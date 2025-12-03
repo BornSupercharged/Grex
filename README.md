@@ -35,7 +35,8 @@
 git clone https://github.com/<org>/Grex.git
 cd Grex
 dotnet build grex.sln -p:Platform=x64
-dotnet run --project Grex.csproj -p:Platform=x64
+# After building, run the executable directly:
+.\bin\x64\Debug\net8.0-windows10.0.19041.0\Grex.exe
 ```
 
 > **Requirements:** Windows 10 1809+ (or Windows 11), .NET 8 SDK, and Windows App Runtime 1.8  

@@ -42,7 +42,7 @@ namespace Grex.IntegrationTests
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickInFilesMode_ShouldCallContextMenuServiceWithCorrectPath()
+        public Task RightClickInFilesMode_ShouldCallContextMenuServiceWithCorrectPath()
         {
             // Arrange
             var testFile = TestDataHelper.CreateTestFile(_testDirectory, "test.txt", "test content");
@@ -77,10 +77,11 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Once);
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickInContentMode_ShouldCallContextMenuServiceWithCorrectPath()
+        public Task RightClickInContentMode_ShouldCallContextMenuServiceWithCorrectPath()
         {
             // Arrange
             var testFile = TestDataHelper.CreateTestFile(_testDirectory, "test.txt", "test content with match");
@@ -113,10 +114,11 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Once);
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickWithWslPath_ShouldConvertToWindowsPathBeforeCallingService()
+        public Task RightClickWithWslPath_ShouldConvertToWindowsPathBeforeCallingService()
         {
             // Arrange
             var wslPath = "/home/user/test.txt";
@@ -153,10 +155,11 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Once);
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickWithInvalidPath_ShouldHandleGracefullyWithoutCrashing()
+        public Task RightClickWithInvalidPath_ShouldHandleGracefullyWithoutCrashing()
         {
             // Arrange
             var invalidPath = "C:\\nonexistent\\file.txt";
@@ -190,6 +193,7 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Once);
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
@@ -221,7 +225,7 @@ namespace Grex.IntegrationTests
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickInFilesMode_ShouldSetHandledToTrue()
+        public Task RightClickInFilesMode_ShouldSetHandledToTrue()
         {
             // Arrange
             var testFile = TestDataHelper.CreateTestFile(_testDirectory, "test.txt", "test content");
@@ -254,10 +258,11 @@ namespace Grex.IntegrationTests
             // Assert - Note: UI controls not accessible in test context, test skipped
             // rightTappedArgs.Handled.Should().BeTrue("RightTapped event should be handled");
             // rightTappedArgs.Handled.Should().NotBe(initialHandled, "Handled property should have changed");
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickInContentMode_ShouldSetHandledToTrue()
+        public Task RightClickInContentMode_ShouldSetHandledToTrue()
         {
             // Arrange
             var testFile = TestDataHelper.CreateTestFile(_testDirectory, "test.txt", "test content with match");
@@ -288,10 +293,11 @@ namespace Grex.IntegrationTests
             // Assert - Note: UI controls not accessible in test context, test skipped
             // rightTappedArgs.Handled.Should().BeTrue("RightTapped event should be handled");
             // rightTappedArgs.Handled.Should().NotBe(initialHandled, "Handled property should have changed");
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickOnEmptyResults_ShouldNotCallContextMenuService()
+        public Task RightClickOnEmptyResults_ShouldNotCallContextMenuService()
         {
             // Arrange
             _tabViewModel.SearchResults.Clear();
@@ -314,10 +320,11 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Never, "ContextMenuService should not be called when right-clicking on empty results");
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickOnFilesModeEmptyResults_ShouldNotCallContextMenuService()
+        public Task RightClickOnFilesModeEmptyResults_ShouldNotCallContextMenuService()
         {
             // Arrange
             _tabViewModel.SearchResults.Clear();
@@ -340,10 +347,11 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Never, "ContextMenuService should not be called when right-clicking on empty files results");
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickWithMultipleResults_ShouldUseCorrectItemPath()
+        public Task RightClickWithMultipleResults_ShouldUseCorrectItemPath()
         {
             // Arrange
             var testFile1 = TestDataHelper.CreateTestFile(_testDirectory, "test1.txt", "content1");
@@ -389,10 +397,11 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Once, "ContextMenuService should be called exactly once with one of the file paths");
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickWithWslPathFallback_ShouldUseDefaultDistribution()
+        public Task RightClickWithWslPathFallback_ShouldUseDefaultDistribution()
         {
             // Arrange
             var wslPath = "/home/user/test.txt";
@@ -429,10 +438,11 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Once);
+            return Task.CompletedTask;
         }
 
         [Fact(Skip = "Requires UI initialization - UI event handler tests need proper WinUI context")]
-        public async Task RightClickWithDifferentWslDistributions_ShouldUseCorrectDistribution()
+        public Task RightClickWithDifferentWslDistributions_ShouldUseCorrectDistribution()
         {
             // Arrange
             var wslPath = "/home/user/test.txt";
@@ -469,6 +479,7 @@ namespace Grex.IntegrationTests
             //     It.IsAny<int>(),
             //     It.IsAny<int>()), 
             //     Times.Once);
+            return Task.CompletedTask;
         }
     }
 }

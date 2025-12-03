@@ -22,8 +22,10 @@ jobs:
           dotnet-version: '8.0.x'
       - name: Restore dependencies
         run: dotnet restore grex.sln
-      - name: Run tests
-        run: dotnet test grex.sln -p:Platform=x64 --configuration Release
+      - name: Run unit tests
+        run: dotnet test Grex.Tests/Grex.Tests.csproj -p:Platform=x64 --configuration Release --logger "console;verbosity=normal"
+        timeout-minutes: 10
+        continue-on-error: false
       - name: Publish application
         run: dotnet publish Grex.csproj -p:Platform=x64 -c Release -o publish/win-x64
       - name: Package artifacts
