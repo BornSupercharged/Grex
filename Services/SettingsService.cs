@@ -11,12 +11,13 @@ namespace Grex.Services
         System,
         Light,
         Dark,
+        GentleGecko,
         BlackKnight,
-        Paranoid,
         Diamond,
-        Subspace,
-        RedVelvet,
         Dreams,
+        Paranoid,
+        RedVelvet,
+        Subspace,
         Tiefling,
         Vibes
     }
@@ -35,7 +36,7 @@ namespace Grex.Services
         public bool UseWindowsSearchIndex { get; set; } = false;
         public bool EnableDockerSearch { get; set; } = false;
         public Models.SizeUnit SizeUnit { get; set; } = Models.SizeUnit.KB;
-        public ThemePreference ThemePreference { get; set; } = ThemePreference.System;
+        public ThemePreference ThemePreference { get; set; } = ThemePreference.GentleGecko;
         public string UILanguage { get; set; } = "en-US"; // Default to English (United States)
         
         // Culture-aware string comparison settings

@@ -1097,6 +1097,13 @@ namespace Grex
         private static readonly SolidColorBrush DarkBackgroundBrush = new SolidColorBrush(Color.FromArgb(255, 24, 24, 24));
         private static readonly SolidColorBrush LightBackgroundBrush = new SolidColorBrush(Color.FromArgb(255, 245, 245, 245));
         
+        // Gentle Gecko theme colors - Green/Black scheme (based on Black Knight)
+        private static readonly SolidColorBrush GentleGeckoBackgroundBrush = new SolidColorBrush(Color.FromArgb(255, 0, 0, 0)); // #000000
+        private static readonly Color GentleGeckoSecondaryColor = Color.FromArgb(255, 0, 51, 34); // #003322 Dark Green
+        private static readonly Color GentleGeckoTertiaryColor = Color.FromArgb(255, 0, 89, 61); // #00593D Medium Green
+        private static readonly Color GentleGeckoTextColor = Color.FromArgb(255, 255, 255, 255); // #FFFFFF
+        private static readonly Color GentleGeckoAccentColor = Color.FromArgb(255, 0, 184, 107); // #00B86B Emerald Green
+        
         // Black Knight theme colors - Modified to use Blue/Black scheme
         private static readonly SolidColorBrush BlackKnightBackgroundBrush = new SolidColorBrush(Color.FromArgb(255, 0, 0, 0)); // #000000
         private static readonly Color BlackKnightSecondaryColor = Color.FromArgb(255, 0, 51, 102); // #003366 Dark Blue
@@ -1292,7 +1299,8 @@ namespace Grex
 
         private static bool IsHighContrastTheme(Services.ThemePreference preference)
         {
-            return preference == Services.ThemePreference.BlackKnight ||
+            return preference == Services.ThemePreference.GentleGecko ||
+                   preference == Services.ThemePreference.BlackKnight ||
                    preference == Services.ThemePreference.Paranoid ||
                    preference == Services.ThemePreference.Diamond ||
                    preference == Services.ThemePreference.Subspace ||
@@ -1506,6 +1514,13 @@ namespace Grex
         {
             return preference switch
             {
+                Services.ThemePreference.GentleGecko => (
+                    GentleGeckoBackgroundBrush,
+                    new SolidColorBrush(GentleGeckoSecondaryColor),
+                    new SolidColorBrush(GentleGeckoTertiaryColor),
+                    new SolidColorBrush(GentleGeckoTextColor),
+                    new SolidColorBrush(GentleGeckoAccentColor)
+                ),
                 Services.ThemePreference.BlackKnight => (
                     BlackKnightBackgroundBrush,
                     new SolidColorBrush(BlackKnightSecondaryColor),
@@ -1699,6 +1714,35 @@ namespace Grex
                 SetBrushResources(resources, tertiary,
                     "AccentButtonBackgroundPointerOver",
                     "AccentButtonBackgroundPressed");
+                
+                // AppBarToggleButton specific resources (used by Filter Options toggle button)
+                SetBrushResources(resources, text,
+                    "AppBarToggleButtonForeground",
+                    "AppBarToggleButtonForegroundPointerOver",
+                    "AppBarToggleButtonForegroundPressed",
+                    "AppBarToggleButtonForegroundChecked",
+                    "AppBarToggleButtonForegroundCheckedPointerOver",
+                    "AppBarToggleButtonForegroundCheckedPressed",
+                    "AppBarToggleButtonRevealForeground",
+                    "AppBarToggleButtonRevealForegroundPointerOver",
+                    "AppBarToggleButtonRevealForegroundPressed",
+                    "AppBarToggleButtonRevealForegroundChecked",
+                    "AppBarToggleButtonRevealForegroundCheckedPointerOver",
+                    "AppBarToggleButtonRevealForegroundCheckedPressed");
+                SetBrushResources(resources, accent,
+                    "AppBarToggleButtonBackground",
+                    "AppBarToggleButtonBackgroundChecked",
+                    "AppBarToggleButtonRevealBackground",
+                    "AppBarToggleButtonRevealBackgroundChecked");
+                SetBrushResources(resources, tertiary,
+                    "AppBarToggleButtonBackgroundPointerOver",
+                    "AppBarToggleButtonBackgroundPressed",
+                    "AppBarToggleButtonBackgroundCheckedPointerOver",
+                    "AppBarToggleButtonBackgroundCheckedPressed",
+                    "AppBarToggleButtonRevealBackgroundPointerOver",
+                    "AppBarToggleButtonRevealBackgroundPressed",
+                    "AppBarToggleButtonRevealBackgroundCheckedPointerOver",
+                    "AppBarToggleButtonRevealBackgroundCheckedPressed");
                 
                 Log($"ApplyHighContrastResources: Applied resource overrides for {preference}");
             }
@@ -2063,6 +2107,11 @@ namespace Grex
             
             switch (preference)
             {
+                case Services.ThemePreference.GentleGecko:
+                    textColor = GentleGeckoTextColor;
+                    accentColor = GentleGeckoAccentColor;
+                    secondaryColor = GentleGeckoSecondaryColor;
+                    break;
                 case Services.ThemePreference.BlackKnight:
                     textColor = BlackKnightTextColor;
                     accentColor = BlackKnightAccentColor;

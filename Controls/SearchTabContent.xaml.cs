@@ -604,24 +604,59 @@ namespace Grex.Controls
                 
                 if (FilterOptionsToggleButton != null)
                 {
+                    // Clear any hardcoded values first
+                    FilterOptionsToggleButton.ClearValue(AppBarToggleButton.ForegroundProperty);
+                    FilterOptionsToggleButton.ClearValue(AppBarToggleButton.BackgroundProperty);
+                    
+                    // Set properties directly
                     FilterOptionsToggleButton.Foreground = e.TextBrush;
                     FilterOptionsToggleButton.Background = e.AccentBrush;
                     
                     // Set hover/pressed state resources
                     if (FilterOptionsToggleButton.Resources == null)
                         FilterOptionsToggleButton.Resources = new Microsoft.UI.Xaml.ResourceDictionary();
+                    
+                    // Set all AppBarToggleButton resources
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonBackground"] = e.AccentBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundPointerOver"] = e.TertiaryBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundPressed"] = e.TertiaryBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundChecked"] = e.AccentBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundCheckedPointerOver"] = e.TertiaryBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundCheckedPressed"] = e.TertiaryBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackground"] = e.AccentBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundPointerOver"] = e.TertiaryBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundPressed"] = e.TertiaryBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundChecked"] = e.AccentBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundCheckedPointerOver"] = e.TertiaryBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundCheckedPressed"] = e.TertiaryBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForeground"] = e.TextBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForegroundPointerOver"] = e.TextBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForegroundPressed"] = e.TextBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForegroundChecked"] = e.TextBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForegroundCheckedPointerOver"] = e.TextBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForegroundCheckedPressed"] = e.TextBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealForeground"] = e.TextBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealForegroundPointerOver"] = e.TextBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealForegroundPressed"] = e.TextBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealForegroundChecked"] = e.TextBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealForegroundCheckedPointerOver"] = e.TextBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealForegroundCheckedPressed"] = e.TextBrush;
+                    
+                    // Also set CommandBar-specific resources that might be used
+                    FilterOptionsToggleButton.Resources["CommandBarBackground"] = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Transparent);
+                    FilterOptionsToggleButton.Resources["CommandBarOverflowPresenterBackground"] = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Transparent);
+                    
+                    // Apply to parent CommandBar resources if available
+                    var commandBar = FilterOptionsToggleButton.Parent as Microsoft.UI.Xaml.Controls.CommandBar;
+                    if (commandBar != null && commandBar.Resources == null)
+                        commandBar.Resources = new Microsoft.UI.Xaml.ResourceDictionary();
+                    if (commandBar?.Resources != null)
+                    {
+                        commandBar.Resources["AppBarToggleButtonBackground"] = e.AccentBrush;
+                        commandBar.Resources["AppBarToggleButtonBackgroundChecked"] = e.AccentBrush;
+                        commandBar.Resources["AppBarToggleButtonRevealBackground"] = e.AccentBrush;
+                        commandBar.Resources["AppBarToggleButtonRevealBackgroundChecked"] = e.AccentBrush;
+                    }
 
                     // Force visual state refresh for FilterOptionsToggleButton
                     if (FilterOptionsToggleButton.IsChecked == true)
@@ -634,6 +669,11 @@ namespace Grex.Controls
                         Microsoft.UI.Xaml.VisualStateManager.GoToState(FilterOptionsToggleButton, "Checked", false);
                         Microsoft.UI.Xaml.VisualStateManager.GoToState(FilterOptionsToggleButton, "Unchecked", false);
                     }
+                    
+                    // Force a layout update
+                    FilterOptionsToggleButton.InvalidateArrange();
+                    FilterOptionsToggleButton.InvalidateMeasure();
+                    FilterOptionsToggleButton.UpdateLayout();
                 }
                 
                 Log($"ApplyThemeColors: Completed for {e.Theme}");

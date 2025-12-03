@@ -66,14 +66,15 @@ Grex stores settings in `%LocalAppData%\Grex\settings.json`. Here's the complete
 | 0 | System Default |
 | 1 | Light Mode |
 | 2 | Dark Mode |
-| 3 | Black Knight (High Contrast) |
-| 4 | Paranoid (High Contrast) |
+| 3 | Gentle Gecko (High Contrast) |
+| 4 | Black Knight (High Contrast) |
 | 5 | Diamond (High Contrast) |
-| 6 | Subspace (High Contrast) |
-| 7 | Red Velvet (High Contrast) |
-| 8 | Dreams (High Contrast) |
-| 9 | Tiefling (High Contrast) |
-| 10 | Vibes (High Contrast) |
+| 6 | Dreams (High Contrast) |
+| 7 | Paranoid (High Contrast) |
+| 8 | Red Velvet (High Contrast) |
+| 9 | Subspace (High Contrast) |
+| 10 | Tiefling (High Contrast) |
+| 11 | Vibes (High Contrast) |
 
 **SizeUnit:**
 | Value | Unit |

@@ -415,12 +415,13 @@ namespace Grex.Tests.Services
         #region High Contrast Theme Tests
 
         [Theory]
+        [InlineData(ThemePreference.GentleGecko)]
         [InlineData(ThemePreference.BlackKnight)]
-        [InlineData(ThemePreference.Paranoid)]
         [InlineData(ThemePreference.Diamond)]
-        [InlineData(ThemePreference.Subspace)]
-        [InlineData(ThemePreference.RedVelvet)]
         [InlineData(ThemePreference.Dreams)]
+        [InlineData(ThemePreference.Paranoid)]
+        [InlineData(ThemePreference.RedVelvet)]
+        [InlineData(ThemePreference.Subspace)]
         [InlineData(ThemePreference.Tiefling)]
         [InlineData(ThemePreference.Vibes)]
         public void SetThemePreference_HighContrastThemes_SetsCorrectly(ThemePreference theme)
@@ -435,6 +436,19 @@ namespace Grex.Tests.Services
         }
 
         [Fact]
+        public void ExportSettingsAsJson_WithGentleGeckoTheme_ExportsCorrectNumericValue()
+        {
+            // Arrange
+            SettingsService.SetThemePreference(ThemePreference.GentleGecko);
+
+            // Act
+            var json = SettingsService.ExportSettingsAsJson();
+
+            // Assert - GentleGecko is enum value 3
+            json.Should().Contain("\"ThemePreference\": 3");
+        }
+
+        [Fact]
         public void ExportSettingsAsJson_WithBlackKnightTheme_ExportsCorrectNumericValue()
         {
             // Arrange
@@ -443,20 +457,7 @@ namespace Grex.Tests.Services
             // Act
             var json = SettingsService.ExportSettingsAsJson();
 
-            // Assert - BlackKnight is enum value 3
-            json.Should().Contain("\"ThemePreference\": 3");
-        }
-
-        [Fact]
-        public void ExportSettingsAsJson_WithParanoidTheme_ExportsCorrectNumericValue()
-        {
-            // Arrange
-            SettingsService.SetThemePreference(ThemePreference.Paranoid);
-
-            // Act
-            var json = SettingsService.ExportSettingsAsJson();
-
-            // Assert - Paranoid is enum value 4
+            // Assert - BlackKnight is enum value 4
             json.Should().Contain("\"ThemePreference\": 4");
         }
 
@@ -474,16 +475,29 @@ namespace Grex.Tests.Services
         }
 
         [Fact]
-        public void ExportSettingsAsJson_WithSubspaceTheme_ExportsCorrectNumericValue()
+        public void ExportSettingsAsJson_WithDreamsTheme_ExportsCorrectNumericValue()
         {
             // Arrange
-            SettingsService.SetThemePreference(ThemePreference.Subspace);
+            SettingsService.SetThemePreference(ThemePreference.Dreams);
 
             // Act
             var json = SettingsService.ExportSettingsAsJson();
 
-            // Assert - Subspace is enum value 6
+            // Assert - Dreams is enum value 6
             json.Should().Contain("\"ThemePreference\": 6");
+        }
+
+        [Fact]
+        public void ExportSettingsAsJson_WithParanoidTheme_ExportsCorrectNumericValue()
+        {
+            // Arrange
+            SettingsService.SetThemePreference(ThemePreference.Paranoid);
+
+            // Act
+            var json = SettingsService.ExportSettingsAsJson();
+
+            // Assert - Paranoid is enum value 7
+            json.Should().Contain("\"ThemePreference\": 7");
         }
 
         [Fact]
@@ -495,21 +509,21 @@ namespace Grex.Tests.Services
             // Act
             var json = SettingsService.ExportSettingsAsJson();
 
-            // Assert - RedVelvet is enum value 7
-            json.Should().Contain("\"ThemePreference\": 7");
+            // Assert - RedVelvet is enum value 8
+            json.Should().Contain("\"ThemePreference\": 8");
         }
 
         [Fact]
-        public void ExportSettingsAsJson_WithDreamsTheme_ExportsCorrectNumericValue()
+        public void ExportSettingsAsJson_WithSubspaceTheme_ExportsCorrectNumericValue()
         {
             // Arrange
-            SettingsService.SetThemePreference(ThemePreference.Dreams);
+            SettingsService.SetThemePreference(ThemePreference.Subspace);
 
             // Act
             var json = SettingsService.ExportSettingsAsJson();
 
-            // Assert - Dreams is enum value 8
-            json.Should().Contain("\"ThemePreference\": 8");
+            // Assert - Subspace is enum value 9
+            json.Should().Contain("\"ThemePreference\": 9");
         }
 
         [Fact]
@@ -521,8 +535,8 @@ namespace Grex.Tests.Services
             // Act
             var json = SettingsService.ExportSettingsAsJson();
 
-            // Assert - Tiefling is enum value 9
-            json.Should().Contain("\"ThemePreference\": 9");
+            // Assert - Tiefling is enum value 10
+            json.Should().Contain("\"ThemePreference\": 10");
         }
 
         [Fact]
@@ -534,19 +548,20 @@ namespace Grex.Tests.Services
             // Act
             var json = SettingsService.ExportSettingsAsJson();
 
-            // Assert - Vibes is enum value 10
-            json.Should().Contain("\"ThemePreference\": 10");
+            // Assert - Vibes is enum value 11
+            json.Should().Contain("\"ThemePreference\": 11");
         }
 
         [Theory]
-        [InlineData(3, ThemePreference.BlackKnight)]
-        [InlineData(4, ThemePreference.Paranoid)]
+        [InlineData(3, ThemePreference.GentleGecko)]
+        [InlineData(4, ThemePreference.BlackKnight)]
         [InlineData(5, ThemePreference.Diamond)]
-        [InlineData(6, ThemePreference.Subspace)]
-        [InlineData(7, ThemePreference.RedVelvet)]
-        [InlineData(8, ThemePreference.Dreams)]
-        [InlineData(9, ThemePreference.Tiefling)]
-        [InlineData(10, ThemePreference.Vibes)]
+        [InlineData(6, ThemePreference.Dreams)]
+        [InlineData(7, ThemePreference.Paranoid)]
+        [InlineData(8, ThemePreference.RedVelvet)]
+        [InlineData(9, ThemePreference.Subspace)]
+        [InlineData(10, ThemePreference.Tiefling)]
+        [InlineData(11, ThemePreference.Vibes)]
         public void ImportSettingsFromJson_WithHighContrastThemeNumericValue_ImportsCorrectly(int numericValue, ThemePreference expectedTheme)
         {
             // Arrange

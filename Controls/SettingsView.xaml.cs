@@ -1499,18 +1499,18 @@ namespace Grex.Controls
                 var tag = selectedItem.Tag?.ToString();
                 Services.ThemePreference preference = tag switch
                 {
-                    "System" => Services.ThemePreference.System,
                     "Light" => Services.ThemePreference.Light,
                     "Dark" => Services.ThemePreference.Dark,
+                    "GentleGecko" => Services.ThemePreference.GentleGecko,
                     "BlackKnight" => Services.ThemePreference.BlackKnight,
-                    "Paranoid" => Services.ThemePreference.Paranoid,
                     "Diamond" => Services.ThemePreference.Diamond,
-                    "Subspace" => Services.ThemePreference.Subspace,
-                    "RedVelvet" => Services.ThemePreference.RedVelvet,
                     "Dreams" => Services.ThemePreference.Dreams,
+                    "Paranoid" => Services.ThemePreference.Paranoid,
+                    "RedVelvet" => Services.ThemePreference.RedVelvet,
+                    "Subspace" => Services.ThemePreference.Subspace,
                     "Tiefling" => Services.ThemePreference.Tiefling,
                     "Vibes" => Services.ThemePreference.Vibes,
-                    _ => Services.ThemePreference.System
+                    _ => Services.ThemePreference.Light
                 };
                 
                 SettingsService.SetThemePreference(preference);
@@ -1559,15 +1559,16 @@ namespace Grex.Controls
         {
             return preference switch
             {
-                Services.ThemePreference.System => 0,
-                Services.ThemePreference.Light => 1,
-                Services.ThemePreference.Dark => 2,
+                Services.ThemePreference.System => 0, // Map System to Light (index 0) since System is removed from dropdown
+                Services.ThemePreference.Light => 0,
+                Services.ThemePreference.Dark => 1,
+                Services.ThemePreference.GentleGecko => 2,
                 Services.ThemePreference.BlackKnight => 3,
-                Services.ThemePreference.Paranoid => 4,
-                Services.ThemePreference.Diamond => 5,
-                Services.ThemePreference.Subspace => 6,
+                Services.ThemePreference.Diamond => 4,
+                Services.ThemePreference.Dreams => 5,
+                Services.ThemePreference.Paranoid => 6,
                 Services.ThemePreference.RedVelvet => 7,
-                Services.ThemePreference.Dreams => 8,
+                Services.ThemePreference.Subspace => 8,
                 Services.ThemePreference.Tiefling => 9,
                 Services.ThemePreference.Vibes => 10,
                 _ => 0
