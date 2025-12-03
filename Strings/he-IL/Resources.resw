@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>חיפוש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>בונה Regex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>הגדרות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>נתיב חיפוש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>הזן נתיב לחיפוש...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>תבנית חיפוש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>הזן טקסט או תבנית Regex...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>החלף ב-</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>הזן טקסט החלפה...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>חיפוש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>החלף</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>רגיש לאותיות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>השתמש בביטוי רגולרי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>כלול תיקיות משנה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>עקוב אחר קישורים סמליים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>מסנני קבצים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (מופרד בנקודה-פסיק)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>הדר תיקיות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin;obj;node_modules (מופרד בנקודה-פסיק)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>מסנן גודל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>גודל מינימלי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>גודל מקסימלי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>תוצאות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>תוכן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>קבצים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>שם קובץ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>שורה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>תוכן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>נתיב</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>גודל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>שונה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>מוכן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>מחפש...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>לא נמצאו התאמות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>שגיאה: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>תבנית ביטוי רגולרי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>טקסט בדיקה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>התאמות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>כללי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>שפה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>ערכת נושא</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>מערכת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>בהיר</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>כהה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>שגיאה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>אזהרה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>מידע</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>אישור</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>ביטול</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>כן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>לא</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>פועל כמנהל מערכת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex פועל כעת עם הרשאות מנהל מערכת.
+
+הפעלה כמנהל מערכת עלולה לגרום לבעיות עם:
+• התראות toast של Windows
+• חלק מתכונות Windows App SDK
+• אבטחה ובידוד של האפליקציה
+
+מומלץ להפעיל את Grex כמשתמש רגיל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>התעלם (לא בטוח)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>יציאה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>שגיאת הפעלת אפליקציה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>נכשל בהפעלת האפליקציה: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>שגיאה לא מטופלת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>אירעה שגיאה בלתי צפויה: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>שגיאת יצירת טאב</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>נכשל ביצירת טאב: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>אירעה שגיאה קריטית בעת יצירת טאב: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>שגיאת חיפוש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>אירעה שגיאה במהלך החיפוש: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>שגיאת חיפוש WSL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>אירעה שגיאה בעת חיפוש ב-WSL: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>אין תוצאות אפשריות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>הערך 'הדר תיקיות' מדיר את כל התיקיות. אנא בדוק את התבנית שלך ונסה שוב.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>תבנית Regex לא תקינה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>הערך 'הדר תיקיות' אינו ביטוי רגולרי תקין. אנא בדוק את התבנית שלך ונסה שוב.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>אשר החלפה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך לבצע את פעולת ההחלפה? פעולה זו לא ניתנת לביטול.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>האם לדרוס תבנית Regex?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>האם ברצונך לדרוס את תבנית ה-Regex הנוכחית עם ההגדרה המוקדמת {0}?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>המשך</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - חיפוש קבצים בטאבים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>חיפוש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>בונה Regex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>הגדרות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>סטטוס חיפוש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>מוכן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>טאב חדש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>טאב {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>מחליף...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>עובד רק לחיפושי טקסט רגיל תחת נתיבי Windows.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>הזן או הדבק נתיב כאן...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>עיון...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>הזן מונח חיפוש או תבנית Regex...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>החלף</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>החלף ב...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>חיפוש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>החלף</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>איפוס</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>אפשרויות מסנן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>בדיקת התראה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>זוהי התראת בדיקה לאימות שההתראות פועלות כראוי.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>התראת בדיקה נשלחה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>Windows התבקש להציג התראת toast. אם עדיין אינך רואה אותה, ודא שההתראות מופעלות עבור Grex (הגדרות Windows &gt; מערכת &gt; התראות) ושסיוע מיקוד / אל תפריע מושבת.
+
+יומן התראות: {0}
+יומן אבחון: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>שגיאת בדיקת התראה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>אירעה שגיאה בלתי צפויה בעת ניסיון לשלוח את ההתראה.
+
+{0}
+
+ראה יומן: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>התראות toast של Windows אינן זמינות בתצורת מערכת זו.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>סיבות נפוצות:
+• Windows App SDK runtime (חבילת Singleton) חסר או דורש תיקון
+• האפליקציה פועלת עם הרשאות מוגבהות (מנהל מערכת)
+• עבור אפליקציות לא ארוזות, IsSupported() עלול להחזיר false באופן שגוי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>שלבי פתרון בעיות:
+1. התקן או תקן את Windows App Runtime: https://aka.ms/windowsappsdk/runtime
+2. ודא ש-Grex לא פועל כמנהל מערכת
+3. הפעל מחדש את Grex לאחר התקנה/תיקון של ה-runtime</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Grex לא הצליח להירשם להתראות toast של Windows.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>סיבות נפוצות:
+• Windows App SDK runtime (חבילת Singleton) חסר או פגום
+• האפליקציה פועלת עם הרשאות מוגבהות (מנהל מערכת)
+• זהות האפליקציה לא מוגדרת כראוי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>שלבי פתרון בעיות:
+1. התקן או תקן את Windows App Runtime: https://aka.ms/windowsappsdk/runtime
+2. ודא ש-Grex לא פועל כמנהל מערכת
+3. הפעל מחדש את Grex לאחר התקנה/תיקון של ה-runtime</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>פרטים: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>קובץ יומן: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>התאם קבצים:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>למשל, *.json|*.txt או -*.log</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>הדר תיקיות:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>למשל, .git,vendor או ^(.git|vendor)$</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>סוג חיפוש:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>חיפוש טקסט</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>חיפוש Regex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>תוצאות חיפוש:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>תוכן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>קבצים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>הגבלת גודל:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>ללא הגבלה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>פחות מ-</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>שווה ל-</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>גדול מ-</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>הזן גודל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>כבד .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>חיפוש רגיש לאותיות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>כלול קבצי מערכת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>כלול תיקיות משנה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>כלול פריטים מוסתרים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>כלול קבצים בינאריים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>כלול קישורים סמליים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>השתמש בחיפוש Windows</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>נצל את אינדקס חיפוש Windows לחיפושי טקסט מהירים יותר בתיקיות Windows מאונדקסות. חיפושי Regex, יעדי WSL ומיקומים לא מאונדקסים ישתמשו בסורק המסורתי.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>בחר את התיקייה או הכונן לסריקה. תומך בהדבקת נתיבים ומציג מיקומים אחרונים.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>פתח את בוחר התיקיות כדי לבחור שורש חיפוש.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>הקלד את מונח הטקסט הרגיל או תבנית ה-Regex שברצונך לחפש.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>הפעל מצב החלפה כדי שההתאמות יוכלו להתעדכן במקום רק להופיע ברשימה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>ספק את טקסט ההחלפה שייכתב בעת הפעלת ההחלפה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>סנן קבצים לפי שם. הפרד תבניות עם '|' והוסף קידומת '-' כדי להדיר.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>דלג על תיקיות באמצעות שמות מופרדים בפסיקים או Regex (למשל, ^(.git|vendor)$).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>בחר האם החיפוש מפרש קלט כטקסט רגיל או כ-Regex.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>בחר האם התוצאות מציגות שורות תואמות או רק את רשימת הקבצים.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>החל השוואת גודל אופציונלית לפני סריקת כל קובץ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>הזן את סף הגודל המספרי שעובד עם ההשוואה שנבחרה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>בחר את היחידה (KB, MB, GB) עבור הגבלת הגודל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>דלג על קבצים שמתעלמים מהם על ידי .gitignore בתיקייה שנבחרה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>התייחס להתאמות כאל תקפות רק כאשר רישום האותיות תואם בדיוק.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>אפשר לסרוק קבצים מוגנים על ידי המערכת.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>חפש באופן רקורסיבי את כל תיקיות המשנה תחת הנתיב שנבחר.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>כלול קבצים ותיקיות המסומנים כמוסתרים.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>סרוק קבצים בינאריים בנוסף לקבצי טקסט. זה יכול להיות איטי יותר.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>עקוב אחר קישורים סמליים וצמתים במהלך הסריקה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>שם</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>שורה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>עמודה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>טקסט</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>נתיב קובץ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>שם</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>גודל קובץ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>התאמות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>נתיב קובץ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>סיומת קובץ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>קידוד</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>תאריך שונה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>הסתר שורה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>הסתר עמודה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>הסתר נתיב</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>הסתר גודל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>הסתר התאמות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>הסתר סיומת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>הסתר קידוד</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>הסתר תאריך שונה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>הגדרות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>הגדרות אלה ישמשו כברירת מחדל עבור טאבים חדשים ובהפעלת האפליקציה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>העדפת ערכת נושא</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>ערכת נושא מערכת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>מצב בהיר</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>מצב כהה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>אפשרויות מסנן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>תוצאות חיפוש:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>סוג חיפוש:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>אפשרויות מסנן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>כבד .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>חיפוש רגיש לאותיות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>כלול קבצי מערכת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>כלול תיקיות משנה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>כלול פריטים מוסתרים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>כלול קבצים בינאריים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>כלול קישורים סמליים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>השתמש בחיפוש Windows</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>השתמש באינדקס חיפוש Windows לחיפושי טקסט מהירים יותר בתיקיות מאונדקסות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>ניפוי שגיאות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>השתמש בלחצן למטה כדי לאמת התראות toast של Windows. אם תלויות Windows App SDK הנדרשות חסרות, תקבל הנחיות לפתרון בעיות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>בדיקת התראה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>השתמש בלחצן למטה כדי לאמת התראות toast של Windows. אם תלויות Windows App SDK הנדרשות חסרות, תקבל הנחיות לפתרון בעיות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>השתמש בלחצן למטה כדי לבדוק החלפת שפה ולאמת את כל מפתחות התרגום.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>בדיקת לוקליזציה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>בדיקת לוקליזציה עברה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>כל {0} מפתחות הלוקליזציה קיימים בכל {1} השפות הנתמכות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>בדיקת לוקליזציה נכשלה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>חלק ממפתחות הלוקליזציה חסרים בשפה אחת או יותר:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} מפתחות חסרים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... ועוד {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>שגיאת בדיקת לוקליזציה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>אירעה שגיאה בעת בדיקת הלוקליזציה: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>טקסט לדוגמה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>הזן טקסט לדוגמה כדי לבדוק את תבנית ה-Regex שלך...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>תבנית Regex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>הזן תבנית Regex...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>הגדרות מוקדמות:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>אימייל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>טלפון</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>תאריך</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>ספרות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>תוצאות התאמה בזמן אמת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>פירוק Regex חזותי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>אפשרויות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>לא רגיש לאותיות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>רב-שורות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>התאמה גלובלית</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>הזן תבנית Regex תקינה כדי לראות התאמות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>הזן טקסט לדוגמה כדי לבדוק את תבנית ה-Regex שלך.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>ספק טקסט לדוגמה שתבנית ה-Regex תיבדק כנגדו.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>הזן את תבנית ה-Regex שברצונך להעריך.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>התעלם מרישום אותיות בעת הערכת התאמות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>התייחס ל-^ ול-$ כאל התחלה וסוף של כל שורה במקום כל הטקסט.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>מצא כל התאמה במקום לעצור אחרי הראשונה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>השוואת מחרוזות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>מצב השוואה:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>מצב השוואה:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>סידורי (מהיר, בינארי)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>סידורי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>תרבות נוכחית</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>תרבות נוכחית</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>תרבות בלתי משתנה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>תרבות בלתי משתנה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>נירמול Unicode:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>נירמול Unicode:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ללא</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>טופס C (פירוק קנוני)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>טופס D (פירוק קנוני)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>טופס KC (פירוק תאימות)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>טופס KD (פירוק תאימות)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>רגיש לסימני ניקוד</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>כאשר מושבת, תווים עם סימני ניקוד מטופלים כתווים הבסיסיים שלהם (למשל, 'é' = 'e')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>תרבות:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>תרבות מחרוזת:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>בחר תרבות או הזן קוד תרבות מותאם אישית</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>משמש להגדרות השוואת מחרוזות במהלך פעולות חיפוש, לא לשפת ממשק המשתמש של האפליקציה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>שפת ממשק משתמש</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>שפת אפליקציה:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>התאם את ערכת הנושא של Windows אוטומטית כאשר Grex מתחיל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>כפה את ערכת הנושא הבהירה ללא קשר להגדרת Windows.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>כפה את ערכת הנושא הכהה ללא קשר להגדרת Windows.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>החלף את שפת האפליקציה באופן מיידי עבור כל דף פתוח.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>בחר האם טאבים חדשים משתמשים כברירת מחדל בתוצאות תוכן או תוצאות קבצים.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>בחר האם טאבים חדשים מתחילים במצב חיפוש טקסט או מצב חיפוש Regex.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>הגדר האם חיפושים חדשים מכבדים את .gitignore כברירת מחדל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>כלול קבצים מוגנים על ידי המערכת כברירת מחדל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>עבור רקורסיבית לתיקיות משנה כברירת מחדל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>כלול קבצים ותיקיות מוסתרים כברירת מחדל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>סרוק קבצים בינאריים כברירת מחדל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>עקוב אחר קישורים סמליים וצמתים כברירת מחדל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>הפוך חיפושים חדשים לרגישים לאותיות כברירת מחדל.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>בחר איזה נירמול Unicode מוחל לפני השוואות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>בחר את כללי השוואת המחרוזות כברירת מחדל עבור חיפושים חדשים.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>שלח התראת דוגמה כדי לאמת ש-toast של Windows פועלים.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>בדוק החלפת שפה ואמת שכל מפתחות התרגום באנגלית קיימים בכל השפות הנתמכות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>לא נמצאו התאמות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>נמצאו {0} התאמה(ות).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>לא נמצאה התאמה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>נמצאה התאמה אחת.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>שגיאה: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>הזן תבנית Regex כדי לראות את הפירוק.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>תבנית Regex לא תקינה: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>מחלקת תווים</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>קבוצה לא לוכדת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>קבוצה לוכדת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>כמת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>עוגן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>רצף בריחה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>מילולי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>מתאים לכל תו בסט</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>קבוצות ללא לכידה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>לוכד טקסט תואם</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>כמת: מציין ספירה מדויקת או טווח</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>אפס או יותר</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>אחד או יותר</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>אפס או אחד</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>תחילת שורה/מחרוזת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>סוף שורה/מחרוזת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>ספרה (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>לא ספרה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>תו מילה (a-z, A-Z, 0-9, _)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>תו לא מילה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>רווח לבן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>לא רווח לבן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>שורה חדשה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>טאב</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>חזרת כרכרה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>תו מילולי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>האם לדרוס תבנית Regex?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>האם ברצונך לדרוס את תבנית ה-Regex הנוכחית עם ההגדרה המוקדמת {0}?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>המשך</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>ביטול</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>לְהַמשִׁיך</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>זוהה נתיב WSL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>חיפוש WSL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>אוֹדוֹת</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>נוצר על ידי BornSupercharged</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>מורשה תחת GPL 3.0</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>צפה בפרויקט ב-GitHub</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>הקש F1 בכל עת כדי לפתוח דף זה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>גִרְסָה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>לְהַפְסִיק</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>שְׁנִיָה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>שניות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>דַקָה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>פּרוֹטוֹקוֹל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>שָׁעָה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>שעות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>נמצאו {0} התאמות ב-{1} קבצים ב-{2}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>הוחלפו {0} התאמות ב-{1} קבצים ב-{2}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>גיבוי ושחזור</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>ייצוא הגדרות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>הגדרות ייבוא</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>שחזר ברירות מחדל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>ייצא את ההגדרות הנוכחיות שלך לקובץ גיבוי, ייבא הגדרות מגיבוי קודם או שחזר את כל ההגדרות לברירות המחדל המקוריות שלהן.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>הגדרות ייצוא</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>ההגדרות שלך יוצאו בהצלחה אל: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>הייצוא נכשל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>ייצוא ההגדרות נכשל: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>הגדרות מיובאות</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>ההגדרות יובאו בהצלחה.שינויים מסוימים עשויים לדרוש הפעלה מחדש כדי להיכנס לתוקף.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>הייבוא ​​נכשל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>ייבוא ​​ההגדרות נכשל: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>הקובץ שנבחר אינו נראה כגיבוי חוקי של הגדרות Grex.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>שחזר ברירות מחדל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>פעולה זו תאפס את כל ההגדרות לברירות המחדל המקוריות שלהן ותפעיל מחדש את היישום.האם אתה בטוח שאתה רוצה להמשיך?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>ייצא את ההגדרות הנוכחיות שלך לקובץ גיבוי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>ייבוא ​​הגדרות מקובץ גיבוי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>אפס את כל ההגדרות לברירות המחדל המקוריות שלהן</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>מערכת ברירת מחדל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>מצב אור</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>מצב כהה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>אביר שחור (ניגודיות גבוהה)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>פרנואיד (ניגודיות גבוהה)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>יהלום (ניגודיות גבוהה)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>תת-מרחב (ניגודיות גבוהה)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>קטיפה אדומה (ניגודיות גבוהה)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>חלומות (ניגודיות גבוהה)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>טיפלינג (ניגודיות גבוהה)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ויברציות (ניגודיות גבוהה)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>הפעל מחדש את היישום</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>הפעל מחדש את היישום כדי להחיל שינויים.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>החל עיצוב</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>חלק מהאלמנטים דורשים הפעלה מחדש של היישום כדי לסגנן כראוי.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>מְאוּחָר יוֹתֵר</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Docker Search</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>שיקוף קבצים ממכולה פועלת של Docker כך ש-Grex תוכל לסרוק אותם מבלי לצאת מהאפליקציה.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>אפשר חיפוש Docker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>מופעל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>נָכֶה</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>הצג קונטיינרים זמינים של Docker לצד נתיב החיפוש כדי שתוכל למקד אליהם ישירות.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>דיסק מקומי</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>חיפוש יעד</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>בחר מיכל</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>רענן את רשימת המכולות של Docker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>שגיאת חיפוש של Docker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>Docker אינו זמין.ודא ש-Docker Desktop פועל ושיש לך הרשאה להפעיל פקודות Docker.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>בחר קונטיינר Docker לפני תחילת החיפוש.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>לא ניתן היה לאתחל את שילוב Docker: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>לא ניתן לרענן מכלי Docker: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>הכנת מראת החיפוש של Docker נכשלה: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>עותק Docker נכשל עקב יצירת קישור סמלי: {0}
+
+Windows דורש הרשאות מיוחדות כדי ליצור קישורים סמליים.הפעל את Grex כמנהל, או הפעל את זכות המשתמש 'צור קישורים סמליים' עבור חשבונך.
+
+הערה: נתיבים מסוימים של מיכל (כמו node_modules) מכילים קישורים סימליים רבים וייתכן שלא ניתן יהיה לחפש אותם ללא הרשאות אלה.</value>
+    <comment>status:complete</comment>
+  </data>
+</root>

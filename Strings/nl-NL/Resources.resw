@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>Zoeken</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>Regex-bouwer</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>Instellingen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>Zoekpad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>Voer pad in om te zoeken...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>Zoekpatroon</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>Voer tekst of Regex patroon in...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>Vervangen Door</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>Voer vervangende tekst in...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>Zoeken</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>Vervangen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>Hoofdlettergevoelig</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>Gebruik Reguliere Expressie</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>Submappen Opnemen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>Symbolische Links Volgen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>Bestandsfilters</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (gescheiden door puntkomma)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>Mappen Uitsluiten</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin;obj;node_modules (gescheiden door puntkomma)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>Groottefilter</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>Min. Grootte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>Max. Grootte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>Resultaten</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>Inhoud</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>Bestanden</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>Bestandsnaam</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>Regel</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>Inhoud</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>Pad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>Grootte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>Gewijzigd</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>Gereed</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>Zoeken...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>Geen overeenkomsten gevonden</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>Fout: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>Reguliere Expressie Patroon</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>Testtekst</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>Overeenkomsten</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>Algemeen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>Taal</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>Thema</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>Systeem</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>Licht</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>Donker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Fout</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>Waarschuwing</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>Informatie</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>OK</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Annuleren</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>Ja</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>Nee</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>Uitvoeren als beheerder</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex wordt momenteel uitgevoerd met beheerdersrechten.
+
+Uitvoeren als beheerder kan problemen veroorzaken met:
+• Windows toast-meldingen
+• Sommige Windows App SDK-functies
+• Toepassingsbeveiliging en isolatie
+
+Het wordt aanbevolen om Grex uit te voeren als een gewone gebruiker.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>Negeren (niet veilig)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>Afsluiten</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>Fout bij opstarten van toepassing</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>Het opstarten van de toepassing is mislukt: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>Onverwerkte fout</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>Er is een onverwachte fout opgetreden: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>Fout bij aanmaken van tabblad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>Het aanmaken van het tabblad is mislukt: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>Er is een kritieke fout opgetreden bij het aanmaken van een tabblad: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>Zoekfout</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het zoeken: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>WSL-zoekfout</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het zoeken in WSL: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>Geen resultaten mogelijk</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>De waarde 'Uitsluiten mappen' sluit alle mappen uit. Controleer uw patroon en probeer het opnieuw.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>Ongeldig Regex-patroon</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>De waarde 'Uitsluiten mappen' is geen geldige reguliere expressie. Controleer uw patroon en probeer het opnieuw.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>Vervangen bevestigen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>Weet u zeker dat u de vervangingsbewerking wilt uitvoeren?Deze actie kan niet ongedaan worden gemaakt.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Regex-patroon overschrijven?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>Wilt u het huidige Regex-patroon overschrijven met de voorinstelling {0}?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>Doorgaan</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - Bestand zoeken met tabbladen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>Zoeken</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>Regex-bouwer</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>Instellingen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>Zoekstatus</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>Gereed</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>Nieuw tabblad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>Tabblad {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>Vervangen...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>Werkt alleen voor zoekopdrachten in platte tekst onder Windows-paden.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>Voer het pad hier in of plak het...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>Blader...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>Voer zoekterm of Regex-patroon in...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>Vervangen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>Vervangen door...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>Zoekopdracht</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>Vervangen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>Opnieuw instellen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>Filteropties</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>Testmelding</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>Dit is een testmelding om te controleren of meldingen correct werken.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>Testmelding verzonden</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>Windows werd gevraagd een toastmelding weer te geven.Als je het nog steeds niet ziet, controleer dan of meldingen zijn ingeschakeld voor Grex (Windows-instellingen &gt; Systeem &gt; Meldingen) en of Focushulp / Niet storen is uitgeschakeld.
+
+Meldingslogboek: {0}
+Diagnostisch logboek: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>Fout bij testmelding</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>Er is een onverwachte fout opgetreden tijdens het verzenden van de melding.
+
+{0}
+
+Zie logboek: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>Windows-toastmeldingen zijn niet beschikbaar op deze systeemconfiguratie.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>Veelvoorkomende oorzaken:
+• Windows App SDK-runtime (Singleton-pakket) ontbreekt of moet worden gerepareerd
+• Applicatie wordt uitgevoerd met verhoogde (beheerders)rechten
+• Voor onverpakte apps kan IsSupported() onjuist false retourneren</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>Stappen voor probleemoplossing:
+1. Installeer of repareer de Windows App Runtime: https://aka.ms/windowsappsdk/runtime
+2. Zorg ervoor dat Grex NIET als beheerder draait
+3. Start Grex opnieuw op na het installeren/repareren van de runtime</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Grex kon zich niet registreren voor Windows-toastmeldingen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>Veelvoorkomende oorzaken:
+• Windows App SDK-runtime (Singleton-pakket) ontbreekt of is beschadigd
+• Applicatie wordt uitgevoerd met verhoogde (beheerders)rechten
+• Applicatie-identiteit is niet correct geconfigureerd</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>Stappen voor probleemoplossing:
+1. Installeer of repareer de Windows App Runtime: https://aka.ms/windowsappsdk/runtime
+2. Zorg ervoor dat Grex NIET als beheerder draait
+3. Start Grex opnieuw op na het installeren/repareren van de runtime</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>Details: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>Logbestand: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>Match-bestanden:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>bijvoorbeeld *.json|*.txt of -*.log</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>Exclusief Dirs:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>bijvoorbeeld .git,vendor of ^(.git|vendor)$</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>Zoektype:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Tekst zoeken</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Regex-zoekopdracht</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>Zoekresultaten:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>Inhoud</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>Bestanden</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>Groottelimiet:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>Geen limiet</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>Minder dan</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>Gelijk aan</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>Groter dan</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>Voer maat in</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>Respecteer .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Zoek hoofdlettergevoelig</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>Voeg systeembestanden toe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>Inclusief submappen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>Voeg verborgen items toe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>Voeg binaire bestanden toe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>Voeg symbolische links toe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Gebruik Windows Zoeken</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Maak gebruik van de Windows Search-index voor snellere tekstzoekopdrachten in geïndexeerde Windows-mappen.Regex-zoekopdrachten, WSL-doelen en niet-geïndexeerde locaties maken gebruik van de traditionele scanner.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>Kies de map of het station dat u wilt scannen.Ondersteunt het plakken van paden en toont recente locaties.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>Open de mappenkiezer om een ​​zoekroot te selecteren.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>Typ de platte tekstterm of het Regex-patroon waarnaar u wilt zoeken.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>Schakel de vervangingsmodus in, zodat overeenkomsten kunnen worden bijgewerkt in plaats van alleen vermeld.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>Geef de vervangende tekst op die wordt geschreven wanneer de vervanging wordt uitgevoerd.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>Filter bestanden op naam.Scheid patronen met '|'en voorvoegsel met '-' om uit te sluiten.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>Sla mappen over met door komma's gescheiden namen of een Regex (bijvoorbeeld ^(.git|vendor)$).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>Kies of de zoekopdracht invoer interpreteert als platte tekst of als Regex.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>Kies of de resultaten overeenkomende regels tonen of alleen de lijst met bestanden.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>Pas een optionele groottevergelijking toe voordat u elk bestand scant.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>Voer de numerieke groottedrempel in die werkt met de geselecteerde vergelijking.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>Selecteer de eenheid (KB, MB, GB) voor de maximale grootte.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>Sla bestanden over die door .gitignore worden genegeerd in de geselecteerde map.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Beschouw overeenkomsten alleen als geldig als de letteromhulling exact overeenkomt.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Sta toe dat door het systeem beveiligde bestanden worden gescand.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>Doorzoek recursief alle submappen onder het gekozen pad.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>Voeg bestanden en mappen toe die als verborgen zijn gemarkeerd.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Scan naast tekstbestanden ook binaire bestanden.Dit kan langzamer zijn.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>Volg symbolische links en kruispunten tijdens het scannen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>Naam</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>Lijn</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>Kolom</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>Tekst</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>Bestandspad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>Naam</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>Bestandsgrootte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>Wedstrijden</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>Bestandspad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>Bestandsextensie</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>Codering</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>Datum gewijzigd</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>Lijn verbergen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>Kolom verbergen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>Pad verbergen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>Grootte verbergen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>Overeenkomsten verbergen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>Ext. verbergen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>Codering verbergen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>Datum gewijzigd verbergen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>Instellingen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Deze instellingen worden gebruikt als standaardinstellingen voor nieuwe tabbladen en bij het opstarten van toepassingen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>Themavoorkeur</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>Systeem Thema</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>Lichtmodus</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>Donkere modus</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Filteropties</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>Zoekresultaten:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>Zoektype:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>Filteropties</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>Respecteer .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Zoek hoofdlettergevoelig</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>Voeg systeembestanden toe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>Inclusief submappen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>Voeg verborgen items toe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>Voeg binaire bestanden toe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>Voeg symbolische links toe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Gebruik Windows Zoeken</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Gebruik de Windows Search-index voor snellere tekstzoekopdrachten in geïndexeerde mappen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>Foutopsporing</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Gebruik de onderstaande knop om Windows-toastmeldingen te verifiëren.Indien vereiste Windows App SDK-afhankelijkheden ontbreken, ontvangt u hulp bij het oplossen van problemen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>Testmelding</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Gebruik de onderstaande knop om Windows-toastmeldingen te verifiëren.Indien vereiste Windows App SDK-afhankelijkheden ontbreken, ontvangt u hulp bij het oplossen van problemen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Gebruik de onderstaande knop om de taalwisseling te testen en alle vertaalsleutels te verifiëren.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>Lokalisatie testen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>Lokalisatietest geslaagd</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>Alle {0} lokalisatiesleutels zijn aanwezig in alle {1} ondersteunde talen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>Lokalisatietest mislukt</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>Sommige lokalisatiesleutels ontbreken in een of meer talen:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} ontbrekende sleutels</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... en nog {0} meer</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>Fout lokalisatietest</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het testen van de lokalisatie: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>Voorbeeldtekst</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>Voer voorbeeldtekst in om uw Regex-patroon te testen tegen...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>Regex-patroon</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>Regex-patroon invoeren...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>Voorinstellingen:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>E-mail</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>Telefoon</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>Datum</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>Cijfers</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>Live wedstrijdresultaten</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>Visuele Regex-uitsplitsing</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>Opties</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>Hoofdletterongevoelig</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>Meerdere regels</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>Mondiale wedstrijd</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>Voer een geldig Regex-patroon in om overeenkomsten te zien.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>Voer voorbeeldtekst in om uw Regex-patroon te testen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>Geef voorbeeldtekst op waarmee de Regex zal worden getest.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>Voer het Regex-patroon in dat u wilt evalueren.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Negeer karakterbehuizingen bij het evalueren van overeenkomsten.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>Behandel ^ en $ als het begin en einde van elke regel in plaats van de hele tekst.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>Vind elke match in plaats van te stoppen na de eerste.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>String-vergelijking</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>Vergelijkingsmodus:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>Vergelijkingsmodus:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Ordinaal (snel, binair)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>Ordinaal</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Huidige cultuur</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Huidige cultuur</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Invariante cultuur</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Invariante cultuur</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>Unicode-normalisatie:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>Unicode-normalisatie:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Geen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Vorm C (canonieke ontbinding)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Vorm D (canonieke ontbinding)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Formulier KC (compatibiliteitsontleding)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Formulier KD (compatibiliteitsdecompositie)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Diakritisch gevoelig</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Indien uitgeschakeld, worden tekens met accenten behandeld als hun basistekens (bijvoorbeeld 'é' = 'e')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>Cultuur:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>Snaarcultuur:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>Selecteer cultuur of voer een aangepaste cultuurcode in</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>Wordt gebruikt voor instellingen voor tekenreeksvergelijking tijdens zoekbewerkingen, niet voor de UI-taal van de toepassing.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>UI-taal</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>Toepassingstaal:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>Match het Windows-thema automatisch wanneer Grex start.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>Forceer het lichte thema, ongeacht de Windows-instelling.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>Forceer het donkere thema, ongeacht de Windows-instelling.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>Wijzig direct de applicatietaal voor elke geopende pagina.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>Kies of nieuwe tabbladen standaard inhoudsresultaten of bestandsresultaten weergeven.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>Kies of nieuwe tabbladen starten in de tekstzoekmodus of in de Regex-zoekmodus.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>Stel in of nieuwe zoekopdrachten standaard .gitignore respecteren.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Standaard door het systeem beveiligde bestanden opnemen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>Standaard terugkeren naar submappen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>Inclusief verborgen bestanden en mappen standaard.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Standaard binaire bestanden scannen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>Volg standaard symbolische links en kruispunten.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Maak nieuwe zoekopdrachten standaard hoofdlettergevoelig.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>Kies welke Unicode-normalisatie vóór vergelijkingen wordt toegepast.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>Selecteer de standaardregels voor tekenreeksvergelijking voor nieuwe zoekopdrachten.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>Verzend een voorbeeldmelding om te controleren of Windows-toasts werken.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>Test de taalwisseling en controleer of alle Engelse vertaalsleutels in alle ondersteunde talen bestaan</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>Geen overeenkomsten gevonden.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>{0} overeenkomst(en) gevonden.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>Geen overeenkomst gevonden.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>1 overeenkomst gevonden.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>Fout: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>Voer een Regex-patroon in om de uitsplitsing te bekijken.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>Ongeldig Regex-patroon: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>Karakterklasse</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>Niet-vastleggende groep</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>Groep vastleggen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>Kwantificator</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>Anker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>Ontsnappingsreeks</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>Letterlijk</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>Komt overeen met elk personage in de set</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>Groepen zonder vastleggen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>Legt overeenkomende tekst vast</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>Kwantificator: specificeert het exacte aantal of bereik</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>Nul of meer</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>Eén of meer</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>Nul of één</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>Begin van lijn/string</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>Einde van de regel/reeks</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>Cijfer (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>Niet-cijferig</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>Woordteken (a-z, A-Z, 0-9, _)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>Niet-woord karakter</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>Witruimte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>Niet-witruimte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>Nieuwe lijn</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>Tab</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>Vervoer terug</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>Letterlijk karakter</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Regex-patroon overschrijven?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>Wilt u het huidige Regex-patroon overschrijven met de voorinstelling {0}?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>Doorgaan</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Annuleren</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>Doorgaan</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>WSL-pad gedetecteerd</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>WSL-zoekopdracht</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>Over</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>Gemaakt door BornSupercharged</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>Gelicentieerd onder GPL 3.0</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>Bekijk projecten op GitHub</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>Druk op elk gewenst moment op F1 om deze pagina te openen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>Versie</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Stop</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>seconde</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>seconden</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>minuut</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>notulen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>uur</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>uur</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>{0} overeenkomsten gevonden in {1} bestanden in {2}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>{0} overeenkomsten vervangen in {1} bestanden in {2}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>Back-up en herstel</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>Instellingen exporteren</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>Instellingen importeren</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>Standaardinstellingen herstellen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>Exporteer uw huidige instellingen naar een back-upbestand, importeer instellingen uit een eerdere back-up of herstel alle instellingen naar hun oorspronkelijke standaardwaarden.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>Instellingen geëxporteerd</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>Uw instellingen zijn succesvol geëxporteerd naar: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>Exporteren mislukt</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>Kan instellingen niet exporteren: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>Instellingen geïmporteerd</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>Instellingen zijn succesvol geïmporteerd.Voor sommige wijzigingen is mogelijk een herstart nodig om van kracht te worden.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>Importeren mislukt</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>Kan instellingen niet importeren: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>Het geselecteerde bestand lijkt geen geldige back-up van de Grex-instellingen te zijn.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>Standaardinstellingen herstellen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>Hierdoor worden alle instellingen teruggezet naar hun oorspronkelijke standaardwaarden en wordt de applicatie opnieuw gestart.Weet u zeker dat u wilt doorgaan?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Exporteer uw huidige instellingen naar een back-upbestand</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Importeer instellingen uit een back-upbestand</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>Reset alle instellingen naar hun oorspronkelijke standaardwaarden</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Systeemstandaard</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Lichtmodus</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Donkere modus</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Zwarte ridder (hoog contrast)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Paranoïde (hoog contrast)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Diamant (hoog contrast)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Subruimte (hoog contrast)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Rood fluweel (hoog contrast)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Dromen (hoog contrast)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Tiefling (hoog contrast)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Vibes (hoog contrast)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>Start de applicatie opnieuw</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>Start de applicatie opnieuw om de wijzigingen toe te passen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>Thema toepassen</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>Voor sommige elementen moet de applicatie opnieuw worden opgestart om correct te kunnen stylen.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>Later</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Docker-zoekopdracht</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Spiegel bestanden vanuit een actieve Docker-container zodat Grex ze kan scannen zonder de app te verlaten.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>Schakel Docker-zoeken in</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>Ingeschakeld</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>Gehandicapt</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>Toon beschikbare Docker-containers naast het zoekpad, zodat u ze direct kunt targeten.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>Lokale schijf</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>Zoekdoel</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>Selecteer container</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Vernieuw de Docker-containerlijst</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>Docker-zoekfout</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>Docker is niet beschikbaar.Zorg ervoor dat Docker Desktop actief is en dat u toestemming hebt om docker-opdrachten uit te voeren.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>Selecteer een Docker-container voordat u begint met zoeken.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>Kan Docker-integratie niet initialiseren: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>Kan Docker-containers niet vernieuwen: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>Kan de Docker-zoekspiegel niet voorbereiden: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>Docker-kopie mislukt vanwege het maken van een symbolische link: {0}
+
+Windows vereist speciale rechten om symbolische koppelingen te maken.Voer Grex uit als beheerder, of schakel het gebruikersrecht 'Symbomische links maken' in voor uw account.
+
+Opmerking: Sommige containerpaden (zoals node_modules) bevatten veel symbolische links en zijn mogelijk niet doorzoekbaar zonder deze rechten.</value>
+    <comment>status:complete</comment>
+  </data>
+</root>

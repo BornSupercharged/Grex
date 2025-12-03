@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>Хайлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>Regex Builder</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>Тохиргоо</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>Хайлтын зам</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>Хайх зам оруулна уу...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>Хайлтын загвар</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>Текст эсвэл Regex загвар оруулна уу...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>Солих</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>Солих текст оруулна уу...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>Хайх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>Солих</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>Том жижиг ялгаатай</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>Ердийн илэрхийлэл ашиглах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>Дэд хавтас оруулах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>Тэмдэглэгээний холбоос дагах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>Файлын шүүлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (цэгтэй таслалаар тусгаарлагдсан)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>Хавтас хасах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin;obj;node_modules (цэгтэй таслалаар тусгаарлагдсан)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>Хэмжээний шүүлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>Хамгийн бага хэмжээ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>Хамгийн их хэмжээ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>Үр дүн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>Агуулга</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>Файлууд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>Файлын нэр</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>Мөр</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>Агуулга</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>Зам</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>Хэмжээ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>Өөрчлөгдсөн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>Бэлэн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>Хайж байна...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>Тохирох олдсонгүй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>Алдаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>Ердийн илэрхийлэлийн загвар</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>Туршилтын текст</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>Тохирох</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>Ерөнхий</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>Хэл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>Сэдэв</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>Систем</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>Гэрэл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>Харанхуй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>Анхааруулга</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>Мэдээлэл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>Бас</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Цуцлах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>Тийм</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>Үгүй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>Админ эрхээр ажиллаж байна</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex одоогоор админ эрхээр ажиллаж байна.
+
+Админ эрхээр ажиллах нь дараах асуудлуудыг үүсгэж болно:
+• Windows toast мэдэгдэл
+• Зарим Windows App SDK онцлогууд
+• Програмын аюулгүй байдал ба тусгаарлалт
+
+Grex-ийг ердийн хэрэглэгчээр ажиллуулахыг зөвлөж байна.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>Оруулахгүй (Аюултай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>Гарах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>Програм эхлүүлэх алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>Програм эхлүүлэхэд алдаа гарлаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>Зохицуулаагүй алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>Гэнэтийн алдаа гарлаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>Таб үүсгэх алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>Таб үүсгэхэд алдаа гарлаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>Таб үүсгэхэд ноцтой алдаа гарлаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>Хайлтын алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>Хайлтын явцад алдаа гарлаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>WSL хайлтын алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>WSL-д хайх явцад алдаа гарлаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>Үр дүн боломжгүй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>'Exclude Dirs' утга нь бүх хавтасыг хасаж байна. Загвараа шалгаад дахин оролдоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>Буруу Regex загвар</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>'Exclude Dirs' утга нь хүчинтэй ердийн илэрхийлэл биш байна. Загвараа шалгаад дахин оролдоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>Солихыг баталгаажуулах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>Та орлуулах ажиллагааг явуулахыг хүсч байна уу?Энэ үйлдлийг буцаах боломжгүй.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Regex загварыг дарж бичих үү?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>Та одоогийн Regex загварыг {0} урьдчилсан тохиргоогоор дарж бичих үү?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>Үргэлжлүүлэх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - Табтай файл хайлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>Хайлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>Regex Builder</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>Тохиргоо</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>Хайлтын төлөв</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>Бэлэн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>Шинэ таб</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>Таб {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>Солиж байна...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>Windows замуудын дорх энгийн текст хайлтад л ажиллана.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>Энд зам оруулна уу эсвэл буулгана уу...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>Сонгох...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>Хайлтын нэр томьёо эсвэл Regex загвар оруулна уу...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>Солих</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>Солих...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>Хайх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>Солих</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>Дахин тохируулах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>Шүүлтийн сонголтууд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>Туршилтын мэдэгдэл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>Энэ бол мэдэгдлийг зөв ажиллаж байгаа эсэхийг шалгах тестийн мэдэгдэл юм.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>Туршилтын мэдэгдлийг илгээсэн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>Windows нь шарсан талхыг харуулахыг хүссэн.Хэрэв та үүнийг харахгүй байгаа бол мэдэгдлүүдийг GECKORPOP (Windows Setsion&gt; систем&gt; мэдэгдэл идэвхжүүлсэн) болон ТҮҮХИЙН ТӨЛӨВЛӨГӨӨГҮЙ БОЛОМЖТОЙ.
+
+Мэдэгдэлийн бүртгэл: {0}
+Оношлогооны бүртгэл: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>Туршилтын мэдэгдлийн алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>Мэдэгдэл илгээхийг оролдох үед гэнэтийн алдаа гарлаа.
+
+{0}
+
+Нэвтрэх: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>Windows шарсан талхыг энэ системийн тохиргоонд ашиглах боломжгүй.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>Нийтлэг шалтгаанууд:
+• Windows App SDK ажиллуулах цаг (Singleton багц) байхгүй эсвэл засвар хийх шаардлагатай байна
+• Аппликешн өндөрлөг (администратор) давуу эрхээр ажиллаж байна
+• Дэмжгүй апп-ууд, enstupsported () нь хуурамчаар буцах боломжтой</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>Алдаа засах алхамууд:
+1. Windows App Runtime ажиллах эсвэл засах: https://aka.ms.ms/windowsappsdk/runtk/runte
+2. Grex администратороор ажиллахгүй байх
+3. Ажиллуулах хугацааг суулгасны дараа GECKOGPEP-ийг дахин эхлүүлнэ үү</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Геккреп нь Windows-ийн шарсан талхаар бүртгүүлж чадахгүй байсан.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>Нийтлэг шалтгаанууд:
+• Windows App SDK Runtime (Singleton багц) байхгүй эсвэл эвдэрсэн байна
+• Аппликешн өндөрлөг (администратор) давуу эрхээр ажиллаж байна
+• Өргөдлийн таних тэмдэг зохих ёсоор тохируулагдаагүй байна</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>Алдаа засах алхамууд:
+1. Windows App Runtime ажиллах эсвэл засах: https://aka.ms.ms/windowsappsdk/runtk/runte
+2. Grex администратороор ажиллахгүй байх
+3. Ажиллуулах хугацааг суулгасны дараа GECKOGPEP-ийг дахин эхлүүлнэ үү</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>Дэлгэрэнгүй мэдээлэл: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>Бүртгэлийн файл: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>Тоглолтын файлууд:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>E.G., * .json | * .txt эсвэл - *. *. бүртгэл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>DIRS-ийг оруулахгүй байх:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>e.g., .git, борлуулагч эсвэл ^ (git | Борлуулагч) $</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>Хэлээн авах төрөл:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Текст хайлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Regex хайлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>Хайлтын үр дүн:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>Сэтгэл ханамжтай</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>Фиднарүүд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>Хэмжээний хязгаар:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>Хязгаар болгон хүрээгүй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>Хол</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>Тэнцүү</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>Түүнээс их</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>Хэмжээ орно</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>Хүндэтгэл .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Мэдрэмжтэй хэргийг хайх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>Системийн файлуудыг оруулах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>Дэд бүлгийг багтаана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>Нуугдсан зүйлсийг багтаана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>Хоёртын файлуудыг багтаана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>Бэлгэдлийн холбоосыг багтаана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows хайлтыг ашиглана уу</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Windows хайлтын хайлтын индексийг interned Windows хавтас дээр хайхын тулд Windows хайлтын индексийг ашиглана уу.Regex Seendes, WSL зорилтот түвшин, индекс бус байршил нь уламжлалт сканнерыг ашиглах болно.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>Фолдерыг сонгоно уу эсвэл скан хийхээр сонгоно уу.Замаа буулгахыг дэмжиж, сүүлийн байршлыг нь харуулна.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>Хайлтын үндэсийг сонгохын тулд фолдер сонгогчийг нээнэ үү.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>Хайлт хийхийг хүсч буй энгийн текст эсвэл Regex загварыг бичнэ үү.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>SUBLE горимыг идэвхжүүлэхийн тулд тохирох горимыг зөвхөн жагсаалтад оруулахын оронд шинэчлэгдэх боломжтой.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>Орлуулах үед бичсэн текстийг оруулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>Файлуудыг нэрээр нь шүүнэ үү.'| | -Тэй хамт загварыг тусад ньболон "-" -тэй угтвар.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>Таслалаар тусгаарлагдсан нэр эсвэл Regex ашиглан директорыг алгасах эсвэл Regex (e.g., ^ (. Git | борлуулагч) $).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>Хайлтын эхлэлийг энгийн текст хэлбэрээр эсвэл Regex хэлбэрээр ордог эсэхийг сонгоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>Үр дүнг тохирох шугам эсвэл файлуудын жагсаалтыг харуулах эсэхийг сонгоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>Файл бүрийг скан хийхээс өмнө нэмэлт хэмжээтэй харьцуулалтыг ашиглана уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>Сонгосон харьцуулалтад ажилладаг тоон хэмжээнээс оруулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>Хэмжээний хязгаарыг (kb, MB, MB, GB) сонгоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>Сонгосон директор дахь үл тоомсорлосон алгасах файлуудыг алгасах.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Зөвхөн үсэг нь яг таарч тохирох үед л тоглолтыг хүчин төгөлдөр болно.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Системээс хамгаалагдсан файлуудыг сканнердахыг зөвшөөрөх.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>Сонгосон замаар бүх дэд бүх дэд хэсгийг дахин хайх.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>Нуугдмал гэж тэмдэглэгдсэн файл, хавтас оруулах.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Текст файлуудаас гадна хоёртын файлуудыг скан хийх.Энэ нь удаан байж болно.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>Сканнердах үед бэлгэдлийн холбоос, уулзварыг дагаарай.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>Нэр</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>Мөр</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>Багана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>Текст</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>Файлын зам</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>Нэр</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>Файлын хэмжээ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>Тохирох</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>Файлын зам</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>Файлын өргөтгөл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>Кодлол</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>Өөрчлөгдсөн огноо</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>Мөрийг нуух</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>Баганыг нуух</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>Замыг нуух</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>Хэмжээг нуух</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>Тохирохыг нуух</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>Өргөтгөлийг нуух</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>Кодлолыг нуух</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>Өөрчлөгдсөн огноог нуух</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>Тохиргоо</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Эдгээр тохиргоог шинэ таб, програмын эхлүүлэхэд тохируулсан байдлаар ашиглана.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>Сэдвийн давуу байдал</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>Системийн сэдэв</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>Гэрлэлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>Харанхуй горим</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Шүүлтүүрийн сонголтууд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>Хайлтын үр дүн:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>Хэлээн авах төрөл:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>Шүүлтүүрийн сонголтууд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>Хүндэтгэл .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Мэдрэмжтэй хэргийг хайх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>Системийн файлуудыг оруулах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>Дэд бүлгийг багтаана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>Нуугдсан зүйлсийг багтаана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>Хоёртын файлуудыг багтаана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>Бэлгэдлийн холбоосыг багтаана</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows хайлтыг ашиглана уу</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Windows хайлтын хайлтын индексийг ашиглан индексжүүлсэн фолдер дээр хайхын тулд Windows хайлтын индексийг ашиглана уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>Дүүлтэй харилцаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Windows шарсан талхыг шалгахын тулд доорх товчийг доор дарна уу.Шаардлагатай Windows App SDK-ийн хамаарал байхгүй бол та алдааг олж засварлах удирдамж авах болно.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>Туршилтын мэдэгдэл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Windows Tock-ийн мэдэгдлийг шалгахын тулд доорх товчийг ашиглана уу.Шаардлагатай Windows App SDK-ийн хамаарал байхгүй бол та алдааг олж засварлах удирдамж авах болно.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Доорх товчийг дарж, орчуулах хэлийг асааж, орчуулгын бүх түлхүүрүүдийг баталгаажуулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>Туршилтын нутагшуулалт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>Локалжуулалтын тест дамжуулсан</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>Бүх {0} нутагшуулах түлхүүрүүд нь {1} дэмжигдсэн хэл дээр байдаг.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>Орон нутгийн тест амжилтгүй болсон</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>Зарим локализацийн товчлуурууд нэг буюу хэд хэдэн хэл дээр алга байна.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} байхгүй түлхүүрүүд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... ба {0} илүү</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>Орон нутгийн тестийн алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>Орон нутгийн хуваарилалтыг туршиж үзэхэд алдаа гарлаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>Текст текст</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>Regex загварыг шалгахын тулд дээжийн текстийг оруулна уу ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>Regex загвар</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>Regex загварыг оруулна уу ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>Урьдчилсан танилцуулга:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>Байлдлаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>Утас</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>Огноо</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>Цисьебэлсэн стандарт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>Тоглолтын үр дүн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>Харааны регистрийн задаргаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>Сонголт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>Мэдрэмтгий хэрэг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>Жиндатинад</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>Багийн тэмцээн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>Тоглолтыг харахын тулд хүчинтэй Regex загварыг оруулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>Regex загварыг туршиж үзэх дээжийн текстийг оруулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>Regex-ийг туршиж үзэх дэд текстийг өгнө үү.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>Үнэлэхийг хүсч буй Regex загварыг оруулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Тоглолтыг үнэлэх үед тэмдэгтийг үл тоомсорлоорой.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>Бүхэл бүтэн текстийн оронд мөр бүрийн эхлэл, төгсгөл, төгсгөл болгон эмчил.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>Эхнийх нь дараа зогссоны оронд тоглолт бүрийг олоорой.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>Мөрийг харьцуулах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>Харьцуулах горим:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>Харьцуулах горим:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>ДҮРЭМ (хурдан, хоёртын)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>Нээлттэй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Одоогийн синайл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Одоогийн синайл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Инвариант соёл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Инвариант соёл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>Юникод хэвийн байдал:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>Юникод хэвийн байдал:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Хэн ч</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Маягт c (Canonical Despomposition)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>FORM D (Canonical Devomposition)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Маягт kc маягт (нийцтэй байдал задрах)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>KD маягт (нийцтэй байдал задрах)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Диакритик мэдрэмтгий</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Хөгжлийн бэрхшээлгүй, өргөлттэй тэмдэгтүүд нь тэдний суурь тэмдэгтүүд (e.g. e '=' = = = '=' = '=' = '=')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>Соёл:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>String соёл:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>Соёл сонгоно уу эсвэл захиалгын кодыг оруулна уу</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>Програмын UI хэл дээр бус хайлтын харьцуулалт хийх үед дараахь харьцуулалтын тохиргоог ашигладаг.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>UI хэл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>Хэрэг дэргүүлгийн хүн:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>Геккрепр эхлэхэд Windows Tope-ийг автоматаар тохируулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>Windows тохиргооноос үл хамааран гэрлийн сэдвийг хүчээр.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>Windows-ээс үл хамааран харанхуй сэдвийг хүчээр.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>Нээлттэй хуудас бүрт програмын хэлийг шууд шилжүүлнэ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>Шинэ таб нь агуулгын үр дүн эсвэл файлын үр дүнг тохируулах эсэхээ сонгоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>Шинэ табууд нь текст хайх эсвэл Regex Хайлтын горимоос эхлэх эсэхийг сонгоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>Шинэ хайлтыг хүндэлдэг .gitignore-ийг анхдагчаар нь тохируулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Системийн хамгаалагдсан файлыг анхдагчаар оруулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>Үндсэнээр дэд бүлэгт нэвтрэх.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>Нуугдсан файл, хавтасыг анхдагчаар оруулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Хоёртын файлыг сканнердах үндсэнээр скан хийх.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>Бэлгэдлийн холбоос, уулзварыг анхдагчаар дагаж мөрдөөрэй.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Шинэ хайлт хийх, анхдагч хэлбэртэй байх.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>Харьцуулалтаас өмнө ямар нэг Юникод хэвийн болгохыг сонгоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>Шинэ хайлтыг шинэ хайлт хийх үндсэн мөрийг сонгоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>Windows шарсан талх ажиллаж байгаа эсэхийг шалгахын тулд дээжийн мэдэгдлийг илгээнэ үү.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>Туршилтын хэлийг асааж, бүх англи орчуулгын товчлуурыг дэмжиж байгаа бүх хэл дээр байдаг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>Тохирох зүйл олдсонгүй.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>Олсон {0} тохирох (ES).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>Тохирох зүйл олдсонгүй.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>1 тоглолтыг оллоо.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>Алдаа: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>ЗЭЭЛИЙН НЭГДСЭН НЭГДСЭН ХАМГААЛАХ БОЛОМЖТОЙ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>Буруу Regex хээ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>Журмаарын анги</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>Олзгүй бүлэг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>Автомашины бүлэг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>Тавьчин</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>Зангуу</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>Зугтах дараалал</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>Үгчилсэн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>Багцад ямар ч тэмдэгт таарч байна</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>Бүлэг барихгүйгээр бүлгүүд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>Тохирсон текстийг авсан</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>Тоонууд: Тоолох тоолуурыг зааж өгөх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>Тэг ба түүнээс дээш</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>Нэг нь илүү</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>Тэг эсвэл нэг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>Шугамын эхлэл / мөр</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>Шугам / мөрний төгсгөл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>Цифр (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>Орон сууцгүй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>Үгийн тэмдэгт (A-Z, A-Z, A-Z, 0-9, _)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>Үг биш тэмдэгт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>Цагаант таамаглал</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>Хоосон орон зайгүй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>Шинэ шугам</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>Ярих</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>Вандлууд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>Шууд тэмдэгт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Regex загварыг дарж бичих үү?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>Та {0} Preset-тэй одоогийн Regex загварыг дарж бичихийг хүсч байна уу?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>Үргэлжлүүлэх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Цуаах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>Ургэлжлэх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>WSL зам илэрсэн</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>WSL хайх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>Тухай</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>Төрсөн цоожуулсан</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>GPL 3.0 дагуу лицензтэй</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>GitHub дээр төслийг харах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>Энэ хуудсыг нээх бол F1 дээр дарна уу</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>Таамаглал</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Зогс</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>хоёрдахь нь</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>хоёр цаг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>моч / минут</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>хоёр хоног</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>аг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>цаг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>Олдсон {0} {1} -д {1} файлд {1} дотор {2}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>{0} -ийг {1} файлд {1} файл дотор {2} дотор {2}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>Нөөцлөх ба сэргээх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>Экспортын тохиргоо</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>Импортөө</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>Үндсэн утгыг сэргээх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>Одоогийн тохиргоог нөөцлөлтийн файлд экспортлох, өмнөх нөөцлөх, эсвэл бүх тохиргоог эх хувилбар руу нь оруулах, эсвэл бүх тохиргоог эхлүүлэх.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>Тохиргоо экспортлогдсон</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>Таны тохиргоог амжилттай экспортолсон: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>Экспорт амжилтгүй боллоо</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>Тохиргоог экспортлох боломжгүй: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>Тохиргоо импортолсон</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>Тохиргоог амжилттай оруулж ирсэн.Зарим өөрчлөлтүүд хүчин төгөлдөр болохын тулд дахин эхлүүлэхийг шаардаж болно.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>Импорт амжилтгүй боллоо</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>Тохиргоог импортонд оруулж чадсангүй: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>Сонгосон файл нь хүчин төгөлдөр Grex тохиргооны нөөцлөхгүй байна.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>Үндсэн утгыг сэргээх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>Энэ нь бүх тохиргоог анхны анхны үндсэн тохиргоог дахин тохируулах бөгөөд програмыг дахин эхлүүлнэ.Та үргэлжлүүлэхийг хүсч байна уу?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Одоогийн тохиргоогоо нөөцлөх файл руу экспортлох</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Нөөцлөх файлаас тохиргоог импортлох</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>Бүх тохиргоог анхны анхны үндсэн тохиргоог дахин тохируулна уу</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>SO системийг тогтооно</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Гэрлэлт</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Харанхуй горим</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Хар Найт (өндөр ялгаатай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Параноид (Өндөр ялгаатай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Алмаз (өндөр ялгаатай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Дэд зай (өндөр ялгаатай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Улаан хилэн (Өндөр ялгаатай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Мөрөөдөл (өндөр ялгаатай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>TheEfling (Өндөр ялгаатай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Vibes (Өндөр ялгаатай)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>Програмыг дахин эхлүүлэх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>Өөрчлөлтийг ашиглахын тулд програмыг дахин эхлүүлнэ үү.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>Сэдэвийг түрхэнэ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>Зарим элементүүд нь хэв маягийн хэв маягаар дахин эхлүүлэхийн тулд дахин эхлүүлэх шаардлагатай байна.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>Сүүлд</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Док хайх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Доког доккерийн контейнерээс толин тусгал файлууд нь апп-ыг орхихгүйгээр сканнердах боломжтой.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>Доклер хайлтыг идэвхжүүл</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>Оруулах</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>Эрэмдэг зэрэмдэг</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>Хайлтын замын хажууд байгаа Docker савыг харуулна уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>Орон орон диск</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>Зорилтот хайх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>Сонгох савыг сонгоно уу</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Доклерийн контейнер жагсаалтыг шинэчлэх</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>Док хайлтын алдаа</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>Докер боломжгүй байна.Docker Desktop ажиллаж байгаа эсэхийг шалгаарай, та DOCKER командыг ажиллуулах зөвшөөрөл байна.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>Хайлт эхлэхээс өмнө докер савыг сонгоно уу.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>Док интеграцийг эхлүүлэх боломжгүй байна: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>Доклер савыг шинэчлэх боломжгүй: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>Доклер хайлтын толин тусгалыг бэлдэж чадсангүй: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>Бэлгэдлийн холбоосын холбоос үүсгэснээс хойш Docker хуулбарыг амжилтгүй боллоо: {0}
+
+Windows нь бэлгэдлийн холбоосыг үүсгэх тусгай давуу эрх шаарддаг.GECKOGPEP-г Администратороор ажиллуулаад, эсвэл "SAMBOL холбоосын холбоосыг өөрийн акаунтад ашиглах боломжтой.
+
+Тэмдэглэл: Зарим контейнерийн замууд (NODE_MODULESS гэх мэт) олон тооны шинж чанарыг агуулж, эдгээр давуу эрхгүйгээр хайхгүй байж болно.</value>
+    <comment>status:complete</comment>
+  </data>
+</root>

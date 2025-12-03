@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>Cuardaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>Tógálaí Regex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>Socruithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>Conair Chuardaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>Iontráil conair le cuardach...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>Patrún Cuardaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>Iontráil téacs nó patrún Regex...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>Ionadaigh Le</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>Iontráil téacs ionaid...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>Cuardaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>Ionadaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>Íogair do Chás</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>Úsáid Slonn Rialta</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>San áireamh Fofhillteáin</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>Lean Naisc Shiamplacha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>Scagairí Comhad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (scartha le leathstad)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>Eisiamh Fillteáin</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin;obj;node_modules (scartha le leathstad)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>Scagaire Méide</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>Méid Min</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>Méid Max</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>Torthaí</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>Ábhar</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>Comhaid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>Ainm Comhaid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>Líne</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>Ábhar</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>Conair</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>Méid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>Modhnaithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>Réidh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>Ag cuardach...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>Níor fuarthas meaitseáil</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>Earráid: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>Patrún Slonn Rialta</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>Téacs Tástála</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>Meaitseálacha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>Ginearálta</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>Teanga</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>Téama</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>Córas</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>Éadrom</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>Dorcha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Earráid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>Rabhadh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>Eolas</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>Ceart go leor</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Cealaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>Tá</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>Níl</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>Ag Rith mar Riarachán</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Tá Grex ag rith faoi láthair le pribhléidí riaracháin.
+
+Is féidir fadhbanna a bheith ag rith mar riarachán le:
+• Fógraí toast Windows
+• Roinnt gnéithe Windows App SDK
+• Slándáil agus iargúlú feidhmchláir
+
+Moltar duit Grex a rith mar úsáideoir rialta.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>Neamhaird (Neamhshábhailte)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>Scoir</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>Earráid Tosaigh Feidhmchláir</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>Theip ar thosú feidhmchláir: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>Earráid Neamhphróiseáilte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>Tharla earráid gan choinne: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>Earráid Cruthú Cluaisín</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>Theip ar chluaisín a chruthú: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>Tharla earráid chriticiúil agus cluaisín á chruthú: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>Earráid Cuardaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>Tharla earráid le linn cuardaigh: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>Earráid Cuardaigh WSL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>Tharla earráid ag cuardach i WSL: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>Níl Torthaí Indéanta</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>Tá an luach 'Eisiamh Fillteáin' ag eisiamh gach fillteán. Seiceáil do phatrún agus bain triail eile as.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>Patrún Regex Neamhbhailí</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>Níl an luach 'Eisiamh Fillteáin' ina shlonn rialta bailí. Seiceáil do phatrún agus bain triail eile as.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>Deimhnigh Ionadú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>An bhfuil tú cinnte gur mian leat an oibríocht ionaid a dhéanamh? Ní féidir an gníomh seo a chur ar ceal.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Forscríobh Patrún Regex?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>Ar mhaith leat an Patrún Regex reatha a fhorscríobh leis an réamhshocraithe {0}?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>Ar Aghaidh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - Cuardach Comhad le Cluaisíní</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>Cuardaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>Tógálaí Regex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>Socruithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>Stádas Cuardaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>Réidh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>Cluaisín Nua</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>Cluaisín {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>Ag ionadú...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>Oibríonn sé amháin le haghaidh cuardaigh téacs pláin faoi chonairí Windows.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>Iontráil nó greamaigh conair anseo...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>Brabhsáil...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>Iontráil téarma cuardaigh nó patrún Regex...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>Ionadaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>Ionadaigh le...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>Cuardaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>Ionadaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>Athshocraigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>Roghanna Scagaire</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>Fógra Tástála</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>Is fógra tástála é seo chun a fhíorú go bhfuil fógraí ag obair i gceart.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>Seoladh Fógra Tástála</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>Iarradh ar Windows fógra toast a thaispeáint. Mura bhfeiceann tú é fós, fíoraigh go bhfuil fógraí cumasaithe do Grex (Socruithe Windows &gt; Córas &gt; Fógraí) agus go bhfuil Cúnamh Fócais / Ná Cuir Isteach díchumasaithe.
+
+Log fógra: {0}
+Log diagnóiseach: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>Earráid Fógra Tástála</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>Tharla earráid gan choinne agus iarracht á déanamh an fógra a sheoladh.
+
+{0}
+
+Féach log: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>Níl fógraí toast Windows ar fáil ar chumraíocht chórais seo.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>Cúiseanna coitianta:
+• Tá Windows App SDK runtime (pacáiste Singleton) ar iarraidh nó teastaíonn deisiú
+• Tá an feidhmchlár ag rith le pribhléidí arda (riaracháin)
+• Do apps neamhphacáilte, d'fhéadfadh IsSupported() false a thabhairt ar ais go mícheart</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>Céimeanna fabhtchealaithe:
+1. Suiteáil nó deisigh Windows App Runtime: https://aka.ms/windowsappsdk/runtime
+2. Cinntigh nach bhfuil Grex ag rith mar riarachán
+3. Atosaigh Grex tar éis an runtime a shuiteáil/a dheisiú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Ní fhéadfadh Grex clárú le haghaidh fógraí toast Windows.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>Cúiseanna coitianta:
+• Tá Windows App SDK runtime (pacáiste Singleton) ar iarraidh nó truaillithe
+• Tá an feidhmchlár ag rith le pribhléidí arda (riaracháin)
+• Níl aitheantas feidhmchláir cumraithe i gceart</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>Céimeanna fabhtchealaithe:
+1. Suiteáil nó deisigh Windows App Runtime: https://aka.ms/windowsappsdk/runtime
+2. Cinntigh nach bhfuil Grex ag rith mar riarachán
+3. Atosaigh Grex tar éis an runtime a shuiteáil/a dheisiú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>Sonraí: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>Comhad log: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>Comhaid Meaitseála:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>m.sh., *.json|*.txt nó -*.log</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>Eisiamh Fillteáin:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>m.sh., .git,vendor nó ^(.git|vendor)$</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>Cineál Cuardaigh:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Cuardach Téacs</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Cuardach Regex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>Torthaí Cuardaigh:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>Ábhar</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>Comhaid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>Teorainn Méide:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>Gan Teorainn</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>Níos Lú Ná</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>Comhionann Le</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>Níos Mó Ná</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>Iontráil méid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>Urramaigh .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Cuardaigh íogair do chás</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>San áireamh comhaid chórais</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>San áireamh fofhillteáin</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>San áireamh míreanna folaithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>San áireamh comhaid dénártha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>San áireamh naisc shiamplacha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Úsáid Cuardach Windows</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Bain leas as innéacs Cuardaigh Windows le haghaidh cuardaigh téacs níos tapúla ar fhillteáin Windows innéacsaithe. Úsáidfidh cuardaigh Regex, spriocanna WSL, agus suíomhanna neamhinnéacsaithe an scanóir traidisiúnta.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>Roghnaigh an fhillteán nó an tiomáint le scanadh. Tacaíonn sé le conairí a ghreamú agus taispeánann sé suíomhanna le déanaí.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>Oscail an roghnóir fillteán chun fréamh cuardaigh a roghnú.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>Clóscríobh an téarma téacs pláin nó an patrún Regex ar mian leat a chuardach.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>Cumasaigh mód ionaid ionas gur féidir meaitseálacha a nuashonrú seachas iad a liostáil amháin.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>Soláthair an téacs ionaid a scríobhfar nuair a ritheann an t-ionadú.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>Scag comhaid de réir ainm. Scar patrúin le '|' agus réamhfhocail le '-' chun iad a eisiamh.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>Scipeáil fillteáin ag úsáid ainmneacha scartha le camóg nó Regex (m.sh., ^(.git|vendor)$).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>Roghnaigh an gcuardaíonn an cuardach an t-ionchur mar théacs pláin nó mar Regex.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>Roghnaigh an dtaispeánann torthaí línte meaitseála nó liosta comhad amháin.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>Cuir comparáid méide roghnach i bhfeidhm roimh gach comhad a scanadh.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>Iontráil an tairseach méide uimhriúil a oibríonn leis an gcomparáid roghnaithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>Roghnaigh an t-aonad (KB, MB, GB) don teorainn méide.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>Scipeáil comhaid ar neamhaird ag .gitignore sa fhillteán roghnaithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Ní mheas meaitseálacha mar bhailí ach nuair a mheaitseálann cás litreach go beacht.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Lig do chomhaid chosanta córais a scanadh.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>Cuardaigh go hathchúrsach gach fofhillteán faoin gconair roghnaithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>San áireamh comhaid agus fillteáin atá marcáilte mar fholaithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Scan comhaid dénártha mar theannta le comhaid téacs. D'fhéadfadh sé seo a bheith níos moille.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>Lean naisc shiamplacha agus acomhail agus tú ag scanadh.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>Ainm</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>Líne</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>Colún</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>Téacs</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>Conair Comhaid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>Ainm</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>Méid Comhaid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>Meaitseálacha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>Conair Comhaid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>Eisínteacht Comhaid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>Ionchódú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>Dáta modhnaithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>Folaigh Líne</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>Folaigh Colún</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>Folaigh Conair</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>Folaigh Méid</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>Folaigh Meaitseálacha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>Folaigh Eisínteacht</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>Folaigh Ionchódú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>Folaigh Dáta Modhnaithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>Socruithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Úsáidfear na socruithe seo mar réamhshocruithe do chluaisíní nua agus ag tosú feidhmchláir.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>Roghainn Téama</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>Téama Córais</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>Mód Éadrom</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>Mód Dorcha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Roghanna Scagaire</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>Torthaí Cuardaigh:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>Cineál Cuardaigh:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>Roghanna Scagaire</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>Urramaigh .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Cuardaigh íogair do chás</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>San áireamh comhaid chórais</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>San áireamh fofhillteáin</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>San áireamh míreanna folaithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>San áireamh comhaid dénártha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>San áireamh naisc shiamplacha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Úsáid Cuardach Windows</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Úsáid innéacs Cuardaigh Windows le haghaidh cuardaigh téacs níos tapúla ar fhillteáin innéacsaithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>Dífhabhtú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Úsáid an cnaipe thíos chun fógraí toast Windows a fhíorú. Má tá spleáchais Windows App SDK riachtanacha ar iarraidh, gheobhaidh tú treoir fabhtchealaithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>Fógra Tástála</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Úsáid an cnaipe thíos chun fógraí toast Windows a fhíorú. Má tá spleáchais Windows App SDK riachtanacha ar iarraidh, gheobhaidh tú treoir fabhtchealaithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Úsáid an cnaipe thíos chun athrú teanga a thástáil agus gach eochair aistriúcháin a fhíorú.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>Tástáil Logánú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>Rith Tástáil Logánú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>Tá gach {0} eochair logánú i láthair i ngach {1} teanga tacaíochta.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>Theip ar Thástáil Logánú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>Tá roinnt eochracha logánú ar iarraidh i dteanga amháin nó níos mó:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} eochracha ar iarraidh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... agus {0} eile</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>Earráid Tástáil Logánú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>Tharla earráid agus logánú á thástáil: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>Téacs Samplach</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>Iontráil téacs samplach chun do phatrún Regex a thástáil...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>Patrún Regex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>Iontráil patrún Regex...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>Réamhshocruithe:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>Ríomhphost</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>Teileafón</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>Dáta</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>Digití</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>Torthaí Meaitseála Beo</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>Briseadh Amach Regex Físeach</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>Roghanna</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>Neamhíogair do chás</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>Il-líne</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>Meaitseáil domhanda</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>Iontráil patrún Regex bailí chun meaitseálacha a fheiceáil.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>Iontráil téacs samplach chun do phatrún Regex a thástáil.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>Soláthair téacs samplach a dhéanfar tástáil ar an Regex ina choinne.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>Iontráil an patrún Regex ar mian leat a mheas.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Neamhaird ar chás carachtair agus meaitseálacha á meá.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>Meas ^ agus $ mar thús agus deireadh gach líne seachas an téacs iomlán.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>Aimsigh gach meaitseáil seachas stopadh tar éis an chéad cheann.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>Comparáid Teaghrán</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>Mód Comparáide:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>Mód Comparáide:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Ordúil (tapa, dénártha)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>Ordúil</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Chultúr Reatha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Chultúr Reatha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Chultúr Neamhathraitheach</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Chultúr Neamhathraitheach</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>Ghnáthú Unicode:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>Ghnáthú Unicode:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Ceann ar bith</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Foirm C (dí-chomhdhéanamh canónach)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Foirm D (dí-chomhdhéanamh canónach)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Foirm KC (dí-chomhdhéanamh comhoiriúnachta)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Foirm KD (dí-chomhdhéanamh comhoiriúnachta)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Íogair do Dhiaicritice</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Nuair a dhéantar é a dhíchumasú, meastar carachtair aiccented mar a gcarachtair bhonn (m.sh., 'é' = 'e')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>Chultúr:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>Chultúr Teaghrán:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>Roghnaigh cultúr nó iontráil cód cultúir saincheaptha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>Úsáidtear le haghaidh socruithe comparáide teaghrán le linn oibríochtaí cuardaigh, ní le haghaidh teanga UI feidhmchláir.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>Teanga UI</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>Teanga Feidhmchláir:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>Meaitseáil téama Windows go huathoibríoch nuair a thosaíonn Grex.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>Cuir téama éadrom i bhfeidhm beag beann ar shocrú Windows.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>Cuir téama dorcha i bhfeidhm beag beann ar shocrú Windows.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>Athraigh teanga feidhmchláir láithreach do gach leathanach oscailte.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>Roghnaigh an réamhshocraíonn cluaisíní nua ar thorthaí ábhair nó torthaí comhad.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>Roghnaigh an dtosaíonn cluaisíní nua i mód cuardaigh téacs nó mód cuardaigh Regex.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>Socraigh an urramaíonn cuardaigh nua .gitignore de réir réamhshocraithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>San áireamh comhaid chosanta córais de réir réamhshocraithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>Cuardaigh go hathchúrsach i fofhillteáin de réir réamhshocraithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>San áireamh comhaid agus fillteáin folaithe de réir réamhshocraithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Scan comhaid dénártha de réir réamhshocraithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>Lean naisc shiamplacha agus acomhail de réir réamhshocraithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Déan cuardaigh nua íogair do chás de réir réamhshocraithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>Roghnaigh cén ghnáthú Unicode a chuirtear i bhfeidhm roimh chomparáidí.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>Roghnaigh rialacha comparáide teaghrán réamhshocraithe le haghaidh cuardaigh nua.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>Seol fógra samplach chun a fhíorú go bhfuil tostaí Windows ag obair.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>Tástáil athrú teanga agus fíoraigh go bhfuil gach eochair aistriúcháin Béarla ann i ngach teanga tacaíochta</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>Níor fuarthas meaitseálacha.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>Fuarthas {0} meaitseáil(í).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>Níor fuarthas meaitseáil.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>Fuarthas 1 meaitseáil.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>Earráid: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>Iontráil patrún Regex chun an briseadh amach a fheiceáil.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>Patrún Regex neamhbhailí: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>Aicme Carachtair</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>Grúpa Neamhghabhálach</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>Grúpa Gabhálach</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>Cainníochtán</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>Ancaire</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>Sraith Éalaithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>Litriúil</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>Meaitseálacha aon charachtar sa tacar</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>Grúpaí gan ghabháil</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>Gabhaileann téacs meaitseáilte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>Cainníochtán: sonraíonn comhaireamh beacht nó raon</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>Nialas nó níos mó</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>Ceann amháin nó níos mó</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>Nialas nó ceann amháin</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>Tús líne/teaghrán</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>Deireadh líne/teaghrán</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>Dígit (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>Neamh-digit</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>Carachtar focal (a-z, A-Z, 0-9, _)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>Carachtar neamhfhocail</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>Spás bán</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>Neamh-spás bán</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>Líne nua</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>Táb</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>Filleadh carráiste</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>Carachtar litriúil</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Forscríobh Patrún Regex?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>Ar mhaith leat an Patrún Regex reatha a fhorscríobh leis an réamhshocraithe {0}?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>Ar Aghaidh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Cealaigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>Lean ort</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>Braitheadh ​​Conair WSL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>Cuardach WSL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>Maidir</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>Cruthaithe ag BornSupercharged</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>Ceadúnaithe faoi GPL 3.0</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>Féach ar an Tionscadal ar GitHub</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>Brúigh F1 am ar bith chun an leathanach seo a oscailt</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>Leagan</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Stop</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>dara</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>soicind</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>nóiméad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>nóiméad</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>uair an chloig</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>uair an chloig</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>Aimsíodh {0} meaitseáil i {1} gcomhad i {2}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>Athsholáthraíodh {0} meaitseáil i {1} gcomhad in {2}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>Cúltaca &amp; Athchóirigh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>Socruithe Easpórtála</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>Socruithe Iompórtála</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>Athchóirigh Réamhshocruithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>Easpórtáil do shocruithe reatha go comhad cúltaca, iompórtáil socruithe ó chúltaca roimhe seo, nó cuir na socruithe go léir ar ais chuig a réamhshocruithe bunaidh.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>Socruithe Easpórtáilte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>Easpórtáladh do shocruithe go rathúil chuig: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>Theip ar Easpórtáil</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>Theip ar easpórtáil na socruithe: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>Socruithe Iompórtáilte</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>Iompórtáladh na socruithe go rathúil.D'fhéadfadh go mbeadh gá le hathatosú le haghaidh roinnt athruithe le cur i bhfeidhm.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>Theip ar an Iompórtáil</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>Theip ar iompórtáil socruithe: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>Ní cosúil gur cúltaca bailí socruithe Grex é an comhad roghnaithe.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>Athchóirigh Réamhshocruithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>Athshocróidh sé seo na socruithe go léir chuig a réamhshocruithe bunaidh agus atosóidh sé an feidhmchlár.An bhfuil tú cinnte gur mhaith leat leanúint ar aghaidh?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Easpórtáil do shocruithe reatha go comhad cúltaca</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Íosluchtaigh socruithe ó comhad cúltaca</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>Athshocraigh gach socrú chuig a réamhshocruithe bunaidh</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Réamhshocrú Córais</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Mód Solas</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Mód Dorcha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Ridire Dubh (Codarsnacht Ard)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Paranoid (Ardchodarsnacht)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Diamond (Codarsnacht Ard)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Fospás (Codarsnacht Ard)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Veilbhit Dearg (Codarsnacht Ard)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Aislingí (Codarsnacht Ard)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Tiefling (Codarsnacht Ard)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Vibes (Codarsnacht Ard)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>Iarratas a atosú</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>Atosaigh an feidhmchlár chun athruithe a chur i bhfeidhm.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>Cuir Téama i bhFeidhm</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>Teastaíonn roinnt gnéithe den fheidhmchlár a atosú chun an stíl cheart a dhéanamh.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>Níos déanaí</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Cuardach Docker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Scáthán comhaid ó choimeádán Docker reatha ionas gur féidir le Grex iad a scanadh gan an aip a fhágáil.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>Cumasaigh Cuardach Docker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>Cumasaithe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>faoi ​​mhíchumas</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>Taispeáin na coimeádáin Docker atá ar fáil in aice leis an gcosán cuardaigh ionas gur féidir leat díriú orthu go díreach.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>Diosca Áitiúil</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>Cuardaigh Sprioc</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>Roghnaigh coimeádán</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Athnuaigh liosta coimeádán Docker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>Earráid Chuardaigh Docker</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>Níl docker ar fáil.Déan cinnte go bhfuil Docker Desktop ag rith agus go bhfuil cead agat orduithe docker a rith.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>Roghnaigh coimeádán Docker sula dtosaíonn tú ar an gcuardach.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>Níorbh fhéidir comhtháthú Docker a thúsú: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>Ní féidir coimeádáin Docker a athnuachan: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>Theip ar an scáthán cuardaigh Docker a ullmhú: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>Theip ar chóip an docker mar gheall ar chruthú naisc siombalach: {0}
+
+Tá pribhléidí speisialta ag teastáil ó Windows chun naisc siombalacha a chruthú.Rith Grex mar Riarthóir, nó cumasaigh an t-úsáideoir 'Cruthaigh naisc siombalacha' ceart do do chuntas.
+
+Nóta: Tá go leor nascanna simplí i roinnt conairí coimeádán (cosúil le nód_modúil) agus seans nach mbeifear in ann iad a chuardach gan na pribhléidí seo.</value>
+    <comment>status:complete</comment>
+  </data>
+</root>

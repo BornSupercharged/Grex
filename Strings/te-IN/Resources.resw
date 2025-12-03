@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>శోధించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>రెజెక్స్ బిల్డర్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>సెట్టింగ్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>శోధన మార్గం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>శోధించడానికి మార్గాన్ని నమోదు చేయండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>శోధన నమూనా</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>టెక్స్ట్ లేదా రీజెక్స్ నమూనాను నమోదు చేయండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>తో భర్తీ చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>భర్తీ వచనాన్ని నమోదు చేయండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>శోధించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>భర్తీ చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>కేస్ సెన్సిటివ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>రెగ్యులర్ ఎక్స్‌ప్రెషన్‌ని ఉపయోగించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>ఉప డైరెక్టరీలను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>సింబాలిక్ లింక్‌లను అనుసరించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>ఫైల్ ఫిల్టర్లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (సెమికోలన్ వేరు చేయబడింది)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>డైరెక్టరీలను మినహాయించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>బిన్;obj;నోడ్_మాడ్యూల్స్ (సెమికోలన్ వేరు)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>సైజు ఫిల్టర్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>కనిష్ట పరిమాణం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>గరిష్ట పరిమాణం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>ఫలితాలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>కంటెంట్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>ఫైల్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>ఫైల్ పేరు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>లైన్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>కంటెంట్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>మార్గం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>పరిమాణం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>సవరించబడింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>సిద్ధంగా ఉంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>శోధిస్తోంది...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>సరిపోలికలు ఏవీ కనుగొనబడలేదు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>లోపం: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>రెగ్యులర్ ఎక్స్‌ప్రెషన్ ప్యాటర్న్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>పరీక్ష వచనం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>మ్యాచ్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>జనరల్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>భాష</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>థీమ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>వ్యవస్థ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>కాంతి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>చీకటి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>దోషం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>హెచ్చరిక</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>సమాచారం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>సరే</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>రద్దు చేయి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>అవును</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>కాదు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>నిర్వాహకునిగా అమలు చేయబడుతోంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex ప్రస్తుతం నిర్వాహక హక్కులతో అమలు చేయబడుతోంది.
+
+నిర్వాహకునిగా అమలు చేయడం వలన ఈ సమస్యలు ఏర్పడవచ్చు:
+• Windows toast నోటిఫికేషన్‌లు
+• కొన్ని Windows App SDK లక్షణాలు
+• అప్లికేషన్ భద్రత మరియు వేరుచేయడం
+
+Grex-ను సాధారణ వినియోగదారునిగా అమలు చేయడం సిఫార్సు చేయబడింది.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>నిర్లక్ష్యం చేయి (అసురక్షితం)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>నిష్క్రమించు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>అప్లికేషన్ ప్రారంభ దోషం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>అప్లికేషన్‌ను ప్రారంభించడంలో విఫలమైంది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>నిర్వహించని దోషం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>ఊహించని దోషం సంభవించింది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>ట్యాబ్ సృష్టి దోషం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>ట్యాబ్‌ను సృష్టించడంలో విఫలమైంది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>ట్యాబ్‌ను సృష్టించేటప్పుడు క్లిష్టమైన దోషం సంభవించింది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>శోధన దోషం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>శోధన సమయంలో దోషం సంభవించింది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>WSL శోధన దోషం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>WSLలో శోధించేటప్పుడు దోషం సంభవించింది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>ఫలితాలు సాధ్యం కాదు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>'Exclude Dirs' విలువ అన్ని డైరెక్టరీలను మినహాయిస్తోంది. దయచేసి మీ నమూనాను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>చెల్లని Regex నమూనా</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>'Exclude Dirs' విలువ చెల్లుబాటు అయ్యే సాధారణ వ్యక్తీకరణ కాదు. దయచేసి మీ నమూనాను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>మార్పిడిని నిర్ధారించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>మీరు ఖచ్చితంగా రీప్లేస్ ఆపరేషన్ చేయాలనుకుంటున్నారా?ఈ చర్య రద్దు చేయబడదు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Regex నమూనాను తిరిగి రాయాలా?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>మీరు ప్రస్తుత Regex నమూనాను {0} ముందే సెట్‌చేసిన దానితో తిరిగి రాయాలనుకుంటున్నారా?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>కొనసాగించు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - ట్యాబ్ ఫైల్ శోధన</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>శోధన</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>రెజెక్స్ బిల్డర్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>సెట్టింగ్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>శోధన స్థితి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>సిద్ధంగా ఉంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>కొత్త ట్యాబ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>ట్యాబ్ {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>భర్తీ చేస్తోంది...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>Windows పాత్‌ల క్రింద సాదా వచన శోధనల కోసం మాత్రమే పని చేస్తుంది.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>ఇక్కడ మార్గాన్ని నమోదు చేయండి లేదా అతికించండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>బ్రౌజ్ చేయండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>శోధన పదం లేదా రీజెక్స్ నమూనాను నమోదు చేయండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>భర్తీ చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>దీనితో భర్తీ చేయండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>శోధించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>భర్తీ చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>రీసెట్ చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>ఫిల్టర్ ఎంపికలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>పరీక్ష నోటిఫికేషన్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>నోటిఫికేషన్‌లు సరిగ్గా పని చేస్తున్నాయని ధృవీకరించడానికి ఇది పరీక్ష నోటిఫికేషన్.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>పరీక్ష నోటిఫికేషన్ పంపబడింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>టోస్ట్ నోటిఫికేషన్‌ను ప్రదర్శించమని Windows అడిగారు.మీకు ఇప్పటికీ అది కనిపించకుంటే, Grex (Windows సెట్టింగ్‌లు &gt; సిస్టమ్ &gt; నోటిఫికేషన్‌లు) కోసం నోటిఫికేషన్‌లు ప్రారంభించబడిందని మరియు ఫోకస్ అసిస్ట్ / డిస్టర్బ్ చేయవద్దు నిలిపివేయబడిందని ధృవీకరించండి.
+
+నోటిఫికేషన్ లాగ్: {0}
+డయాగ్నస్టిక్ లాగ్: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>పరీక్ష నోటిఫికేషన్ లోపం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>నోటిఫికేషన్‌ను పంపడానికి ప్రయత్నిస్తున్నప్పుడు ఊహించని లోపం సంభవించింది.
+
+{0}
+
+లాగ్ చూడండి: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>ఈ సిస్టమ్ కాన్ఫిగరేషన్‌లో Windows టోస్ట్ నోటిఫికేషన్‌లు అందుబాటులో లేవు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>సాధారణ కారణాలు:
+• Windows యాప్ SDK రన్‌టైమ్ (సింగిల్‌టన్ ప్యాకేజీ) లేదు లేదా మరమ్మత్తు అవసరం
+• అప్లికేషన్ ఎలివేటెడ్ (అడ్మినిస్ట్రేటర్) అధికారాలతో అమలవుతోంది
+• ప్యాక్ చేయని యాప్‌ల కోసం, IsSupported() తప్పుగా తిరిగి రావచ్చు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>ట్రబుల్షూటింగ్ దశలు:
+1. Windows యాప్ రన్‌టైమ్‌ను ఇన్‌స్టాల్ చేయండి లేదా రిపేర్ చేయండి: https://aka.ms/windowsappsdk/runtime
+2. Grex అడ్మినిస్ట్రేటర్‌గా పని చేయడం లేదని నిర్ధారించుకోండి
+3. రన్‌టైమ్‌ను ఇన్‌స్టాల్ చేసిన/రిపేర్ చేసిన తర్వాత grexని పునఃప్రారంభించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Grex Windows టోస్ట్ నోటిఫికేషన్‌ల కోసం నమోదు చేయలేకపోయింది.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>సాధారణ కారణాలు:
+• Windows యాప్ SDK రన్‌టైమ్ (సింగిల్‌టన్ ప్యాకేజీ) లేదు లేదా పాడైంది
+• అప్లికేషన్ ఎలివేటెడ్ (అడ్మినిస్ట్రేటర్) అధికారాలతో అమలవుతోంది
+• అప్లికేషన్ గుర్తింపు సరిగ్గా కాన్ఫిగర్ చేయబడలేదు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>ట్రబుల్షూటింగ్ దశలు:
+1. విండోస్ యాప్ రన్‌టైమ్‌ను ఇన్‌స్టాల్ చేయండి లేదా రిపేర్ చేయండి: https://aka.ms/windowsappsdk/runtime
+2. Grex అడ్మినిస్ట్రేటర్‌గా పని చేయడం లేదని నిర్ధారించుకోండి
+3. రన్‌టైమ్‌ను ఇన్‌స్టాల్ చేసిన/రిపేర్ చేసిన తర్వాత grexని పునఃప్రారంభించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>వివరాలు: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>లాగ్ ఫైల్: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>ఫైల్‌లను సరిపోల్చండి:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>ఉదా., *.json|*.txt లేదా -*.log</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>డైర్లను మినహాయించండి:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>ఉదా., .git, విక్రేత లేదా ^(.git|వెండర్)$</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>శోధన రకం:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>వచన శోధన</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Regex శోధన</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>శోధన ఫలితాలు:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>కంటెంట్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>ఫైల్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>పరిమాణ పరిమితి:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>పరిమితి లేదు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>కంటే తక్కువ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>కు సమానం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>కంటే ఎక్కువ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>పరిమాణాన్ని నమోదు చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>గౌరవించండి .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>కేస్-సెన్సిటివ్ శోధన</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>సిస్టమ్ ఫైల్‌లను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>సబ్‌ఫోల్డర్‌లను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>దాచిన అంశాలను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>బైనరీ ఫైళ్లను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>సింబాలిక్ లింక్‌లను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows శోధనను ఉపయోగించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>ఇండెక్స్ చేయబడిన Windows ఫోల్డర్‌లలో వేగవంతమైన టెక్స్ట్ శోధనల కోసం Windows శోధన సూచికను ప్రభావితం చేయండి.Regex శోధనలు, WSL లక్ష్యాలు మరియు నాన్-ఇండెక్స్డ్ స్థానాలు సాంప్రదాయ స్కానర్‌ను ఉపయోగిస్తాయి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>స్కాన్ చేయడానికి ఫోల్డర్ లేదా డ్రైవ్‌ని ఎంచుకోండి.పాత్‌లను అతికించడానికి మద్దతు ఇస్తుంది మరియు ఇటీవలి స్థానాలను చూపుతుంది.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>శోధన మూలాన్ని ఎంచుకోవడానికి ఫోల్డర్ పికర్‌ని తెరవండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>మీరు శోధించాలనుకుంటున్న సాదా వచన పదం లేదా రీజెక్స్ నమూనాను టైప్ చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>రీప్లేస్ మోడ్‌ని ప్రారంభించండి, తద్వారా జాబితా చేయబడిన వాటికి బదులుగా సరిపోలికలు నవీకరించబడతాయి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>రీప్లేస్ రన్ చేసినప్పుడు వ్రాయబడే రీప్లేస్‌మెంట్ టెక్స్ట్‌ని అందించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>పేరు ద్వారా ఫైళ్లను ఫిల్టర్ చేయండి.'|'తో ప్రత్యేక నమూనాలుమరియు మినహాయించడానికి '-' తో ఉపసర్గ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>కామాతో వేరు చేయబడిన పేర్లు లేదా రీజెక్స్ (ఉదా., ^(.git|వెండర్)$) ఉపయోగించి డైరెక్టరీలను దాటవేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>శోధన ఇన్‌పుట్‌ను సాదా వచనంగా లేదా రీజెక్స్‌గా అన్వయించాలో ఎంచుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>ఫలితాలు సరిపోలే పంక్తులను చూపాలా లేదా ఫైల్‌ల జాబితాను చూపాలా ఎంచుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>ప్రతి ఫైల్‌ని స్కాన్ చేయడానికి ముందు ఐచ్ఛిక పరిమాణ పోలికను వర్తించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>ఎంచుకున్న పోలికతో పని చేసే సంఖ్యా పరిమాణ థ్రెషోల్డ్‌ని నమోదు చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>పరిమాణ పరిమితి కోసం యూనిట్ (KB, MB, GB) ఎంచుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>ఎంచుకున్న డైరెక్టరీలో .gitignore ద్వారా విస్మరించబడిన ఫైల్‌లను దాటవేయి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>అక్షరం కేసింగ్ సరిగ్గా సరిపోలినప్పుడు మాత్రమే సరిపోలికలను చెల్లుబాటు అయ్యేలా పరిగణించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>సిస్టమ్-రక్షిత ఫైల్‌లను స్కాన్ చేయడానికి అనుమతించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>ఎంచుకున్న మార్గంలో అన్ని సబ్‌ఫోల్డర్‌లను పునరావృతంగా శోధించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>దాచినట్లు గుర్తించబడిన ఫైల్‌లు మరియు ఫోల్డర్‌లను చేర్చండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>టెక్స్ట్ ఫైల్‌లతో పాటు బైనరీ ఫైల్‌లను స్కాన్ చేయండి.ఇది నెమ్మదిగా ఉండవచ్చు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>స్కాన్ చేస్తున్నప్పుడు సింబాలిక్ లింక్‌లు మరియు జంక్షన్‌లను అనుసరించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>పేరు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>లైన్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>కాలమ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>వచనం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>ఫైల్ మార్గం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>పేరు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>ఫైల్ పరిమాణం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>మ్యాచ్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>ఫైల్ మార్గం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>ఫైల్ పొడిగింపు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>ఎన్కోడింగ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>తేదీ సవరించబడింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>లైన్ దాచు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>నిలువు వరుసను దాచు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>మార్గాన్ని దాచండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>పరిమాణాన్ని దాచండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>సరిపోలికలను దాచండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>Extని దాచు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>ఎన్‌కోడింగ్‌ను దాచండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>దాచు తేదీ సవరించబడింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>సెట్టింగ్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>ఈ సెట్టింగ్‌లు కొత్త ట్యాబ్‌ల కోసం మరియు అప్లికేషన్ స్టార్టప్‌లో డిఫాల్ట్‌లుగా ఉపయోగించబడతాయి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>థీమ్ ప్రాధాన్యత</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>సిస్టమ్ థీమ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>లైట్ మోడ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>డార్క్ మోడ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>ఫిల్టర్ ఎంపికలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>శోధన ఫలితాలు:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>శోధన రకం:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>ఫిల్టర్ ఎంపికలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>గౌరవించండి .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>కేస్-సెన్సిటివ్ శోధన</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>సిస్టమ్ ఫైల్‌లను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>సబ్‌ఫోల్డర్‌లను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>దాచిన అంశాలను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>బైనరీ ఫైళ్లను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>సింబాలిక్ లింక్‌లను చేర్చండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows శోధనను ఉపయోగించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>ఇండెక్స్ చేయబడిన ఫోల్డర్‌లలో వేగవంతమైన టెక్స్ట్ శోధనల కోసం Windows శోధన సూచికను ఉపయోగించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>డీబగ్ చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Windows టోస్ట్ నోటిఫికేషన్‌లను ధృవీకరించడానికి దిగువ బటన్‌ను ఉపయోగించండి.అవసరమైతే Windows App SDK డిపెండెన్సీలు లేకుంటే మీరు ట్రబుల్షూటింగ్ మార్గదర్శకత్వాన్ని అందుకుంటారు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>పరీక్ష నోటిఫికేషన్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>విండోస్ టోస్ట్ నోటిఫికేషన్‌లను ధృవీకరించడానికి దిగువ బటన్‌ను ఉపయోగించండి.అవసరమైతే Windows App SDK డిపెండెన్సీలు లేకుంటే మీరు ట్రబుల్షూటింగ్ మార్గదర్శకత్వాన్ని అందుకుంటారు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>భాష మార్పిడిని పరీక్షించడానికి మరియు అన్ని అనువాద కీలను ధృవీకరించడానికి దిగువ బటన్‌ను ఉపయోగించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>పరీక్ష స్థానికీకరణ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>స్థానికీకరణ పరీక్ష ఉత్తీర్ణత సాధించింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>అన్ని {0} స్థానికీకరణ కీలు అన్ని {1} మద్దతు ఉన్న భాషలలో ఉన్నాయి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>స్థానికీకరణ పరీక్ష విఫలమైంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>ఒకటి లేదా అంతకంటే ఎక్కువ భాషల్లో కొన్ని స్థానికీకరణ కీలు లేవు:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} కీలు లేవు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... మరియు మరో {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>స్థానికీకరణ పరీక్ష లోపం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>స్థానికీకరణను పరీక్షిస్తున్నప్పుడు లోపం సంభవించింది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>నమూనా వచనం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>మీ రీజెక్స్ నమూనాను పరీక్షించడానికి నమూనా వచనాన్ని నమోదు చేయండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>Regex నమూనా</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>రీజెక్స్ నమూనాను నమోదు చేయండి...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>ప్రీసెట్లు:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>ఇమెయిల్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>ఫోన్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>తేదీ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>అంకెలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>ప్రత్యక్ష మ్యాచ్ ఫలితాలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>విజువల్ రీజెక్స్ విచ్ఛిన్నం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>ఎంపికలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>కేస్ సెన్సిటివ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>బహుళ లైన్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>గ్లోబల్ మ్యాచ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>సరిపోలికలను చూడటానికి చెల్లుబాటు అయ్యే రీజెక్స్ నమూనాను నమోదు చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>మీ రీజెక్స్ నమూనాను పరీక్షించడానికి నమూనా వచనాన్ని నమోదు చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>రీజెక్స్ పరీక్షించబడే నమూనా వచనాన్ని అందించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>మీరు మూల్యాంకనం చేయాలనుకుంటున్న రీజెక్స్ నమూనాను నమోదు చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>మ్యాచ్‌లను మూల్యాంకనం చేస్తున్నప్పుడు క్యారెక్టర్ కేసింగ్‌ను విస్మరించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>మొత్తం వచనానికి బదులుగా ప్రతి పంక్తి యొక్క ప్రారంభం మరియు ముగింపుగా ^ మరియు $ని పరిగణించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>మొదటి మ్యాచ్ తర్వాత ఆపడానికి బదులుగా ప్రతి మ్యాచ్‌ను కనుగొనండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>స్ట్రింగ్ పోలిక</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>పోలిక మోడ్:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>పోలిక మోడ్:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>ఆర్డినల్ (ఫాస్ట్, బైనరీ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>ఆర్డినల్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>ప్రస్తుత సంస్కృతి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>ప్రస్తుత సంస్కృతి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>మార్పులేని సంస్కృతి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>మార్పులేని సంస్కృతి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>యూనికోడ్ సాధారణీకరణ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>యూనికోడ్ సాధారణీకరణ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ఏదీ లేదు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ఫారం సి (కానానికల్ డికంపోజిషన్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ఫారం D (కానానికల్ డికంపోజిషన్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ఫారం KC (అనుకూలత కుళ్ళిపోవడం)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ఫారమ్ KD (అనుకూలత కుళ్ళిపోవడం)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>డయాక్రిటిక్ సెన్సిటివ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>నిలిపివేయబడినప్పుడు, ఉచ్ఛారణ అక్షరాలు వాటి మూల అక్షరాలుగా పరిగణించబడతాయి (ఉదా., 'é' = 'e')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>సంస్కృతి:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>స్ట్రింగ్ సంస్కృతి:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>సంస్కృతిని ఎంచుకోండి లేదా అనుకూల సంస్కృతి కోడ్‌ని నమోదు చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>శోధన కార్యకలాపాల సమయంలో స్ట్రింగ్ పోలిక సెట్టింగ్‌ల కోసం ఉపయోగించబడుతుంది, అప్లికేషన్ UI భాష కోసం కాదు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>UI భాష</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>అప్లికేషన్ భాష:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>Grex ప్రారంభమైనప్పుడు Windows థీమ్‌ను స్వయంచాలకంగా సరిపోల్చండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>Windows సెట్టింగ్‌తో సంబంధం లేకుండా లైట్ థీమ్‌ను బలవంతం చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>Windows సెట్టింగ్‌తో సంబంధం లేకుండా డార్క్ థీమ్‌ను బలవంతం చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>ప్రతి తెరిచిన పేజీకి తక్షణమే అప్లికేషన్ భాషని మార్చండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>కంటెంట్ ఫలితాలకు లేదా ఫైల్ ఫలితాలకు కొత్త ట్యాబ్‌లు డిఫాల్ట్‌గా ఉన్నాయో లేదో ఎంచుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>కొత్త ట్యాబ్‌లు టెక్స్ట్ సెర్చ్‌లో లేదా రీజెక్స్ సెర్చ్ మోడ్‌లో ప్రారంభం కావాలో ఎంచుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>కొత్త శోధనలు డిఫాల్ట్‌గా .gitignoreని గౌరవిస్తాయో లేదో సెట్ చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>డిఫాల్ట్‌గా సిస్టమ్-రక్షిత ఫైల్‌లను చేర్చండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>డిఫాల్ట్‌గా సబ్‌ఫోల్డర్‌లలోకి పునరావృతం చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>దాచిన ఫైల్‌లు మరియు ఫోల్డర్‌లను డిఫాల్ట్‌గా చేర్చండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>డిఫాల్ట్‌గా బైనరీ ఫైల్‌లను స్కాన్ చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>డిఫాల్ట్‌గా సింబాలిక్ లింక్‌లు మరియు జంక్షన్‌లను అనుసరించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>కొత్త శోధనలను డిఫాల్ట్‌గా కేస్-సెన్సిటివ్‌గా చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>పోలికలకు ముందు ఏ యూనికోడ్ సాధారణీకరణను వర్తింపజేయాలో ఎంచుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>కొత్త శోధనల కోసం డిఫాల్ట్ స్ట్రింగ్ పోలిక నియమాలను ఎంచుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>Windows టోస్ట్‌లు పని చేస్తున్నాయని ధృవీకరించడానికి నమూనా నోటిఫికేషన్‌ను పంపండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>భాష మార్పిడిని పరీక్షించండి మరియు అన్ని మద్దతు ఉన్న భాషలలో అన్ని ఆంగ్ల అనువాద కీలు ఉన్నాయని ధృవీకరించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>సరిపోలికలు ఏవీ కనుగొనబడలేదు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>{0} మ్యాచ్(లు) కనుగొనబడింది.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>సరిపోలిక కనుగొనబడలేదు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>1 సరిపోలిక కనుగొనబడింది.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>లోపం: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>బ్రేక్‌డౌన్‌ను చూడటానికి రీజెక్స్ నమూనాను నమోదు చేయండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>చెల్లని రీజెక్స్ నమూనా: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>క్యారెక్టర్ క్లాస్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>నాన్ క్యాప్చరింగ్ గ్రూప్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>గుంపును సంగ్రహిస్తోంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>క్వాంటిఫైయర్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>యాంకర్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>ఎస్కేప్ సీక్వెన్స్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>లిటరల్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>సెట్‌లోని ఏదైనా పాత్రతో సరిపోతుంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>సంగ్రహించకుండా గుంపులు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>సరిపోలిన వచనాన్ని క్యాప్చర్ చేస్తుంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>క్వాంటిఫైయర్: ఖచ్చితమైన గణన లేదా పరిధిని పేర్కొంటుంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>సున్నా లేదా అంతకంటే ఎక్కువ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>ఒకటి లేదా అంతకంటే ఎక్కువ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>సున్నా లేదా ఒకటి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>లైన్/స్ట్రింగ్ ప్రారంభం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>లైన్/స్ట్రింగ్ ముగింపు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>అంకెల (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>అంకెలు లేని</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>పద అక్షరం (a-z, A-Z, 0-9, _)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>పదం లేని పాత్ర</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>వైట్‌స్పేస్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>నాన్-వైట్‌స్పేస్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>న్యూలైన్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>ట్యాబ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>క్యారేజ్ రిటర్న్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>సాహిత్య పాత్ర</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Regex నమూనాను ఓవర్‌రైట్ చేయాలా?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>మీరు ప్రస్తుత Regex నమూనాను {0} ప్రీసెట్‌తో ఓవర్‌రైట్ చేయాలనుకుంటున్నారా?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>కొనసాగండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>రద్దు చేయి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>కొనసాగించు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>WSL మార్గం కనుగొనబడింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>WSL శోధన</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>గురించి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>BornSupercharged ద్వారా సృష్టించబడింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>GPL 3.0 ప్రకారం లైసెన్స్ పొందింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>GitHubలో ప్రాజెక్ట్‌ను వీక్షించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>ఈ పేజీని తెరవడానికి ఎప్పుడైనా F1ని నొక్కండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>వెర్షన్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>ఆపు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>రెండవది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>సెకన్లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>నిమిషం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>నిమిషాలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>గంట</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>గంటలు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>{2}లోని {1} ఫైల్‌లలో {0} సరిపోలికలు కనుగొనబడ్డాయి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>{2}లోని {1} ఫైల్‌లలో {0} సరిపోలికలు భర్తీ చేయబడ్డాయి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>బ్యాకప్ &amp; పునరుద్ధరించు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>ఎగుమతి సెట్టింగ్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>దిగుమతి సెట్టింగ్‌లు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>డిఫాల్ట్‌లను పునరుద్ధరించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>మీ ప్రస్తుత సెట్టింగ్‌లను బ్యాకప్ ఫైల్‌కి ఎగుమతి చేయండి, మునుపటి బ్యాకప్ నుండి సెట్టింగ్‌లను దిగుమతి చేయండి లేదా అన్ని సెట్టింగ్‌లను వాటి అసలు డిఫాల్ట్‌లకు పునరుద్ధరించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>సెట్టింగ్‌లు ఎగుమతి చేయబడ్డాయి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>మీ సెట్టింగ్‌లు దీనికి విజయవంతంగా ఎగుమతి చేయబడ్డాయి: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>ఎగుమతి విఫలమైంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>సెట్టింగ్‌లను ఎగుమతి చేయడంలో విఫలమైంది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>సెట్టింగ్‌లు దిగుమతి చేయబడ్డాయి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>సెట్టింగ్‌లు విజయవంతంగా దిగుమతి చేయబడ్డాయి.కొన్ని మార్పులు అమలులోకి రావడానికి పునఃప్రారంభం అవసరం కావచ్చు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>దిగుమతి విఫలమైంది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>సెట్టింగ్‌లను దిగుమతి చేయడంలో విఫలమైంది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>ఎంచుకున్న ఫైల్ చెల్లుబాటు అయ్యే Grex సెట్టింగ్‌ల బ్యాకప్‌గా కనిపించడం లేదు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>డిఫాల్ట్‌లను పునరుద్ధరించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>ఇది అన్ని సెట్టింగ్‌లను వాటి అసలు డిఫాల్ట్‌లకు రీసెట్ చేస్తుంది మరియు అప్లికేషన్‌ను పునఃప్రారంభిస్తుంది.మీరు ఖచ్చితంగా కొనసాగించాలనుకుంటున్నారా?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>మీ ప్రస్తుత సెట్టింగ్‌లను బ్యాకప్ ఫైల్‌కి ఎగుమతి చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>బ్యాకప్ ఫైల్ నుండి సెట్టింగ్‌లను దిగుమతి చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>అన్ని సెట్టింగ్‌లను వాటి అసలు డిఫాల్ట్‌లకు రీసెట్ చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>సిస్టమ్ డిఫాల్ట్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>లైట్ మోడ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>డార్క్ మోడ్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>బ్లాక్ నైట్ (అధిక కాంట్రాస్ట్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>పారానోయిడ్ (అధిక కాంట్రాస్ట్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>డైమండ్ (అధిక కాంట్రాస్ట్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>సబ్‌స్పేస్ (అధిక కాంట్రాస్ట్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>రెడ్ వెల్వెట్ (అధిక కాంట్రాస్ట్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>కలలు (అధిక కాంట్రాస్ట్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>టైఫ్లింగ్ (అధిక కాంట్రాస్ట్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>వైబ్స్ (అధిక కాంట్రాస్ట్)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>అప్లికేషన్ పునఃప్రారంభించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>మార్పులను వర్తింపజేయడానికి అప్లికేషన్‌ను పునఃప్రారంభించండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>థీమ్‌ని వర్తింపజేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>కొన్ని మూలకాలను సరిగ్గా శైలికి రీస్టార్ట్ చేయడానికి అప్లికేషన్ అవసరం.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>తరువాత</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>డాకర్ శోధన</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>నడుస్తున్న డాకర్ కంటైనర్ నుండి ఫైల్‌లను మిర్రర్ చేయండి, కాబట్టి Grex యాప్ నుండి నిష్క్రమించకుండానే వాటిని స్కాన్ చేయగలదు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>డాకర్ శోధనను ప్రారంభించండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>ప్రారంభించబడింది</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>వికలాంగుడు</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>శోధన మార్గం పక్కన అందుబాటులో ఉన్న డాకర్ కంటైనర్‌లను చూపండి, తద్వారా మీరు వాటిని నేరుగా లక్ష్యంగా చేసుకోవచ్చు.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>స్థానిక డిస్క్</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>శోధన లక్ష్యం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>కంటైనర్‌ను ఎంచుకోండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>డాకర్ కంటైనర్ జాబితాను రిఫ్రెష్ చేయండి</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>డాకర్ శోధన లోపం</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>డాకర్ అందుబాటులో లేదు.డాకర్ డెస్క్‌టాప్ రన్ అవుతుందని మరియు డాకర్ ఆదేశాలను అమలు చేయడానికి మీకు అనుమతి ఉందని నిర్ధారించుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>శోధనను ప్రారంభించే ముందు డాకర్ కంటైనర్‌ను ఎంచుకోండి.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>డాకర్ ఇంటిగ్రేషన్ ప్రారంభించడం సాధ్యపడలేదు: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>డాకర్ కంటైనర్‌లను రిఫ్రెష్ చేయడం సాధ్యపడలేదు: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>డాకర్ శోధన మిర్రర్‌ను సిద్ధం చేయడంలో విఫలమైంది: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>సింబాలిక్ లింక్ సృష్టి కారణంగా డాకర్ కాపీ విఫలమైంది: {0}
+
+సింబాలిక్ లింక్‌లను రూపొందించడానికి Windowsకు ప్రత్యేక అధికారాలు అవసరం.grexని అడ్మినిస్ట్రేటర్‌గా అమలు చేయండి లేదా మీ ఖాతా కోసం 'సింబాలిక్ లింక్‌లను సృష్టించండి' వినియోగదారుని ప్రారంభించండి.
+
+గమనిక: కొన్ని కంటైనర్ పాత్‌లు (node_modules వంటివి) అనేక సిమ్‌లింక్‌లను కలిగి ఉంటాయి మరియు ఈ అధికారాలు లేకుండా శోధించలేకపోవచ్చు.</value>
+    <comment>status:complete</comment>
+  </data>
+</root>

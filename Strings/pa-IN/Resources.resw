@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>Regex ਬਿਲਡਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>ਖੋਜ ਪਾਥ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>ਖੋਜਣ ਲਈ ਪਾਥ ਦਾਖਲ ਕਰੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>ਖੋਜ ਪੈਟਰਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>ਟੈਕਸਟ ਜਾਂ Regex ਪੈਟਰਨ ਦਾਖਲ ਕਰੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>ਇਸ ਨਾਲ ਬਦਲੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>ਬਦਲਣ ਵਾਲਾ ਟੈਕਸਟ ਦਾਖਲ ਕਰੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>ਬਦਲੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>ਕੇਸ ਸੰਵੇਦਨਸ਼ੀਲ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>ਨਿਯਮਿਤ ਸਮੀਕਰਣ ਵਰਤੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>ਉਪ-ਡਾਇਰੈਕਟਰੀਆਂ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>ਪ੍ਰਤੀਕਾਤਮਕ ਲਿੰਕਾਂ ਦਾ ਪਾਲਣ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>ਫਾਈਲ ਫਿਲਟਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (semicolon ਨਾਲ ਵੱਖਰੇ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>ਡਾਇਰੈਕਟਰੀਆਂ ਬਾਹਰ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin;obj;node_modules (semicolon ਨਾਲ ਵੱਖਰੇ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>ਸਾਈਜ਼ ਫਿਲਟਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>ਘੱਟੋ-ਘੱਟ ਸਾਈਜ਼</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>ਵੱਧ ਤੋਂ ਵੱਧ ਸਾਈਜ਼</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>ਨਤੀਜੇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>ਸਮਗਰੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>ਫਾਈਲਾਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>ਫਾਈਲ ਨਾਮ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>ਲਾਈਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>ਸਮਗਰੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>ਪਾਥ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>ਸਾਈਜ਼</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>ਸੋਧਿਆ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>ਤਿਆਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>ਖੋਜ ਰਿਹਾ ਹੈ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>ਕੋਈ ਮੈਚ ਨਹੀਂ ਮਿਲਿਆ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>ਗਲਤੀ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>ਨਿਯਮਿਤ ਸਮੀਕਰਣ ਪੈਟਰਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>ਟੈਸਟ ਟੈਕਸਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>ਮੈਚ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>ਸਧਾਰਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>ਭਾਸ਼ਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>ਥੀਮ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>ਸਿਸਟਮ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>ਹਲਕਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>ਗੂੜ੍ਹਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>ਚੇਤਾਵਨੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>ਜਾਣਕਾਰੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>ਠੀਕ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>ਰੱਦ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>ਹਾਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>ਨਹੀਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>ਐਡਮਿਨਿਸਟ੍ਰੇਟਰ ਵਜੋਂ ਚੱਲ ਰਿਹਾ ਹੈ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex ਇਸ ਸਮੇਂ ਐਡਮਿਨਿਸਟ੍ਰੇਟਰ ਅਧਿਕਾਰਾਂ ਨਾਲ ਚੱਲ ਰਿਹਾ ਹੈ।
+
+ਐਡਮਿਨਿਸਟ੍ਰੇਟਰ ਵਜੋਂ ਚਲਾਉਣਾ ਇਸ ਨਾਲ ਸਮੱਸਿਆਵਾਂ ਪੈਦਾ ਕਰ ਸਕਦਾ ਹੈ:
+• Windows toast ਸੂਚਨਾਵਾਂ
+• ਕੁਝ Windows App SDK ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ
+• ਐਪਲੀਕੇਸ਼ਨ ਸੁਰੱਖਿਆ ਅਤੇ ਅਲੱਗਤਾ
+
+ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਤੁਸੀਂ Grex ਨੂੰ ਇੱਕ ਨਿਯਮਿਤ ਉਪਭੋਗਤਾ ਵਜੋਂ ਚਲਾਓ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>ਨਜ਼ਰਅੰਦਾਜ਼ ਕਰੋ (ਅਸੁਰੱਖਿਤ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>ਬਾਹਰ ਨਿਕਲੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>ਐਪਲੀਕੇਸ਼ਨ ਸ਼ੁਰੂਆਤ ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>ਐਪਲੀਕੇਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਅਸਫਲ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>ਬਿਨਾਂ ਸੰਭਾਲੀ ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>ਇੱਕ ਅਚਾਨਕ ਗਲਤੀ ਆਈ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>ਟੈਬ ਬਣਾਉਣ ਦੀ ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>ਟੈਬ ਬਣਾਉਣ ਵਿੱਚ ਅਸਫਲ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>ਟੈਬ ਬਣਾਉਂਦੇ ਸਮੇਂ ਇੱਕ ਗੰਭੀਰ ਗਲਤੀ ਆਈ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>ਖੋਜ ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>ਖੋਜ ਦੌਰਾਨ ਇੱਕ ਗਲਤੀ ਆਈ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>WSL ਖੋਜ ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>WSL ਵਿੱਚ ਖੋਜ ਕਰਦੇ ਸਮੇਂ ਇੱਕ ਗਲਤੀ ਆਈ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>ਕੋਈ ਨਤੀਜੇ ਸੰਭਵ ਨਹੀਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>'Exclude Dirs' ਮੁੱਲ ਸਾਰੀਆਂ ਡਾਇਰੈਕਟਰੀਆਂ ਨੂੰ ਬਾਹਰ ਕਰ ਰਿਹਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਪੈਟਰਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>ਅਵੈਧ Regex ਪੈਟਰਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>'Exclude Dirs' ਮੁੱਲ ਇੱਕ ਵੈਧ ਨਿਯਮਿਤ ਸਮੀਕਰਣ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਪੈਟਰਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>ਬਦਲਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਬਦਲਣ ਦਾ ਕਾਰਵਾਈ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ? ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਵਾਪਸ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Regex ਪੈਟਰਨ ਓਵਰਰਾਈਟ ਕਰੋ?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>ਕੀ ਤੁਸੀਂ ਮੌਜੂਦਾ Regex ਪੈਟਰਨ ਨੂੰ {0} ਪ੍ਰੀਸੈੱਟ ਨਾਲ ਓਵਰਰਾਈਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>ਅੱਗੇ ਵਧੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - ਟੈਬਡ ਫਾਈਲ ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>Regex ਬਿਲਡਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>ਖੋਜ ਸਥਿਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>ਤਿਆਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>ਨਵੀਂ ਟੈਬ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>ਟੈਬ {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>ਬਦਲਿਆ ਜਾ ਰਿਹਾ ਹੈ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>Windows paths ਹੇਠਾਂ ਸਿਰਫ plain-text ਖੋਜਾਂ ਲਈ ਕੰਮ ਕਰਦਾ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>ਇੱਥੇ ਪਾਥ ਦਾਖਲ ਜਾਂ ਪੇਸਟ ਕਰੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>ਬ੍ਰਾਊਜ਼ ਕਰੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>ਖੋਜ ਸ਼ਬਦ ਜਾਂ Regex ਪੈਟਰਨ ਦਾਖਲ ਕਰੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>ਬਦਲੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>ਇਸ ਨਾਲ ਬਦਲੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>ਬਦਲੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>ਰੀਸੈੱਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>ਫਿਲਟਰ ਵਿਕਲਪ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>ਸੂਚਨਾ ਟੈਸਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>ਇਹ ਇੱਕ ਟੈਸਟ ਸੂਚਨਾ ਹੈ ਜੋ ਇਹ ਸੁਧਾਰਨ ਲਈ ਹੈ ਕਿ ਸੂਚਨਾਵਾਂ ਸਹੀ ਤਰ੍ਹਾਂ ਕੰਮ ਕਰ ਰਹੀਆਂ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>ਟੈਸਟ ਸੂਚਨਾ ਭੇਜੀ ਗਈ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>Windows ਨੂੰ toast ਸੂਚਨਾ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰਨ ਲਈ ਕਿਹਾ ਗਿਆ ਸੀ। ਜੇ ਤੁਸੀਂ ਅਜੇ ਵੀ ਇਸਨੂੰ ਨਹੀਂ ਦੇਖਦੇ, ਤਾਂ ਸੁਧਾਰੋ ਕਿ Grex ਲਈ ਸੂਚਨਾਵਾਂ ਸਮਰੱਥ ਹਨ (Windows ਸੈਟਿੰਗਾਂ &gt; ਸਿਸਟਮ &gt; ਸੂਚਨਾਵਾਂ) ਅਤੇ Focus assist / Do Not Disturb ਅਯੋਗ ਹੈ।
+
+ਸੂਚਨਾ ਲਾਗ: {0}
+ਨਿਦਾਨ ਲਾਗ: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>ਸੂਚਨਾ ਟੈਸਟ ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>ਸੂਚਨਾ ਭੇਜਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਸਮੇਂ ਇੱਕ ਅਚਾਨਕ ਗਲਤੀ ਆਈ।
+
+{0}
+
+ਲਾਗ ਵੇਖੋ: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>ਇਸ ਸਿਸਟਮ ਕੌਂਫਿਗਰੇਸ਼ਨ 'ਤੇ Windows toast ਸੂਚਨਾਵਾਂ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>ਆਮ ਕਾਰਨ:
+• Windows App SDK runtime (Singleton package) ਗੁੰਮ ਹੈ ਜਾਂ ਮੁਰੰਮਤ ਦੀ ਲੋੜ ਹੈ
+• ਐਪਲੀਕੇਸ਼ਨ ਉੱਚਿਤ (ਐਡਮਿਨਿਸਟ੍ਰੇਟਰ) ਅਧਿਕਾਰਾਂ ਨਾਲ ਚੱਲ ਰਹੀ ਹੈ
+• unpackaged ਐਪਾਂ ਲਈ, IsSupported() ਗਲਤ ਤਰ੍ਹਾਂ false ਵਾਪਸ ਕਰ ਸਕਦਾ ਹੈ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>ਸਮੱਸਿਆ ਨਿਪਟਾਉਣ ਦੇ ਕਦਮ:
+1. Windows App Runtime ਸਥਾਪਿਤ ਜਾਂ ਮੁਰੰਮਤ ਕਰੋ: https://aka.ms/windowsappsdk/runtime
+2. ਯਕੀਨੀ ਬਣਾਓ ਕਿ Grex ਐਡਮਿਨਿਸਟ੍ਰੇਟਰ ਵਜੋਂ ਨਹੀਂ ਚੱਲ ਰਿਹਾ
+3. runtime ਸਥਾਪਿਤ/ਮੁਰੰਮਤ ਕਰਨ ਤੋਂ ਬਾਅਦ Grex ਨੂੰ ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Grex Windows toast ਸੂਚਨਾਵਾਂ ਲਈ ਰਜਿਸਟਰ ਨਹੀਂ ਕਰ ਸਕਿਆ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>ਆਮ ਕਾਰਨ:
+• Windows App SDK runtime (Singleton package) ਗੁੰਮ ਹੈ ਜਾਂ ਖਰਾਬ ਹੈ
+• ਐਪਲੀਕੇਸ਼ਨ ਉੱਚਿਤ (ਐਡਮਿਨਿਸਟ੍ਰੇਟਰ) ਅਧਿਕਾਰਾਂ ਨਾਲ ਚੱਲ ਰਹੀ ਹੈ
+• ਐਪਲੀਕੇਸ਼ਨ ਪਛਾਣ ਸਹੀ ਤਰ੍ਹਾਂ ਕੌਂਫਿਗਰ ਨਹੀਂ ਹੈ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>ਸਮੱਸਿਆ ਨਿਪਟਾਉਣ ਦੇ ਕਦਮ:
+1. Windows App Runtime ਸਥਾਪਿਤ ਜਾਂ ਮੁਰੰਮਤ ਕਰੋ: https://aka.ms/windowsappsdk/runtime
+2. ਯਕੀਨੀ ਬਣਾਓ ਕਿ Grex ਐਡਮਿਨਿਸਟ੍ਰੇਟਰ ਵਜੋਂ ਨਹੀਂ ਚੱਲ ਰਿਹਾ
+3. runtime ਸਥਾਪਿਤ/ਮੁਰੰਮਤ ਕਰਨ ਤੋਂ ਬਾਅਦ Grex ਨੂੰ ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>ਵੇਰਵੇ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>ਲਾਗ ਫਾਈਲ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>ਫਾਈਲਾਂ ਮੈਚ ਕਰੋ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>ਉਦਾਹਰਣ: *.json|*.txt ਜਾਂ -*.log</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>ਡਾਇਰੈਕਟਰੀਆਂ ਬਾਹਰ ਕਰੋ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>ਉਦਾਹਰਣ: .git,vendor ਜਾਂ ^(.git|vendor)$</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>ਖੋਜ ਕਿਸਮ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>ਟੈਕਸਟ ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Regex ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>ਖੋਜ ਨਤੀਜੇ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>ਸਮਗਰੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>ਫਾਈਲਾਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>ਸਾਈਜ਼ ਸੀਮਾ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>ਕੋਈ ਸੀਮਾ ਨਹੀਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>ਤੋਂ ਘੱਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>ਬਰਾਬਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>ਤੋਂ ਵੱਧ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>ਸਾਈਜ਼ ਦਾਖਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>ਕਿਲੋਬਾਈਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>ਮੈਗਾਬਾਈਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>ਗੀਗਾਬਾਈਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>.gitignore ਦਾ ਸਤਿਕਾਰ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>ਕੇਸ-ਸੰਵੇਦਨਸ਼ੀਲ ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>ਸਿਸਟਮ ਫਾਈਲਾਂ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>ਉਪ-ਫੋਲਡਰ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>ਲੁਕੀਆਂ ਚੀਜ਼ਾਂ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>ਬਾਇਨਰੀ ਫਾਈਲਾਂ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>ਪ੍ਰਤੀਕਾਤਮਕ ਲਿੰਕ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows ਖੋਜ ਵਰਤੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>ਇੰਡੈਕਸ ਕੀਤੇ Windows ਫੋਲਡਰਾਂ 'ਤੇ ਤੇਜ਼ ਟੈਕਸਟ ਖੋਜਾਂ ਲਈ Windows ਖੋਜ ਇੰਡੈਕਸ ਦੀ ਵਰਤੋਂ ਕਰੋ। Regex ਖੋਜਾਂ, WSL ਟਾਰਗੇਟ, ਅਤੇ ਗੈਰ-ਇੰਡੈਕਸ ਸਥਾਨਾਂ 'ਤੇ ਪਰੰਪਰਾਗਤ ਸਕੈਨਰ ਵਰਤਿਆ ਜਾਵੇਗਾ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>ਸਕੈਨ ਕਰਨ ਲਈ ਫੋਲਡਰ ਜਾਂ ਡ੍ਰਾਈਵ ਚੁਣੋ। ਪਾਥ ਪੇਸਟ ਕਰਨਾ ਸਹਾਇਕ ਹੈ ਅਤੇ ਹਾਲੀਆ ਸਥਾਨਾਂ ਦਿਖਾਉਂਦਾ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>ਖੋਜ ਰੂਟ ਚੁਣਨ ਲਈ ਫੋਲਡਰ ਪਿਕਰ ਖੋਲ੍ਹੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>ਉਹ plain-text ਸ਼ਬਦ ਜਾਂ Regex ਪੈਟਰਨ ਟਾਈਪ ਕਰੋ ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਖੋਜਣਾ ਚਾਹੁੰਦੇ ਹੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>ਰਿਪਲੇਸ ਮੋਡ ਸਮਰੱਥ ਕਰੋ ਤਾਂ ਕਿ ਮੈਚਾਂ ਨੂੰ ਸਿਰਫ ਸੂਚੀਬੱਧ ਕਰਨ ਦੀ ਬਜਾਏ ਅਪਡੇਟ ਕੀਤਾ ਜਾ ਸਕੇ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>ਰਿਪਲੇਸ ਚਲਾਉਣ 'ਤੇ ਲਿਖਿਆ ਜਾਣ ਵਾਲਾ ਰਿਪਲੇਸਮੈਂਟ ਟੈਕਸਟ ਪ੍ਰਦਾਨ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>ਨਾਮ ਦੁਆਰਾ ਫਾਈਲਾਂ ਨੂੰ ਫਿਲਟਰ ਕਰੋ। ਪੈਟਰਨਾਂ ਨੂੰ '|' ਨਾਲ ਵੱਖ ਕਰੋ ਅਤੇ ਬਾਹਰ ਕਰਨ ਲਈ '-' ਨਾਲ ਪ੍ਰੀਫਿਕਸ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>ਕੌਮਾ-ਵੱਖ ਕੀਤੇ ਨਾਮਾਂ ਜਾਂ Regex (ਉਦਾਹਰਣ: ^(.git|vendor)$) ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਡਾਇਰੈਕਟਰੀਆਂ ਨੂੰ ਛੱਡੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>ਚੁਣੋ ਕਿ ਖੋਜ ਇਨਪੁਟ ਨੂੰ plain text ਜਾਂ Regex ਵਜੋਂ ਸਮਝਦੀ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>ਚੁਣੋ ਕਿ ਨਤੀਜੇ ਮੈਚਿੰਗ ਲਾਈਨਾਂ ਜਾਂ ਸਿਰਫ ਫਾਈਲਾਂ ਦੀ ਸੂਚੀ ਦਿਖਾਉਂਦੇ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>ਹਰ ਫਾਈਲ ਨੂੰ ਸਕੈਨ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਇੱਕ ਵਿਕਲਪਿਕ ਸਾਈਜ਼ ਤੁਲਨਾ ਲਾਗੂ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>ਸੰਖਿਆਤਮਕ ਸਾਈਜ਼ ਥ੍ਰੈਸ਼ਹੋਲਡ ਦਾਖਲ ਕਰੋ ਜੋ ਚੁਣੀ ਗਈ ਤੁਲਨਾ ਨਾਲ ਕੰਮ ਕਰਦਾ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>ਸਾਈਜ਼ ਸੀਮਾ ਲਈ ਯੂਨਿਟ (KB, MB, GB) ਚੁਣੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>ਚੁਣੀ ਗਈ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ .gitignore ਦੁਆਰਾ ਨਜ਼ਰਅੰਦਾਜ਼ ਕੀਤੀਆਂ ਫਾਈਲਾਂ ਨੂੰ ਛੱਡੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>ਸਿਰਫ ਤਾਂ ਮੈਚਾਂ ਨੂੰ ਵੈਧ ਸਮਝੋ ਜਦੋਂ ਅੱਖਰ ਕੇਸ ਬਿਲਕੁਲ ਮੈਚ ਕਰਦਾ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>ਸਿਸਟਮ-ਸੁਰੱਖਿਤ ਫਾਈਲਾਂ ਨੂੰ ਸਕੈਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>ਚੁਣੇ ਗਏ ਪਾਥ ਹੇਠਾਂ ਸਾਰੇ ਉਪ-ਫੋਲਡਰਾਂ ਨੂੰ ਪੁਨਰਾਵਰਤੀ ਖੋਜੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>ਲੁਕੀਆਂ ਚਿੰਨ੍ਹਿਤ ਫਾਈਲਾਂ ਅਤੇ ਫੋਲਡਰਾਂ ਨੂੰ ਸ਼ਾਮਲ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>ਟੈਕਸਟ ਫਾਈਲਾਂ ਦੇ ਨਾਲ-ਨਾਲ ਬਾਇਨਰੀ ਫਾਈਲਾਂ ਨੂੰ ਵੀ ਸਕੈਨ ਕਰੋ। ਇਹ ਹੌਲੀ ਹੋ ਸਕਦਾ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>ਸਕੈਨ ਕਰਦੇ ਸਮੇਂ ਪ੍ਰਤੀਕਾਤਮਕ ਲਿੰਕਾਂ ਅਤੇ ਜੰਕਸ਼ਨਾਂ ਦਾ ਪਾਲਣ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>ਨਾਮ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>ਲਾਈਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>ਕਾਲਮ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>ਟੈਕਸਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>ਫਾਈਲ ਪਾਥ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>ਨਾਮ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>ਫਾਈਲ ਸਾਈਜ਼</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>ਮੈਚ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>ਫਾਈਲ ਪਾਥ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>ਫਾਈਲ ਐਕਸਟੈਨਸ਼ਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>ਐਨਕੋਡਿੰਗ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>ਤਾਰੀਖ ਸੋਧੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>ਲਾਈਨ ਲੁਕਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>ਕਾਲਮ ਲੁਕਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>ਪਾਥ ਲੁਕਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>ਸਾਈਜ਼ ਲੁਕਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>ਮੈਚ ਲੁਕਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>ਐਕਸਟੈਨਸ਼ਨ ਲੁਕਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>ਐਨਕੋਡਿੰਗ ਲੁਕਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>ਤਾਰੀਖ ਸੋਧੀ ਲੁਕਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>ਇਹ ਸੈਟਿੰਗਾਂ ਨਵੀਆਂ ਟੈਬਾਂ ਅਤੇ ਐਪਲੀਕੇਸ਼ਨ ਸ਼ੁਰੂਆਤ 'ਤੇ ਡਿਫਾਲਟ ਵਜੋਂ ਵਰਤੀਆਂ ਜਾਣਗੀਆਂ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>ਥੀਮ ਪਸੰਦ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>ਸਿਸਟਮ ਥੀਮ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>ਹਲਕਾ ਮੋਡ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>ਗੂੜ੍ਹਾ ਮੋਡ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>ਫਿਲਟਰ ਵਿਕਲਪ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>ਖੋਜ ਨਤੀਜੇ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>ਖੋਜ ਕਿਸਮ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>ਫਿਲਟਰ ਵਿਕਲਪ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>.gitignore ਦਾ ਸਤਿਕਾਰ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>ਕੇਸ-ਸੰਵੇਦਨਸ਼ੀਲ ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>ਸਿਸਟਮ ਫਾਈਲਾਂ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>ਉਪ-ਫੋਲਡਰ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>ਲੁਕੀਆਂ ਚੀਜ਼ਾਂ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>ਬਾਇਨਰੀ ਫਾਈਲਾਂ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>ਪ੍ਰਤੀਕਾਤਮਕ ਲਿੰਕ ਸ਼ਾਮਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows ਖੋਜ ਵਰਤੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>ਇੰਡੈਕਸ ਕੀਤੇ ਫੋਲਡਰਾਂ 'ਤੇ ਤੇਜ਼ ਟੈਕਸਟ ਖੋਜਾਂ ਲਈ Windows ਖੋਜ ਇੰਡੈਕਸ ਵਰਤੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>ਡੀਬੱਗ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Windows toast ਸੂਚਨਾਵਾਂ ਨੂੰ ਸੁਧਾਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ ਦੀ ਵਰਤੋਂ ਕਰੋ। ਜੇ ਲੋੜੀਂਦੀਆਂ Windows App SDK ਨਿਰਭਰਤਾਵਾਂ ਗੁੰਮ ਹਨ ਤਾਂ ਤੁਹਾਨੂੰ ਸਮੱਸਿਆ ਨਿਪਟਾਉਣ ਦੀ ਸਹਾਇਤਾ ਮਿਲੇਗੀ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>ਸੂਚਨਾ ਟੈਸਟ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Windows toast ਸੂਚਨਾਵਾਂ ਨੂੰ ਸੁਧਾਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ ਦੀ ਵਰਤੋਂ ਕਰੋ। ਜੇ ਲੋੜੀਂਦੀਆਂ Windows App SDK ਨਿਰਭਰਤਾਵਾਂ ਗੁੰਮ ਹਨ ਤਾਂ ਤੁਹਾਨੂੰ ਸਮੱਸਿਆ ਨਿਪਟਾਉਣ ਦੀ ਸਹਾਇਤਾ ਮਿਲੇਗੀ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>ਭਾਸ਼ਾ ਬਦਲਣ ਅਤੇ ਸਾਰੀਆਂ ਅਨੁਵਾਦ ਕੁੰਜੀਆਂ ਨੂੰ ਸੁਧਾਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਬਟਨ ਦੀ ਵਰਤੋਂ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>ਸਥਾਨੀਕਰਣ ਟੈਸਟ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>ਸਥਾਨੀਕਰਣ ਟੈਸਟ ਪਾਸ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>ਸਾਰੀਆਂ {0} ਸਥਾਨੀਕਰਣ ਕੁੰਜੀਆਂ ਸਾਰੀਆਂ {1} ਸਹਾਇਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਮੌਜੂਦ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>ਸਥਾਨੀਕਰਣ ਟੈਸਟ ਅਸਫਲ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>ਕੁਝ ਸਥਾਨੀਕਰਣ ਕੁੰਜੀਆਂ ਇੱਕ ਜਾਂ ਵਧੇਰੇ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਗੁੰਮ ਹਨ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} ਗੁੰਮ ਕੁੰਜੀਆਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... ਅਤੇ {0} ਹੋਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>ਸਥਾਨੀਕਰਣ ਟੈਸਟ ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>ਸਥਾਨੀਕਰਣ ਟੈਸਟ ਕਰਦੇ ਸਮੇਂ ਇੱਕ ਗਲਤੀ ਆਈ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>ਨਮੂਨਾ ਟੈਕਸਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>ਆਪਣੇ Regex ਪੈਟਰਨ ਦਾ ਟੈਸਟ ਕਰਨ ਲਈ ਨਮੂਨਾ ਟੈਕਸਟ ਦਾਖਲ ਕਰੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>Regex ਪੈਟਰਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>Regex ਪੈਟਰਨ ਦਾਖਲ ਕਰੋ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>ਪ੍ਰੀਸੈੱਟ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>ਈਮੇਲ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>ਫੋਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>ਤਾਰੀਖ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>ਅੰਕ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>ਯੂਆਰਐਲ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>ਲਾਈਵ ਮੈਚ ਨਤੀਜੇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>ਦ੍ਰਿਸ਼ Regex ਵਿਸ਼ਲੇਸ਼ਣ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>ਵਿਕਲਪ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>ਕੇਸ-ਅਸੰਵੇਦਨਸ਼ੀਲ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>ਮਲਟੀਲਾਈਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>ਗਲੋਬਲ ਮੈਚ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>ਮੈਚ ਵੇਖਣ ਲਈ ਇੱਕ ਵੈਧ Regex ਪੈਟਰਨ ਦਾਖਲ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>ਆਪਣੇ Regex ਪੈਟਰਨ ਦਾ ਟੈਸਟ ਕਰਨ ਲਈ ਨਮੂਨਾ ਟੈਕਸਟ ਦਾਖਲ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>ਨਮੂਨਾ ਟੈਕਸਟ ਪ੍ਰਦਾਨ ਕਰੋ ਜਿਸ ਦੇ ਵਿਰੁੱਧ Regex ਦਾ ਟੈਸਟ ਕੀਤਾ ਜਾਵੇਗਾ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>Regex ਪੈਟਰਨ ਦਾਖਲ ਕਰੋ ਜਿਸ ਦਾ ਤੁਸੀਂ ਮੁਲਾਂਕਣ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>ਮੈਚਾਂ ਦਾ ਮੁਲਾਂਕਣ ਕਰਦੇ ਸਮੇਂ ਅੱਖਰ ਕੇਸ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>^ ਅਤੇ $ ਨੂੰ ਪੂਰੇ ਟੈਕਸਟ ਦੀ ਬਜਾਏ ਹਰ ਲਾਈਨ ਦੀ ਸ਼ੁਰੂਆਤ ਅਤੇ ਅੰਤ ਵਜੋਂ ਸਮਝੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>ਪਹਿਲੇ ਮੈਚ ਤੋਂ ਬਾਅਦ ਰੁਕਣ ਦੀ ਬਜਾਏ ਹਰ ਮੈਚ ਲੱਭੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>ਸਟ੍ਰਿੰਗ ਤੁਲਨਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>ਤੁਲਨਾ ਮੋਡ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>ਤੁਲਨਾ ਮੋਡ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Ordinal (ਤੇਜ਼, ਬਾਇਨਰੀ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>ਕ੍ਰਮਬੱਧ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>ਮੌਜੂਦਾ ਸੱਭਿਆਚਾਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>ਮੌਜੂਦਾ ਸੱਭਿਆਚਾਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Invariant ਸੱਭਿਆਚਾਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Invariant ਸੱਭਿਆਚਾਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>Unicode ਸਾਧਾਰਣੀਕਰਣ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>Unicode ਸਾਧਾਰਣੀਕਰਣ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ਕੋਈ ਨਹੀਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ਫਾਰਮ C (ਕੈਨੋਨੀਕਲ ਵਿਘਟਨ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ਫਾਰਮ D (ਕੈਨੋਨੀਕਲ ਵਿਘਟਨ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ਫਾਰਮ KC (ਸੁਵਿਧਾਜਨਕ ਵਿਘਟਨ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>ਫਾਰਮ KD (ਸੁਵਿਧਾਜਨਕ ਵਿਘਟਨ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Diacritic ਸੰਵੇਦਨਸ਼ੀਲ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>ਜਦੋਂ ਅਯੋਗ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਉਚਾਰਨ ਚਿੰਨ੍ਹ ਵਾਲੇ ਅੱਖਰ ਆਪਣੇ ਮੂਲ ਅੱਖਰਾਂ ਵਜੋਂ ਸਮਝੇ ਜਾਂਦੇ ਹਨ (ਉਦਾਹਰਣ: 'é' = 'e')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>ਸੱਭਿਆਚਾਰ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>ਸਟ੍ਰਿੰਗ ਸੱਭਿਆਚਾਰ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>ਸੱਭਿਆਚਾਰ ਚੁਣੋ ਜਾਂ ਕਸਟਮ ਸੱਭਿਆਚਾਰ ਕੋਡ ਦਾਖਲ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>ਖੋਜ ਕਾਰਵਾਈਆਂ ਦੌਰਾਨ ਸਟ੍ਰਿੰਗ ਤੁਲਨਾ ਸੈਟਿੰਗਾਂ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਐਪਲੀਕੇਸ਼ਨ UI ਭਾਸ਼ਾ ਲਈ ਨਹੀਂ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>UI ਭਾਸ਼ਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>ਐਪਲੀਕੇਸ਼ਨ ਭਾਸ਼ਾ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>Grex ਸ਼ੁਰੂ ਹੋਣ 'ਤੇ Windows ਥੀਮ ਨੂੰ ਆਪਣੇ-ਆਪ ਮੈਚ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>Windows ਸੈਟਿੰਗ ਦੀ ਪਰਵਾਹ ਕੀਤੇ ਬਿਨਾਂ ਹਲਕਾ ਥੀਮ ਲਾਗੂ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>Windows ਸੈਟਿੰਗ ਦੀ ਪਰਵਾਹ ਕੀਤੇ ਬਿਨਾਂ ਗੂੜ੍ਹਾ ਥੀਮ ਲਾਗੂ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>ਹਰ ਖੁੱਲ੍ਹੇ ਪੰਨੇ ਲਈ ਐਪਲੀਕੇਸ਼ਨ ਭਾਸ਼ਾ ਨੂੰ ਤੁਰੰਤ ਬਦਲੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>ਚੁਣੋ ਕਿ ਨਵੀਆਂ ਟੈਬਾਂ ਸਮਗਰੀ ਨਤੀਜਿਆਂ ਜਾਂ ਫਾਈਲ ਨਤੀਜਿਆਂ 'ਤੇ ਡਿਫਾਲਟ ਕਰਦੀਆਂ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>ਚੁਣੋ ਕਿ ਨਵੀਆਂ ਟੈਬਾਂ ਟੈਕਸਟ ਖੋਜ ਜਾਂ Regex ਖੋਜ ਮੋਡ ਵਿੱਚ ਸ਼ੁਰੂ ਹੁੰਦੀਆਂ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>ਸੈੱਟ ਕਰੋ ਕਿ ਨਵੀਆਂ ਖੋਜਾਂ ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ .gitignore ਦਾ ਸਤਿਕਾਰ ਕਰਦੀਆਂ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ ਸਿਸਟਮ-ਸੁਰੱਖਿਤ ਫਾਈਲਾਂ ਨੂੰ ਸ਼ਾਮਲ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ ਉਪ-ਫੋਲਡਰਾਂ ਵਿੱਚ ਪੁਨਰਾਵਰਤੀ ਖੋਜੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ ਲੁਕੀਆਂ ਫਾਈਲਾਂ ਅਤੇ ਫੋਲਡਰਾਂ ਨੂੰ ਸ਼ਾਮਲ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ ਬਾਇਨਰੀ ਫਾਈਲਾਂ ਨੂੰ ਸਕੈਨ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ ਪ੍ਰਤੀਕਾਤਮਕ ਲਿੰਕਾਂ ਅਤੇ ਜੰਕਸ਼ਨਾਂ ਦਾ ਪਾਲਣ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ ਨਵੀਆਂ ਖੋਜਾਂ ਨੂੰ ਕੇਸ-ਸੰਵੇਦਨਸ਼ੀਲ ਬਣਾਓ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>ਚੁਣੋ ਕਿ ਤੁਲਨਾਵਾਂ ਤੋਂ ਪਹਿਲਾਂ ਕਿਹੜਾ Unicode ਸਾਧਾਰਣੀਕਰਣ ਲਾਗੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>ਨਵੀਆਂ ਖੋਜਾਂ ਲਈ ਡਿਫਾਲਟ ਸਟ੍ਰਿੰਗ ਤੁਲਨਾ ਨਿਯਮ ਚੁਣੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>ਇੱਕ ਨਮੂਨਾ ਸੂਚਨਾ ਭੇਜੋ ਜੋ ਇਹ ਸੁਧਾਰਨ ਲਈ ਹੈ ਕਿ Windows toasts ਕੰਮ ਕਰ ਰਹੇ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>ਭਾਸ਼ਾ ਬਦਲਣ ਦਾ ਟੈਸਟ ਕਰੋ ਅਤੇ ਸੁਧਾਰੋ ਕਿ ਸਾਰੀਆਂ ਅੰਗਰੇਜ਼ੀ ਅਨੁਵਾਦ ਕੁੰਜੀਆਂ ਸਾਰੀਆਂ ਸਹਾਇਕ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਮੌਜੂਦ ਹਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>ਕੋਈ ਮੈਚ ਨਹੀਂ ਮਿਲਿਆ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>{0} ਮੈਚ ਮਿਲੇ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>ਕੋਈ ਮੈਚ ਨਹੀਂ ਮਿਲਿਆ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>1 ਮੈਚ ਮਿਲਿਆ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>ਗਲਤੀ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>ਵਿਸ਼ਲੇਸ਼ਣ ਵੇਖਣ ਲਈ ਇੱਕ Regex ਪੈਟਰਨ ਦਾਖਲ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>ਅਵੈਧ Regex ਪੈਟਰਨ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>ਅੱਖਰ ਸ਼੍ਰੇਣੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>ਗੈਰ-ਕੈਪਚਰਿੰਗ ਗਰੁੱਪ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>ਕੈਪਚਰਿੰਗ ਗਰੁੱਪ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>ਕੁਆਂਟੀਫਾਇਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>ਐਂਕਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>ਐਸਕੇਪ ਸੀਕਵੈਂਸ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>ਸ਼ਾਬਦਿਕ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>ਸੈੱਟ ਵਿੱਚ ਕੋਈ ਵੀ ਅੱਖਰ ਮੈਚ ਕਰਦਾ ਹੈ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>ਕੈਪਚਰ ਕੀਤੇ ਬਿਨਾਂ ਗਰੁੱਪ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>ਮੈਚ ਕੀਤੇ ਟੈਕਸਟ ਨੂੰ ਕੈਪਚਰ ਕਰਦਾ ਹੈ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>ਕੁਆਂਟੀਫਾਇਰ: ਸਹੀ ਗਿਣਤੀ ਜਾਂ ਸੀਮਾ ਨਿਰਧਾਰਤ ਕਰਦਾ ਹੈ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>ਜ਼ੀਰੋ ਜਾਂ ਵਧੇਰੇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>ਇੱਕ ਜਾਂ ਵਧੇਰੇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>ਜ਼ੀਰੋ ਜਾਂ ਇੱਕ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>ਲਾਈਨ/ਸਟ੍ਰਿੰਗ ਦੀ ਸ਼ੁਰੂਆਤ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>ਲਾਈਨ/ਸਟ੍ਰਿੰਗ ਦਾ ਅੰਤ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>ਅੰਕ (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>ਗੈਰ-ਅੰਕ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>ਸ਼ਬਦ ਅੱਖਰ (a-z, A-Z, 0-9, _)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>ਗੈਰ-ਸ਼ਬਦ ਅੱਖਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>ਖਾਲੀ ਥਾਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>ਗੈਰ-ਖਾਲੀ ਥਾਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>ਨਵੀਂ ਲਾਈਨ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>ਟੈਬ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>ਕੈਰੀਜ ਵਾਪਸੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>ਸ਼ਾਬਦਿਕ ਅੱਖਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Regex ਪੈਟਰਨ ਓਵਰਰਾਈਟ ਕਰੋ?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>ਕੀ ਤੁਸੀਂ ਮੌਜੂਦਾ Regex ਪੈਟਰਨ ਨੂੰ {0} ਪ੍ਰੀਸੈੱਟ ਨਾਲ ਓਵਰਰਾਈਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>ਅੱਗੇ ਵਧੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>ਰੱਦ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>ਜਾਰੀ ਰੱਖੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>WSL ਮਾਰਗ ਖੋਜਿਆ ਗਿਆ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>WSL ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>ਬਾਰੇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>BornSupercharged ਦੁਆਰਾ ਬਣਾਇਆ ਗਿਆ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>GPL 3.0 ਦੇ ਅਧੀਨ ਲਾਇਸੰਸਸ਼ੁਦਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>GitHub 'ਤੇ ਪ੍ਰੋਜੈਕਟ ਦੇਖੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>ਇਸ ਪੰਨੇ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਕਿਸੇ ਵੀ ਸਮੇਂ F1 ਦਬਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>ਸੰਸਕਰਣ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>ਰੂਕੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>ਦੂਜਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>ਸਕਿੰਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>ਮਿੰਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>ਮਿੰਟ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>ਘੰਟਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>ਘੰਟੇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>{2} ਵਿੱਚ {1} ਫ਼ਾਈਲਾਂ ਵਿੱਚ {0} ਮੇਲ ਮਿਲੇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>{2} ਵਿੱਚ {1} ਫਾਈਲਾਂ ਵਿੱਚ {0} ਮਿਲਾਨ ਬਦਲੇ ਗਏ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>ਬੈਕਅੱਪ ਅਤੇ ਰੀਸਟੋਰ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>ਨਿਰਯਾਤ ਸੈਟਿੰਗ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ ਆਯਾਤ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>ਡਿਫੌਲਟ ਰੀਸਟੋਰ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>ਆਪਣੀਆਂ ਮੌਜੂਦਾ ਸੈਟਿੰਗਾਂ ਨੂੰ ਇੱਕ ਬੈਕਅੱਪ ਫਾਈਲ ਵਿੱਚ ਨਿਰਯਾਤ ਕਰੋ, ਪਿਛਲੇ ਬੈਕਅੱਪ ਤੋਂ ਸੈਟਿੰਗਾਂ ਆਯਾਤ ਕਰੋ, ਜਾਂ ਸਾਰੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਉਹਨਾਂ ਦੇ ਮੂਲ ਡਿਫੌਲਟ ਵਿੱਚ ਰੀਸਟੋਰ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ ਨਿਰਯਾਤ ਕੀਤੀਆਂ ਗਈਆਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>ਤੁਹਾਡੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਇਸ ਵਿੱਚ ਨਿਰਯਾਤ ਕੀਤਾ ਗਿਆ ਹੈ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>ਨਿਰਯਾਤ ਅਸਫਲ ਰਿਹਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ ਨੂੰ ਨਿਰਯਾਤ ਕਰਨ ਵਿੱਚ ਅਸਫਲ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ ਆਯਾਤ ਕੀਤੀਆਂ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਆਯਾਤ ਕੀਤਾ ਗਿਆ ਹੈ।ਕੁਝ ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੋ ਸਕਦੀ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>ਆਯਾਤ ਅਸਫਲ ਰਿਹਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>ਸੈਟਿੰਗਾਂ ਆਯਾਤ ਕਰਨ ਵਿੱਚ ਅਸਫਲ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>ਚੁਣੀ ਗਈ ਫ਼ਾਈਲ ਇੱਕ ਵੈਧ Grex ਸੈਟਿੰਗਾਂ ਬੈਕਅੱਪ ਨਹੀਂ ਜਾਪਦੀ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>ਡਿਫੌਲਟ ਰੀਸਟੋਰ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>ਇਹ ਸਾਰੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਉਹਨਾਂ ਦੇ ਮੂਲ ਪੂਰਵ-ਨਿਰਧਾਰਤ 'ਤੇ ਰੀਸੈਟ ਕਰੇਗਾ ਅਤੇ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਰੀਸਟਾਰਟ ਕਰੇਗਾ।ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>ਆਪਣੀਆਂ ਮੌਜੂਦਾ ਸੈਟਿੰਗਾਂ ਨੂੰ ਇੱਕ ਬੈਕਅੱਪ ਫਾਈਲ ਵਿੱਚ ਨਿਰਯਾਤ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>ਬੈਕਅੱਪ ਫਾਈਲ ਤੋਂ ਸੈਟਿੰਗਾਂ ਆਯਾਤ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>ਸਾਰੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਉਹਨਾਂ ਦੇ ਮੂਲ ਡਿਫੌਲਟ 'ਤੇ ਰੀਸੈਟ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਸਿਸਟਮ ਪੂਰਵ-ਨਿਰਧਾਰਤ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਲਾਈਟ ਮੋਡ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਡਾਰਕ ਮੋਡ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਬਲੈਕ ਨਾਈਟ (ਹਾਈ ਕੰਟ੍ਰਾਸਟ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਪੈਰਾਨੋਇਡ (ਉੱਚ ਵਿਪਰੀਤ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਹੀਰਾ (ਉੱਚ ਕੰਟ੍ਰਾਸਟ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਸਬਸਪੇਸ (ਉੱਚ ਕੰਟ੍ਰਾਸਟ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਲਾਲ ਵੈਲਵੇਟ (ਉੱਚ ਕੰਟ੍ਰਾਸਟ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਸੁਪਨੇ (ਉੱਚ ਅੰਤਰ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਟਾਈਫਲਿੰਗ (ਉੱਚ ਕੰਟ੍ਰਾਸਟ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ਵਾਈਬਸ (ਉੱਚ ਕੰਟ੍ਰਾਸਟ)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>ਐਪਲੀਕੇਸ਼ਨ ਰੀਸਟਾਰਟ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>ਤਬਦੀਲੀਆਂ ਲਾਗੂ ਕਰਨ ਲਈ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਮੁੜ ਚਾਲੂ ਕਰੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>ਥੀਮ ਲਾਗੂ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>ਕੁਝ ਤੱਤਾਂ ਨੂੰ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਸਹੀ ਢੰਗ ਨਾਲ ਸਟਾਈਲ ਕਰਨ ਲਈ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>ਬਾਅਦ ਵਿੱਚ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>ਡੌਕਰ ਖੋਜ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>ਚੱਲ ਰਹੇ ਡੌਕਰ ਕੰਟੇਨਰ ਤੋਂ ਫਾਈਲਾਂ ਨੂੰ ਮਿਰਰ ਕਰੋ ਤਾਂ ਕਿ ਗੇਕੋਗ੍ਰੇਪ ਉਹਨਾਂ ਨੂੰ ਐਪ ਛੱਡੇ ਬਿਨਾਂ ਸਕੈਨ ਕਰ ਸਕੇ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>ਡੌਕਰ ਖੋਜ ਨੂੰ ਸਮਰੱਥ ਬਣਾਓ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>ਸਮਰਥਿਤ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>ਅਯੋਗ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>ਖੋਜ ਮਾਰਗ ਦੇ ਅੱਗੇ ਉਪਲਬਧ ਡੌਕਰ ਕੰਟੇਨਰ ਦਿਖਾਓ ਤਾਂ ਜੋ ਤੁਸੀਂ ਉਹਨਾਂ ਨੂੰ ਸਿੱਧਾ ਨਿਸ਼ਾਨਾ ਬਣਾ ਸਕੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>ਸਥਾਨਕ ਡਿਸਕ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>ਖੋਜ ਟੀਚਾ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>ਕੰਟੇਨਰ ਚੁਣੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>ਡੌਕਰ ਕੰਟੇਨਰ ਸੂਚੀ ਨੂੰ ਤਾਜ਼ਾ ਕਰੋ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>ਡੌਕਰ ਖੋਜ ਗਲਤੀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>ਡੌਕਰ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਡੌਕਰ ਡੈਸਕਟਾਪ ਚੱਲ ਰਿਹਾ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਡੌਕਰ ਕਮਾਂਡਾਂ ਚਲਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>ਖੋਜ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਇੱਕ ਡੌਕਰ ਕੰਟੇਨਰ ਚੁਣੋ।</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>ਡੌਕਰ ਏਕੀਕਰਣ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>ਡੌਕਰ ਕੰਟੇਨਰਾਂ ਨੂੰ ਤਾਜ਼ਾ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>ਡੌਕਰ ਖੋਜ ਮਿਰਰ ਤਿਆਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>ਸਿੰਬਲਿਕ ਲਿੰਕ ਬਣਾਉਣ ਕਾਰਨ ਡੌਕਰ ਕਾਪੀ ਅਸਫਲ ਹੋਈ: {0}
+
+ਵਿੰਡੋਜ਼ ਨੂੰ ਪ੍ਰਤੀਕਾਤਮਕ ਲਿੰਕ ਬਣਾਉਣ ਲਈ ਵਿਸ਼ੇਸ਼ ਅਧਿਕਾਰਾਂ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।ਜਾਂ ਤਾਂ ਪ੍ਰਸ਼ਾਸਕ ਦੇ ਤੌਰ 'ਤੇ Grex ਨੂੰ ਚਲਾਓ, ਜਾਂ ਆਪਣੇ ਖਾਤੇ ਲਈ 'ਸਿਮੋਲਿਕ ਲਿੰਕ ਬਣਾਓ' ਉਪਭੋਗਤਾ ਨੂੰ ਯੋਗ ਬਣਾਓ।
+
+ਨੋਟ: ਕੁਝ ਕੰਟੇਨਰ ਮਾਰਗਾਂ (ਜਿਵੇਂ node_modules) ਵਿੱਚ ਬਹੁਤ ਸਾਰੇ ਸਿਮਲਿੰਕਸ ਹੁੰਦੇ ਹਨ ਅਤੇ ਇਹਨਾਂ ਵਿਸ਼ੇਸ਼ ਅਧਿਕਾਰਾਂ ਤੋਂ ਬਿਨਾਂ ਖੋਜਯੋਗ ਨਹੀਂ ਹੋ ਸਕਦੇ ਹਨ।</value>
+    <comment>status:complete</comment>
+  </data>
+</root>

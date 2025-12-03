@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>Regex builder</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>تەڭشەكلەر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>ئىزدەش يولى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>ئىزدەش ئۈچۈن يول كىرگۈزۈڭ ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>ئىزدەش ئەندىزىسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>تېكىست ياكى Regex ئەندىزىسىنى كىرگۈزۈڭ ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>ئالماشتۇرۇڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>ئالماشتۇرۇش تېكىستىنى كىرگۈزۈڭ ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>ئالماشتۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>دېلو سەزگۈر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>دائىملىق ئىپادىنى ئىشلىتىڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>تارماق قىسقۇچىنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>سىمۋوللۇق ئۇلىنىشلارغا ئەگىشىڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>ھۆججەت سۈزگۈچ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>* .cs; *. *.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>مۇندەرىجە</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin; obj; node_modules (يېرىم چېكىت ئايرىلغان)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>چوڭايتىش سۈزگۈچ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>Min size</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>Max Size</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>نەتىجە</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>مەزمۇن</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>ھۆججەتلەر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>ھۆججەت ئىسمى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>Line</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>مەزمۇن</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>يول</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>Size</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>ئۆزگەرتىلگەن</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>تەييار</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>ئىزدەش ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>ماس كەلمەيدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>خاتالىق: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>دائىملىق ئىپادىلەش ئەندىزىسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>سىناق تېكىستى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>Match</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>General</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>تىل</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>تېما</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>سىستېما</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>نۇر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>قاراڭغۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>خاتالىق</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>ئاگاھلاندۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>ئۇچۇر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>جەزملەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>ئەمەلدىن قالدۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>ھەئە</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>ياق</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>مۇدىر سۈپىتىدە ئىجرا قىلىنىۋاتىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex ھازىر مۇدىر ھوقۇقى بىلەن ئىجرا قىلىنىۋاتىدۇ.
+
+مۇدىر سۈپىتىدە ئىجرا قىلىش تۆۋەندىكى مەسىلىلەرگە سەۋەب بولۇشى مۇمكىن:
+• Windows toast ئ bildirishnomalari
+• بەزى Windows App SDK ئىقتىدارلىرى
+• ئىلتىماس بىخەتەرلىكى ۋە ئايرىش
+
+Grex نى ئادەتتىكى ئىشلەتكۈچى سۈپىتىدە ئىجرا قىلىش تەۋسىيە قىلىنىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>پەرۋا قىلما (خەتەرلىك)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>چىقىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>ئىلتىماس باشلاش خاتالىقى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>ئىلتىماسنى باشلاش مەغلۇپ بولدى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>بىر تەرەپ قىلىنمىغان خاتالىق</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>كۈتۈلمىگەن خاتالىق يۈز بەردى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>بەتكۈچ قۇرۇش خاتالىقى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>بەتكۈچ قۇرۇش مەغلۇپ بولدى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>بەتكۈچ قۇرۇش جەريانىدا جىددىي خاتالىق يۈز بەردى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>ئىزدەش خاتالىقى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>ئىزدەش جەريانىدا خاتالىق يۈز بەردى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>WSL ئىزدەش خاتالىقى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>WSL دا ئىزدەش جەريانىدا خاتالىق يۈز بەردى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>نەتىجە يوق</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>'Exclude Dirs' قىممىتى بارلىق مۇندەرىجىلەرنى چىقىرىۋاتىدۇ. ئۈلگىڭىزنى تەكشۈرۈپ قايتا سىناڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>ئىناۋەتسىز Regex ئۈلگىسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>'Exclude Dirs' قىممىتى ئىناۋەتلىك مۇنتىزىم ئىپادى ئەمەس. ئۈلگىڭىزنى تەكشۈرۈپ قايتا سىناڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>ئالماشتۇرۇشنى جەزملەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>مەشغۇلات مەشغۇلاتىڭىزنى ئورۇندىماقچىمۇ?بۇ ھەرىكەتنى ئەمەلدىن قالدۇرغىلى بولمايدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Regex ئۈلگىسىنى ئۆزگەرتىشكەمۇ؟</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>نۆۋەتتىكى Regex ئۈلگىسىنى {0} ئالدىن بەلگىلەنگەن بىلەن ئۆزگەرتمەكچىمۇ؟</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>داۋاملاشتۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - بەتكۈچلۈك ھۆججەت ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>Regex builder</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>تەڭشەكلەر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>ئىزدەش ھالىتى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>تەييار</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>يېڭى بەتكۈچ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>TAB {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>ئالماشتۇرۇش ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>پەقەت Windows يولىنى ساقلايدىغان ئاددىي ئىزدەش ئۈچۈنلا ئىشلەيدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>بۇ يەردىكى يولنى كىرگۈزۈڭ ياكى چاپلاڭ ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>تور كۆرۈڭ ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>ئىزدەش سۆزى ياكى Regex ئەندىزىسىنى كىرگۈزۈڭ ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>ئالماشتۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>ئالماشتۇرۇڭ ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>ئالماشتۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>ئەسلىگە كەلتۈرۈش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>سۈزگۈچ تاللاشلىرى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>سىناق ئۇقتۇرۇشى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>بۇ ئۇقتۇرۇشنىڭ توغرا خىزمەت قىلغانلىقىنى دەلىللەش ئۇقتۇرۇشى.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>سىناق ئۇقتۇرۇشى ئەۋەتىلدى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>Windows نى ئەڭ ياخشى ئۇقتۇرۇش قىلىش تەلەپ قىلىندى.ئەگەر يەنىلا ئۇنى كۆرمىسىڭىز, WeckoGrep (Windows تەڭشىكى&gt; سىستېما&gt; ئۇقتۇرۇشى) ۋە بۇ فوكۇس ياردەم قىلىش, بۇ نۇقتا ياردەم قىلىش چەكلەنگەنلىكىنى جەزملەشتۈرۈڭ.
+
+ئۇقتۇرۇش خاتىرىسى: {0}
+دىئاگنوز قويۇش خاتىرىسى: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>سىناق ئۇقتۇرۇشى خاتالىقى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>ئۇقتۇرۇش ئەۋەتمەكچى بولغاندا كۈتۈلمىگەن خاتالىق كۆرۈلدى.
+
+{0}
+
+خاتىرە كۆرۈڭ: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>بۇ سىستېما سەپلىمىسىدە Windows Tooth ئۇقتۇرۇشى يوق.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>كۆپ ئۇچرايدىغان سەۋەبلەر:
+• Windows ئەپ SDK ئىجرا ۋاقتى (يەككە بوغچا بولىقى) يوقاپ كەتتى ياكى رېمونت قىلىشقا موھتاج
+• قوللىنىشچان پروگرامما يۇقىرى (باشقۇرغۇچى) ئىمتىياز بىلەن ئىجرا بولۇۋاتىدۇ
+• قوللىمىغان ئەپلەر, تارقىتىلغان () خاتا جاۋاب قايتۇرۇشى مۇمكىن</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>چاتاقلاشتۇرۇش قەدەملىرى:
+1. Windows ئەپ ئىجرا ۋاقتىغا قاچىلاش ياكى رېمونت قىلىش: http://tps caka.ms/windoWSAWSAWSDK /
+2. گېكوگرېگرېنى باشقۇرغۇچىغا كاپالەتلىك قىلىش
+3. Runtime نى قاچىلاش / رېمونت قىلىش / رېمونت قىلىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Gekogrep Windows ئۇچقۇچىسىزلىقىنى كۆرەلمىدى.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>كۆپ ئۇچرايدىغان سەۋەبلەر:
+• Windows ئەپ sdk ئىجرا ۋاقتى (يەككە بوغچا) يوقاپ كەتتى ياكى بۇزۇلغان
+• قوللىنىشچان پروگرامما يۇقىرى (باشقۇرغۇچى) ئىمتىياز بىلەن ئىجرا بولۇۋاتىدۇ
+• ئىلتىماس كىملىكى مۇۋاپىق تەڭشەلدى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>چاتاقلاشتۇرۇش قەدەملىرى:
+1. Windows ئەپ ئىجرا ۋاقتىغا قاچىلاش ياكى رېمونت قىلىش: http://tps caka.ms/windoWSAWSAWSDK /
+2. گېكوگرېگرېنى باشقۇرغۇچىغا كاپالەتلىك قىلىش
+3. Runtime نى قاچىلاش / رېمونت قىلىش / رېمونت قىلىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>تەپسىلاتلار: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>خاتىرە ھۆججىتى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>ماس كېلىدىغان ھۆججەتلەر:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>E.G., * .json | * .txt ياكى - *.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>قىستۇرمىنى چىقىرىۋېتىڭ:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>E.G., .git, ساتقۇچى ياكى ^ (. GIT | ساتقۇچى) $</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>ئىزدەش تىپى:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>تېكىست ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Regex search</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>ئىزدەش نەتىجىسى:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>مەزمۇن</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>ھۆججەتلەر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>چوڭلۇقى چەكلىمىسى:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>چەك يوق</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>ئاز</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>باراۋەر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>ئۇنىڭدىنمۇ چوڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>چوڭ-كىچىكلىكىنى كىرگۈزۈڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>ھۆرمەت قىلىڭ .Gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>ئىزدەش دېلوسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>سىستېما ھۆججىتىنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>Subfolders نى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>يوشۇرۇن تۈرلەرنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>ئىككىلىك ھۆججەتنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>سىمۋوللۇق ئۇلىنىشلارنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows Search نى ئىشلىتىڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>كۆرسەتمىلەر كۆرسەتكۈچتىكى تېخىمۇ تېز تېكىستلەرنى ئىزدەش ئۈچۈن Windows ئىزدەش كۆرسەتكۈچىنى تۆۋەنلىتىمىز.Regex ئىزدەش, WSL نىشانى ۋە كۆرگەزاتسى بولمىغان جايلار ئەنئەنىۋى سايىلىغۇچنى ئىشلىتىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>ھۆججەت قىسقۇچنى تاللاڭ ياكى سايىلەشنى تاللاڭ.قەيسەر يوللارنى قوللايدۇ ۋە يېقىنقى ئورۇنلارنى كۆرسىتىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>ھۆججەت قىسقۇچ تاللىغۇچنى ئېچىڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>ئىزدىمەكچى بولغان ئاددىي تېكىست ئاتالغۇ ياكى رېئاللىق ئەندىزىسىنى كىرگۈزۈڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>ئالماشتۇرۇش ھالىتىنى قوزغىتىڭ, شۇڭا مۇسابىقىنىلا تىزىملىكنىڭ ئورنىغا يېڭىلىنىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>ئالماشتۇرغاندا ئالماشتۇرۇش تېكىستى بىلەن تەمىنلەڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>ھۆججەتلەرنى ئىسىم بىلەن سۈزۈڭ.«|» بىلەن ئايرىم ئەندىزەھەمدە «-» نى چىقىرىۋېتىش.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>پەش بىلەن ئايرىلغان ئىسىملار ياكى Regex (E..g., ^ (. GIT | ساتقۇچى) $ نى ئاتلاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>ئىزدەشنىڭ ئاددىي تېكىست ياكى رېپېتىت سۈپىتىدە كىرگۈزۈشنى چۈشەنمىگەن-دەپ قاراۋالىشىنى تاللاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>نەتىجىنى ماسلاشتۇرۇش لىنىيىسىنى ياكى ھۆججەتلەرنىڭ تىزىملىكى ياكى ئەمەسلىكىنى تاللاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>ھەر بىر ھۆججەتنى سىكانىرلاشتىن بۇرۇن ئىختىيارى چوڭلۇقنى سېلىشتۇرۇش.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>تاللانغان سېلىشتۇرۇش بىلەن ئىشلەيدىغان راۋان چەكلىمىسىنى كىرگۈزۈڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>چوڭلۇقى (KB, MB, GB) نى تاللاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>ھۆججەتلەرنى ئاتلاش. تاللانغان مۇندەرىجىدە.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>خەت بېسىش مۇسابىقىسى ئېنىق بولغاندا پەقەت ماس ​​كېلىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>سىكانىرلانغان ھۆججەتلەرنى ساقلايدىغان ھۆججەتلەر.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>تاللانغان يولدا بارلىق تارماق پروگراممىلارنى قايتا ئىزدەڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>يوشۇرۇنغان ھۆججەت ۋە قىسقۇچلارنى ئۆز ئىچىگە ئالىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>تېكىست ھۆججىتىدىن باشقا ئىككىلىك ھۆججەتنى سايىلەش.بۇنى ئاستا بولىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>سىكانېرلاش جەريانىدا سىمۋوللۇق ئۇلىنىش ۋە تۇتۇش.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>Line</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>ستون</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>تېكىست</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>ھۆججەت يولى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>ھۆججەت چوڭلۇقى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>Match</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>ھۆججەت يولى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>ھۆججەت كېڭەيتىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>كودلاش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>ۋاقىت ئۆزگەرتىلدى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>Like</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>ئىستوننى يوشۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>يولنى يوشۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>چوڭلۇقىنى يوشۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>مۇسابىقىنى يوشۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>كېڭەيتىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>كودلاشنى يوشۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>Work word</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>تەڭشەك</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>بۇ تەڭشەكلەر يېڭى بەتكۈچلەرگە سۈكۈتتىكىغا قەدەر ئىشلىتىلىدۇ ۋە قوللىنىشچان پروگرامما مەركىزىگە سۈكۈت قىلىنىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>Teame Prefigment</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>سىستېما تېما</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>نۇر ھالىتى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>قاراڭغۇ ھالەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>سۈزگۈچ تاللاشلىرى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>ئىزدەش نەتىجىسى:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>ئىزدەش تىپى:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>سۈزگۈچ تاللاشلىرى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>ھۆرمەت قىلىڭ .Gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>ئىزدەش دېلوسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>سىستېما ھۆججىتىنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>Subfolders نى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>يوشۇرۇن تۈرلەرنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>ئىككىلىك ھۆججەتنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>سىمۋوللۇق ئۇلىنىشلارنى ئۆز ئىچىگە ئالىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows Search نى ئىشلىتىڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>تىزىمغا ئېلىنغان ھۆججەت قىسقۇچلاردىكى تېخىمۇ تېز تېكىست ئىزدەش ئۈچۈن Windows ئىزدەش كۆرسەتكۈچىنى ئىشلىتىڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>ھەل قىلىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>تۆۋەندىكى كۇنۇپكىنى ئىشلىتىپ Windows گىرىم ئۇقتۇرۇشىنى دەلىللەش.ئەگەر ئېھتىياجلىق Windows ئەپ sdk تايىنىشچانلىقى يوقاپ كەتكەن بولسا, سىز بىر مەسىلىنى ھەل قىلىش يېتەكچىسىگە ئېرىشىسىز.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>سىناق ئۇقتۇرۇشى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>تۆۋەندىكى كۇنۇپكىنى ئىشلىتىپ Windows ATSTE ئۇقتۇرۇشىنى دەلىللەش ئۈچۈن.ئەگەر ئېھتىياجلىق Windows ئەپ sdk تايىنىشچانلىقى يوقاپ كەتكەن بولسا, سىز بىر مەسىلىنى ھەل قىلىش يېتەكچىسىگە ئېرىشىسىز.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>تۆۋەندىكى كۇنۇپكىنى ئىشلىتىپ سىناپ بېقىڭ تىلنى سىناش ۋە بارلىق تەرجىمە كۇنۇپكىلارنى دەلىللەڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>يەرلىكلەشتۈرۈش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>يەرلىكلەشتۈرۈش سىنىقى ئۆتۈپ كەتتى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>ھەممىسى {1 SEVE يۈكلەش كۇنۇپكىلىرى بارلىق {1 قوللايدىغان تىللار بىلەن تەمىنلەيدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>يەرلىكلەشتۈرۈش سىنىقى مەغلۇپ بولدى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>بىر ياكى بىر نەچچە تىلدا بىر قىسىم يەرلىك ئورۇنلاشتۇرۇش كۇنۇپكىلىرى كەم:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} يوقاپ كەتكەن كۇنۇپكىلار</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... ۋە {0} more</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>يەرلىكلەشتۈرۈش سىناق خاتالىقى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>يەرلىكلەشتۈرۈشنى سىناق قىلغاندا خاتالىق كۆرۈلدى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>ئۈلگە تېكىست</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>Regex ئەندىزىڭىزنى سىناپ بېقىڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>Regex ئەندىزە</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>Regex ئەندىزىسىنى كىرگۈزۈڭ ...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>ئالدىنئالا:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>Email</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>تېلېفون</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>چېسلا</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>Randits</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>Live Match نەتىجىسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>Visual Regex بۇزۇلمىسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>تاللانما</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>دېلو ھاقارەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>كۆپ سان</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>يەر شارى مۇسابىقىسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>مۇسابىقىنى كۆرۈش ئۈچۈن ئىناۋەتلىك Regex ئەندىزىسىنى كىرگۈزۈڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>Regex ئەندىزىڭىزنى سىناش ئۈچۈن ئۈلگە تېكىست كىرگۈزۈڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>Regex نىڭ تەكشۈرۈلىدىغان ئۈلگە تېكىستى بىلەن تەمىنلەڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>باھالىماقچى بولغان Regex ئەندىزىسىنى كىرگۈزۈڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>مۇسابىقە باھالىغاندا خاراكتېر ھالىتىگە پەرۋا قىلماڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>ھەر بىر قۇرنىڭ ئورنىغا ھەر بىر قۇرنىڭ باشلىنىشى ۋە ئاخىرىنى داۋالاش ۋە ئاخىرلاشتۇرۇڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>بىرىنچىدىن كېيىن توختاپ قېلىشنىڭ ئورنىغا ھەر بىر مۇسابىقىنى تېپىڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>String comporational</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>سېلىشتۇرۇش ھالىتى:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>سېلىشتۇرۇش ھالىتى:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>بۇيرۇق (تېز, ئىككىلىك)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>بۇيرۇق</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>ھازىرقى مەدەنىيەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>ھازىرقى مەدەنىيەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>ئۆزگەرمەس مەدەنىيەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>ئۆزگەرمەس مەدەنىيەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>يۇنىكود نورماللاشتۇرۇش:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>يۇنىكود نورماللاشتۇرۇش:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>None</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>C (cannical decomition)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>D (Canonical decomition)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>KC جەدۋىلى (ماسلىشىشچانلىقى تۈگىتىش)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>KD (ماسلىشىشچانلىقى تۈگىتىش)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>دىئاكتاس سەزگۈر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>مېيىپ, تەلەپپۇزدىكى ھەرپلەر ئۇلارنىڭ ئاساسىي ھەرپلىرى دەپ قارىلىدۇ (مەسىلەن,, 'É' = 'e')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>مەدەنىيەت:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>تىزما مەدەنىيىتى:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>مەدەنىيەتنى تاللاڭ ياكى ئىختىيارى مەدەنىيەت كودىنى كىرگۈزۈڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>ئىزدەش تىجارىتى UI تىلى ئۈچۈن ئەمەس, ئىزدەش مەشغۇلاتى جەريانىدا تىزىپ توپلاش ئۈچۈن ئىشلىتىلىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>Ui تىلى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>قوللىنىشچان تىل:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>GACKOGREP باشلانغاندا Windows ئۇسلۇبىنى ئاپتوماتىك ماسلاشتۇرۇڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>دېرىزىنىڭ قانداق بولۇشىدىن قەتئىينەزەر نۇر تېمىسىنى زورلۇق بىلەن زورلاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>دېرىزىنىڭ قانداق بولۇشىدىن قەتئىينەزەر قاراڭغۇ تېمىنى يېتەكلەڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>ئىلتىماس تەرنى ھەر خىل ئوچۇق بەتكە دەرھال ئالماشتۇرۇڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>مەزمۇن نەتىجىسى ياكى ھۆججەت نەتىجىسىنىڭ سۈكۈتتىكى ياكى ئەمەسلىكىنى سۈكۈتتىكى ياكى ئەمەسلىكىنى تاللاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>يېڭى بەتكۈچلەرنى تېكىست ئىزدەش ياكى Regex ئىزدەش ھالىتىدە باشلىنامدۇ?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>ھۆرمەتكە سازاۋەر ياكى سۈكۈتتىكى ھالەتتە .gitignororororororore.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>سۈكۈتتىكى قوغدىلىدىغان ھۆججەتلەرنى قوشۇڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>سۈكۈتتىكى تارماق ئورۇندۇقتا.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>سۈكۈت بويىچە يوشۇرۇن ھۆججەت ۋە ھۆججەت قىسقۇچلارنى ئۆز ئىچىگە ئالىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>ئىككىلىك ھۆججەتنى سۈكۈتتىكى ھالەتتە سايىلەڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>سۈكۈتتىكى سىمۋوللۇق ئۇلىنىش ۋە ئاستى سىزىقلارغا ئەگىشىڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>سۈكۈت بويىچە يېڭى ئىزدەش ئېلىپ بارىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>سېلىشتۇرۇشتىن ئىلگىرى قايسى يۇنىكود نورمال ئىشلىتىشنى تاللاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>يېڭى ئىزدەش ئۈچۈن سۈكۈتتىكى تىزما سېلىش قائىدىسىنى تاللاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>Windows UEASS نىڭ ئىشلەۋاتقانلىقىنى دەلىللەش ئۈچۈن ئۈلگە ئۇقتۇرۇشنى ئەۋەتىڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>سىناق تىلى بارلىق تىللاردا بارلىق تىللاردا بارلىق تىللارنى ئالماشتۇرۇش ۋە دەلىللەڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>ماس تېپىلمىدى.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>تېپىلغان {0} memine (es).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>ماس كەلمەيدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>1 مەيدان مۇسابىقىنى تاپتى.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>خاتالىق: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>بۇزۇلۇش ئەندىزىسىنى كىرگۈزۈڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>ئىناۋەتسىز Regex ئەندىزىسى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>ھەرپ سىنىپى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>تۇتمال ئەمەس</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>گۇرۇپپىلارنى تۇتۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>سان</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>لەڭگەر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>قېچىش تەرتىپى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>Literal</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>يۈرۈشلۈك ھەرپلەرگە ماس كېلىدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>تۇتماي گۇرۇپپىلار</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>تۈرگە ئايرىلغان تېكىست</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>سان: ئېنىق سان ياكى دائىرىنى بەلگىلەيدۇ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>نۆل ياكى ئۇنىڭدىنمۇ كۆپ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>بىر ياكى بىر قانچە</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>نۆل ياكى بىر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>قۇر / تىزما باشلىنىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>سىزىق / تىزما</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>Right (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>رەقەملىك ئەمەس</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>سۆز خاراكتېر (A-Z, A-Z, 0-9, _</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>سۆزسىز خاراكتېر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>ئاق بوشلۇق</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>ئاقسا</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>Newline</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>بەتكۈچ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>ۋاگون قايتۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>ھەقىقىي خاراكتېر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Regrite Regex ئەندىزىسىنى قاپلامسىز?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>{0} بىلەن نۆۋەتتىكى Regex ئەندىزىسىنى قاپلىماقچىمۇ?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>داۋاملاشتۇر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>بىكار قىلىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>داۋاملاشتۇرۇش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>Wsl watch</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>Wsl ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>ھەققىدە</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>Bornsuperchacked تەرىپىدىن ياسالغان</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>GPL 3.0 نىڭ ئاستىدا ئىجازەتنامىسى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>GitHub دىكى تۈرنى كۆرۈڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>بۇ بەتنى ئېچىش ئۈچۈن F1 نى بېسىڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>نەشرى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>توختا</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>ئىككىنچى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>سېكۇنت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>مىنۇت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>مىنۇت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>سائەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>سائەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>{2} دىكى {1} ھۆججىتىدە</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>{2} {1} {1} ھۆججىتى {1} ھۆججىتى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>زاپاسلاش ۋە ئەسلىگە كەلتۈرۈش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>دائىرىلەرنىڭ ئېكسپورت مىقدارى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>تەڭشەك</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>سۈكۈتنى ئەسلىگە كەلتۈرۈڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>نۆۋەتتىكى تەڭشەكلىرىڭىزنى زاپاسلاش ھۆججىتىگە چىقىرىش, ئالدىنقى زاپاسلادىن كىرگۈزۈپ ياكى بارلىق تەڭشەكلەرنى ئەسلىتىدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>بەلگىلەرنى ئېكسپورت قىلدى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>تەڭشەكلىرىڭىز مۇۋەپپەقىيەتلىك ھالدا ئېكسپورت قىلىندى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>چىقىرىش مەغلۇب بولدى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>تەڭشەكلەرنى ئېكسپورت قىلالمىدى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>ئىمپورت قىلىنغان تەڭشەكلەر</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>تەڭشەكلەر مۇۋەپپەقىيەتلىك ئىمپورتلاندى.بەزى ئۆزگەرتىشلەر نەتىجىگە ئېرىشىشنى تەلەپ قىلىشى مۇمكىن.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>ئەكىرىش مەغلۇپ بولدى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>تەڭشەكلەرنى ئەكىرىش مەغلۇب بولدى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>تاللانغان ھۆججەتنىڭ ئىناۋەتلىك گېكوپ تەڭشەك زاپاسلاش كۆرۈنمەيدۇ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>سۈكۈتنى ئەسلىگە كەلتۈرۈڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>بۇ بارلىق تەڭشەكلەرنى ئەسلىدىكى سۈكۈتتىكى ھالەتتە ئەسلىگە كەلتۈرۈڭ ۋە ئىلتىماسنى قايتا قوزغىتىدۇ.داۋاملاشتۇرۇشنى خالامسىز?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>نۆۋەتتىكى تەڭشەكلىرىڭىزنى زاپاسلاش ھۆججىتىگە چىقىرىڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>زاپاس ھۆججەتنىڭ تەڭشىكىنى ئەكىرىش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>بارلىق تەڭشەكلەرنى ئەسلىدىكى سۈكۈتتىكى ھالەتتە ئەسلىگە كەلتۈرۈڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>سىستېما سۈكۈتتىكى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>نۇر ھالىتى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>قاراڭغۇ ھالەت</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>قارا چەۋەنداز (يۇقىرى سېلىشتۇرما)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>پاراشوتتىن (يۇقىرى سېلىشتۇرما)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ئالماس (يۇقىرى سېلىشتۇرما)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>بوشلۇق (يۇقىرى سېلىشتۇرما)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>قىزىل مەخمەل (يۇقىرى سېلىشتۇرما)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>چۈش (يۇقىرى سېلىشتۇرما)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>تىرناق (يۇقىرى سېلىشتۇرما)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Vibes (high truest)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>ئىلتىماسنى قايتا قوزغىتىڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>ئۆزگەرتىشلەرنى قوللىنىش ئۈچۈن ئىلتىماسنى قايتا قوزغىتىڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>تېما ئىشلىتىڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>بەزى ئېلېمېنتلار توغرا كۇنۇپكىنى مۇۋاپىق كۇنۇپكا تاختىسىغا قايتا ماس كېلىشى كېرەك.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>كېيىنچە</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>دوكتور ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>ئىجرا بولۇۋاتقان دوپپا قاچىلانغان دوپپا قاچىلانغان دوپپا ھۆججەتلىرى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>ھالككە ئىزدەش</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>قوزغىتىلدى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>چەكلەنگەن</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>ئىزدەش يولىنىڭ يېنىدىكى ئۆچۈرگۈچ قاچىلارنى كۆرسىتىڭ, شۇڭا ئۇلارنى بىۋاسىتە نىشانلىيالايسىز.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>يەرلىك دىس</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>ئىزدەش نىشانى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>قاچىلاشنى تاللاڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>تاشكېرنىڭ قاچىسىنىڭ تىزىلىشىنى يېڭىلاڭ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>دوكتور ئىزدەش خاتالىقى</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>دوكتورنى ئىشلەتكىلى بولمايدۇ.ھالقا ئۈستەلنىڭ ئىجرا بولۇۋاتقانلىقىغا كاپالەتلىك قىلىڭ, ھالقا بۇيرۇقلىرىنى ئىجرا قىلىش ھوقۇقىڭىز بار.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>ئىزدەشتىن باشلىنىشتىن بۇرۇن تالون قاچىسىنى تاللاڭ.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>قوزغاتقۇچنى قوزغىتالمىدى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>دوكتور قاچىلارنى يېڭىلاشقا ئامالسىز: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>ھالقا ئىزدەش ئەينىكىنى تەييارلاش مەغلۇب بولدى: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>سىمۋوللۇق ئۇلىنىش ئۈچۈن DTKKER كۆچۈرۈش مەغلۇپ بولدى: {0}
+
+Windows بىلەن سىمۋوللۇق ئۇلىنىش قۇرۇش ئۈچۈن ئالاھىدە ئىمتىيازغا ئېھتىياجلىق.يا Grex نى باشقۇرغۇچى قىلىپ ئىجرا قىلىڭ ياكى ھېساباتىڭىز ئۈچۈن «سىمۋوللۇق ئۇلىنىش» ئىشلەتكۈچىنى ئىشلىتىڭ.
+
+ئەسكەرتىش: بەزى قاچا يوللىرى (Node_MOULES) بار, بۇ ئىمتىيازغا ئوخشاش نۇرغۇن سىلىقلانماسلىق بولۇشى مۇمكىن.</value>
+    <comment>status:complete</comment>
+  </data>
+</root>

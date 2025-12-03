@@ -1,0 +1,497 @@
+<UserControl x:Class="Grex.Controls.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Name="SettingsControl"
+             x:Uid="SettingsView"
+             VerticalAlignment="Stretch"
+             HorizontalAlignment="Stretch">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Padding="24">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Spacing="24">
+                <!-- Header section that scrolls -->
+                <Grid>
+                    <!-- Header text/layout -->
+                    <StackPanel Spacing="8">
+                        <TextBlock x:Name="SettingsTitleTextBlock"
+                                x:Uid="SettingsTitleTextBlock"
+                                FontSize="28"
+                                FontWeight="SemiBold"
+                                Margin="0,0,0,8"/>
+
+                        <TextBlock x:Name="SettingsDescriptionTextBlock"
+                                x:Uid="SettingsDescriptionTextBlock"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                TextWrapping="Wrap"
+                                Margin="0,0,0,16"/>
+                    </StackPanel>
+                </Grid>
+                
+                <!-- Structured content grid -->
+                <Grid x:Name="SettingsFormGrid"
+                      ColumnSpacing="24"
+                      RowSpacing="8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Theme Preference -->
+                    <TextBlock x:Name="ThemePreferenceTextBlock"
+                              x:Uid="ThemePreferenceTextBlock"
+                              Grid.Row="0"
+                              Grid.Column="0"
+                              FontSize="18"
+                              FontWeight="SemiBold"
+                              Margin="0,0,0,4"/>
+                    <ComboBox x:Name="ThemePreferenceComboBox"
+                             Grid.Row="1"
+                             Grid.Column="0"
+                             Grid.ColumnSpan="2"
+                             Width="280"
+                             SelectionChanged="ThemePreferenceComboBox_SelectionChanged"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Left"
+                             PointerEntered="ComboBox_PointerEntered"
+                             PointerExited="ComboBox_PointerExited">
+                        <ComboBoxItem x:Name="SystemThemeComboBoxItem" x:Uid="SystemThemeComboBoxItem" Tag="System" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="LightThemeComboBoxItem" x:Uid="LightThemeComboBoxItem" Tag="Light" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="DarkThemeComboBoxItem" x:Uid="DarkThemeComboBoxItem" Tag="Dark" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="BlackKnightThemeComboBoxItem" x:Uid="BlackKnightThemeComboBoxItem" Tag="BlackKnight" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="ParanoidThemeComboBoxItem" x:Uid="ParanoidThemeComboBoxItem" Tag="Paranoid" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="DiamondThemeComboBoxItem" x:Uid="DiamondThemeComboBoxItem" Tag="Diamond" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="SubspaceThemeComboBoxItem" x:Uid="SubspaceThemeComboBoxItem" Tag="Subspace" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="RedVelvetThemeComboBoxItem" x:Uid="RedVelvetThemeComboBoxItem" Tag="RedVelvet" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="DreamsThemeComboBoxItem" x:Uid="DreamsThemeComboBoxItem" Tag="Dreams" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="TieflingThemeComboBoxItem" x:Uid="TieflingThemeComboBoxItem" Tag="Tiefling" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Name="VibesThemeComboBoxItem" x:Uid="VibesThemeComboBoxItem" Tag="Vibes" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                    </ComboBox>
+
+                    <!-- UI Language -->
+                    <TextBlock x:Name="UILanguageHeaderTextBlock"
+                              x:Uid="UILanguageHeaderTextBlock"
+                              Grid.Row="0"
+                              Grid.Column="2"
+                              Grid.ColumnSpan="2"
+                              FontSize="18"
+                              FontWeight="SemiBold"
+                              Margin="0,0,0,4"/>
+                    <TextBlock x:Name="UILanguageLabelTextBlock"
+                              x:Uid="UILanguageLabelTextBlock"
+                              Grid.Row="1"
+                              Grid.Column="2"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <ComboBox x:Name="UILanguageComboBox"
+                             Grid.Row="1"
+                             Grid.Column="3"
+                             Width="225"
+                             SelectionChanged="UILanguageComboBox_SelectionChanged"
+                             VerticalAlignment="Center"
+                             Margin="0,0,24,0"
+                             PointerEntered="ComboBox_PointerEntered"
+                             PointerExited="ComboBox_PointerExited">
+                    </ComboBox>
+
+                    <!-- Filter Options -->
+                    <TextBlock x:Name="FilterOptionsHeaderTextBlock"
+                              x:Uid="FilterOptionsHeaderTextBlock"
+                              Grid.Row="2"
+                              Grid.ColumnSpan="4"
+                              FontSize="18"
+                              FontWeight="SemiBold"
+                              Margin="0,16,0,4"/>
+                    
+                    <!-- Match Files / Exclude Dirs -->
+                    <TextBlock x:Name="DefaultMatchFilesLabelTextBlock"
+                              x:Uid="MatchFilesTextBlock"
+                              Grid.Row="3"
+                              Grid.Column="0"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <TextBox x:Name="DefaultMatchFilesTextBox"
+                            x:Uid="MatchFileNamesTextBox"
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            Width="250"
+                            HorizontalAlignment="Left"
+                            TextChanged="DefaultMatchFilesTextBox_TextChanged"
+                            VerticalAlignment="Center"
+                            PointerEntered="TextBox_PointerEntered"
+                            PointerExited="TextBox_PointerExited"/>
+                    <TextBlock x:Name="DefaultExcludeDirsLabelTextBlock"
+                              x:Uid="ExcludeDirsTextBlock"
+                              Grid.Row="3"
+                              Grid.Column="2"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <TextBox x:Name="DefaultExcludeDirsTextBox"
+                            x:Uid="ExcludeDirsTextBox"
+                            Grid.Row="3"
+                            Grid.Column="3"
+                            Width="250"
+                            HorizontalAlignment="Left"
+                            TextChanged="DefaultExcludeDirsTextBox_TextChanged"
+                            VerticalAlignment="Center"
+                            PointerEntered="TextBox_PointerEntered"
+                            PointerExited="TextBox_PointerExited"/>
+                    
+                    <!-- Search Results / Search Type -->
+                    <TextBlock x:Name="SearchResultsLabelTextBlock"
+                              x:Uid="SearchResultsLabelTextBlock"
+                              Grid.Row="4"
+                              Grid.Column="0"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <ComboBox x:Name="DefaultSearchResultsComboBox"
+                             x:Uid="DefaultSearchResultsComboBox"
+                             Grid.Row="4"
+                             Grid.Column="1"
+                             Width="150"
+                             SelectionChanged="DefaultSearchResultsComboBox_SelectionChanged"
+                             VerticalAlignment="Center"
+                             Margin="0,0,24,0"
+                             PointerEntered="ComboBox_PointerEntered"
+                             PointerExited="ComboBox_PointerExited">
+                        <ComboBoxItem x:Uid="ContentComboBoxItem" Tag="Content" IsSelected="True" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Uid="FilesComboBoxItem" Tag="Files" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                    </ComboBox>
+                    <TextBlock x:Name="SearchTypeLabelTextBlock"
+                              x:Uid="SearchTypeLabelTextBlock"
+                              Grid.Row="4"
+                              Grid.Column="2"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <ComboBox x:Name="DefaultSearchTypeComboBox"
+                             Grid.Row="4"
+                             Grid.Column="3"
+                             Width="150"
+                             SelectionChanged="DefaultSearchTypeComboBox_SelectionChanged"
+                             VerticalAlignment="Center"
+                             PointerEntered="ComboBox_PointerEntered"
+                             PointerExited="ComboBox_PointerExited">
+                        <ComboBoxItem x:Uid="TextSearchComboBoxItem" Tag="Text" IsSelected="True" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Uid="RegexSearchComboBoxItem" Tag="Regex" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                    </ComboBox>
+
+                    <!-- Filter Options Checkboxes -->
+                    <CheckBox x:Name="DefaultRespectGitignoreCheckBox"
+                             x:Uid="DefaultRespectGitignoreCheckBox"
+                             Grid.Row="5"
+                             Grid.Column="0"
+                             Checked="DefaultRespectGitignore_Changed"
+                             Unchecked="DefaultRespectGitignore_Changed"
+                             VerticalAlignment="Center"
+                             Margin="0,0,16,8"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+                    <CheckBox x:Name="DefaultIncludeSystemFilesCheckBox"
+                             x:Uid="DefaultIncludeSystemFilesCheckBox"
+                             Grid.Row="5"
+                             Grid.Column="1"
+                             Checked="DefaultIncludeSystemFiles_Changed"
+                             Unchecked="DefaultIncludeSystemFiles_Changed"
+                             VerticalAlignment="Center"
+                             Margin="0,0,16,8"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+                    <CheckBox x:Name="DefaultIncludeSubfoldersCheckBox"
+                             x:Uid="DefaultIncludeSubfoldersCheckBox"
+                             Grid.Row="5"
+                             Grid.Column="2"
+                             Checked="DefaultIncludeSubfolders_Changed"
+                             Unchecked="DefaultIncludeSubfolders_Changed"
+                             VerticalAlignment="Center"
+                             Margin="0,0,16,8"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+                    <CheckBox x:Name="DefaultUseWindowsSearchCheckBox"
+                             x:Uid="DefaultUseWindowsSearchCheckBox"
+                             Grid.Row="5"
+                             Grid.Column="3"
+                             Checked="DefaultUseWindowsSearch_Changed"
+                             Unchecked="DefaultUseWindowsSearch_Changed"
+                             VerticalAlignment="Center"
+                             Margin="0,0,16,8"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+                    <CheckBox x:Name="DefaultIncludeHiddenItemsCheckBox"
+                             x:Uid="DefaultIncludeHiddenItemsCheckBox"
+                             Grid.Row="6"
+                             Grid.Column="0"
+                             Checked="DefaultIncludeHiddenItems_Changed"
+                             Unchecked="DefaultIncludeHiddenItems_Changed"
+                             VerticalAlignment="Center"
+                             Margin="0,0,16,8"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+                    <CheckBox x:Name="DefaultIncludeBinaryFilesCheckBox"
+                             x:Uid="DefaultIncludeBinaryFilesCheckBox"
+                             Grid.Row="6"
+                             Grid.Column="1"
+                             Checked="DefaultIncludeBinaryFiles_Changed"
+                             Unchecked="DefaultIncludeBinaryFiles_Changed"
+                             VerticalAlignment="Center"
+                             Margin="0,0,16,8"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+                    <CheckBox x:Name="DefaultIncludeSymbolicLinksCheckBox"
+                             x:Uid="DefaultIncludeSymbolicLinksCheckBox"
+                             Grid.Row="6"
+                             Grid.Column="2"
+                             Checked="DefaultIncludeSymbolicLinks_Changed"
+                             Unchecked="DefaultIncludeSymbolicLinks_Changed"
+                             VerticalAlignment="Center"
+                             Margin="0,0,16,8"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+                    
+
+                    <!-- String Culture / Diacritic -->
+                    <TextBlock x:Name="StringComparisonHeaderTextBlock"
+                              x:Uid="StringComparisonHeaderTextBlock"
+                              Grid.Row="7"
+                              Grid.ColumnSpan="4"
+                              FontSize="18"
+                              FontWeight="SemiBold"
+                              Margin="0,16,0,4"/>
+                    <TextBlock x:Name="CultureLabelTextBlock"
+                              x:Uid="CultureLabelTextBlock"
+                              Grid.Row="8"
+                              Grid.Column="0"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <ComboBox x:Name="CultureComboBox"
+                             Grid.Row="8"
+                             Grid.Column="1"
+                             Width="225"
+                             SelectionChanged="CultureComboBox_SelectionChanged"
+                             VerticalAlignment="Center"
+                             Margin="0,0,24,0"
+                             PointerEntered="ComboBox_PointerEntered"
+                             PointerExited="ComboBox_PointerExited">
+                    </ComboBox>
+                    <CheckBox x:Name="DiacriticSensitiveCheckBox"
+                             x:Uid="DiacriticSensitiveCheckBox"
+                             Grid.Row="8"
+                             Grid.Column="2"
+                             Checked="DiacriticSensitiveCheckBox_Changed"
+                             Unchecked="DiacriticSensitiveCheckBox_Changed"
+                             VerticalAlignment="Center"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+                    <CheckBox x:Name="DefaultSearchCaseSensitiveCheckBox"
+                             x:Uid="DefaultSearchCaseSensitiveCheckBox"
+                             Grid.Row="8"
+                             Grid.Column="3"
+                             Checked="DefaultSearchCaseSensitive_Changed"
+                             Unchecked="DefaultSearchCaseSensitive_Changed"
+                             VerticalAlignment="Center"
+                             PointerEntered="CheckBox_PointerEntered"
+                             PointerExited="CheckBox_PointerExited"/>
+
+                    <!-- Culture-Aware String Comparison Options -->
+                    <TextBlock x:Name="UnicodeNormalizationLabelTextBlock"
+                              x:Uid="UnicodeNormalizationLabelTextBlock"
+                              Grid.Row="9"
+                              Grid.Column="0"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <ComboBox x:Name="UnicodeNormalizationModeComboBox"
+                             Grid.Row="9"
+                             Grid.Column="1"
+                             Width="200"
+                             SelectionChanged="UnicodeNormalizationModeComboBox_SelectionChanged"
+                             VerticalAlignment="Center"
+                             PointerEntered="ComboBox_PointerEntered"
+                             PointerExited="ComboBox_PointerExited">
+                        <ComboBoxItem x:Uid="NoneNormalizationComboBoxItem" Tag="None" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Uid="FormCNormalizationComboBoxItem" Tag="FormC" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Uid="FormDNormalizationComboBoxItem" Tag="FormD" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Uid="FormKCNormalizationComboBoxItem" Tag="FormKC" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Uid="FormKDNormalizationComboBoxItem" Tag="FormKD" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                    </ComboBox>
+                    <TextBlock x:Name="StringComparisonModeLabelTextBlock"
+                              x:Uid="StringComparisonModeLabelTextBlock"
+                              Grid.Row="9"
+                              Grid.Column="2"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <ComboBox x:Name="StringComparisonModeComboBox"
+                             Grid.Row="9"
+                             Grid.Column="3"
+                             Width="200"
+                             SelectionChanged="StringComparisonModeComboBox_SelectionChanged"
+                             VerticalAlignment="Center"
+                             Margin="0,0,24,0"
+                             PointerEntered="ComboBox_PointerEntered"
+                             PointerExited="ComboBox_PointerExited">
+                        <ComboBoxItem x:Uid="OrdinalComboBoxItem" Tag="Ordinal" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Uid="CurrentCultureComboBoxItem" Tag="CurrentCulture" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        <ComboBoxItem x:Uid="InvariantCultureComboBoxItem" Tag="InvariantCulture" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                    </ComboBox>
+
+                    <!-- Backup & Restore Section -->
+                    <TextBlock x:Name="BackupRestoreHeaderTextBlock"
+                              x:Uid="BackupRestoreHeaderTextBlock"
+                              Grid.Row="10"
+                              Grid.ColumnSpan="4"
+                              FontSize="18"
+                              FontWeight="SemiBold"
+                              Margin="0,16,0,4"/>
+                    
+                    <!-- Row 11: Explanation Text -->
+                    <TextBlock x:Name="BackupRestoreExplanationTextBlock"
+                               x:Uid="BackupRestoreExplanationTextBlock"
+                               Grid.Row="11"
+                               Grid.ColumnSpan="4"
+                               Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                               Margin="0,0,0,12" 
+                               TextWrapping="Wrap"/>
+                    
+                    <!-- Row 12: Buttons aligned with the 4-column grid -->
+                    <Button x:Name="ExportSettingsButton"
+                           x:Uid="ExportSettingsButton"
+                           Grid.Row="12"
+                           Grid.Column="0"
+                           Click="ExportSettingsButton_Click"
+                           HorizontalAlignment="Left"
+                           Padding="16,8"
+                           PointerEntered="Button_PointerEntered"
+                           PointerExited="Button_PointerExited"/>
+                    <Button x:Name="ImportSettingsButton"
+                           x:Uid="ImportSettingsButton"
+                           Grid.Row="12"
+                           Grid.Column="1"
+                           Click="ImportSettingsButton_Click"
+                           HorizontalAlignment="Left"
+                           Padding="16,8"
+                           PointerEntered="Button_PointerEntered"
+                           PointerExited="Button_PointerExited"/>
+                    <Button x:Name="RestoreDefaultsButton"
+                           x:Uid="RestoreDefaultsButton"
+                           Grid.Row="12"
+                           Grid.Column="2"
+                           Click="RestoreDefaultsButton_Click"
+                           HorizontalAlignment="Left"
+                           Padding="16,8"
+                           PointerEntered="Button_PointerEntered"
+                           PointerExited="Button_PointerExited"/>
+
+                    <!-- Debug Section -->
+                    <Grid Grid.Row="13"
+                          Grid.ColumnSpan="4"
+                          Margin="0,24,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <TextBlock x:Name="DebugHeaderTextBlock"
+                                  x:Uid="DebugHeaderTextBlock"
+                                  Grid.Row="0"
+                                  Grid.ColumnSpan="2"
+                                  FontSize="18"
+                                  FontWeight="SemiBold"
+                                  Margin="0,0,0,12"/>
+                        
+                        <!-- Row 1: Restart Button (Full Width) -->
+                        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,0,16">
+                            <TextBlock x:Name="RestartApplicationExplanationTextBlock"
+                                       Text="Restart the application to apply pending changes or fix issues."
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       Margin="0,0,0,8" 
+                                       TextWrapping="Wrap"/>
+                            <Button x:Name="RestartApplicationButton"
+                                   x:Uid="RestartApplicationButton"
+                                   Click="RestartApplicationButton_Click"
+                                   HorizontalAlignment="Left"
+                                   Padding="16,8"
+                                   PointerEntered="Button_PointerEntered"
+                                   PointerExited="Button_PointerExited"/>
+                        </StackPanel>
+                        
+                        <!-- Row 2: Explanation Text for Test Buttons -->
+                        <TextBlock x:Name="TestNotificationExplanationTextBlock"
+                                   x:Uid="TestNotificationExplanationTextBlock"
+                                   Grid.Row="2"
+                                   Grid.Column="0"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   Margin="0,0,12,8" 
+                                   TextWrapping="Wrap"/>
+                        <TextBlock x:Name="TestLocalizationExplanationTextBlock"
+                                   x:Uid="TestLocalizationExplanationTextBlock"
+                                   Grid.Row="2"
+                                   Grid.Column="1"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                   Margin="12,0,0,8" 
+                                   TextWrapping="Wrap"/>
+                        
+                        <!-- Row 3: Test Buttons -->
+                        <Button x:Name="TestNotificationButton"
+                               x:Uid="TestNotificationButton"
+                               Grid.Row="3"
+                               Grid.Column="0"
+                               Click="TestNotificationButton_Click"
+                               HorizontalAlignment="Left"
+                               Padding="16,8"
+                               PointerEntered="Button_PointerEntered"
+                               PointerExited="Button_PointerExited"/>
+                        <Button x:Name="TestLocalizationButton"
+                               x:Uid="TestLocalizationButton"
+                               Grid.Row="3"
+                               Grid.Column="1"
+                               Click="TestLocalizationButton_Click"
+                               HorizontalAlignment="Left"
+                               Padding="16,8"
+                               Margin="12,0,0,0"
+                               PointerEntered="Button_PointerEntered"
+                               PointerExited="Button_PointerExited"/>
+                    </Grid>
+                </Grid>
+                
+                <!-- Docker Search Settings -->
+                <StackPanel x:Name="DockerSettingsPanel"
+                            Spacing="8"
+                            Margin="0,24,0,0">
+                    <TextBlock x:Name="DockerSettingsHeaderTextBlock"
+                               x:Uid="DockerSettingsHeaderTextBlock"
+                               FontSize="18"
+                               FontWeight="SemiBold"/>
+                    <TextBlock x:Name="DockerSettingsDescriptionTextBlock"
+                               x:Uid="DockerSettingsDescriptionTextBlock"
+                               Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                               TextWrapping="Wrap"/>
+                    <ToggleSwitch x:Name="EnableDockerSearchToggleSwitch"
+                                  x:Uid="EnableDockerSearchToggleSwitch"
+                                  Toggled="EnableDockerSearchToggleSwitch_Toggled"
+                                  HorizontalAlignment="Left"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
+

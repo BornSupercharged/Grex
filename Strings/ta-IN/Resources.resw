@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>ரெஜெக்ஸ் பில்டர்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>அமைப்புகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>தேடல் பாதை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>தேடுவதற்கான பாதையை உள்ளிடவும்...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>தேடல் முறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>உரை அல்லது ரீஜெக்ஸ் பேட்டர்னை உள்ளிடவும்...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>உடன் மாற்றவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>மாற்று உரையை உள்ளிடவும்...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>தேடு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>மாற்றவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>கேஸ் சென்சிட்டிவ்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>வழக்கமான வெளிப்பாடு பயன்படுத்தவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>துணை அடைவுகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>குறியீட்டு இணைப்புகளைப் பின்பற்றவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>கோப்பு வடிப்பான்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (அரைப்புள்ளி பிரிக்கப்பட்டது)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>கோப்பகங்களை விலக்கு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin;obj;node_modules (அரைப்புள்ளி பிரிக்கப்பட்டது)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>அளவு வடிகட்டி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>குறைந்தபட்ச அளவு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>அதிகபட்ச அளவு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>முடிவுகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>உள்ளடக்கம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>கோப்புகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>கோப்பு பெயர்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>வரி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>உள்ளடக்கம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>பாதை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>அளவு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>மாற்றியமைக்கப்பட்டது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>தயார்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>தேடுகிறது...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>பொருத்தங்கள் எதுவும் இல்லை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>பிழை: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>வழக்கமான வெளிப்பாடு முறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>சோதனை உரை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>போட்டிகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>பொது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>மொழி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>தீம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>அமைப்பு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>ஒளி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>இருள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>எச்சரிக்கை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>தகவல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>சரி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>ரத்துசெய்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>ஆம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>இல்லை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>நிர்வாகியாக இயங்குகிறது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex தற்போது நிர்வாகி அனுமதிகளுடன் இயங்குகிறது.
+
+நிர்வாகியாக இயங்குவது பின்வரும் சிக்கல்களை ஏற்படுத்தக்கூடும்:
+• Windows toast அறிவிப்புகள்
+• சில Windows App SDK அம்சங்கள்
+• பயன்பாட்டு பாதுகாப்பு மற்றும் தனிமைப்படுத்தல்
+
+Grex-ஐ வழக்கமான பயனராக இயக்க பரிந்துரைக்கப்படுகிறது.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>புறக்கணி (பாதுகாப்பற்றது)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>வெளியேறு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>பயன்பாட்டு துவக்க பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>பயன்பாட்டைத் துவக்க முடியவில்லை: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>கையாளப்படாத பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>எதிர்பாராத பிழை ஏற்பட்டது: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>தாவல் உருவாக்க பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>தாவலை உருவாக்க முடியவில்லை: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>தாவலை உருவாக்கும்போது ஒரு முக்கியமான பிழை ஏற்பட்டது: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>தேடல் பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>தேடலின் போது ஒரு பிழை ஏற்பட்டது: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>WSL தேடல் பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>WSL-ல் தேடும்போது ஒரு பிழை ஏற்பட்டது: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>முடிவுகள் சாத்தியமில்லை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>'Exclude Dirs' மதிப்பு அனைத்து கோப்பகங்களையும் விலக்குகிறது. தயவுசெய்து உங்கள் வடிவத்தைச் சரிபார்க்கவும் மீண்டும் முயற்சிக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>தவறான Regex வடிவம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>'Exclude Dirs' மதிப்பு சரியான வழக்கமான வெளிப்பாடு அல்ல. தயவுசெய்து உங்கள் வடிவத்தைச் சரிபார்க்கவும் மீண்டும் முயற்சிக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>மாற்றீட்டை உறுதிப்படுத்து</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>மாற்றுச் செயல்பாட்டை நிச்சயமாகச் செய்ய விரும்புகிறீர்களா?இந்தச் செயலைச் செயல்தவிர்க்க முடியாது.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Regex வடிவத்தை மேலெழுதவா?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>தற்போதைய Regex வடிவத்தை {0} முன்னமைவுடன் மேலெழுத விரும்புகிறீர்களா?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>தொடரவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - தாவல் கோப்பு தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>ரெஜெக்ஸ் பில்டர்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>அமைப்புகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>தேடல் நிலை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>தயார்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>புதிய தாவல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>தாவல் {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>மாற்றுகிறது...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>விண்டோஸ் பாதைகளின் கீழ் எளிய உரை தேடல்களுக்கு மட்டுமே வேலை செய்யும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>பாதையை இங்கே உள்ளிடவும் அல்லது ஒட்டவும்...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>உலாவுக...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>தேடல் சொல் அல்லது ரீஜெக்ஸ் பேட்டர்னை உள்ளிடவும்...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>மாற்றவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>இதனுடன் மாற்றவும்...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>தேடு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>மாற்றவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>மீட்டமை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>வடிகட்டி விருப்பங்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>சோதனை அறிவிப்பு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>அறிவிப்புகள் சரியாகச் செயல்படுகின்றனவா என்பதைச் சரிபார்க்க இது ஒரு சோதனை அறிவிப்பு.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>சோதனை அறிவிப்பு அனுப்பப்பட்டது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>டோஸ்ட் அறிவிப்பைக் காட்ட Windows கேட்கப்பட்டது.நீங்கள் இன்னும் அதைப் பார்க்கவில்லை எனில், Grex (Windows அமைப்புகள் &gt; சிஸ்டம் &gt; அறிவிப்புகள்)க்கான அறிவிப்புகள் இயக்கப்பட்டுள்ளன என்பதையும், ஃபோகஸ் அசிஸ்ட் / தொந்தரவு செய்யாதே முடக்கப்பட்டுள்ளது என்பதையும் சரிபார்க்கவும்.
+
+அறிவிப்பு பதிவு: {0}
+கண்டறியும் பதிவு: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>சோதனை அறிவிப்பு பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>அறிவிப்பை அனுப்ப முயற்சிக்கும் போது எதிர்பாராத பிழை ஏற்பட்டது.
+
+{0}
+
+பதிவைப் பார்க்கவும்: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>இந்த சிஸ்டம் உள்ளமைவில் Windows toast அறிவிப்புகள் கிடைக்காது.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>பொதுவான காரணங்கள்:
+• Windows App SDK இயக்க நேரம் (Singleton தொகுப்பு) காணவில்லை அல்லது பழுதுபார்க்க வேண்டும்
+• உயர்ந்த (நிர்வாகி) சலுகைகளுடன் பயன்பாடு இயங்குகிறது
+• தொகுக்கப்படாத பயன்பாடுகளுக்கு, IsSupported() தவறாகத் திருப்பி அனுப்பப்படலாம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>சரிசெய்தல் படிகள்:
+1. விண்டோஸ் ஆப் இயக்க நேரத்தை நிறுவவும் அல்லது சரிசெய்யவும்: https://aka.ms/windowsappsdk/runtime
+2. Grex நிர்வாகியாக இயங்கவில்லை என்பதை உறுதிப்படுத்தவும்
+3. இயக்க நேரத்தை நிறுவி/சரிசெய்த பிறகு Grex ஐ மீண்டும் தொடங்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>விண்டோஸ் டோஸ்ட் அறிவிப்புகளுக்கு Grex பதிவு செய்ய முடியவில்லை.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>பொதுவான காரணங்கள்:
+• Windows App SDK இயக்க நேரம் (Singleton தொகுப்பு) காணவில்லை அல்லது சிதைந்துள்ளது
+• உயர்ந்த (நிர்வாகி) சலுகைகளுடன் பயன்பாடு இயங்குகிறது
+• விண்ணப்ப அடையாளம் சரியாக உள்ளமைக்கப்படவில்லை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>சரிசெய்தல் படிகள்:
+1. விண்டோஸ் ஆப் இயக்க நேரத்தை நிறுவவும் அல்லது சரிசெய்யவும்: https://aka.ms/windowsappsdk/runtime
+2. Grex நிர்வாகியாக இயங்கவில்லை என்பதை உறுதிப்படுத்தவும்
+3. இயக்க நேரத்தை நிறுவி/சரிசெய்த பிறகு Grex ஐ மீண்டும் தொடங்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>விவரங்கள்: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>பதிவு கோப்பு: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>பொருந்தக்கூடிய கோப்புகள்:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>எ.கா., *.json|*.txt அல்லது -*.log</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>விதிகளை விலக்கு:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>எ.கா., .git,vendor அல்லது ^(.git|vendor)$</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>தேடல் வகை:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>உரை தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Regex தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>தேடல் முடிவுகள்:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>உள்ளடக்கம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>கோப்புகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>அளவு வரம்பு:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>வரம்பு இல்லை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>விட குறைவாக</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>சமம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>விட பெரியது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>அளவை உள்ளிடவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>மரியாதை .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>கேஸ்-சென்சிட்டிவ் தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>கணினி கோப்புகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>துணைக் கோப்புறைகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>மறைக்கப்பட்ட பொருட்களைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>பைனரி கோப்புகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>குறியீட்டு இணைப்புகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>விண்டோஸ் தேடலைப் பயன்படுத்தவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>அட்டவணைப்படுத்தப்பட்ட Windows கோப்புறைகளில் விரைவான உரைத் தேடல்களுக்கு Windows Search குறியீட்டைப் பயன்படுத்தவும்.Regex தேடல்கள், WSL இலக்குகள் மற்றும் குறியிடப்படாத இடங்கள் ஆகியவை பாரம்பரிய ஸ்கேனரைப் பயன்படுத்தும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>ஸ்கேன் செய்ய கோப்புறை அல்லது இயக்ககத்தைத் தேர்ந்தெடுக்கவும்.பாதைகளை ஒட்டுவதை ஆதரிக்கிறது மற்றும் சமீபத்திய இருப்பிடங்களைக் காட்டுகிறது.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>தேடல் மூலத்தைத் தேர்ந்தெடுக்க கோப்புறைத் தேர்வைத் திறக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>நீங்கள் தேட விரும்பும் எளிய உரைச் சொல் அல்லது ரீஜெக்ஸ் வடிவத்தைத் தட்டச்சு செய்யவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>மாற்றீடு பயன்முறையை இயக்கவும், அதனால் பட்டியலிடப்பட்டவைக்கு பதிலாக பொருத்தங்கள் புதுப்பிக்கப்படும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>இடமாற்றம் இயங்கும் போது எழுதப்படும் மாற்று உரையை வழங்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>பெயர் மூலம் கோப்புகளை வடிகட்டவும்.'|' உடன் தனி வடிவங்கள்மற்றும் விலக்குவதற்கு '-' உடன் முன்னொட்டு.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>கமாவால் பிரிக்கப்பட்ட பெயர்கள் அல்லது ரீஜெக்ஸைப் பயன்படுத்தி கோப்பகங்களைத் தவிர்க்கவும் (எ.கா., ^(.git|vendor)$).</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>தேடல் உள்ளீட்டை எளிய உரையாக அல்லது ரீஜெக்ஸாக விளக்குகிறதா என்பதைத் தேர்வுசெய்யவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>முடிவுகள் பொருந்தக்கூடிய வரிகளைக் காட்டுகின்றனவா அல்லது கோப்புகளின் பட்டியலைக் காட்டுகின்றனவா என்பதைத் தேர்வுசெய்யவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>ஒவ்வொரு கோப்பையும் ஸ்கேன் செய்வதற்கு முன் விருப்ப அளவு ஒப்பீட்டைப் பயன்படுத்தவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>தேர்ந்தெடுக்கப்பட்ட ஒப்பீட்டில் செயல்படும் எண் அளவு வரம்பை உள்ளிடவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>அளவு வரம்பிற்கு யூனிட்டை (KB, MB, GB) தேர்ந்தெடுக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>தேர்ந்தெடுக்கப்பட்ட கோப்பகத்தில் .gitignore ஆல் புறக்கணிக்கப்பட்ட கோப்புகளைத் தவிர்க்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>லெட்டர் கேசிங் சரியாக பொருந்தினால் மட்டுமே பொருத்தங்களை செல்லுபடியாகும் என்று கருதுங்கள்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>கணினி-பாதுகாக்கப்பட்ட கோப்புகளை ஸ்கேன் செய்ய அனுமதிக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>தேர்ந்தெடுக்கப்பட்ட பாதையின் கீழ் அனைத்து துணை கோப்புறைகளையும் மீண்டும் மீண்டும் தேடுங்கள்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>மறைக்கப்பட்டதாகக் குறிக்கப்பட்ட கோப்புகள் மற்றும் கோப்புறைகளைச் சேர்க்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>உரை கோப்புகளுக்கு கூடுதலாக பைனரி கோப்புகளை ஸ்கேன் செய்யவும்.இது மெதுவாக இருக்கலாம்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>ஸ்கேன் செய்யும் போது குறியீட்டு இணைப்புகள் மற்றும் சந்திப்புகளைப் பின்பற்றவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>பெயர்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>வரி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>நெடுவரிசை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>உரை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>கோப்பு பாதை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>பெயர்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>கோப்பு அளவு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>போட்டிகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>கோப்பு பாதை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>கோப்பு நீட்டிப்பு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>குறியாக்கம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>தேதி மாற்றப்பட்டது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>வரியை மறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>நெடுவரிசையை மறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>பாதையை மறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>அளவை மறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>பொருத்தங்களை மறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>Ext ஐ மறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>குறியாக்கத்தை மறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>மறை தேதி மாற்றப்பட்டது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>அமைப்புகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>இந்த அமைப்புகள் புதிய தாவல்கள் மற்றும் பயன்பாடு தொடங்கும் போது இயல்புநிலையாகப் பயன்படுத்தப்படும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>தீம் விருப்பம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>கணினி தீம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>ஒளி முறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>இருண்ட பயன்முறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>வடிகட்டி விருப்பங்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>தேடல் முடிவுகள்:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>தேடல் வகை:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>வடிகட்டி விருப்பங்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>மரியாதை .gitignore</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>கேஸ்-சென்சிட்டிவ் தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>கணினி கோப்புகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>துணைக் கோப்புறைகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>மறைக்கப்பட்ட பொருட்களைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>பைனரி கோப்புகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>குறியீட்டு இணைப்புகளைச் சேர்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>விண்டோஸ் தேடலைப் பயன்படுத்தவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>அட்டவணைப்படுத்தப்பட்ட கோப்புறைகளில் விரைவான உரைத் தேடல்களுக்கு Windows தேடல் குறியீட்டைப் பயன்படுத்தவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>பிழைத்திருத்தம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>விண்டோஸ் டோஸ்ட் அறிவிப்புகளைச் சரிபார்க்க கீழே உள்ள பொத்தானைப் பயன்படுத்தவும்.தேவைப்பட்டால் Windows App SDK சார்புகள் இல்லை என்றால், நீங்கள் பிழைகாணல் வழிகாட்டலைப் பெறுவீர்கள்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>சோதனை அறிவிப்பு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>விண்டோஸ் டோஸ்ட் அறிவிப்புகளைச் சரிபார்க்க கீழே உள்ள பொத்தானைப் பயன்படுத்தவும்.தேவைப்பட்டால் Windows App SDK சார்புகள் இல்லை என்றால், நீங்கள் பிழைகாணல் வழிகாட்டலைப் பெறுவீர்கள்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>மொழி மாறுதலைச் சோதிக்கவும் அனைத்து மொழிபெயர்ப்பு விசைகளையும் சரிபார்க்கவும் கீழே உள்ள பொத்தானைப் பயன்படுத்தவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>சோதனை உள்ளூர்மயமாக்கல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>உள்ளூர்மயமாக்கல் சோதனை தேர்ச்சி பெற்றது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>அனைத்து {0} உள்ளூர்மயமாக்கல் விசைகளும் அனைத்து {1} ஆதரிக்கப்படும் மொழிகளிலும் உள்ளன.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>உள்ளூர்மயமாக்கல் சோதனை தோல்வியடைந்தது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>ஒன்று அல்லது அதற்கு மேற்பட்ட மொழிகளில் சில உள்ளூர்மயமாக்கல் விசைகள் இல்லை:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} விசைகள் இல்லை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... மேலும் {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>உள்ளூர்மயமாக்கல் சோதனை பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>உள்ளூர்மயமாக்கலைச் சோதிக்கும் போது பிழை ஏற்பட்டது: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>மாதிரி உரை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>உங்கள் ரீஜெக்ஸ் பேட்டர்னை சோதிக்க மாதிரி உரையை உள்ளிடவும்...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>ரெஜெக்ஸ் பேட்டர்ன்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>ரெஜெக்ஸ் பேட்டர்னை உள்ளிடவும்...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>முன்னமைவுகள்:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>மின்னஞ்சல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>தொலைபேசி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>தேதி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>இலக்கங்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>நேரடி போட்டி முடிவுகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>விஷுவல் ரீஜெக்ஸ் முறிவு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>விருப்பங்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>வழக்கு உணர்வற்றது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>பல வரி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>உலகளாவிய போட்டி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>பொருத்தங்களைப் பார்க்க சரியான ரீஜெக்ஸ் பேட்டர்னை உள்ளிடவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>உங்கள் ரீஜெக்ஸ் பேட்டர்னைச் சோதிக்க மாதிரி உரையை உள்ளிடவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>ரெஜெக்ஸ் சோதனை செய்யப்படும் மாதிரி உரையை வழங்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>நீங்கள் மதிப்பிட விரும்பும் ரீஜெக்ஸ் பேட்டர்னை உள்ளிடவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>பொருத்தங்களை மதிப்பிடும்போது எழுத்து உறையை புறக்கணிக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>முழு உரைக்கும் பதிலாக ஒவ்வொரு வரியின் தொடக்கமாகவும் முடிவாகவும் ^ மற்றும் $ ஐக் கையாளவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>முதல் போட்டிக்குப் பிறகு நிறுத்துவதற்குப் பதிலாக ஒவ்வொரு பொருத்தத்தைக் கண்டறியவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>சரம் ஒப்பீடு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>ஒப்பீட்டு முறை:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>ஒப்பீட்டு முறை:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>ஆர்டினல் (வேகமான, பைனரி)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>ஆர்டினல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>தற்போதைய கலாச்சாரம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>தற்போதைய கலாச்சாரம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>மாறாத கலாச்சாரம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>மாறாத கலாச்சாரம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>யூனிகோட் இயல்பாக்கம்:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>யூனிகோட் இயல்பாக்கம்:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>இல்லை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>படிவம் சி (நியமனச் சிதைவு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>படிவம் D (நியமனச் சிதைவு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>படிவம் KC (பொருந்தக்கூடிய சிதைவு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>படிவம் KD (பொருந்தக்கூடிய சிதைவு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>டயக்ரிடிக் உணர்திறன்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>முடக்கப்பட்டால், உச்சரிப்பு எழுத்துக்கள் அவற்றின் அடிப்படை எழுத்துக்களாகக் கருதப்படுகின்றன (எ.கா., 'é' = 'e')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>கலாச்சாரம்:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>சரம் கலாச்சாரம்:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>கலாச்சாரத்தைத் தேர்ந்தெடுக்கவும் அல்லது தனிப்பயன் கலாச்சாரக் குறியீட்டை உள்ளிடவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>தேடல் செயல்பாடுகளின் போது சரம் ஒப்பீட்டு அமைப்புகளுக்குப் பயன்படுத்தப்படுகிறது, பயன்பாட்டு UI மொழிக்காக அல்ல.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>UI மொழி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>பயன்பாட்டு மொழி:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>Grex தொடங்கும் போது தானாகவே Windows தீம் பொருத்தவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>விண்டோஸ் அமைப்பைப் பொருட்படுத்தாமல் லைட் தீமினை கட்டாயப்படுத்தவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>விண்டோஸ் அமைப்பைப் பொருட்படுத்தாமல் இருண்ட தீம் கட்டாயப்படுத்தவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>ஒவ்வொரு திறந்த பக்கத்திற்கும் பயன்பாட்டு மொழியை உடனடியாக மாற்றவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>உள்ளடக்க முடிவுகள் அல்லது கோப்பு முடிவுகளுக்கு புதிய தாவல்கள் இயல்புநிலையாக உள்ளதா என்பதைத் தேர்வுசெய்யவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>புதிய தாவல்கள் உரைத் தேடலில் தொடங்க வேண்டுமா அல்லது ரீஜெக்ஸ் தேடல் பயன்முறையில் தொடங்க வேண்டுமா என்பதைத் தேர்வுசெய்யவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>புதிய தேடல்கள் இயல்புநிலையாக .gitignore மதிக்க வேண்டுமா என்பதை அமைக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>முன்னிருப்பாக கணினி-பாதுகாக்கப்பட்ட கோப்புகளைச் சேர்க்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>இயல்புநிலையாக துணை கோப்புறைகளில் திரும்பவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>மறைக்கப்பட்ட கோப்புகள் மற்றும் கோப்புறைகளை இயல்பாகச் சேர்க்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>இயல்பாக பைனரி கோப்புகளை ஸ்கேன் செய்யவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>முன்னிருப்பாக குறியீட்டு இணைப்புகள் மற்றும் சந்திப்புகளைப் பின்பற்றவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>புதிய தேடல்களை இயல்பாகவே கேஸ் சென்சிட்டிவ் ஆக்குங்கள்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>ஒப்பிடுவதற்கு முன் எந்த யூனிகோட் இயல்பாக்கம் பயன்படுத்தப்படுகிறது என்பதைத் தேர்வுசெய்யவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>புதிய தேடல்களுக்கான இயல்புநிலை சரம் ஒப்பீட்டு விதிகளைத் தேர்ந்தெடுக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>விண்டோஸ் டோஸ்ட்கள் செயல்படுகின்றனவா என்பதைச் சரிபார்க்க மாதிரி அறிவிப்பை அனுப்பவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>மொழி மாறுதலைச் சோதித்து, ஆதரிக்கப்படும் அனைத்து மொழிகளிலும் உள்ள அனைத்து ஆங்கில மொழிபெயர்ப்பு விசைகளையும் சரிபார்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>பொருத்தங்கள் எதுவும் இல்லை.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>{0} பொருத்தம்(கள்) கண்டறியப்பட்டது.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>பொருத்தம் எதுவும் இல்லை.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>1 பொருத்தம் கிடைத்தது.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>பிழை: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>முறிவைக் காண ரெஜெக்ஸ் பேட்டர்னை உள்ளிடவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>தவறான ரீஜெக்ஸ் பேட்டர்ன்: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>எழுத்து வகுப்பு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>கைப்பற்றாத குழு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>கைப்பற்றும் குழு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>அளவுகோல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>நங்கூரம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>எஸ்கேப் வரிசை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>இலக்கியம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>தொகுப்பில் உள்ள எந்த கதாபாத்திரத்திற்கும் பொருந்தும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>கைப்பற்றாமல் குழுக்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>பொருந்தும் உரையைப் பிடிக்கிறது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>குவாண்டிஃபையர்: சரியான எண்ணிக்கை அல்லது வரம்பைக் குறிப்பிடுகிறது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>பூஜ்யம் அல்லது அதற்கு மேல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>ஒன்று அல்லது அதற்கு மேற்பட்டவை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>பூஜ்யம் அல்லது ஒன்று</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>வரி/சரத்தின் தொடக்கம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>வரி/சரத்தின் முடிவு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>இலக்கம் (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>இலக்கமில்லாத</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>வார்த்தை எழுத்து (a-z, A-Z, 0-9, _)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>சொல் அல்லாத எழுத்து</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>வெண்வெளி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>வெள்ளைவெளி அல்லாத இடம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>புதிய வரி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>தாவல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>வண்டி திரும்புதல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>இலக்கியப் பாத்திரம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Regex வடிவத்தை மேலெழுதவா?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>தற்போதைய Regex வடிவத்தை {0} முன்னமைவுடன் மேலெழுத விரும்புகிறீர்களா?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>தொடரவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>ரத்து செய்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>தொடரவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>WSL பாதை கண்டறியப்பட்டது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>WSL தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>பற்றி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>BornSupercharged ஆல் உருவாக்கப்பட்டது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>GPL 3.0 இன் கீழ் உரிமம் பெற்றது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>GitHub இல் திட்டத்தைப் பார்க்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>இந்தப் பக்கத்தைத் திறக்க எப்போது வேண்டுமானாலும் F1ஐ அழுத்தவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>பதிப்பு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>நிறுத்து</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>இரண்டாவது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>வினாடிகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>நிமிடம்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>நிமிடங்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>மணி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>மணி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>{2} இல் உள்ள {1} கோப்புகளில் {0} பொருத்தங்கள் உள்ளன</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>{2} இல் {1} கோப்புகளில் {0} பொருத்தங்கள் மாற்றப்பட்டன</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>காப்புப்பிரதி &amp; மீட்டமை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>ஏற்றுமதி அமைப்புகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>இறக்குமதி அமைப்புகள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>இயல்புநிலைகளை மீட்டமை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>உங்கள் தற்போதைய அமைப்புகளை காப்புப் பிரதி கோப்பிற்கு ஏற்றுமதி செய்யவும், முந்தைய காப்புப்பிரதியிலிருந்து அமைப்புகளை இறக்குமதி செய்யவும் அல்லது எல்லா அமைப்புகளையும் அவற்றின் அசல் இயல்புநிலைக்கு மீட்டமைக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>அமைப்புகள் ஏற்றுமதி செய்யப்பட்டன</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>உங்கள் அமைப்புகள் இதற்கு வெற்றிகரமாக ஏற்றுமதி செய்யப்பட்டுள்ளன: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>ஏற்றுமதி தோல்வியடைந்தது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>அமைப்புகளை ஏற்றுமதி செய்ய முடியவில்லை: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>அமைப்புகள் இறக்குமதி செய்யப்பட்டன</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>அமைப்புகள் வெற்றிகரமாக இறக்குமதி செய்யப்பட்டன.சில மாற்றங்கள் நடைமுறைக்கு வர மறுதொடக்கம் தேவைப்படலாம்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>இறக்குமதி தோல்வி</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>அமைப்புகளை இறக்குமதி செய்ய முடியவில்லை: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>தேர்ந்தெடுக்கப்பட்ட கோப்பு சரியான Grex அமைப்புகளின் காப்புப்பிரதியாகத் தெரியவில்லை.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>இயல்புநிலைகளை மீட்டமை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>இது எல்லா அமைப்புகளையும் அவற்றின் அசல் இயல்புநிலைக்கு மீட்டமைத்து பயன்பாட்டை மறுதொடக்கம் செய்யும்.நீங்கள் நிச்சயமாக தொடர விரும்புகிறீர்களா?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>உங்கள் தற்போதைய அமைப்புகளை காப்புப்பிரதி கோப்பிற்கு ஏற்றுமதி செய்யவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>காப்புப்பிரதி கோப்பிலிருந்து அமைப்புகளை இறக்குமதி செய்யவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>எல்லா அமைப்புகளையும் அவற்றின் அசல் இயல்புநிலைக்கு மீட்டமைக்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>கணினி இயல்புநிலை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>ஒளி முறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>இருண்ட பயன்முறை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>பிளாக் நைட் (அதிக மாறுபாடு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>சித்தப்பிரமை (அதிக மாறுபாடு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>வைரம் (அதிக மாறுபாடு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>துணைவெளி (அதிக மாறுபாடு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>சிவப்பு வெல்வெட் (அதிக மாறுபாடு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>கனவுகள் (அதிக மாறுபாடு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>டைஃப்லிங் (அதிக மாறுபாடு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>அதிர்வுகள் (அதிக மாறுபாடு)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>பயன்பாட்டை மறுதொடக்கம் செய்யுங்கள்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>மாற்றங்களைப் பயன்படுத்த, பயன்பாட்டை மறுதொடக்கம் செய்யவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>தீம் விண்ணப்பிக்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>சில கூறுகளுக்குப் பயன்பாட்டை மறுதொடக்கம் செய்ய வேண்டும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>பின்னர்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>டோக்கர் தேடல்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>இயங்கும் டோக்கர் கன்டெய்னரிலிருந்து கோப்புகளைப் பிரதிபலிப்பதன் மூலம், பயன்பாட்டை விட்டு வெளியேறாமல் Grex அவற்றை ஸ்கேன் செய்ய முடியும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>டோக்கர் தேடலை இயக்கு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>இயக்கப்பட்டது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>முடக்கப்பட்டது</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>தேடல் பாதைக்கு அருகில் கிடைக்கும் டோக்கர் கொள்கலன்களைக் காண்பி, அவற்றை நீங்கள் நேரடியாக குறிவைக்கலாம்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>உள்ளூர் வட்டு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>தேடல் இலக்கு</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>கொள்கலனைத் தேர்ந்தெடுக்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>டோக்கர் கொள்கலன் பட்டியலைப் புதுப்பிக்கவும்</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>டோக்கர் தேடல் பிழை</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>டோக்கர் கிடைக்கவில்லை.டோக்கர் டெஸ்க்டாப் இயங்குகிறது என்பதையும், டோக்கர் கட்டளைகளை இயக்க உங்களுக்கு அனுமதி இருப்பதையும் உறுதிப்படுத்திக் கொள்ளுங்கள்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>தேடலைத் தொடங்குவதற்கு முன், டோக்கர் கொள்கலனைத் தேர்ந்தெடுக்கவும்.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>டோக்கர் ஒருங்கிணைப்பை துவக்க முடியவில்லை: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>டோக்கர் கொள்கலன்களைப் புதுப்பிக்க முடியவில்லை: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>டோக்கர் தேடல் கண்ணாடியைத் தயாரிப்பதில் தோல்வி: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>குறியீட்டு இணைப்பு உருவாக்கம் காரணமாக டோக்கர் நகல் தோல்வியடைந்தது: {0}
+
+குறியீட்டு இணைப்புகளை உருவாக்க Windows க்கு சிறப்பு சலுகைகள் தேவை.Grex ஐ நிர்வாகியாக இயக்கவும் அல்லது உங்கள் கணக்கிற்கான 'குறியீட்டு இணைப்புகளை உருவாக்கு' பயனரை இயக்கவும்.
+
+குறிப்பு: சில கண்டெய்னர் பாதைகள் (node_modules போன்றவை) பல சிம்லிங்க்களைக் கொண்டிருக்கின்றன, மேலும் இந்தச் சலுகைகள் இல்லாமல் தேட முடியாது.</value>
+    <comment>status:complete</comment>
+  </data>
+</root>

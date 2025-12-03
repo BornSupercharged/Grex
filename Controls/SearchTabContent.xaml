@@ -1,0 +1,1007 @@
+<UserControl x:Class="Grex.Controls.SearchTabContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:models="using:Grex.Models"
+             xmlns:local="using:Grex.Controls"
+             xmlns:converters="using:Grex.Converters"
+             x:Name="SearchTabControl"
+             x:Uid="SearchTabContent"
+             VerticalAlignment="Stretch"
+             HorizontalAlignment="Stretch">
+    <UserControl.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </UserControl.Resources>
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <!-- Main Content Area -->
+        <Grid Padding="19,16,19,0" VerticalAlignment="Stretch">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup>
+                    <VisualState x:Name="Wide">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="800"/>
+                        </VisualState.StateTriggers>
+                    </VisualState>
+                    <VisualState x:Name="Narrow">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="0"/>
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="OptionsPanel.Orientation" Value="Vertical"/>
+                            <Setter Target="SearchInputPanel.Orientation" Value="Vertical"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" MinHeight="0"/>
+            </Grid.RowDefinitions>
+
+                <!-- Path Selection -->
+                <Grid x:Name="PathPanel" Grid.Row="0" HorizontalAlignment="Stretch" Margin="0,0,0,12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" MinWidth="200"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto" MinWidth="40"/>
+                    </Grid.ColumnDefinitions>
+                    <AutoSuggestBox x:Name="PathAutoSuggestBox"
+                                    x:Uid="PathAutoSuggestBox"
+                                    Grid.Column="0"
+                                    PlaceholderText="Enter or paste path here..."
+                                    Margin="0,0,12,0"
+                                    HorizontalAlignment="Stretch"
+                                    TextChanged="PathAutoSuggestBox_TextChanged"
+                                    SuggestionChosen="PathAutoSuggestBox_SuggestionChosen"
+                                    QuerySubmitted="PathAutoSuggestBox_QuerySubmitted"
+                                    GotFocus="PathAutoSuggestBox_GotFocus">
+                        <AutoSuggestBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="8,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" 
+                                               Text="{Binding DisplayText}" 
+                                               VerticalAlignment="Center"
+                                               TextTrimming="CharacterEllipsis"/>
+                                    <Button x:Name="RemoveButton"
+                                            Grid.Column="1"
+                                            Content="✕"
+                                            FontSize="14"
+                                            Width="24"
+                                            Height="24"
+                                            Padding="0"
+                                            Margin="8,0,0,0"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Right"
+                                            Loaded="RemoveButton_Loaded"
+                                            Background="Transparent"
+                                            BorderThickness="0"/>
+                                </Grid>
+                            </DataTemplate>
+                        </AutoSuggestBox.ItemTemplate>
+                    </AutoSuggestBox>
+                    <StackPanel Grid.Column="1"
+                                Orientation="Horizontal"
+                                Spacing="4"
+                                VerticalAlignment="Center"
+                                Visibility="{Binding IsDockerSearchGloballyEnabled, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <ComboBox x:Name="DockerContainerComboBox"
+                                  x:Uid="DockerContainerComboBox"
+                                  ItemsSource="{Binding DockerContainerOptions}"
+                                  SelectedItem="{Binding SelectedDockerOption, Mode=TwoWay}"
+                                  DisplayMemberPath="Label"
+                                  Width="200">
+                            <ToolTipService.ToolTip>
+                                <TextBlock x:Uid="DockerTargetComboBox.Header" Text="Search Target"/>
+                            </ToolTipService.ToolTip>
+                        </ComboBox>
+                        <Button x:Name="DockerRefreshButton"
+                                x:Uid="DockerRefreshButton"
+                                VerticalAlignment="Center"
+                                Margin="0,0,5,0"
+                                Click="DockerRefreshButton_Click"
+                                PointerEntered="Button_PointerEntered"
+                                PointerExited="Button_PointerExited"
+                                Style="{ThemeResource AccentButtonStyle}"
+                                MinWidth="40"
+                                Height="32"
+                                Padding="0">
+                            <FontIcon Glyph="&#xE72C;" FontSize="14"/>
+                        </Button>
+                    </StackPanel>
+                    <Button x:Name="BrowseButton"
+                            x:Uid="BrowseButton"
+                            Grid.Column="2"
+                            Content="Browse..."
+                            MinWidth="40"
+                            HorizontalAlignment="Stretch"
+                            Click="BrowseButton_Click"
+                            SizeChanged="BrowseButton_SizeChanged"
+                            PointerEntered="Button_PointerEntered"
+                            PointerExited="Button_PointerExited"
+                            Style="{ThemeResource AccentButtonStyle}"
+                            IsEnabled="{Binding IsFileBrowserEnabled}"/>
+                </Grid>
+
+                <!-- Search Input and CommandBar Row -->
+                <Grid Grid.Row="1" Margin="0,0,0,12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Search Input -->
+                    <StackPanel x:Name="SearchInputPanel" Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Spacing="12" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <TextBox x:Name="SearchTextBox"
+                                 x:Uid="SearchTextBox"
+                                 PlaceholderText="Enter search term or Regex pattern..."
+                                 MinWidth="350"
+                                 Width="400"
+                                 HorizontalAlignment="Left"
+                                 TextChanged="SearchTextBox_TextChanged"
+                                 KeyDown="SearchTextBox_KeyDown"/>
+                        <CheckBox x:Name="ReplaceCheckBox"
+                                 x:Uid="ReplaceCheckBox"
+                                 Content="Replace"
+                                 Checked="ReplaceCheckBox_Checked"
+                                 Unchecked="ReplaceCheckBox_Unchecked"
+                                 IsChecked="False"
+                                 VerticalAlignment="Center"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                    </StackPanel>
+                    <TextBox x:Name="ReplaceWithTextBox"
+                             x:Uid="ReplaceWithTextBox"
+                             Grid.Row="1" Grid.Column="0"
+                             MinWidth="350"
+                             Width="400"
+                             PlaceholderText="Replace with..."
+                             Visibility="Collapsed"
+                             HorizontalAlignment="Left"
+                             Margin="0,8,0,0"
+                             TextChanged="ReplaceWithTextBox_TextChanged"
+                             KeyDown="ReplaceWithTextBox_KeyDown"/>
+
+                    <!-- CommandBar -->
+                    <CommandBar x:Name="MainCommandBar" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" DefaultLabelPosition="Right">
+                        <AppBarButton x:Name="AppBarSearchButton" x:Uid="AppBarSearchButton" Label="Search" Click="AppBarSearchButton_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" IsEnabled="{Binding CanSearchOrStop}">
+                            <AppBarButton.Icon>
+                                <FontIcon Glyph="&#xE721;" FontFamily="{StaticResource SymbolThemeFontFamily}"/>
+                            </AppBarButton.Icon>
+                        </AppBarButton>
+                        <AppBarButton x:Name="AppBarReplaceButton" x:Uid="AppBarReplaceButton" Label="Replace" Click="AppBarReplaceButton_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" IsEnabled="{Binding CanReplaceOrStop}">
+                            <AppBarButton.Icon>
+                                <FontIcon Glyph="&#xE8AB;" FontFamily="{StaticResource SymbolThemeFontFamily}"/>
+                            </AppBarButton.Icon>
+                        </AppBarButton>
+                        <AppBarButton x:Name="AppBarResetButton" x:Uid="AppBarResetButton" Label="Reset" Click="AppBarResetButton_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited">
+                            <AppBarButton.Icon>
+                                <FontIcon Glyph="&#xE895;" FontFamily="{StaticResource SymbolThemeFontFamily}"/>
+                            </AppBarButton.Icon>
+                        </AppBarButton>
+                        <AppBarSeparator/>
+                        <AppBarToggleButton x:Name="FilterOptionsToggleButton" x:Uid="FilterOptionsToggleButton" Label="Filter Options" Click="FilterOptionsToggleButton_Click" IsChecked="True" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" Foreground="Black">
+                            <AppBarToggleButton.Icon>
+                                <FontIcon Glyph="&#xE71C;" FontFamily="{StaticResource SymbolThemeFontFamily}"/>
+                            </AppBarToggleButton.Icon>
+                        </AppBarToggleButton>
+                    </CommandBar>
+                </Grid>
+
+                <!-- Filter Options Pane -->
+                <Grid x:Name="FilterOptionsPane" Grid.Row="2" Visibility="Visible" Margin="0,0,0,12">
+                    <!-- Search Options -->
+                    <StackPanel x:Name="OptionsPanel" Spacing="12">
+                    <!-- Match/Exclude and SearchType/SearchResults Grid -->
+                    <Grid RowSpacing="8" ColumnSpacing="16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="140"/>
+                            <ColumnDefinition Width="400"/>
+                            <ColumnDefinition Width="140"/>
+                            <ColumnDefinition Width="400"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Row 0: Match Files / Exclude Dirs -->
+                        <TextBlock x:Name="MatchFilesTextBlock"
+                                   Grid.Row="0" Grid.Column="0"
+                                   x:Uid="MatchFilesTextBlock"
+                                   Text="Match Files:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                        <TextBox Grid.Row="0" Grid.Column="1"
+                                 x:Name="MatchFileNamesTextBox"
+                                 x:Uid="MatchFileNamesTextBox"
+                                 PlaceholderText="e.g., *.json|*.txt or -*.log"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,15,0"/>
+                        <TextBlock x:Name="ExcludeDirsTextBlock"
+                                   Grid.Row="0" Grid.Column="2"
+                                   x:Uid="ExcludeDirsTextBlock"
+                                   Text="Exclude Dirs:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                        <TextBox Grid.Row="0" Grid.Column="3"
+                                 x:Name="ExcludeDirsTextBox"
+                                 x:Uid="ExcludeDirsTextBox"
+                                 PlaceholderText="e.g., .git,vendor or ^(.git|vendor)$"
+                                 VerticalAlignment="Center"/>
+
+                        <!-- Row 1: Search Type / Search Results -->
+                        <TextBlock x:Name="SearchTypeTextBlock"
+                                   Grid.Row="1" Grid.Column="0"
+                                   x:Uid="SearchTypeTextBlock"
+                                   Text="Search Type:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                        <ComboBox Grid.Row="1" Grid.Column="1"
+                                  x:Name="SearchTypeComboBox"
+                                  x:Uid="SearchTypeComboBox"
+                                  Width="200"
+                                  SelectionChanged="SearchTypeComboBox_SelectionChanged"
+                                  VerticalAlignment="Center"
+                                  Margin="0,0,15,0"
+                                  PointerEntered="ComboBox_PointerEntered"
+                                  PointerExited="ComboBox_PointerExited">
+                            <ComboBoxItem x:Uid="TextSearchComboBoxItem" Content="Text Search" Tag="Text" IsSelected="True" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                            <ComboBoxItem x:Uid="RegexSearchComboBoxItem" Content="Regex Search" Tag="Regex" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        </ComboBox>
+                        <TextBlock x:Name="SearchResultsTextBlock"
+                                   Grid.Row="1" Grid.Column="2"
+                                   x:Uid="SearchResultsTextBlock"
+                                   Text="Search Results:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                        <ComboBox Grid.Row="1" Grid.Column="3"
+                                  x:Name="SearchResultsComboBox"
+                                  x:Uid="SearchResultsComboBox"
+                                  Width="200"
+                                  SelectionChanged="SearchResultsComboBox_SelectionChanged"
+                                  VerticalAlignment="Center"
+                                  Margin="0,0,15,0"
+                                  PointerEntered="ComboBox_PointerEntered"
+                                  PointerExited="ComboBox_PointerExited">
+                            <ComboBoxItem x:Uid="ContentComboBoxItem" Content="Content" Tag="Content" IsSelected="True" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                            <ComboBoxItem x:Uid="FilesComboBoxItem" Content="Files" Tag="Files" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                        </ComboBox>
+
+                        <!-- Row 2: Size Limit -->
+                        <TextBlock x:Name="SizeLimitTextBlock"
+                                   Grid.Row="2" Grid.Column="0"
+                                   x:Uid="SizeLimitTextBlock"
+                                   Text="Size Limit:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                        <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <ComboBox Grid.Column="0"
+                                     x:Name="SizeLimitComboBox"
+                                     x:Uid="SizeLimitComboBox"
+                                     Width="200"
+                                     SelectionChanged="SizeLimitComboBox_SelectionChanged"
+                                     VerticalAlignment="Center"
+                                     Margin="0,0,0,0"
+                                     PointerEntered="ComboBox_PointerEntered"
+                                     PointerExited="ComboBox_PointerExited">
+                                <ComboBoxItem x:Uid="NoLimitComboBoxItem" Content="No Limit" Tag="NoLimit" IsSelected="True" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                                <ComboBoxItem x:Uid="LessThanComboBoxItem" Content="Less Than" Tag="LessThan" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                                <ComboBoxItem x:Uid="EqualToComboBoxItem" Content="Equal To" Tag="EqualTo" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                                <ComboBoxItem x:Uid="GreaterThanComboBoxItem" Content="Greater Than" Tag="GreaterThan" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                            </ComboBox>
+                            <StackPanel Grid.Column="1"
+                                       x:Name="SizeLimitInputPanel" 
+                                       Orientation="Horizontal" 
+                                       Spacing="8"
+                                       Visibility="Collapsed"
+                                       VerticalAlignment="Center">
+                                <TextBox x:Name="SizeLimitNumberBox"
+                                          x:Uid="SizeLimitNumberBox"
+                                          Width="140"
+                                          PlaceholderText="Enter size"
+                                          TextChanged="SizeLimitTextBox_TextChanged"
+                                          InputScope="Number"
+                                          VerticalAlignment="Center"
+                                          Margin="15,0,8,0"/>
+                                <ComboBox x:Name="SizeUnitComboBox"
+                                          x:Uid="SizeUnitComboBox"
+                                          Width="80"
+                                          SelectionChanged="SizeUnitComboBox_SelectionChanged"
+                                          VerticalAlignment="Center"
+                                          PointerEntered="ComboBox_PointerEntered"
+                                          PointerExited="ComboBox_PointerExited">
+                                    <ComboBoxItem x:Uid="KBComboBoxItem" Content="KB" Tag="KB" IsSelected="True" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                                    <ComboBoxItem x:Uid="MBComboBoxItem" Content="MB" Tag="MB" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                                    <ComboBoxItem x:Uid="GBComboBoxItem" Content="GB" Tag="GB" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
+                                </ComboBox>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                    <!-- Filter Options - Fluid layout using 2-row Grid for proper wrapping -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" MinWidth="180"/>
+                            <ColumnDefinition Width="*" MinWidth="180"/>
+                            <ColumnDefinition Width="*" MinWidth="180"/>
+                            <ColumnDefinition Width="*" MinWidth="180"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <CheckBox x:Name="RespectGitignoreCheckBox"
+                                 x:Uid="RespectGitignoreCheckBox"
+                                 Grid.Row="0" Grid.Column="0"
+                                 Content="Respect .gitignore"
+                                 Checked="RespectGitignore_Changed"
+                                 Unchecked="RespectGitignore_Changed"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,16,8"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                        <CheckBox x:Name="SearchCaseSensitiveCheckBox"
+                                 x:Uid="SearchCaseSensitiveCheckBox"
+                                 Grid.Row="0" Grid.Column="1"
+                                 Content="Search case-sensitive"
+                                 Checked="SearchCaseSensitive_Changed"
+                                 Unchecked="SearchCaseSensitive_Changed"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,16,8"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                        <CheckBox x:Name="IncludeSystemFilesCheckBox"
+                                 x:Uid="IncludeSystemFilesCheckBox"
+                                 Grid.Row="0" Grid.Column="2"
+                                 Content="Include system files"
+                                 Checked="IncludeSystemFiles_Changed"
+                                 Unchecked="IncludeSystemFiles_Changed"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,16,8"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                        <CheckBox x:Name="IncludeSubfoldersCheckBox"
+                                 x:Uid="IncludeSubfoldersCheckBox"
+                                 Grid.Row="0" Grid.Column="3"
+                                 Content="Include subfolders"
+                                 Checked="IncludeSubfolders_Changed"
+                                 Unchecked="IncludeSubfolders_Changed"
+                                 IsChecked="True"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,0,8"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                        <CheckBox x:Name="IncludeHiddenItemsCheckBox"
+                                 x:Uid="IncludeHiddenItemsCheckBox"
+                                 Grid.Row="1" Grid.Column="0"
+                                 Content="Include hidden items"
+                                 Checked="IncludeHiddenItems_Changed"
+                                 Unchecked="IncludeHiddenItems_Changed"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,16,0"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                        <CheckBox x:Name="IncludeBinaryFilesCheckBox"
+                                 x:Uid="IncludeBinaryFilesCheckBox"
+                                 Grid.Row="1" Grid.Column="1"
+                                 Content="Include binary files"
+                                 Checked="IncludeBinaryFiles_Changed"
+                                 Unchecked="IncludeBinaryFiles_Changed"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,16,0"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                        <CheckBox x:Name="IncludeSymbolicLinksCheckBox"
+                                 x:Uid="IncludeSymbolicLinksCheckBox"
+                                 Grid.Row="1" Grid.Column="2"
+                                 Content="Include symbolic links"
+                                 Checked="IncludeSymbolicLinks_Changed"
+                                 Unchecked="IncludeSymbolicLinks_Changed"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,0,0"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                        <CheckBox x:Name="UseWindowsSearchCheckBox"
+                                 x:Uid="UseWindowsSearchCheckBox"
+                                 Grid.Row="1" Grid.Column="3"
+                                 Content="Use Windows Search"
+                                 Checked="UseWindowsSearchIndex_Changed"
+                                 Unchecked="UseWindowsSearchIndex_Changed"
+                                 VerticalAlignment="Center"
+                                 Margin="0,0,0,0"
+                                 PointerEntered="CheckBox_PointerEntered"
+                                 PointerExited="CheckBox_PointerExited"/>
+                    </Grid>
+                </StackPanel>
+                </Grid>
+
+            <!-- Results Tables Container -->
+            <Grid Grid.Row="4" VerticalAlignment="Stretch" Margin="0,0,0,0">
+                    <!-- Results Table - Content Mode -->
+                    <Grid x:Name="ContentResultsGrid" Visibility="Collapsed" VerticalAlignment="Stretch">
+                        <Border Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                                CornerRadius="8"
+                                Padding="0"
+                                VerticalAlignment="Stretch">
+                            <Grid VerticalAlignment="Stretch">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                    <!-- Header Row -->
+                                    <Border Grid.Row="0"
+                                            Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                                            CornerRadius="8,8,0,0"
+                                            Padding="0">
+                                        <Grid x:Name="ResultsHeaderGrid" ColumnSpacing="8" Padding="8,6" MinWidth="600">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition x:Name="NameColumnDefinition" Width="220"/>
+                                                <ColumnDefinition x:Name="LineColumnDefinition" Width="80"/>
+                                                <ColumnDefinition x:Name="ColumnColumnDefinition" Width="90"/>
+                                                <ColumnDefinition x:Name="TextColumnDefinition" Width="2*"/>
+                                                <ColumnDefinition x:Name="PathColumnDefinition" Width="2*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Button Grid.Column="0"
+                                                    x:Name="ContentNameHeaderButton"
+                                                    x:Uid="ContentNameHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11"
+                                                    Click="NameHeaderButton_Click">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="ContentNameContextMenu" Opening="ContentContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="ContentHideLineMenuItem4" x:Uid="HideLineMenuItem" Text="Hide Line" Click="ContentColumnContextMenu_Click" Tag="Line"/>
+                                                        <MenuFlyoutItem x:Name="ContentHideColumnMenuItem4" x:Uid="HideColumnMenuItem" Text="Hide Column" Click="ContentColumnContextMenu_Click" Tag="Column"/>
+                                                        <MenuFlyoutItem x:Name="ContentHidePathMenuItem4" x:Uid="HidePathMenuItem" Text="Hide Path" Click="ContentColumnContextMenu_Click" Tag="Path"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="0"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="ColumnResizer_DragDelta"
+                                                   DoubleTapped="ColumnResizer_DoubleTapped"
+                                                   Tag="Name"/>
+
+                                            <Button Grid.Column="1"
+                                                    x:Name="ContentLineHeaderButton"
+                                                    x:Uid="ContentLineHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="ContentLineContextMenu" Opening="ContentContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="ContentHideLineMenuItem" x:Uid="HideLineMenuItem" Text="Hide Line" Click="ContentColumnContextMenu_Click" Tag="Line"/>
+                                                        <MenuFlyoutItem x:Name="ContentHideColumnMenuItem" x:Uid="HideColumnMenuItem" Text="Hide Column" Click="ContentColumnContextMenu_Click" Tag="Column"/>
+                                                        <MenuFlyoutItem x:Name="ContentHidePathMenuItem" x:Uid="HidePathMenuItem" Text="Hide Path" Click="ContentColumnContextMenu_Click" Tag="Path"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="1"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="ColumnResizer_DragDelta"
+                                                   DoubleTapped="ColumnResizer_DoubleTapped"
+                                                   Tag="Line"/>
+
+                                            <Button Grid.Column="2"
+                                                    x:Name="ContentColumnHeaderButton"
+                                                    x:Uid="ContentColumnHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="ContentColumnContextMenu" Opening="ContentContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="ContentHideLineMenuItem2" x:Uid="HideLineMenuItem" Text="Hide Line" Click="ContentColumnContextMenu_Click" Tag="Line"/>
+                                                        <MenuFlyoutItem x:Name="ContentHideColumnMenuItem2" x:Uid="HideColumnMenuItem" Text="Hide Column" Click="ContentColumnContextMenu_Click" Tag="Column"/>
+                                                        <MenuFlyoutItem x:Name="ContentHidePathMenuItem2" x:Uid="HidePathMenuItem" Text="Hide Path" Click="ContentColumnContextMenu_Click" Tag="Path"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="2"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="ColumnResizer_DragDelta"
+                                                   DoubleTapped="ColumnResizer_DoubleTapped"
+                                                   Tag="Column"/>
+
+                                            <Button Grid.Column="3"
+                                                    x:Name="ContentTextHeaderButton"
+                                                    x:Uid="ContentTextHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="ContentTextContextMenu" Opening="ContentContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="ContentHideLineMenuItem5" x:Uid="HideLineMenuItem" Text="Hide Line" Click="ContentColumnContextMenu_Click" Tag="Line"/>
+                                                        <MenuFlyoutItem x:Name="ContentHideColumnMenuItem5" x:Uid="HideColumnMenuItem" Text="Hide Column" Click="ContentColumnContextMenu_Click" Tag="Column"/>
+                                                        <MenuFlyoutItem x:Name="ContentHidePathMenuItem5" x:Uid="HidePathMenuItem" Text="Hide Path" Click="ContentColumnContextMenu_Click" Tag="Path"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="3"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="ColumnResizer_DragDelta"
+                                                   DoubleTapped="ColumnResizer_DoubleTapped"
+                                                   Tag="Text"/>
+
+                                            <Button Grid.Column="4"
+                                                    x:Name="ContentPathHeaderButton"
+                                                    x:Uid="ContentPathHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="ContentPathContextMenu" Opening="ContentContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="ContentHideLineMenuItem3" x:Uid="HideLineMenuItem" Text="Hide Line" Click="ContentColumnContextMenu_Click" Tag="Line"/>
+                                                        <MenuFlyoutItem x:Name="ContentHideColumnMenuItem3" x:Uid="HideColumnMenuItem" Text="Hide Column" Click="ContentColumnContextMenu_Click" Tag="Column"/>
+                                                        <MenuFlyoutItem x:Name="ContentHidePathMenuItem3" x:Uid="HidePathMenuItem" Text="Hide Path" Click="ContentColumnContextMenu_Click" Tag="Path"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                        </Grid>
+                                    </Border>
+
+                                    <!-- Line Separator -->
+                                    <Border Grid.Row="1"
+                                            Height="1"
+                                            Background="{ThemeResource ControlStrokeColorDefaultBrush}"/>
+
+                                    <!-- ListView -->
+                                    <ListView x:Name="ResultsListView"
+                                      Grid.Row="2"
+                                      SelectionMode="Single"
+                                      ContainerContentChanging="ResultsListView_ContainerContentChanging"
+                                      DoubleTapped="ResultsListView_DoubleTapped"
+                                      ItemClick="ResultsListView_ItemClick"
+                                      RightTapped="ResultsListView_RightTapped"
+                                      Background="Transparent"
+                                      Padding="0"
+                                      ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                      ScrollViewer.HorizontalScrollMode="Enabled"
+                                      ScrollViewer.VerticalScrollMode="Enabled"
+                                      VerticalAlignment="Stretch"
+                                      HorizontalAlignment="Stretch">
+                                            <ListView.ItemContainerStyle>
+                                                <Style TargetType="ListViewItem">
+                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                                    <Setter Property="Padding" Value="0"/>
+                                                </Style>
+                                            </ListView.ItemContainerStyle>
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Border Padding="8,6">
+                                                        <Grid ColumnSpacing="8">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="220"/>
+                                                                <ColumnDefinition Width="80"/>
+                                                                <ColumnDefinition Width="90"/>
+                                                                <ColumnDefinition Width="2*"/>
+                                                                <ColumnDefinition Width="2*"/>
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Grid.Column="0"
+                                                                       Text="{Binding FileName}"
+                                                                       FontWeight="SemiBold"
+                                                                       FontSize="11"
+                                                                       Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"
+                                                                       TextTrimming="CharacterEllipsis"/>
+
+                                                            <TextBlock Grid.Column="1"
+                                                                       Text="{Binding LineNumber}"
+                                                                       FontSize="11"
+                                                                       HorizontalAlignment="Center"/>
+
+                                                            <TextBlock Grid.Column="2"
+                                                                       Text="{Binding ColumnNumber}"
+                                                                       FontSize="11"
+                                                                       HorizontalAlignment="Center"/>
+
+                                                            <TextBlock Grid.Column="3"
+                                                                       Text="{Binding TrimmedLineContent}"
+                                                                       FontSize="11"
+                                                                       TextTrimming="CharacterEllipsis"/>
+
+                                                            <TextBlock Grid.Column="4"
+                                                                       Text="{Binding DirectoryPath}"
+                                                                       FontSize="11"
+                                                                       TextTrimming="CharacterEllipsis">
+                                                                <ToolTipService.ToolTip>
+                                                                    <ToolTip Content="{Binding RelativePath}"/>
+                                                                </ToolTipService.ToolTip>
+                                                            </TextBlock>
+                                                        </Grid>
+                                                    </Border>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    <!-- Results Table - Files Mode -->
+                    <Grid x:Name="FilesResultsGrid" Visibility="Collapsed" VerticalAlignment="Stretch">
+                        <Border Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                                CornerRadius="8"
+                                Padding="0"
+                                VerticalAlignment="Stretch">
+                            <Grid VerticalAlignment="Stretch">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                    <!-- Header Row -->
+                                    <Border Grid.Row="0"
+                                            Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                                            CornerRadius="8,8,0,0"
+                                            Padding="0">
+                                        <Grid x:Name="FilesHeaderGrid" ColumnSpacing="8" Padding="8,6">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition x:Name="FilesNameColumnDefinition" Width="220"/>
+                                                <ColumnDefinition x:Name="FilesSizeColumnDefinition" Width="100"/>
+                                                <ColumnDefinition x:Name="FilesMatchesColumnDefinition" Width="80"/>
+                                                <ColumnDefinition x:Name="FilesPathColumnDefinition" Width="2*"/>
+                                                <ColumnDefinition x:Name="FilesExtColumnDefinition" Width="80"/>
+                                                <ColumnDefinition x:Name="FilesEncodingColumnDefinition" Width="100"/>
+                                                <ColumnDefinition x:Name="FilesDateColumnDefinition" Width="150"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Button Grid.Column="0"
+                                                    x:Name="FilesNameHeaderButton"
+                                                    x:Uid="FilesNameHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11"
+                                                    Click="NameHeaderButton_Click">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="FilesNameContextMenu" Opening="FilesContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="FilesHideSizeMenuItem7" x:Uid="HideSizeMenuItem" Text="Hide Size" Click="FilesColumnContextMenu_Click" Tag="Size"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideMatchesMenuItem7" x:Uid="HideMatchesMenuItem" Text="Hide Matches" Click="FilesColumnContextMenu_Click" Tag="Matches"/>
+                                                        <MenuFlyoutItem x:Name="FilesHidePathMenuItem7" x:Uid="HidePathMenuItem" Text="Hide Path" Click="FilesColumnContextMenu_Click" Tag="Path"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideExtMenuItem7" x:Uid="HideExtMenuItem" Text="Hide Ext" Click="FilesColumnContextMenu_Click" Tag="Ext"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideEncodingMenuItem7" x:Uid="HideEncodingMenuItem" Text="Hide Encoding" Click="FilesColumnContextMenu_Click" Tag="Encoding"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideDateModifiedMenuItem7" x:Uid="HideDateModifiedMenuItem" Text="Hide Date Modified" Click="FilesColumnContextMenu_Click" Tag="DateModified"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="0"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="FilesColumnResizer_DragDelta"
+                                                   DoubleTapped="FilesColumnResizer_DoubleTapped"
+                                                   Tag="FilesName"/>
+
+                                            <Button Grid.Column="1"
+                                                    x:Name="FilesSizeHeaderButton"
+                                                    x:Uid="FilesSizeHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="FilesSizeContextMenu" Opening="FilesContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="FilesHideSizeMenuItem" x:Uid="HideSizeMenuItem" Text="Hide Size" Click="FilesColumnContextMenu_Click" Tag="Size"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideMatchesMenuItem" x:Uid="HideMatchesMenuItem" Text="Hide Matches" Click="FilesColumnContextMenu_Click" Tag="Matches"/>
+                                                        <MenuFlyoutItem x:Name="FilesHidePathMenuItem" x:Uid="HidePathMenuItem" Text="Hide Path" Click="FilesColumnContextMenu_Click" Tag="Path"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideExtMenuItem" x:Uid="HideExtMenuItem" Text="Hide Ext" Click="FilesColumnContextMenu_Click" Tag="Ext"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideEncodingMenuItem" x:Uid="HideEncodingMenuItem" Text="Hide Encoding" Click="FilesColumnContextMenu_Click" Tag="Encoding"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideDateModifiedMenuItem" x:Uid="HideDateModifiedMenuItem" Text="Hide Date Modified" Click="FilesColumnContextMenu_Click" Tag="DateModified"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="1"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="FilesColumnResizer_DragDelta"
+                                                   DoubleTapped="FilesColumnResizer_DoubleTapped"
+                                                   Tag="FilesSize"/>
+
+                                            <Button Grid.Column="2"
+                                                    x:Name="FilesMatchesHeaderButton"
+                                                    x:Uid="FilesMatchesHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11"
+                                                    Click="MatchesHeaderButton_Click">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="FilesMatchesContextMenu" Opening="FilesContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="FilesHideSizeMenuItem2" x:Uid="HideSizeMenuItem" Text="Hide Size" Click="FilesColumnContextMenu_Click" Tag="Size"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideMatchesMenuItem2" x:Uid="HideMatchesMenuItem" Text="Hide Matches" Click="FilesColumnContextMenu_Click" Tag="Matches"/>
+                                                        <MenuFlyoutItem x:Name="FilesHidePathMenuItem2" x:Uid="HidePathMenuItem" Text="Hide Path" Click="FilesColumnContextMenu_Click" Tag="Path"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideExtMenuItem2" x:Uid="HideExtMenuItem" Text="Hide Ext" Click="FilesColumnContextMenu_Click" Tag="Ext"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideEncodingMenuItem2" x:Uid="HideEncodingMenuItem" Text="Hide Encoding" Click="FilesColumnContextMenu_Click" Tag="Encoding"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideDateModifiedMenuItem2" x:Uid="HideDateModifiedMenuItem" Text="Hide Date Modified" Click="FilesColumnContextMenu_Click" Tag="DateModified"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="2"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="FilesColumnResizer_DragDelta"
+                                                   DoubleTapped="FilesColumnResizer_DoubleTapped"
+                                                   Tag="FilesMatches"/>
+
+                                            <Button Grid.Column="3"
+                                                    x:Name="FilesPathHeaderButton"
+                                                    x:Uid="FilesPathHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="FilesPathContextMenu" Opening="FilesContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="FilesHideSizeMenuItem3" x:Uid="HideSizeMenuItem" Text="Hide Size" Click="FilesColumnContextMenu_Click" Tag="Size"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideMatchesMenuItem3" x:Uid="HideMatchesMenuItem" Text="Hide Matches" Click="FilesColumnContextMenu_Click" Tag="Matches"/>
+                                                        <MenuFlyoutItem x:Name="FilesHidePathMenuItem3" x:Uid="HidePathMenuItem" Text="Hide Path" Click="FilesColumnContextMenu_Click" Tag="Path"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideExtMenuItem3" x:Uid="HideExtMenuItem" Text="Hide Ext" Click="FilesColumnContextMenu_Click" Tag="Ext"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideEncodingMenuItem3" x:Uid="HideEncodingMenuItem" Text="Hide Encoding" Click="FilesColumnContextMenu_Click" Tag="Encoding"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideDateModifiedMenuItem3" x:Uid="HideDateModifiedMenuItem" Text="Hide Date Modified" Click="FilesColumnContextMenu_Click" Tag="DateModified"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="3"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="FilesColumnResizer_DragDelta"
+                                                   DoubleTapped="FilesColumnResizer_DoubleTapped"
+                                                   Tag="FilesPath"/>
+
+                                            <Button Grid.Column="4"
+                                                    x:Name="FilesExtHeaderButton"
+                                                    x:Uid="FilesExtHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11"
+                                                    Click="ExtHeaderButton_Click">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="FilesExtContextMenu" Opening="FilesContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="FilesHideSizeMenuItem4" x:Uid="HideSizeMenuItem" Text="Hide Size" Click="FilesColumnContextMenu_Click" Tag="Size"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideMatchesMenuItem4" x:Uid="HideMatchesMenuItem" Text="Hide Matches" Click="FilesColumnContextMenu_Click" Tag="Matches"/>
+                                                        <MenuFlyoutItem x:Name="FilesHidePathMenuItem4" x:Uid="HidePathMenuItem" Text="Hide Path" Click="FilesColumnContextMenu_Click" Tag="Path"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideExtMenuItem4" x:Uid="HideExtMenuItem" Text="Hide Ext" Click="FilesColumnContextMenu_Click" Tag="Ext"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideEncodingMenuItem4" x:Uid="HideEncodingMenuItem" Text="Hide Encoding" Click="FilesColumnContextMenu_Click" Tag="Encoding"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideDateModifiedMenuItem4" x:Uid="HideDateModifiedMenuItem" Text="Hide Date Modified" Click="FilesColumnContextMenu_Click" Tag="DateModified"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="4"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="FilesColumnResizer_DragDelta"
+                                                   DoubleTapped="FilesColumnResizer_DoubleTapped"
+                                                   Tag="FilesExt"/>
+
+                                            <Button Grid.Column="5"
+                                                    x:Name="FilesEncodingHeaderButton"
+                                                    x:Uid="FilesEncodingHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11"
+                                                    Click="EncodingHeaderButton_Click">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="FilesEncodingContextMenu" Opening="FilesContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="FilesHideSizeMenuItem5" x:Uid="HideSizeMenuItem" Text="Hide Size" Click="FilesColumnContextMenu_Click" Tag="Size"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideMatchesMenuItem5" x:Uid="HideMatchesMenuItem" Text="Hide Matches" Click="FilesColumnContextMenu_Click" Tag="Matches"/>
+                                                        <MenuFlyoutItem x:Name="FilesHidePathMenuItem5" x:Uid="HidePathMenuItem" Text="Hide Path" Click="FilesColumnContextMenu_Click" Tag="Path"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideExtMenuItem5" x:Uid="HideExtMenuItem" Text="Hide Ext" Click="FilesColumnContextMenu_Click" Tag="Ext"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideEncodingMenuItem5" x:Uid="HideEncodingMenuItem" Text="Hide Encoding" Click="FilesColumnContextMenu_Click" Tag="Encoding"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideDateModifiedMenuItem5" x:Uid="HideDateModifiedMenuItem" Text="Hide Date Modified" Click="FilesColumnContextMenu_Click" Tag="DateModified"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="5"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="FilesColumnResizer_DragDelta"
+                                                   DoubleTapped="FilesColumnResizer_DoubleTapped"
+                                                   Tag="FilesEncoding"/>
+
+                                            <Button Grid.Column="6"
+                                                    x:Name="FilesDateModifiedHeaderButton"
+                                                    x:Uid="FilesDateModifiedHeaderButton"
+                                                    Style="{ThemeResource ButtonRevealStyle}"
+                                                    HorizontalAlignment="Stretch"
+                                                    HorizontalContentAlignment="Center"
+                                                    Background="Transparent"
+                                                    BorderThickness="0"
+                                                    FontWeight="SemiBold"
+                                                    FontSize="11">
+                                                <Button.ContextFlyout>
+                                                    <MenuFlyout x:Name="FilesDateModifiedContextMenu" Opening="FilesContextMenu_Opening">
+                                                        <MenuFlyoutItem x:Name="FilesHideSizeMenuItem6" x:Uid="HideSizeMenuItem" Text="Hide Size" Click="FilesColumnContextMenu_Click" Tag="Size"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideMatchesMenuItem6" x:Uid="HideMatchesMenuItem" Text="Hide Matches" Click="FilesColumnContextMenu_Click" Tag="Matches"/>
+                                                        <MenuFlyoutItem x:Name="FilesHidePathMenuItem6" x:Uid="HidePathMenuItem" Text="Hide Path" Click="FilesColumnContextMenu_Click" Tag="Path"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideExtMenuItem6" x:Uid="HideExtMenuItem" Text="Hide Ext" Click="FilesColumnContextMenu_Click" Tag="Ext"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideEncodingMenuItem6" x:Uid="HideEncodingMenuItem" Text="Hide Encoding" Click="FilesColumnContextMenu_Click" Tag="Encoding"/>
+                                                        <MenuFlyoutItem x:Name="FilesHideDateModifiedMenuItem6" x:Uid="HideDateModifiedMenuItem" Text="Hide Date Modified" Click="FilesColumnContextMenu_Click" Tag="DateModified"/>
+                                                    </MenuFlyout>
+                                                </Button.ContextFlyout>
+                                            </Button>
+                                            <Thumb Grid.Column="6"
+                                                   HorizontalAlignment="Right"
+                                                   Width="6"
+                                                   Background="Transparent"
+                                                   BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                                                   BorderThickness="0,0,1,0"
+                                                   DragDelta="FilesColumnResizer_DragDelta"
+                                                   DoubleTapped="FilesColumnResizer_DoubleTapped"
+                                                   Tag="FilesDate"/>
+                                        </Grid>
+                                    </Border>
+
+                                    <!-- Line Separator -->
+                                    <Border Grid.Row="1"
+                                            Height="1"
+                                            Background="{ThemeResource ControlStrokeColorDefaultBrush}"/>
+
+                                    <!-- ListView -->
+                                    <ListView x:Name="FilesResultsListView"
+                                      Grid.Row="2"
+                                      SelectionMode="Single"
+                                      ContainerContentChanging="ResultsListView_ContainerContentChanging"
+                                      DoubleTapped="ResultsListView_DoubleTapped"
+                                      ItemClick="ResultsListView_ItemClick"
+                                      RightTapped="FilesResultsListView_RightTapped"
+                                      Background="Transparent"
+                                      Padding="0"
+                                      ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                      ScrollViewer.HorizontalScrollMode="Enabled"
+                                      ScrollViewer.VerticalScrollMode="Enabled"
+                                      VerticalAlignment="Stretch"
+                                      HorizontalAlignment="Stretch">
+                                            <ListView.ItemContainerStyle>
+                                                <Style TargetType="ListViewItem">
+                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                                    <Setter Property="Padding" Value="0"/>
+                                                </Style>
+                                            </ListView.ItemContainerStyle>
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Border Padding="8,6">
+                                                        <Grid ColumnSpacing="8">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="220"/>
+                                                                <ColumnDefinition Width="100"/>
+                                                                <ColumnDefinition Width="80"/>
+                                                                <ColumnDefinition Width="2*"/>
+                                                                <ColumnDefinition Width="80"/>
+                                                                <ColumnDefinition Width="100"/>
+                                                                <ColumnDefinition Width="150"/>
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Grid.Column="0"
+                                                                       Text="{Binding FileName}"
+                                                                       FontWeight="SemiBold"
+                                                                       FontSize="11"
+                                                                       Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"
+                                                                       TextTrimming="CharacterEllipsis"/>
+
+                                                            <TextBlock Grid.Column="1"
+                                                                       Text="{Binding FormattedSize}"
+                                                                       FontSize="11"
+                                                                       HorizontalAlignment="Right"/>
+
+                                                            <TextBlock Grid.Column="2"
+                                                                       Text="{Binding MatchCount}"
+                                                                       FontSize="11"
+                                                                       HorizontalAlignment="Center"/>
+
+                                                            <TextBlock Grid.Column="3"
+                                                                       Text="{Binding DirectoryPath}"
+                                                                       FontSize="11"
+                                                                       TextTrimming="CharacterEllipsis">
+                                                                <ToolTipService.ToolTip>
+                                                                    <ToolTip Content="{Binding RelativePath}"/>
+                                                                </ToolTipService.ToolTip>
+                                                            </TextBlock>
+
+                                                            <TextBlock Grid.Column="4"
+                                                                       Text="{Binding Extension}"
+                                                                       FontSize="11"
+                                                                       HorizontalAlignment="Center"/>
+
+                                                            <TextBlock Grid.Column="5"
+                                                                       Text="{Binding Encoding}"
+                                                                       FontSize="11"
+                                                                       HorizontalAlignment="Center"/>
+
+                                                            <TextBlock Grid.Column="6"
+                                                                       Text="{Binding FormattedDateModified}"
+                                                                       FontSize="11"/>
+                                                        </Grid>
+                                                    </Border>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+                            </Grid>
+                        </Border>
+                    </Grid>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</UserControl>
+

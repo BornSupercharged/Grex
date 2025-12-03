@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>Regex Builder</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>Gahunda</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>Inzira yo Gushakisha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>Injiza inzira yo gushakisha...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>Gahunda yo Gushakisha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>Enter text or Regex pattern...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>Replace With</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>Enter replacement text...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>Replace</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>Case Sensitive</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>Use Regular Expression</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>Include Subdirectories</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>Follow Symbolic Links</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>File Filters</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (semicolon separated)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>Exclude Directories</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin;obj;node_modules (semicolon separated)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>Size Filter</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>Min Size</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>Max Size</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>Results</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>Content</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>Files</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>File Name</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>Line</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>Content</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>Path</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>Size</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>Modified</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>Ready</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>Searching...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>No matches found</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>Error: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>Regular Expression Pattern</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>Test Text</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>Matches</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>General</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>Language</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>Theme</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>System</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>Light</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>Dark</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Ikosa</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>Iburira</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>Amakuru</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>Sawa</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Kuraho</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>Yego</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>Oya</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>Gukoresha nk'Umuyobozi</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex ubu gukoresha n'ububasha bw'umuyobozi.
+
+Gukoresha nk'umuyobozi birashobora gutuma habaho ibibazo na:
+• Amakuru ya Windows toast
+• Imikoreshereze y'Ubwoba ya Windows App SDK
+• Ubutabazi n'ukwihagarika kwa porogaramu
+
+Biteganijwe ko ukoresha Grex nk'umukoresha w'umwimerere.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>Wirengagize (Ntibuziguye)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>Sohera</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>Ikosa ry'Gutangiza Porogaramu</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>Ntibyashoboye gutangiza porogaramu: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>Ikosa Kitagenzwe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>Ikosa kitateganyijwe cyabaye: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>Ikosa ry'Gukora Tab</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>Ntibyashoboye gukora tab: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>Ikosa gikomeye cyabaye mugihe cyakorwaga tab: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>Ikosa ry'Gushakisha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>Ikosa cyabaye mugihe cyo gushakisha: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>Ikosa ry'Gushakisha mu WSL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>Ikosa cyabaye mugihe cyo gushakisha mu WSL: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>Nta Mibare Ishoboka</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>Agaciro 'Exclude Dirs' gakuraho zose ububiko. Nyamuneka gerageza gahunda yawe hanyuma ugerageze nanone.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>Gahunda ya Regex Itemewe</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>Agaciro 'Exclude Dirs' si gahunda y'ijambo risanzwe kitemewe. Nyamuneka gerageza gahunda yawe hanyuma ugerageze nanone.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>Emeza Gukuraho</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>Are you sure you want to perform the replace operation? This action cannot be undone.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Gukuraho Gahunda ya Regex?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>Ushaka gukuraho Gahunda ya Regex y'ubu na {0} yashyizweho mbere?</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>Komeza</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - Gushakisha Idosiye zifite Tab</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>Shakisha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>Regex Builder</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>Gahunda</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>Imiterere y'Gushakisha</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>Witeguye</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>Tab Nshya</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>Tab {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>Replacing...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>Works only for plain-text searches under Windows paths.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>Enter or paste path here...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>Browse...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter search term or Regex pattern...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>Replace</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>Replace with...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>Replace</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>Reset</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>Filter Options</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>Test Notification</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>This is a test notification to verify that notifications are working correctly.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>Test Notification Sent</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>Windows was asked to display a toast notification. If you still do not see it, verify that notifications are enabled for Grex (Windows Settings &gt; System &gt; Notifications) and that Focus assist / Do Not Disturb is disabled.
+
+Notification log: {0}
+Diagnostic log: {1}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>Test Notification Error</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>An unexpected error occurred while trying to send the notification.
+
+{0}
+
+See log: {1}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>Windows toast notifications are not available on this system configuration.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>Common causes:
+• Windows App SDK runtime (Singleton package) is missing or needs repair
+• Application is running with elevated (administrator) privileges
+• For unpackaged apps, IsSupported() may return false incorrectly</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>Troubleshooting steps:
+1. Install or repair the Windows App Runtime: https://aka.ms/windowsappsdk/runtime
+2. Ensure Grex is NOT running as administrator
+3. Restart Grex after installing/repairing the runtime</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Grex could not register for Windows toast notifications.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>Common causes:
+• Windows App SDK runtime (Singleton package) is missing or corrupted
+• Application is running with elevated (administrator) privileges
+• Application identity is not properly configured</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>Troubleshooting steps:
+1. Install or repair the Windows App Runtime: https://aka.ms/windowsappsdk/runtime
+2. Ensure Grex is NOT running as administrator
+3. Restart Grex after installing/repairing the runtime</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>Details: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>Log file: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>Match Files:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>e.g., *.json|*.txt or -*.log</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>Exclude Dirs:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>e.g., .git,vendor or ^(.git|vendor)$</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>Search Type:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Text Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Regex Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>Search Results:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>Content</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>Files</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>Size Limit:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>No Limit</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>Less Than</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>Equal To</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>Greater Than</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>Enter size</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>Respect .gitignore</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Search case-sensitive</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>Include system files</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>Include subfolders</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>Include hidden items</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>Include binary files</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>Include symbolic links</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Use Windows Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Leverage the Windows Search index for faster text searches on indexed Windows folders. Regex searches, WSL targets, and non-indexed locations will use the traditional scanner.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>Choose the folder or drive to scan. Supports pasting paths and shows recent locations.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>Open the folder picker to select a search root.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>Type the plain-text term or Regex pattern you want to search for.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>Enable replace mode so matches can be updated instead of only listed.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>Provide the replacement text that will be written when replace runs.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>Filter files by name. Separate patterns with '|' and prefix with '-' to exclude.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>Skip directories using comma-separated names or a Regex (e.g., ^(.git|vendor)$).</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>Choose whether the search interprets input as plain text or as a Regex.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>Choose whether results show matching lines or just the list of files.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>Apply an optional size comparison before scanning each file.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>Enter the numeric size threshold that works with the selected comparison.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>Select the unit (KB, MB, GB) for the size limit.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>Skip files ignored by .gitignore in the selected directory.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Only treat matches as valid when the letter casing matches exactly.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Allow system-protected files to be scanned.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>Recursively search all subfolders under the chosen path.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>Include files and folders that are marked as hidden.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Scan binary files in addition to text files. This can be slower.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>Follow symbolic links and junctions while scanning.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>Name</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>Line</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>Column</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>Text</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>File Path</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>Name</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>File Size</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>Matches</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>File Path</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>File Extension</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>Encoding</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>Date modified</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>Hide Line</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>Hide Column</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>Hide Path</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>Hide Size</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>Hide Matches</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>Hide Ext</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>Hide Encoding</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>Hide Date Modified</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>Settings</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>These settings will be used as defaults for new tabs and on application startup.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>Theme Preference</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>System Theme</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>Light Mode</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>Dark Mode</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Filter Options</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>Search Results:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>Search Type:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>Filter Options</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>Respect .gitignore</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Search case-sensitive</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>Include system files</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>Include subfolders</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>Include hidden items</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>Include binary files</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>Include symbolic links</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Use Windows Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Use the Windows Search index for faster text searches on indexed folders.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>Debug</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Use button below to verify Windows toast notifications. If required Windows App SDK dependencies are missing you will receive troubleshooting guidance.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>Test Notification</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Use the button below to verify Windows toast notifications. If required Windows App SDK dependencies are missing you will receive troubleshooting guidance.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Use the button below to test language switching and verify all translation keys.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>Test Localization</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>Localization Test Passed</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>All {0} localization keys are present in all {1} supported languages.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>Localization Test Failed</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>Some localization keys are missing in one or more languages:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: {1} missing keys</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... and {0} more</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>Localization Test Error</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>An error occurred while testing localization: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>Sample Text</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter sample text to test your Regex pattern against...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>Regex Pattern</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>Enter Regex pattern...</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>Presets:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>Email</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>Phone</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>Date</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>Digits</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>Live Match Results</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>Visual Regex Breakdown</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>Options</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>Case insensitive</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>Multiline</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>Global match</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>Enter a valid Regex pattern to see matches.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>Enter sample text to test your Regex pattern.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>Provide sample text that the Regex will be tested against.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>Enter the Regex pattern you want to evaluate.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Ignore character casing when evaluating matches.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>Treat ^ and $ as the start and end of each line instead of the whole text.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>Find every match instead of stopping after the first one.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>String Comparison</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>Comparison Mode:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>Comparison Mode:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Ordinal (fast, binary)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>Ordinal</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Current Culture</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Current Culture</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>Invariant Culture</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>Invariant Culture</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>Unicode Normalization:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>Unicode Normalization:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>None</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Form C (canonical decomposition)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Form D (canonical decomposition)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Form KC (compatibility decomposition)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>Form KD (compatibility decomposition)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>Diacritic Sensitive</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>When disabled, accented characters are treated as their base characters (e.g., 'é' = 'e')</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>Culture:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>String Culture:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>Select culture or enter custom culture code</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>Used for string comparison settings during search operations, not for the application UI language.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>UI Language</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>Application Language:</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>Match the Windows theme automatically when Grex starts.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>Force the light theme regardless of the Windows setting.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>Force the dark theme regardless of the Windows setting.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>Switch the application language instantly for every open page.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>Choose whether new tabs default to content results or file results.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>Choose whether new tabs start in text search or Regex search mode.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>Set whether new searches respect .gitignore by default.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Include system-protected files by default.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>Recurse into subfolders by default.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>Include hidden files and folders by default.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>Scan binary files by default.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>Follow symbolic links and junctions by default.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>Make new searches case-sensitive by default.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>Choose which Unicode normalization is applied before comparisons.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>Select the default string comparison rules for new searches.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>Send a sample notification to verify that Windows toasts are working.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>Test language switching and verify all English translation keys exist in all supported languages</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>No matches found.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>Found {0} match(es).</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>No match found.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>Found 1 match.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>Error: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>Enter a Regex pattern to see the breakdown.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>Invalid Regex pattern: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>Character Class</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>Non-Capturing Group</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>Capturing Group</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>Quantifier</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>Anchor</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>Escape Sequence</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>Literal</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>Matches any character in the set</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>Groups without capturing</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>Captures matched text</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>Quantifier: specifies exact count or range</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>Zero or more</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>One or more</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>Zero or one</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>Start of line/string</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>End of line/string</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>Digit (0-9)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>Non-digit</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>Word character (a-z, A-Z, 0-9, _)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>Non-word character</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>Whitespace</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>Non-whitespace</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>Newline</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>Tab</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>Carriage return</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>Literal character</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Overwrite Regex Pattern?</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>Do you want to overwrite the current Regex Pattern with the {0} preset?</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>Proceed</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>Continue</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>WSL Path Detected</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>WSL Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>About</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>Created by BornSupercharged</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>Licensed under GPL 3.0</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>View Project on GitHub</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>Press F1 anytime to open this page</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>Version</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Stop</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>second</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>seconds</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>minute</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>minutes</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>hour</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>hours</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>Found {0} matches in {1} files in {2}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>Replaced {0} matches in {1} files in {2}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>Backup &amp; Restore</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>Export Settings</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>Import Settings</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>Restore Defaults</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>Export your current settings to a backup file, import settings from a previous backup, or restore all settings to their original defaults.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>Settings Exported</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>Your settings have been exported successfully to: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>Export Failed</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>Failed to export settings: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>Settings Imported</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>Settings have been imported successfully. Some changes may require a restart to take effect.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>Import Failed</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>Failed to import settings: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>The selected file does not appear to be a valid Grex settings backup.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>Restore Defaults</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>This will reset all settings to their original defaults and restart the application. Are you sure you want to continue?</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Export your current settings to a backup file</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Import settings from a backup file</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>Reset all settings to their original defaults</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>System Default</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Light Mode</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Dark Mode</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Black Knight (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Paranoid (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Diamond (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Subspace (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Red Velvet (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Dreams (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Tiefling (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Vibes (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>Restart Application</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>Restart the application to apply changes.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>Apply Theme</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>Some elements need the application to be restarted to style properly.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>Later</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Docker Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Mirror files from a running Docker container so Grex can scan them without leaving the app.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>Enable Docker Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>Enabled</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>Disabled</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>Show available Docker containers next to the search path so you can target them directly.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>Local Disk</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>Search Target</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>Select container</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Refresh Docker container list</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>Docker Search Error</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>Docker is unavailable. Make sure Docker Desktop is running and that you have permission to run docker commands.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>Select a Docker container before starting the search.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>Could not initialize Docker integration: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>Unable to refresh Docker containers: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>Failed to prepare the Docker search mirror: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>Docker copy failed due to symbolic link creation: {0}
+
+Windows requires special privileges to create symbolic links. Either run Grex as Administrator, or enable the 'Create symbolic links' user right for your account.
+
+Note: Some container paths (like node_modules) contain many symlinks and may not be searchable without these privileges.</value>
+    <comment>status:error:Invalid destination language</comment>
+  </data>
+</root>

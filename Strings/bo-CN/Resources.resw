@@ -1,0 +1,1629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>Grex</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTab" xml:space="preserve">
+    <value>འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderTab" xml:space="preserve">
+    <value>Regex བཟོ་མཁན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>སྒྲིག་འཇུག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathLabel" xml:space="preserve">
+    <value>འཚོལ་བཤེར་ལམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPathPlaceholder" xml:space="preserve">
+    <value>འཚོལ་བཤེར་བྱེད་པའི་ལམ་ཞུགས་རོགས།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternLabel" xml:space="preserve">
+    <value>འཚོལ་བཤེར་དཔེ་རྣམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchPatternPlaceholder" xml:space="preserve">
+    <value>ཡིག་ཚང་དང་ཡང་ན་Regex དཔེ་རྣམ་ཞུགས་རོགས།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternLabel" xml:space="preserve">
+    <value>འདི་དང་བརྗེ་རེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacePatternPlaceholder" xml:space="preserve">
+    <value>བརྗེ་རེས་ཡིག་ཚང་ཞུགས་རོགས།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceButton" xml:space="preserve">
+    <value>བརྗེ་རེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseSensitiveLabel" xml:space="preserve">
+    <value>ཡིག་གཟུགས་ཐུབ་ཤུགས་ཅན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseRegexLabel" xml:space="preserve">
+    <value>རྒྱུན་ལྡན་ཆ་འཕྲིན་བེད་སྤྱོད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubdirectoriesLabel" xml:space="preserve">
+    <value>ཕྱི་ཁྱབ་ཁུངས་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FollowSymlinksLabel" xml:space="preserve">
+    <value>རྟགས་མཚམས་རྗེས་འབྲང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersLabel" xml:space="preserve">
+    <value>ཡིག་ཆའི་ཆུས་ཁྲིམས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileFiltersPlaceholder" xml:space="preserve">
+    <value>*.cs;*.txt;*.md (ཚེག་མཐུན་དབྱེ་བ།)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesLabel" xml:space="preserve">
+    <value>ཁུངས་ཁྱབ་འདོར་བ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirectoriesPlaceholder" xml:space="preserve">
+    <value>bin;obj;node_modules (ཚེག་མཐུན་དབྱེ་བ།)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeFilterLabel" xml:space="preserve">
+    <value>ཆེ་ཆུང་ཆུས་ཁྲིམས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MinSizeLabel" xml:space="preserve">
+    <value>ཆུང་ཤོས་ཆེ་ཆུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MaxSizeLabel" xml:space="preserve">
+    <value>ཆེ་ཤོས་ཆེ་ཆུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ResultsLabel" xml:space="preserve">
+    <value>འབྲས་བུ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentMode" xml:space="preserve">
+    <value>ནང་དོན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMode" xml:space="preserve">
+    <value>ཡིག་ཆ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FileNameColumn" xml:space="preserve">
+    <value>ཡིག་ཆའི་མིང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LineNumberColumn" xml:space="preserve">
+    <value>ཐིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumn" xml:space="preserve">
+    <value>ནང་དོན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathColumn" xml:space="preserve">
+    <value>ལམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeColumn" xml:space="preserve">
+    <value>ཆེ་ཆུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ModifiedColumn" xml:space="preserve">
+    <value>བཅོས་བསྒྱུར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReadyStatus" xml:space="preserve">
+    <value>གྲ་སྒྲིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchingStatus" xml:space="preserve">
+    <value>འཚོལ་བཤེར་བྱེད་བཞིན་ཡོད།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoMatchesStatus" xml:space="preserve">
+    <value>མཐུན་པ་རྙེད་མ་སོང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorStatus" xml:space="preserve">
+    <value>ནོར་འཁྲུལ།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternLabel" xml:space="preserve">
+    <value>རྒྱུན་ལྡན་ཆ་འཕྲིན་དཔེ་རྣམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestTextLabel" xml:space="preserve">
+    <value>ཚོད་ལྟའི་ཡིག་ཚང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchesLabel" xml:space="preserve">
+    <value>མཐུན་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>སྤྱིར་བཏང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LanguageLabel" xml:space="preserve">
+    <value>སྐད་ཡིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLabel" xml:space="preserve">
+    <value>དཔེ་རྣམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeSystem" xml:space="preserve">
+    <value>མ་ལག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeLight" xml:space="preserve">
+    <value>འོད་ཆེན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemeDark" xml:space="preserve">
+    <value>མུན་པོ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>ནོར་འཁྲུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WarningTitle" xml:space="preserve">
+    <value>ཉེན་བརྡ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>ཆོག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>ཆོག་མཆན་བཀོལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>ཡིན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>མིན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningTitle" xml:space="preserve">
+    <value>དབང་འཛིན་གྱི་ངོ་བོར་བཀོལ་བཞིན་ཡོད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningMessage" xml:space="preserve">
+    <value>Grex ད་ལྟ་དབང་འཛིན་གྱི་ཐོབ་ཐང་དང་བཅས་པར་བཀོལ་བཞིན་ཡོད།
+
+དབང་འཛིན་གྱི་ངོ་བོར་བཀོལ་བ་ནི་འདི་དག་གི་དཀའ་ངལ་འཕྲོ་ཐུབ།:
+• Windows toast གསལ་བརྡ།
+• Windows App SDK ཁྱད་ཆོས་ཁ་ཤས།
+• ཁ་པར་བདེ་འཇགས་དང་ཁ་བྲལ།
+
+Grex ཚུལ་མཐུན་བེད་སྤྱོད་མཁན་གྱི་ངོ་བོར་བཀོལ་རོགས་གནང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningIgnoreButton" xml:space="preserve">
+    <value>མཐོང་མེད་བཞག (བདེ་འཇགས་མེད་པ།)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AdminWarningrexitButton" xml:space="preserve">
+    <value>ཕྱིར་འགྲོ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorTitle" xml:space="preserve">
+    <value>ཁ་པར་འགོ་བཙུགས་ནོར་འཁྲུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ApplicationStartupErrorMessage" xml:space="preserve">
+    <value>ཁ་པར་འགོ་བཙུགས་མ་ཐུབ།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorTitle" xml:space="preserve">
+    <value>བཀོལ་མ་ཐུབ་པའི་ནོར་འཁྲུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnhandledErrorMessage" xml:space="preserve">
+    <value>རེ་བ་མེད་པའི་ནོར་འཁྲུལ་ཞིག་བྱུང་།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorTitle" xml:space="preserve">
+    <value>ཤོག་ཁྱབ་བཟོ་བའི་ནོར་འཁྲུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationErrorMessage" xml:space="preserve">
+    <value>ཤོག་ཁྱབ་བཟོ་མ་ཐུབ།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabCreationCriticalMessage" xml:space="preserve">
+    <value>ཤོག་ཁྱབ་བཟོ་བའི་སྐབས་སུ་གལ་ཆེན་ནོར་འཁྲུལ་ཞིག་བྱུང་།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorTitle" xml:space="preserve">
+    <value>འཚོལ་བཤེར་ནོར་འཁྲུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchErrorMessage" xml:space="preserve">
+    <value>འཚོལ་བཤེར་བྱེད་པའི་སྐབས་སུ་ནོར་འཁྲུལ་ཞིག་བྱུང་།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorTitle" xml:space="preserve">
+    <value>WSL འཚོལ་བཤེར་ནོར་འཁྲུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchErrorMessage" xml:space="preserve">
+    <value>WSL ནང་དུ་འཚོལ་བཤེར་བྱེད་པའི་སྐབས་སུ་ནོར་འཁྲུལ་ཞིག་བྱུང་།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleTitle" xml:space="preserve">
+    <value>འབྲས་བུ་མེད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoResultsPossibleMessage" xml:space="preserve">
+    <value>'ཁུངས་ཁྱབ་འདོར་བ' གྲངས་ཐང་གིས་ཁུངས་ཁྱབ་ཡོངས་འདོར་བྱེད་བཞིན་ཡོད། ཁྱེད་རང་གི་དཔེ་རྣམ་ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་རོགས་གནང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternTitle" xml:space="preserve">
+    <value>ནུས་མེད་Regex དཔེ་རྣམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvalidRegexPatternMessage" xml:space="preserve">
+    <value>'ཁུངས་ཁྱབ་འདོར་བ' གྲངས་ཐང་ནི་ནུས་ལྡན་རྒྱུན་ལྡན་ཆ་འཕྲིན་མིན། ཁྱེད་རང་གི་དཔེ་རྣམ་ཞིབ་བཤེར་བྱས་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་རོགས་གནང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceTitle" xml:space="preserve">
+    <value>བརྗེ་རེས་ངེས་པར་དུ་བྱེད་དམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmReplaceMessage" xml:space="preserve">
+    <value>ཁྱེད་རང་གིས་བརྗེ་རེས་བྱ་བ་སྒྲུབ་འདོད་ཡོད་པ་ངེས་པར་དུ་ཡིན་ནམ། བྱ་བ་འདི་ཕྱིར་འགྲོ་མི་ཐུབ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteTitle" xml:space="preserve">
+    <value>Regex དཔེ་རྣམ་སྒྱུར་བཅོས་བྱེད་དམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ConfirmRegexOverwriteMessage" xml:space="preserve">
+    <value>ཁྱེད་རང་གིས་ད་ལྟའི་Regex དཔེ་རྣམ་ {0} སྔོན་སྒྲིག་དང་བརྗེ་རེས་བྱེད་འདོད་ཡོད་པ་ཡིན་ནམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButton" xml:space="preserve">
+    <value>མུ་མཐུད་དུ་སྤེལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MainWindow.Title" xml:space="preserve">
+    <value>Grex - ཤོག་ཁྱབ་ཅན་གྱི་ཡིག་ཆ་འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchNavItem.Content" xml:space="preserve">
+    <value>འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBuilderNavItem.Content" xml:space="preserve">
+    <value>Regex བཟོ་མཁན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsNavItem.Content" xml:space="preserve">
+    <value>སྒྲིག་འཇུག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Title" xml:space="preserve">
+    <value>འཚོལ་བཤེར་གནས་ཚུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StatusInfoBar.Message" xml:space="preserve">
+    <value>གྲ་སྒྲིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabNewTitle" xml:space="preserve">
+    <value>ཤོག་ཁྱབ་གསར་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TabTimestampTitleFormat" xml:space="preserve">
+    <value>ཤོག་ཁྱབ་ {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplacingStatus" xml:space="preserve">
+    <value>བརྗེ་རེས་བྱེད་བཞིན་ཡོད།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WindowsSearchDisabledTooltip" xml:space="preserve">
+    <value>Windows ལམ་འོག་གི་ཡིག་ཚང་ཚོད་ལྟའི་འཚོལ་བཤེར་ལ་ཁོ་ནར་ལས་ཀ་བྱེད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PathAutoSuggestBox.PlaceholderText" xml:space="preserve">
+    <value>ལམ་འདིར་ཞུགས་རོགས་དང་ཡང་ན་འདྲེན་རོགས།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="BrowseButton.Content" xml:space="preserve">
+    <value>བལྟ་སྐོར།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTextBox.PlaceholderText" xml:space="preserve">
+    <value>འཚོལ་བཤེར་ཚིག་དང་ཡང་ན་Regex དཔེ་རྣམ་ཞུགས་རོགས།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceCheckBox.Content" xml:space="preserve">
+    <value>བརྗེ་རེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ReplaceWithTextBox.PlaceholderText" xml:space="preserve">
+    <value>འདི་དང་བརྗེ་རེས།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarSearchButton.Label" xml:space="preserve">
+    <value>འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarReplaceButton.Label" xml:space="preserve">
+    <value>བརྗེ་རེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="AppBarResetButton.Label" xml:space="preserve">
+    <value>ཡང་སྒྲིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsToggleButton.Label" xml:space="preserve">
+    <value>ཆུས་ཁྲིམས་འདམ་ག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestTitle" xml:space="preserve">
+    <value>ཚོད་ལྟའི་གསལ་བརྡ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestMessage" xml:space="preserve">
+    <value>འདི་ནི་གསལ་བརྡ་ཚུལ་མཐུན་པོར་ལས་ཀ་བྱེད་བཞིན་ཡོད་པ་ཞིབ་བཤེར་བྱེད་པའི་ཚོད་ལྟའི་གསལ་བརྡ་ཞིག་རེད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentTitle" xml:space="preserve">
+    <value>ཚོད་ལྟའི་གསལ་བརྡ་བཏང་བ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestSentMessage" xml:space="preserve">
+    <value>Windows ལ་toast གསལ་བརྡ་ཞིག་སྟོན་པར་ཞུས་པ་རེད། ཁྱེད་རང་གིས་ད་དུང་མ་མཐོང་ན། Grex ལ་གསལ་བརྡ་སྤྱད་པ་ཆོག་པ་ཡིན་པ་ཞིབ་བཤེར་བྱེད་རོགས། (Windows སྒྲིག་འཇུག &gt; མ་ལག &gt; གསལ་བརྡ།) དེ་བཞིན་Focus assist / མི་འཚུབ་པ་སྤྱད་མེད་པ་ཞིབ་བཤེར་བྱེད་རོགས།
+
+གསལ་བརྡ་ཡིག་ཚགས།: {0}
+ཞིབ་དཔྱད་ཡིག་ཚགས།: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorTitle" xml:space="preserve">
+    <value>ཚོད་ལྟའི་གསལ་བརྡ་ནོར་འཁྲུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationTestErrorMessage" xml:space="preserve">
+    <value>གསལ་བརྡ་བཏང་བའི་སྐབས་སུ་རེ་བ་མེད་པའི་ནོར་འཁྲུལ་ཞིག་བྱུང་།
+
+{0}
+
+ཡིག་ཚགས་ལ་ལྟ་རོགས།: {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportUnavailable" xml:space="preserve">
+    <value>མ་ལག་སྒྲིག་འཇུག་འདིར་Windows toast གསལ་བརྡ་མི་འདུག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportCommonCauses" xml:space="preserve">
+    <value>རྒྱུན་ལྡན་རྒྱུ་རྐྱེན།:
+• Windows App SDK runtime (Singleton ཁུར་ཆས།) མེད་པ་དང་ཡང་ན་བཅོས་དགོས་པ།
+• ཁ་པར་ནི་མཐོ་རིམ་(དབང་འཛིན་) ཐོབ་ཐང་དང་བཅས་པར་བཀོལ་བཞིན་ཡོད།
+• ཁུར་མེད་ཁ་པར་རྣམས་ལ། IsSupported() ནུས་མེད་པར་false སྤྲོད་སྲིད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationSupportTroubleshooting" xml:space="preserve">
+    <value>དཀའ་ངལ་སེལ་ཐབས།:
+1. Windows App Runtime སྒྲིག་འཇུག་དང་ཡང་ན་བཅོས་རོགས།: https://aka.ms/windowsappsdk/runtime
+2. Grex ནི་དབང་འཛིན་གྱི་ངོ་བོར་བཀོལ་བཞིན་མེད་པ་ངེས་པར་དུ་བྱེད་རོགས།
+3. runtime སྒྲིག་འཇུག/བཅོས་རྗེས་Grex ཡང་བསྐྱར་འགོ་བཙུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationFailure" xml:space="preserve">
+    <value>Grex གིས་Windows toast གསལ་བརྡ་ལ་མིང་ཐོ་བཀོད་མ་ཐུབ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationCommonCauses" xml:space="preserve">
+    <value>རྒྱུན་ལྡན་རྒྱུ་རྐྱེན།:
+• Windows App SDK runtime (Singleton ཁུར་ཆས།) མེད་པ་དང་ཡང་ན་ནོར་འཁྲུལ།
+• ཁ་པར་ནི་མཐོ་རིམ་(དབང་འཛིན་) ཐོབ་ཐང་དང་བཅས་པར་བཀོལ་བཞིན་ཡོད།
+• ཁ་པར་ངོ་བོ་ཚུལ་མཐུན་པོར་སྒྲིག་འཇུག་མ་བྱས་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationRegistrationTroubleshooting" xml:space="preserve">
+    <value>དཀའ་ངལ་སེལ་ཐབས།:
+1. Windows App Runtime སྒྲིག་འཇུག་དང་ཡང་ན་བཅོས་རོགས།: https://aka.ms/windowsappsdk/runtime
+2. Grex ནི་དབང་འཛིན་གྱི་ངོ་བོར་བཀོལ་བཞིན་མེད་པ་ངེས་པར་དུ་བྱེད་རོགས།
+3. runtime སྒྲིག་འཇུག/བཅོས་རྗེས་Grex ཡང་བསྐྱར་འགོ་བཙུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationDetailsPrefix" xml:space="preserve">
+    <value>ཞིབ་ཕྲ།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NotificationLogFilePrefix" xml:space="preserve">
+    <value>ཡིག་ཚགས་ཡིག་ཆ།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFilesTextBlock.Text" xml:space="preserve">
+    <value>ཡིག་ཆ་མཐུན་པ།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MatchFileNamesTextBox.PlaceholderText" xml:space="preserve">
+    <value>དཔེར་ན།, *.json|*.txt དང་ཡང་ན་ -*.log</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBlock.Text" xml:space="preserve">
+    <value>ཁུངས་ཁྱབ་འདོར་བ།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ExcludeDirsTextBox.PlaceholderText" xml:space="preserve">
+    <value>དཔེར་ན།, .git,vendor དང་ཡང་ན་ ^(.git|vendor)$</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeTextBlock.Text" xml:space="preserve">
+    <value>འཚོལ་བཤེར་རིགས།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TextSearchComboBoxItem.Content" xml:space="preserve">
+    <value>ཡིག་ཚང་འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexSearchComboBoxItem.Content" xml:space="preserve">
+    <value>Regex འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsTextBlock.Text" xml:space="preserve">
+    <value>འཚོལ་བཤེར་འབྲས་བུ།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentComboBoxItem.Content" xml:space="preserve">
+    <value>ནང་དོན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesComboBoxItem.Content" xml:space="preserve">
+    <value>ཡིག་ཆ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitTextBlock.Text" xml:space="preserve">
+    <value>ཆེ་ཆུང་ཚད་ལྷག:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoLimitComboBoxItem.Content" xml:space="preserve">
+    <value>ཚད་ལྷག་མེད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LessThanComboBoxItem.Content" xml:space="preserve">
+    <value>དེ་ལས་ཆུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EqualToComboBoxItem.Content" xml:space="preserve">
+    <value>དེ་དང་འདྲ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GreaterThanComboBoxItem.Content" xml:space="preserve">
+    <value>དེ་ལས་ཆེན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SizeLimitNumberBox.PlaceholderText" xml:space="preserve">
+    <value>ཆེ་ཆུང་ཞུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="KBComboBoxItem.Content" xml:space="preserve">
+    <value>KB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MBComboBoxItem.Content" xml:space="preserve">
+    <value>MB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GBComboBoxItem.Content" xml:space="preserve">
+    <value>GB</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>.gitignore བརྩི་སྲུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>ཡིག་གཟུགས་ཐུབ་ཤུགས་ཅན་འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>མ་ལག་ཡིག་ཆ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>ཕྱི་ཁྱབ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>སྦས་པའི་དངོས་པོ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>གཉིས་རིམ་ཡིག་ཆ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="IncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>རྟགས་མཚམས་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows འཚོལ་བཤེར་བེད་སྤྱོད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Windows ཁུངས་ཁྱབ་ནང་གི་ཡིག་ཚང་འཚོལ་བཤེར་མགྱོགས་པོར་བྱེད་པར་Windows འཚོལ་བཤེར་དྲི་བའི་བེད་སྤྱོད། Regex འཚོལ་བཤེར། WSL དམིགས་ཡུལ། དེ་བཞིན་དྲི་བ་མེད་པའི་ས་ཆ་རྣམས་ནི་རྒྱུན་ལྡན་བལྟ་སྐོར་བེད་སྤྱོད་བྱེད་ངེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.PathAutoSuggestBox.ToolTip" xml:space="preserve">
+    <value>བལྟ་སྐོར་བྱེད་པའི་ཁུངས་ཁྱབ་དང་ཡང་ན་འཁོར་ལོ་འདམ་ག་བྱེད་རོགས། ལམ་འདྲེན་རོགས་དང་དེ་བཞིན་ཉེ་ཆར་གྱི་ས་ཆ་སྟོན་པར་རྒྱབ་སྐྱོར་བྱེད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.BrowseButton.ToolTip" xml:space="preserve">
+    <value>འཚོལ་བཤེར་རྩ་བ་འདམ་ག་བྱེད་པར་ཁུངས་ཁྱབ་འདམ་ག་ཁ་ཕྱེ་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTextBox.ToolTip" xml:space="preserve">
+    <value>ཁྱེད་རང་གིས་འཚོལ་བཤེར་བྱེད་འདོད་པའི་ཡིག་ཚང་ཚོད་ལྟའི་ཚིག་དང་ཡང་ན་Regex དཔེ་རྣམ་ཞུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceCheckBox.ToolTip" xml:space="preserve">
+    <value>མཐུན་པ་རྣམས་ཁོ་ནར་ཐོ་བཀོད་བྱེད་པའི་ཚབ་ཏུ་བཅོས་སྒྱུར་བྱེད་ཐུབ་པར་བརྗེ་རེས་ཐོན་རིམ་སྤྱད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ReplaceWithTextBox.ToolTip" xml:space="preserve">
+    <value>བརྗེ་རེས་བཀོལ་སྐབས་བྲི་ངེས་པའི་བརྗེ་རེས་ཡིག་ཚང་སྤྲོད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.MatchFileNamesTextBox.ToolTip" xml:space="preserve">
+    <value>མིང་གིས་ཡིག་ཆ་ཆུས་ཁྲིམས་བྱེད་རོགས། '|' གིས་དཔེ་རྣམ་དབྱེ་བ་དང་འདོར་བར་'-' གིས་སྔོན་ཚིག་བཀོད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.ExcludeDirsTextBox.ToolTip" xml:space="preserve">
+    <value>ཚེག་མཐུན་དབྱེ་བའི་མིང་དང་ཡང་ན་Regex བེད་སྤྱོད་བྱས་ནས་ཁུངས་ཁྱབ་རྣམས་བརྒལ་རོགས། (དཔེར་ན།, ^(.git|vendor)$)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>འཚོལ་བཤེར་ནི་ཞུགས་པ་ཡིག་ཚང་ཚོད་ལྟ་དང་ཡང་ན་Regex ཆ་རྐྱེན་དུ་བཤད་པ་འདམ་ག་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>འབྲས་བུ་ནི་མཐུན་པའི་ཐིག་སྟོན་པ་དང་ཡང་ན་ཡིག་ཆའི་ཐོ་ཁོ་ནར་སྟོན་པ་འདམ་ག་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitComboBox.ToolTip" xml:space="preserve">
+    <value>ཡིག་ཆ་རེ་རེ་བལྟ་སྐོར་བྱེད་པའི་སྔོན་དུ་ཆེ་ཆུང་དཔྱད་བསྡུར་རང་འདོད་ཅིག་སྤྱད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeLimitNumberBox.ToolTip" xml:space="preserve">
+    <value>འདམ་ག་བྱས་པའི་དཔྱད་བསྡུར་དང་ལས་ཀ་བྱེད་པའི་ཆེ་ཆུང་ཚད་མཐོ་གྲངས་ཞུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SizeUnitComboBox.ToolTip" xml:space="preserve">
+    <value>ཆེ་ཆུང་ཚད་ལྷག་ལ་ཆ་རྐྱེན་(KB, MB, GB) འདམ་ག་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.RespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>འདམ་ག་བྱས་པའི་ཁུངས་ཁྱབ་ནང་གི་.gitignore གིས་མཐོང་མེད་བཞག་པའི་ཡིག་ཆ་རྣམས་བརྒལ་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.SearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>ཡིག་གཟུགས་ཀྱི་ཐོན་རིམ་དང་ཁོངས་སུ་མཐུན་པ་ཁོ་ནར་ནུས་ལྡན་དུ་བརྩི་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>མ་ལག་སྲུང་སྐྱོབ་ཡིག་ཆ་བལྟ་སྐོར་བྱེད་པར་ཆོག་པ་སྤྲད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>འདམ་ག་བྱས་པའི་ལམ་འོག་གི་ཕྱི་ཁྱབ་ཡོངས་ལ་རྒྱུན་མཐུད་འཚོལ་བཤེར་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>སྦས་པར་རྟགས་བཀོད་པའི་ཡིག་ཆ་དང་ཁུངས་ཁྱབ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>ཡིག་ཚང་ཡིག་ཆའི་ཚབ་ཏུ་གཉིས་རིམ་ཡིག་ཆ་བལྟ་སྐོར་བྱེད་རོགས། འདི་ནི་དལ་པོ་ཡོང་སྲིད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SearchTabContent.IncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>བལྟ་སྐོར་བྱེད་པའི་སྐབས་སུ་རྟགས་མཚམས་དང་མཐུད་ས་རྣམས་རྗེས་འབྲང་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentNameHeaderButton.Content" xml:space="preserve">
+    <value>མིང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentLineHeaderButton.Content" xml:space="preserve">
+    <value>ཐིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentColumnHeaderButton.Content" xml:space="preserve">
+    <value>ཁྲོད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentTextHeaderButton.Content" xml:space="preserve">
+    <value>ཡིག་ཚང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContentPathHeaderButton.Content" xml:space="preserve">
+    <value>ཡིག་ཆའི་ལམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesNameHeaderButton.Content" xml:space="preserve">
+    <value>མིང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesSizeHeaderButton.Content" xml:space="preserve">
+    <value>ཡིག་ཆའི་ཆེ་ཆུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesMatchesHeaderButton.Content" xml:space="preserve">
+    <value>མཐུན་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesPathHeaderButton.Content" xml:space="preserve">
+    <value>ཡིག་ཆའི་ལམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesExtHeaderButton.Content" xml:space="preserve">
+    <value>ཡིག་ཆའི་རྒྱ་སྐྱེད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesEncodingHeaderButton.Content" xml:space="preserve">
+    <value>ཨིན་ཀོ་ཌིང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilesDateModifiedHeaderButton.Content" xml:space="preserve">
+    <value>བཅོས་བསྒྱུར་ཟླ་ཚེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideLineMenuItem.Text" xml:space="preserve">
+    <value>ཐིག་སྦས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideColumnMenuItem.Text" xml:space="preserve">
+    <value>ཁྲོད་སྦས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HidePathMenuItem.Text" xml:space="preserve">
+    <value>ལམ་སྦས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideSizeMenuItem.Text" xml:space="preserve">
+    <value>ཆེ་ཆུང་སྦས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideMatchesMenuItem.Text" xml:space="preserve">
+    <value>མཐུན་པ་སྦས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideExtMenuItem.Text" xml:space="preserve">
+    <value>རྒྱ་སྐྱེད་སྦས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideEncodingMenuItem.Text" xml:space="preserve">
+    <value>ཨིན་ཀོ་ཌིང་སྦས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="HideDateModifiedMenuItem.Text" xml:space="preserve">
+    <value>བཅོས་བསྒྱུར་ཟླ་ཚེས་སྦས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsTitleTextBlock.Text" xml:space="preserve">
+    <value>སྒྲིག་འཇུག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>སྒྲིག་འཇུག་འདི་རྣམས་ནི་ཤོག་ཁྱབ་གསར་པ་དང་ཁ་པར་འགོ་བཙུགས་སྐབས་སུ་སྤྱིར་བཏང་གི་ངོ་བོར་བེད་སྤྱོད་བྱེད་ངེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ThemePreferenceTextBlock.Text" xml:space="preserve">
+    <value>དཔེ་རྣམ་འདོམས་གཞི།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SystemThemeRadio.Content" xml:space="preserve">
+    <value>མ་ལག་དཔེ་རྣམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LightThemeRadio.Content" xml:space="preserve">
+    <value>འོད་ཆེན་ཐོན་རིམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DarkThemeRadio.Content" xml:space="preserve">
+    <value>མུན་པོ་ཐོན་རིམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsHeaderTextBlock.Text" xml:space="preserve">
+    <value>ཆུས་ཁྲིམས་འདམ་ག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchResultsLabelTextBlock.Text" xml:space="preserve">
+    <value>འཚོལ་བཤེར་འབྲས་བུ།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SearchTypeLabelTextBlock.Text" xml:space="preserve">
+    <value>འཚོལ་བཤེར་རིགས།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FilterOptionsDefaultsTextBlock.Text" xml:space="preserve">
+    <value>ཆུས་ཁྲིམས་འདམ་ག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultRespectGitignoreCheckBox.Content" xml:space="preserve">
+    <value>.gitignore བརྩི་སྲུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultSearchCaseSensitiveCheckBox.Content" xml:space="preserve">
+    <value>ཡིག་གཟུགས་ཐུབ་ཤུགས་ཅན་འཚོལ་བཤེར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSystemFilesCheckBox.Content" xml:space="preserve">
+    <value>མ་ལག་ཡིག་ཆ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSubfoldersCheckBox.Content" xml:space="preserve">
+    <value>ཕྱི་ཁྱབ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeHiddenItemsCheckBox.Content" xml:space="preserve">
+    <value>སྦས་པའི་དངོས་པོ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeBinaryFilesCheckBox.Content" xml:space="preserve">
+    <value>གཉིས་རིམ་ཡིག་ཆ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultIncludeSymbolicLinksCheckBox.Content" xml:space="preserve">
+    <value>རྟགས་མཚམས་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.Content" xml:space="preserve">
+    <value>Windows འཚོལ་བཤེར་བེད་སྤྱོད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DefaultUseWindowsSearchCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>དྲི་བ་ཅན་ཁུངས་ཁྱབ་ནང་གི་ཡིག་ཚང་འཚོལ་བཤེར་མགྱོགས་པོར་བྱེད་པར་Windows འཚོལ་བཤེར་དྲི་བ་བེད་སྤྱོད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugHeaderTextBlock.Text" xml:space="preserve">
+    <value>དཀའ་ངལ་སེལ་ཐབས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DebugDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Windows toast གསལ་བརྡ་ཞིབ་བཤེར་བྱེད་པར་འོག་གི་སྒྲོམ་བུ་བེད་སྤྱོད་རོགས། དགོས་པའི་Windows App SDK རྟེན་གཞི་མེད་ན་དཀའ་ངལ་སེལ་ཐབས་ལམ་སྟོན་ཐོབ་ངེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationButton.Content" xml:space="preserve">
+    <value>ཚོད་ལྟའི་གསལ་བརྡ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestNotificationExplanationTextBlock.Text" xml:space="preserve">
+    <value>Windows toast གསལ་བརྡ་ཞིབ་བཤེར་བྱེད་པར་འོག་གི་སྒྲོམ་བུ་བེད་སྤྱོད་རོགས། དགོས་པའི་Windows App SDK རྟེན་གཞི་མེད་ན་དཀའ་ངལ་སེལ་ཐབས་ལམ་སྟོན་ཐོབ་ངེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationExplanationTextBlock.Text" xml:space="preserve">
+    <value>སྐད་ཡིག་བརྗེ་རེས་དང་ཆ་འཕྲིན་མཐུན་པ་ཡོངས་ཞིབ་བཤེར་བྱེད་པར་འོག་གི་སྒྲོམ་བུ་བེད་སྤྱོད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="TestLocalizationButton.Content" xml:space="preserve">
+    <value>ཆ་འཕྲིན་ཚོད་ལྟ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessTitle" xml:space="preserve">
+    <value>ཆ་འཕྲིན་ཚོད་ལྟ་བརྒྱུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestSuccessMessage" xml:space="preserve">
+    <value>ཆ་འཕྲིན་མཐུན་པ་ {0} ཡོངས་ནི་རྒྱབ་སྐྱོར་སྐད་ཡིག {1} ནང་དུ་ཡོད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureTitle" xml:space="preserve">
+    <value>ཆ་འཕྲིན་ཚོད་ལྟ་ཕམ་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestFailureSummary" xml:space="preserve">
+    <value>ཆ་འཕྲིན་མཐུན་པ་ཁ་ཤས་ནི་སྐད་ཡིག་གཅིག་དང་ཡང་ན་དེ་ལས་མང་བ་ནང་དུ་མེད།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestLanguageFailure" xml:space="preserve">
+    <value>{0}: མཐུན་པ་མེད་པ {1}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestMoreKeys" xml:space="preserve">
+    <value>... དེ་ལས་མང་བ {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorTitle" xml:space="preserve">
+    <value>ཆ་འཕྲིན་ཚོད་ལྟ་ནོར་འཁྲུལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LocalizationTestErrorMessage" xml:space="preserve">
+    <value>ཆ་འཕྲིན་ཚོད་ལྟ་བྱེད་པའི་སྐབས་སུ་ནོར་འཁྲུལ་ཞིག་བྱུང་།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBlock.Text" xml:space="preserve">
+    <value>དཔེ་རྣམ་ཡིག་ཚང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SampleTextTextBox.PlaceholderText" xml:space="preserve">
+    <value>ཁྱེད་རང་གི་Regex དཔེ་རྣམ་ཚོད་ལྟ་བྱེད་པར་དཔེ་རྣམ་ཡིག་ཚང་ཞུགས་རོགས།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBlock.Text" xml:space="preserve">
+    <value>Regex དཔེ་རྣམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexPatternTextBox.PlaceholderText" xml:space="preserve">
+    <value>Regex དཔེ་རྣམ་ཞུགས་རོགས།...</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PresetsTextBlock.Text" xml:space="preserve">
+    <value>སྔོན་སྒྲིག:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EmailPresetButton.Content" xml:space="preserve">
+    <value>གློག་ཡིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="PhonePresetButton.Content" xml:space="preserve">
+    <value>ཁ་པར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DatePresetButton.Content" xml:space="preserve">
+    <value>ཟླ་ཚེས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DigitsPresetButton.Content" xml:space="preserve">
+    <value>གྲངས་ཀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="URLPresetButton.Content" xml:space="preserve">
+    <value>URL</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="LiveMatchResultsTextBlock.Text" xml:space="preserve">
+    <value>ད་ལྟའི་མཐུན་པའི་འབྲས་བུ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="VisualRegexBreakdownTextBlock.Text" xml:space="preserve">
+    <value>མཐོང་བའི་Regex དབྱེ་བ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OptionsTextBlock.Text" xml:space="preserve">
+    <value>འདམ་ག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CaseInsensitiveCheckBox.Content" xml:space="preserve">
+    <value>ཡིག་གཟུགས་མི་ཐུབ་ཤུགས་ཅན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="MultilineCheckBox.Content" xml:space="preserve">
+    <value>ཐིག་མང་པོ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="GlobalMatchCheckBox.Content" xml:space="preserve">
+    <value>ཁྱབ་ཆེན་མཐུན་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterValidPatternMessage" xml:space="preserve">
+    <value>མཐུན་པ་མཐོང་པར་ནུས་ལྡན་Regex དཔེ་རྣམ་ཞུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="EnterSampleTextMessage" xml:space="preserve">
+    <value>ཁྱེད་རང་གི་Regex དཔེ་རྣམ་ཚོད་ལྟ་བྱེད་པར་དཔེ་རྣམ་ཡིག་ཚང་ཞུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.SampleTextTextBox.ToolTip" xml:space="preserve">
+    <value>Regex ཚོད་ལྟ་བྱེད་པའི་དཔེ་རྣམ་ཡིག་ཚང་སྤྲོད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.RegexPatternTextBox.ToolTip" xml:space="preserve">
+    <value>ཁྱེད་རང་གིས་དཔྱད་བསྡུར་བྱེད་འདོད་པའི་Regex དཔེ་རྣམ་ཞུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.CaseInsensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>མཐུན་པ་དཔྱད་བསྡུར་བྱེད་པའི་སྐབས་སུ་ཡིག་གཟུགས་ཐོན་རིམ་མཐོང་མེད་བཞག་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.MultilineCheckBox.ToolTip" xml:space="preserve">
+    <value>^ དང་ $ ནི་ཡིག་ཚང་ཡོངས་ཀྱི་ཚབ་ཏུ་ཐིག་རེ་རེའི་འགོ་དང་མཐའ་དུ་བརྩི་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.RegexBuilderView.GlobalMatchCheckBox.ToolTip" xml:space="preserve">
+    <value>དང་པོ་རྙེད་རྗེས་འཇོག་པའི་ཚབ་ཏུ་མཐུན་པ་ཡོངས་རྙེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonHeaderTextBlock.Text" xml:space="preserve">
+    <value>ཡིག་ཚང་དཔྱད་བསྡུར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeTextBlock.Text" xml:space="preserve">
+    <value>དཔྱད་བསྡུར་ཐོན་རིམ།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="StringComparisonModeLabelTextBlock.Text" xml:space="preserve">
+    <value>དཔྱད་བསྡུར་ཐོན་རིམ།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>རིམ་ལྟར་(མགྱོགས་པོ།, གཉིས་རིམ་)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="OrdinalComboBoxItem.Content" xml:space="preserve">
+    <value>རིམ་ལྟར།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>ད་ལྟའི་རིག་གཞུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CurrentCultureComboBoxItem.Content" xml:space="preserve">
+    <value>ད་ལྟའི་རིག་གཞུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComparisonComboBoxItem.Content" xml:space="preserve">
+    <value>མི་འགྱུར་རིག་གཞུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="InvariantCultureComboBoxItem.Content" xml:space="preserve">
+    <value>མི་འགྱུར་རིག་གཞུང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationTextBlock.Text" xml:space="preserve">
+    <value>Unicode སྤྱིར་བཏང་།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UnicodeNormalizationLabelTextBlock.Text" xml:space="preserve">
+    <value>Unicode སྤྱིར་བཏང་།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="NoneNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>མེད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>རྣམ་པ C (རྒྱུན་ལྡན་དབྱེ་བ།)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>རྣམ་པ D (རྒྱུན་ལྡན་དབྱེ་བ།)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKCNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>རྣམ་པ KC (མཐུན་པའི་དབྱེ་བ།)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="FormKDNormalizationComboBoxItem.Content" xml:space="preserve">
+    <value>རྣམ་པ KD (མཐུན་པའི་དབྱེ་བ།)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.Content" xml:space="preserve">
+    <value>རྟགས་མཚམས་ཐུབ་ཤུགས་ཅན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DiacriticSensitiveCheckBox.ToolTipService.ToolTip" xml:space="preserve">
+    <value>སྤྱད་མེད་པའི་སྐབས་སུ། རྟགས་མཚམས་ཅན་གྱི་ཡིག་འབྲུ་ནི་རང་གི་རྩ་བའི་ཡིག་འབྲུ་དུ་བརྩི་བ། (དཔེར་ན།, 'é' = 'e')</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureTextBlock.Text" xml:space="preserve">
+    <value>རིག་གཞུང་།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureLabelTextBlock.Text" xml:space="preserve">
+    <value>ཡིག་ཚང་རིག་གཞུང་།:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBox.PlaceholderText" xml:space="preserve">
+    <value>རིག་གཞུང་འདམ་ག་དང་ཡང་ན་རང་གི་རིག་གཞུང་ཨང་ཐོ་ཞུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CultureComboBoxToolTip.Content" xml:space="preserve">
+    <value>འཚོལ་བཤེར་བྱ་བའི་སྐབས་སུ་ཡིག་ཚང་དཔྱད་བསྡུར་སྒྲིག་འཇུག་ལ་བེད་སྤྱོད། ཁ་པར་UI སྐད་ཡིག་ལ་མིན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageHeaderTextBlock.Text" xml:space="preserve">
+    <value>UI སྐད་ཡིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="UILanguageLabelTextBlock.Text" xml:space="preserve">
+    <value>ཁ་པར་སྐད་ཡིག:</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.SystemThemeRadio.ToolTip" xml:space="preserve">
+    <value>Grex འགོ་བཙུགས་སྐབས་Windows དཔེ་རྣམ་རང་འགུལ་གྱིས་མཐུན་པར་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.LightThemeRadio.ToolTip" xml:space="preserve">
+    <value>Windows སྒྲིག་འཇུག་ལ་མ་ལྟོས་པར་འོད་ཆེན་དཔེ་རྣམ་བཀོལ་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DarkThemeRadio.ToolTip" xml:space="preserve">
+    <value>Windows སྒྲིག་འཇུག་ལ་མ་ལྟོས་པར་མུན་པོ་དཔེ་རྣམ་བཀོལ་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UILanguageComboBox.ToolTip" xml:space="preserve">
+    <value>ཁ་ཕྱེ་བའི་ཤོག་ཁྱབ་ཡོངས་ལ་ཁ་པར་སྐད་ཡིག་མགྱོགས་པོར་བརྗེ་རེས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchResultsComboBox.ToolTip" xml:space="preserve">
+    <value>ཤོག་ཁྱབ་གསར་པ་ནི་ནང་དོན་འབྲས་བུ་དང་ཡང་ན་ཡིག་ཆ་འབྲས་བུ་སྤྱིར་བཏང་གི་ངོ་བོར་འདམ་ག་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchTypeComboBox.ToolTip" xml:space="preserve">
+    <value>ཤོག་ཁྱབ་གསར་པ་ནི་ཡིག་ཚང་འཚོལ་བཤེར་དང་ཡང་ན་Regex འཚོལ་བཤེར་ཐོན་རིམ་ནང་དུ་འགོ་བཙུགས་པ་འདམ་ག་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultRespectGitignoreCheckBox.ToolTip" xml:space="preserve">
+    <value>འཚོལ་བཤེར་གསར་པ་ནི་སྤྱིར་བཏང་གི་ངོ་བོར་.gitignore བརྩི་སྲུང་བྱེད་པ་སྒྲིག་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSystemFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>སྤྱིར་བཏང་གི་ངོ་བོར་མ་ལག་སྲུང་སྐྱོབ་ཡིག་ཆ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSubfoldersCheckBox.ToolTip" xml:space="preserve">
+    <value>སྤྱིར་བཏང་གི་ངོ་བོར་ཕྱི་ཁྱབ་ནང་དུ་རྒྱུན་མཐུད་བྱེད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeHiddenItemsCheckBox.ToolTip" xml:space="preserve">
+    <value>སྤྱིར་བཏང་གི་ངོ་བོར་སྦས་པའི་ཡིག་ཆ་དང་ཁུངས་ཁྱབ་ཚུད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeBinaryFilesCheckBox.ToolTip" xml:space="preserve">
+    <value>སྤྱིར་བཏང་གི་ངོ་བོར་གཉིས་རིམ་ཡིག་ཆ་བལྟ་སྐོར་བྱེད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultIncludeSymbolicLinksCheckBox.ToolTip" xml:space="preserve">
+    <value>སྤྱིར་བཏང་གི་ངོ་བོར་རྟགས་མཚམས་དང་མཐུད་ས་རྣམས་རྗེས་འབྲང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.DefaultSearchCaseSensitiveCheckBox.ToolTip" xml:space="preserve">
+    <value>འཚོལ་བཤེར་གསར་པ་ནི་སྤྱིར་བཏང་གི་ངོ་བོར་ཡིག་གཟུགས་ཐུབ་ཤུགས་ཅན་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.UnicodeNormalizationModeComboBox.ToolTip" xml:space="preserve">
+    <value>དཔྱད་བསྡུར་སྔོན་དུ་Unicode སྤྱིར་བཏང་གང་སྤྱད་པ་འདམ་ག་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.StringComparisonModeComboBox.ToolTip" xml:space="preserve">
+    <value>འཚོལ་བཤེར་གསར་པ་ལ་སྤྱིར་བཏང་ཡིག་ཚང་དཔྱད་བསྡུར་ཁྲིམས་ལུགས་འདམ་ག་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestNotificationButton.ToolTip" xml:space="preserve">
+    <value>Windows toast ལས་ཀ་བྱེད་བཞིན་ཡོད་པ་ཞིབ་བཤེར་བྱེད་པར་དཔེ་རྣམ་གསལ་བརྡ་ཞིག་བཏང་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="Controls.SettingsView.TestLocalizationButton.ToolTip" xml:space="preserve">
+    <value>སྐད་ཡིག་བརྗེ་རེས་ཚོད་ལྟ་དང་རྒྱབ་སྐྱོར་སྐད་ཡིག་ཡོངས་ནང་དུ་ཆ་འཕྲིན་མཐུན་པ་ཡོངས་ཡོད་པ་ཞིབ་བཤེར་བྱེད་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchesFound" xml:space="preserve">
+    <value>མཐུན་པ་རྙེད་མ་སོང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundMatches" xml:space="preserve">
+    <value>མཐུན་པ {0} རྙེད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownNoMatchFound" xml:space="preserve">
+    <value>མཐུན་པ་རྙེད་མ་སོང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownFoundOneMatch" xml:space="preserve">
+    <value>མཐུན་པ 1 རྙེད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownErrorMessage" xml:space="preserve">
+    <value>ནོར་འཁྲུལ།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownEnterPatternMessage" xml:space="preserve">
+    <value>དབྱེ་བ་མཐོང་པར་Regex དཔེ་རྣམ་ཞུགས་རོགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownInvalidPatternMessage" xml:space="preserve">
+    <value>ནུས་མེད་Regex དཔེ་རྣམ།: {0}</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCharacterClass" xml:space="preserve">
+    <value>ཡིག་འབྲུ་རིགས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeNonCapturingGroup" xml:space="preserve">
+    <value>འཛིན་མེད་ཚོགས་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeCapturingGroup" xml:space="preserve">
+    <value>འཛིན་ཅན་ཚོགས་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeQuantifier" xml:space="preserve">
+    <value>གྲངས་ཚད།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeAnchor" xml:space="preserve">
+    <value>གནས་འཛིན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeEscapeSequence" xml:space="preserve">
+    <value>བརྒལ་རིམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownTypeLiteral" xml:space="preserve">
+    <value>ཡིག་འབྲུ་དོན་དངོས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCharacterClass" xml:space="preserve">
+    <value>ཚོགས་པ་ནང་གི་ཡིག་འབྲུ་གང་རུང་མཐུན་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonCapturingGroup" xml:space="preserve">
+    <value>འཛིན་མེད་ཚོགས་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCapturingGroup" xml:space="preserve">
+    <value>མཐུན་པའི་ཡིག་ཚང་འཛིན་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescQuantifierRange" xml:space="preserve">
+    <value>གྲངས་ཚད།: གྲངས་ཐང་དངོས་པོ་དང་ཡང་ན་ཁྱབ་ཆེན་ངེས་པར་དུ་བཤད་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrMore" xml:space="preserve">
+    <value>ཀླད་ཀོར་དང་ཡང་ན་དེ་ལས་མང་བ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescOneOrMore" xml:space="preserve">
+    <value>གཅིག་དང་ཡང་ན་དེ་ལས་མང་བ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescZeroOrOne" xml:space="preserve">
+    <value>ཀླད་ཀོར་དང་ཡང་ན་གཅིག</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorStart" xml:space="preserve">
+    <value>ཐིག/ཡིག་ཚང་གི་འགོ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescAnchorEnd" xml:space="preserve">
+    <value>ཐིག/ཡིག་ཚང་གི་མཐའ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescDigit" xml:space="preserve">
+    <value>གྲངས་ཀ (0-9)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonDigit" xml:space="preserve">
+    <value>གྲངས་མིན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWordChar" xml:space="preserve">
+    <value>ཚིག་ཡིག་འབྲུ (a-z, A-Z, 0-9, _)</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWordChar" xml:space="preserve">
+    <value>ཚིག་མིན་ཡིག་འབྲུ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescWhitespace" xml:space="preserve">
+    <value>དབྱིབས་སྟོང་།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNonWhitespace" xml:space="preserve">
+    <value>དབྱིབས་སྟོང་མིན།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescNewline" xml:space="preserve">
+    <value>ཐིག་གསར་པ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescTab" xml:space="preserve">
+    <value>ཐེབ་ཀ</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescCarriageReturn" xml:space="preserve">
+    <value>ཕྱིར་འགྲོ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownDescLiteralChar" xml:space="preserve">
+    <value>ཡིག་འབྲུ་དོན་དངོས།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternTitle" xml:space="preserve">
+    <value>Regex དཔེ་རྣམ་སྒྱུར་བཅོས་བྱེད་དམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="RegexBreakdownOverwritePatternMessage" xml:space="preserve">
+    <value>ཁྱེད་རང་གིས་ད་ལྟའི་Regex དཔེ་རྣམ་ {0} སྔོན་སྒྲིག་དང་བརྗེ་རེས་བྱེད་འདོད་ཡོད་པ་ཡིན་ནམ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ProceedButtonText" xml:space="preserve">
+    <value>མུ་མཐུད་དུ་སྤེལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>ཆོག་མཆན་བཀོལ།</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="ContinueButton" xml:space="preserve">
+    <value>Continue</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="WslPathWarningTitle" xml:space="preserve">
+    <value>WSL Path Detected</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="WslPathWarningMessage" xml:space="preserve">
+    <value>The path you entered appears to access WSL files through Windows (e.g., C:\home\...). Using the native WSL path (\\wsl$\...) is significantly faster.
+
+Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windows-based search.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="WslSearchButton" xml:space="preserve">
+    <value>WSL Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutNavItem.Content" xml:space="preserve">
+    <value>About</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutCreatedByTextBlock.Text" xml:space="preserve">
+    <value>Created by BornSupercharged</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutLicenseTextBlock.Text" xml:space="preserve">
+    <value>Licensed under GPL 3.0</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutGitHubLinkButton.Content" xml:space="preserve">
+    <value>View Project on GitHub</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutKeyboardShortcutTextBlock.Text" xml:space="preserve">
+    <value>Press F1 anytime to open this page</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="AboutVersionLabel.Text" xml:space="preserve">
+    <value>Version</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="StopButton" xml:space="preserve">
+    <value>Stop</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeSecondSingular" xml:space="preserve">
+    <value>second</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeSecondPlural" xml:space="preserve">
+    <value>seconds</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeMinuteSingular" xml:space="preserve">
+    <value>minute</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeMinutePlural" xml:space="preserve">
+    <value>minutes</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeHourSingular" xml:space="preserve">
+    <value>hour</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TimeHourPlural" xml:space="preserve">
+    <value>hours</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="FoundMatchesStatus" xml:space="preserve">
+    <value>Found {0} matches in {1} files in {2}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ReplacedMatchesStatus" xml:space="preserve">
+    <value>Replaced {0} matches in {1} files in {2}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="BackupRestoreHeaderTextBlock.Text" xml:space="preserve">
+    <value>Backup &amp; Restore</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ExportSettingsButton.Content" xml:space="preserve">
+    <value>Export Settings</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ImportSettingsButton.Content" xml:space="preserve">
+    <value>Import Settings</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RestoreDefaultsButton.Content" xml:space="preserve">
+    <value>Restore Defaults</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="BackupRestoreExplanationTextBlock.Text" xml:space="preserve">
+    <value>Export your current settings to a backup file, import settings from a previous backup, or restore all settings to their original defaults.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsExportedSuccessTitle" xml:space="preserve">
+    <value>Settings Exported</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsExportedSuccessMessage" xml:space="preserve">
+    <value>Your settings have been exported successfully to: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsExportErrorTitle" xml:space="preserve">
+    <value>Export Failed</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsExportErrorMessage" xml:space="preserve">
+    <value>Failed to export settings: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportedSuccessTitle" xml:space="preserve">
+    <value>Settings Imported</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportedSuccessMessage" xml:space="preserve">
+    <value>Settings have been imported successfully. Some changes may require a restart to take effect.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportErrorTitle" xml:space="preserve">
+    <value>Import Failed</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportErrorMessage" xml:space="preserve">
+    <value>Failed to import settings: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SettingsImportInvalidFileMessage" xml:space="preserve">
+    <value>The selected file does not appear to be a valid Grex settings backup.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmTitle" xml:space="preserve">
+    <value>Restore Defaults</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RestoreDefaultsConfirmMessage" xml:space="preserve">
+    <value>This will reset all settings to their original defaults and restart the application. Are you sure you want to continue?</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.ExportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Export your current settings to a backup file</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.ImportSettingsButton.ToolTip" xml:space="preserve">
+    <value>Import settings from a backup file</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.RestoreDefaultsButton.ToolTip" xml:space="preserve">
+    <value>Reset all settings to their original defaults</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="SystemThemeComboBoxItem.Content" xml:space="preserve">
+    <value>System Default</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Light Mode</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DarkThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Dark Mode</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="BlackKnightThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Black Knight (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ParanoidThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Paranoid (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DiamondThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Diamond (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.ThemePreferenceComboBox.ToolTip" xml:space="preserve">
+    <value>Choose a theme for the application: System Default follows your Windows settings, Light and Dark are standard themes, and the high-contrast themes (Black Knight, Paranoid, Diamond) provide enhanced readability.</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="SubspaceThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Subspace (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RedVelvetThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Red Velvet (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DreamsThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Dreams (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="TieflingThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Tiefling (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="VibesThemeComboBoxItem.Content" xml:space="preserve">
+    <value>Vibes (High Contrast)</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="RestartApplicationButton.Content" xml:space="preserve">
+    <value>Restart Application</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.RestartApplicationButton.ToolTip" xml:space="preserve">
+    <value>Restart the application to apply changes.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ApplyThemePromptTitle" xml:space="preserve">
+    <value>Apply Theme</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="ApplyThemePromptMessage" xml:space="preserve">
+    <value>Some elements need the application to be restarted to style properly.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="LaterButton" xml:space="preserve">
+    <value>Later</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Docker Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Mirror files from a running Docker container so Grex can scan them without leaving the app.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
+    <value>Enable Docker Search</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OnContent" xml:space="preserve">
+    <value>Enabled</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="EnableDockerSearchToggleSwitch.OffContent" xml:space="preserve">
+    <value>Disabled</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="Controls.SettingsView.EnableDockerSearchToggleSwitch.ToolTip" xml:space="preserve">
+    <value>Show available Docker containers next to the search path so you can target them directly.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerLocalDiskOption" xml:space="preserve">
+    <value>Local Disk</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerTargetComboBox.Header" xml:space="preserve">
+    <value>Search Target</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerTargetComboBox.PlaceholderText" xml:space="preserve">
+    <value>Select container</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerRefreshButton.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Refresh Docker container list</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerContextCopyPath" xml:space="preserve">
+    <value>Copy Container Path</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerContextCopyName" xml:space="preserve">
+    <value>Copy File Name</value>
+    <comment>status:complete</comment>
+  </data>
+  <data name="DockerSearchErrorTitle" xml:space="preserve">
+    <value>Docker Search Error</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerUnavailableMessage" xml:space="preserve">
+    <value>Docker is unavailable. Make sure Docker Desktop is running and that you have permission to run docker commands.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerContainerNotSelectedMessage" xml:space="preserve">
+    <value>Select a Docker container before starting the search.</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerInitializationErrorMessage" xml:space="preserve">
+    <value>Could not initialize Docker integration: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerRefreshErrorMessage" xml:space="preserve">
+    <value>Unable to refresh Docker containers: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerMirrorErrorMessage" xml:space="preserve">
+    <value>Failed to prepare the Docker search mirror: {0}</value>
+    <comment>status:error:permanent</comment>
+  </data>
+  <data name="DockerSymlinkErrorMessage" xml:space="preserve">
+    <value>Docker copy failed due to symbolic link creation: {0}
+
+Windows requires special privileges to create symbolic links. Either run Grex as Administrator, or enable the 'Create symbolic links' user right for your account.
+
+Note: Some container paths (like node_modules) contain many symlinks and may not be searchable without these privileges.</value>
+    <comment>status:error:Invalid destination language</comment>
+  </data>
+</root>

@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>Grex</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\Grex.ico</ApplicationIcon>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>false</EnableMsixTooling>
+    <WindowsPackageType>None</WindowsPackageType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <EnableDefaultPriItems>false</EnableDefaultPriItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Tests/**" />
+    <Compile Remove="IntegrationTests/**" />
+    <Compile Remove="UITests/**" />
+    <Compile Remove="docs/**" />
+    <None Remove="Tests/**" />
+    <None Remove="IntegrationTests/**" />
+    <None Remove="UITests/**" />
+    <None Remove="docs/**" />
+    <Content Remove="docs/**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Docker.DotNet" Version="3.125.15" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.250907003" />
+    <PackageReference Include="System.Data.OleDb" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PRIResource Include="Strings\**\Resources.resw" />
+  </ItemGroup>
+
+  <!-- Copy assets only when building the main application, not when referenced by test projects -->
+  <Target Name="CopyAssetsToOutput" AfterTargets="Build" Condition="'$(OutputType)' == 'WinExe' AND '$(IsTestProject)' != 'true' AND '$(MSBuildProjectName)' == 'Grex'">
+    <ItemGroup>
+      <AssetsToCopy Include="Assets\*.png" />
+      <AssetsToCopy Include="Assets\*.ico" />
+    </ItemGroup>
+    <MakeDir Directories="$(OutputPath)Assets" Condition="!Exists('$(OutputPath)Assets')" />
+    <Copy SourceFiles="@(AssetsToCopy)" DestinationFolder="$(OutputPath)Assets" SkipUnchangedFiles="true" />
+  </Target>
+
+  <!-- Prevent assets and docs from being included in project references - tests don't need them -->
+  <Target Name="PreventAssetsFromProjectReferences" BeforeTargets="GetCopyToOutputDirectoryItems">
+    <ItemGroup>
+      <_AllProjectOutputItems Remove="@(_AllProjectOutputItems)" Condition="'%(_AllProjectOutputItems.TargetPath)' != '' and ($([System.String]::Copy('%(_AllProjectOutputItems.TargetPath)').Contains('Assets\')) or $([System.String]::Copy('%(_AllProjectOutputItems.TargetPath)').Contains('Assets/')) or $([System.String]::Copy('%(_AllProjectOutputItems.TargetPath)').Contains('docs\')) or $([System.String]::Copy('%(_AllProjectOutputItems.TargetPath)').Contains('docs/')))" />
+      <ContentWithTargetPath Remove="@(ContentWithTargetPath)" Condition="'%(ContentWithTargetPath.TargetPath)' != '' and ($([System.String]::Copy('%(ContentWithTargetPath.TargetPath)').Contains('Assets\')) or $([System.String]::Copy('%(ContentWithTargetPath.TargetPath)').Contains('Assets/')) or $([System.String]::Copy('%(ContentWithTargetPath.TargetPath)').Contains('docs\')) or $([System.String]::Copy('%(ContentWithTargetPath.TargetPath)').Contains('docs/')))" />
+    </ItemGroup>
+  </Target>
+
+</Project>
+
+
