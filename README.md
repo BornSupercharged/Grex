@@ -34,7 +34,7 @@
 ```powershell
 git clone https://github.com/<org>/Grex.git
 cd Grex
-dotnet build Grex.sln -p:Platform=x64
+dotnet build grex.sln -p:Platform=x64
 dotnet run --project Grex.csproj -p:Platform=x64
 ```
 
@@ -68,10 +68,10 @@ Need the full walkthrough? See the **[Usage Guide](docs/usage.md)**.
 ```powershell
 # Restore & build
 dotnet restore
-dotnet build Grex.sln -p:Platform=x64
+dotnet build grex.sln -p:Platform=x64
 
 # Run all tests
-dotnet test Grex.sln -p:Platform=x64
+dotnet test grex.sln -p:Platform=x64
 ```
 
 For detailed build configurations, CI pipelines, and asset generation, see **[Build & Test Reference](docs/build-and-test.md)**.
@@ -81,7 +81,7 @@ For detailed build configurations, CI pipelines, and asset generation, see **[Bu
 Issues and pull requests are welcome! Please:
 
 - Keep new UI strings in the `.resw` files so localization stays in sync
-- Run `dotnet test Grex.sln -p:Platform=x64` before submitting
+- Run `dotnet test grex.sln -p:Platform=x64` before submitting
 - Add or update docs under `docs/` when you ship new features
 
 ## 📄 License
