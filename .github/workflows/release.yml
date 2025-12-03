@@ -1,0 +1,55 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore dependencies
+        run: dotnet restore grex.sln
+      - name: Run tests
+        run: dotnet test grex.sln -p:Platform=x64 --configuration Release
+      - name: Publish application
+        run: dotnet publish Grex.csproj -p:Platform=x64 -c Release -o publish/win-x64
+      - name: Package artifacts
+        shell: pwsh
+        run: Compress-Archive -Path publish/win-x64/* -DestinationPath grex-win-x64.zip
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: grex-win-x64
+          path: grex-win-x64.zip
+
+  release:
+    name: Create Release
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: grex-win-x64
+          path: artifacts
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/grex-win-x64.zip
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+
