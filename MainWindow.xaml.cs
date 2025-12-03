@@ -30,9 +30,65 @@ namespace Grex
         private System.Threading.CancellationTokenSource? _refreshLocalizationCancellation;
         private readonly object _refreshLocalizationLock = new object();
         
-        // Constants for minimum window size
-        private const int minWidth = 1100;
-        private const int minHeight = 700;
+        // Constants for base window size (at 100% DPI scale)
+        private const int baseWidth = 1100;
+        private const int baseHeight = 700;
+        
+        // Calculate scaled window size based on DPI
+        // Handles all Windows scaling options: 100%, 125%, 150%, 175%, 200%, 225%, 250%, 300%, 350%, etc.
+        // RasterizationScale returns a continuous value (1.0 = 100%, 1.5 = 150%, 3.0 = 300%, 3.5 = 350%, etc.)
+        private (int width, int height) GetScaledWindowSize()
+        {
+            try
+            {
+                double scaleFactor = 1.0;
+                
+                // Get DPI scale factor from XamlRoot (most reliable for WinUI 3)
+                // This automatically handles all Windows scaling percentages
+                if (RootGrid?.XamlRoot != null)
+                {
+                    scaleFactor = RootGrid.XamlRoot.RasterizationScale;
+                }
+                else if (_appWindow != null)
+                {
+                    // Fallback: Use Win32 DPI API if XamlRoot is not available yet
+                    try
+                    {
+                        var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
+                        var dpi = GetDpiForWindow(hwnd);
+                        scaleFactor = dpi / 96.0; // 96 DPI = 100% scale, 144 DPI = 150% scale, etc.
+                    }
+                    catch
+                    {
+                        // Use default 1.0 if DPI detection fails
+                    }
+                }
+                
+                // Ensure scale factor is reasonable (between 0.5 and 5.0 to handle edge cases)
+                scaleFactor = Math.Max(0.5, Math.Min(5.0, scaleFactor));
+                
+                // Calculate scaled dimensions
+                var scaledWidth = (int)(baseWidth * scaleFactor);
+                var scaledHeight = (int)(baseHeight * scaleFactor);
+                
+                // Ensure minimum reasonable size (even at very low scales)
+                scaledWidth = Math.Max(scaledWidth, 800);
+                scaledHeight = Math.Max(scaledHeight, 600);
+                
+                Log($"GetScaledWindowSize: DPI scale factor = {scaleFactor} ({scaleFactor * 100:F0}%), scaled size = {scaledWidth}x{scaledHeight}");
+                
+                return (scaledWidth, scaledHeight);
+            }
+            catch (Exception ex)
+            {
+                Log($"GetScaledWindowSize ERROR: {ex}, using base size");
+                return (baseWidth, baseHeight);
+            }
+        }
+        
+        // Win32 API to get DPI for a window (fallback method)
+        [DllImport("user32.dll")]
+        private static extern int GetDpiForWindow(IntPtr hwnd);
 
         // Win32 API for window positioning
         [DllImport("user32.dll")]
@@ -266,6 +322,11 @@ namespace Grex
                 var screenWidth = GetSystemMetrics(0); // SM_CXSCREEN
                 var screenHeight = GetSystemMetrics(1); // SM_CYSCREEN
                 
+                // Get scaled default window size based on DPI
+                var (defaultWidth, defaultHeight) = GetScaledWindowSize();
+                var minWidth = defaultWidth;
+                var minHeight = defaultHeight;
+                
                 // Restore window position and size from settings
                 var (savedX, savedY, savedWidth, savedHeight) = SettingsService.GetWindowPosition();
                 if (savedX.HasValue && savedY.HasValue && savedWidth.HasValue && savedHeight.HasValue)
@@ -282,18 +343,18 @@ namespace Grex
                     }
                     else
                     {
-                        // Invalid saved position, use defaults
-                        _appWindow.Resize(new Windows.Graphics.SizeInt32(1100, 700));
-                        Log("SetupWindow: Invalid saved position, using default size");
+                        // Invalid saved position, use scaled defaults
+                        _appWindow.Resize(new Windows.Graphics.SizeInt32(defaultWidth, defaultHeight));
+                        Log($"SetupWindow: Invalid saved position, using scaled default size ({defaultWidth}, {defaultHeight})");
                     }
                 }
                 else
                 {
-                    // No saved position, center window with default size
-                    var centerX = (screenWidth - minWidth) / 2;
-                    var centerY = (screenHeight - minHeight) / 2;
-                    SetWindowPos(hwnd, HWND_TOP, centerX, centerY, minWidth, minHeight, 0);
-                    Log($"SetupWindow: No saved position, centered window at ({centerX}, {centerY}) with size ({minWidth}, {minHeight})");
+                    // No saved position, center window with scaled default size
+                    var centerX = (screenWidth - defaultWidth) / 2;
+                    var centerY = (screenHeight - defaultHeight) / 2;
+                    SetWindowPos(hwnd, HWND_TOP, centerX, centerY, defaultWidth, defaultHeight, 0);
+                    Log($"SetupWindow: No saved position, centered window at ({centerX}, {centerY}) with scaled size ({defaultWidth}, {defaultHeight})");
                 }
                 
                 // Handle window size changes for responsive design and minimum size enforcement
@@ -1023,10 +1084,13 @@ namespace Grex
                 // Enforce minimum window size as a fallback (Win32 API should handle this, but this ensures it)
                 var currentSize = sender.Size;
                 
-                if (currentSize.Width < minWidth || currentSize.Height < minHeight)
+                // Get current scaled minimum size
+                var (scaledMinWidth, scaledMinHeight) = GetScaledWindowSize();
+                
+                if (currentSize.Width < scaledMinWidth || currentSize.Height < scaledMinHeight)
                 {
-                    var newWidth = Math.Max(currentSize.Width, minWidth);
-                    var newHeight = Math.Max(currentSize.Height, minHeight);
+                    var newWidth = Math.Max(currentSize.Width, scaledMinWidth);
+                    var newHeight = Math.Max(currentSize.Height, scaledMinHeight);
                     sender.Resize(new Windows.Graphics.SizeInt32(newWidth, newHeight));
                 }
                 
