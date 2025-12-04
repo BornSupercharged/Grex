@@ -1780,7 +1780,8 @@ namespace Grex
                     "CheckBoxCheckGlyphForegroundChecked",
                     "CheckBoxCheckGlyphForegroundCheckedPointerOver",
                     "CheckBoxCheckGlyphForegroundCheckedPressed");
-                SetBrushResources(resources, accent,
+
+                SetBrushResources(resources,!IsHighContrastTheme(preference)?accent:tertiary,
                     "CheckBoxForegroundDisabled",
                     "CheckBoxCheckBackgroundFillChecked",
                     "CheckBoxCheckBackgroundFillCheckedPointerOver",
@@ -1808,7 +1809,7 @@ namespace Grex
                     "AccentButtonForeground",
                     "AccentButtonForegroundPointerOver",
                     "AccentButtonForegroundPressed");
-                SetBrushResources(resources, accent, "AccentButtonBackground");
+                SetBrushResources(resources, !IsHighContrastTheme(preference)?accent:secondary, "AccentButtonBackground");
                 SetBrushResources(resources, tertiary,
                     "AccentButtonBackgroundPointerOver",
                     "AccentButtonBackgroundPressed");
@@ -1827,11 +1828,13 @@ namespace Grex
                     "AppBarToggleButtonRevealForegroundChecked",
                     "AppBarToggleButtonRevealForegroundCheckedPointerOver",
                     "AppBarToggleButtonRevealForegroundCheckedPressed");
-                SetBrushResources(resources, accent,
+
+                SetBrushResources(resources, !IsHighContrastTheme(preference)?accent:secondary,
                     "AppBarToggleButtonBackground",
                     "AppBarToggleButtonBackgroundChecked",
                     "AppBarToggleButtonRevealBackground",
                     "AppBarToggleButtonRevealBackgroundChecked");
+
                 SetBrushResources(resources, tertiary,
                     "AppBarToggleButtonBackgroundPointerOver",
                     "AppBarToggleButtonBackgroundPressed",
@@ -1852,37 +1855,44 @@ namespace Grex
                     "SystemControlDisabledAccentBrush");
                 
                 // ToggleSwitch resources to ensure the docker toggle matches theme colors
-                SetBrushResources(resources, accent,
+                SetBrushResources(resources, !IsHighContrastTheme(preference)?accent:tertiary,
                     "ToggleSwitchFillOn",
                     "ToggleSwitchFillOnPointerOver",
                     "ToggleSwitchFillOnPressed",
                     "ToggleSwitchFillOnDisabled");
-                SetBrushResources(resources, secondary,
-                    "ToggleSwitchFillOff",
-                    "ToggleSwitchFillOffPointerOver",
-                    "ToggleSwitchFillOffPressed",
-                    "ToggleSwitchFillOffDisabled");
-                SetBrushResources(resources, text,
-                    "ToggleSwitchStrokeOn",
-                    "ToggleSwitchStrokeOnPointerOver",
-                    "ToggleSwitchStrokeOnPressed",
-                    "ToggleSwitchStrokeOnDisabled",
-                    "ToggleSwitchStrokeOff",
-                    "ToggleSwitchStrokeOffPointerOver",
-                    "ToggleSwitchStrokeOffPressed",
-                    "ToggleSwitchStrokeOffDisabled",
-                    "ToggleSwitchForeground",
-                    "ToggleSwitchForegroundPointerOver",
-                    "ToggleSwitchForegroundPressed",
-                    "ToggleSwitchForegroundDisabled",
-                    "ToggleSwitchKnobFillOn",
-                    "ToggleSwitchKnobFillOnPointerOver",
-                    "ToggleSwitchKnobFillOnPressed",
-                    "ToggleSwitchKnobFillOnDisabled",
-                    "ToggleSwitchKnobFillOff",
-                    "ToggleSwitchKnobFillOffPointerOver",
-                    "ToggleSwitchKnobFillOffPressed",
-                    "ToggleSwitchKnobFillOffDisabled");
+                if ( IsHighContrastTheme(preference) ) {
+                    SetBrushResources(resources, accent,
+                        "ToggleSwitchKnobFillOffPointerOver");
+                    
+                } else {
+                    SetBrushResources(resources, secondary,
+                        "ToggleSwitchFillOffPointerOver");
+                    SetBrushResources(resources, text,
+                        "ToggleSwitchStrokeOn",
+                        "ToggleSwitchStrokeOnPointerOver",
+                        "ToggleSwitchStrokeOnPressed",
+                        "ToggleSwitchStrokeOnDisabled",
+                        "ToggleSwitchStrokeOff",
+                        "ToggleSwitchStrokeOffPointerOver",
+                        "ToggleSwitchStrokeOffPressed",
+                        "ToggleSwitchStrokeOffDisabled",
+                        "ToggleSwitchForeground",
+                        "ToggleSwitchForegroundPointerOver",
+                        "ToggleSwitchForegroundPressed",
+                        "ToggleSwitchForegroundDisabled",
+                        "ToggleSwitchKnobFillOn",
+                        "ToggleSwitchKnobFillOnPointerOver",
+                        "ToggleSwitchKnobFillOnPressed",
+                        "ToggleSwitchKnobFillOnDisabled",
+                        "ToggleSwitchKnobFillOff",
+                        "ToggleSwitchKnobFillOffPointerOver",
+                        "ToggleSwitchKnobFillOffPressed",
+                        "ToggleSwitchKnobFillOffDisabled");
+                    SetBrushResources(resources, secondary,
+                        "ToggleSwitchFillOff",
+                        "ToggleSwitchFillOffPressed",
+                        "ToggleSwitchFillOffDisabled");
+                }
                 
                 Log($"ApplyHighContrastResources: Applied resource overrides for {preference}");
             }

@@ -877,7 +877,7 @@ namespace Grex.Controls
                 this.Resources?.Clear();
                 
                 // Apply text color to all TextBlocks
-                ApplyForegroundToAllTextBlocks(this, e.TextBrush, e.AccentBrush);
+                ApplyForegroundToAllTextBlocks(this, e.TextBrush, e.AccentBrush, e.TertiaryBrush);
                 
                 // Apply accent color to specific accent text
                 ApplyAccentColors(e.AccentBrush);
@@ -902,7 +902,7 @@ namespace Grex.Controls
                 this.Resources["CheckBoxForegroundPointerOver"] = e.TextBrush;
                 this.Resources["CheckBoxForegroundPressed"] = e.TextBrush;
                 this.Resources["CheckBoxCheckGlyphForegroundChecked"] = e.TextBrush;
-                this.Resources["CheckBoxCheckBackgroundFillChecked"] = e.AccentBrush;
+                this.Resources["CheckBoxCheckBackgroundFillChecked"] = e.TertiaryBrush;
                 this.Resources["CheckBoxCheckBackgroundFillCheckedPointerOver"] = e.AccentBrush;
                 
                 // ComboBox resources
@@ -917,7 +917,7 @@ namespace Grex.Controls
             }
         }
         
-        private void ApplyForegroundToAllTextBlocks(DependencyObject parent, SolidColorBrush foreground, SolidColorBrush accent)
+        private void ApplyForegroundToAllTextBlocks(DependencyObject parent, SolidColorBrush foreground, SolidColorBrush accent, SolidColorBrush tertiary)
         {
             var count = Microsoft.UI.Xaml.Media.VisualTreeHelper.GetChildrenCount(parent);
             for (int i = 0; i < count; i++)
@@ -947,7 +947,7 @@ namespace Grex.Controls
                     checkBox.Resources["CheckBoxCheckGlyphForegroundChecked"] = foreground;
                     checkBox.Resources["CheckBoxCheckGlyphForegroundCheckedPointerOver"] = foreground;
                     checkBox.Resources["CheckBoxCheckGlyphForegroundCheckedPressed"] = foreground;
-                    checkBox.Resources["CheckBoxCheckBackgroundFillChecked"] = accent;
+                    checkBox.Resources["CheckBoxCheckBackgroundFillChecked"] = tertiary;
                     checkBox.Resources["CheckBoxCheckBackgroundFillCheckedPointerOver"] = accent;
                     checkBox.Resources["CheckBoxCheckBackgroundFillCheckedPressed"] = accent;
 
@@ -987,7 +987,7 @@ namespace Grex.Controls
                 }
                 
                 // Recurse into children
-                ApplyForegroundToAllTextBlocks(child, foreground, accent);
+                ApplyForegroundToAllTextBlocks(child, foreground, accent, tertiary);
             }
         }
         

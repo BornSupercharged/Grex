@@ -490,7 +490,8 @@ namespace Grex.Controls
         
         private static bool IsHighContrastTheme(Services.ThemePreference preference)
         {
-            return preference == Services.ThemePreference.BlackKnight ||
+            return preference == Services.ThemePreference.GentleGecko ||
+                   preference == Services.ThemePreference.BlackKnight ||
                    preference == Services.ThemePreference.Paranoid ||
                    preference == Services.ThemePreference.Diamond ||
                    preference == Services.ThemePreference.Subspace ||
@@ -545,7 +546,7 @@ namespace Grex.Controls
                 ApplyThemeToResultContainers(e);
                 
                 // Apply foreground colors to all text elements in this control
-                ApplyForegroundToAllTextBlocks(this, e.TextBrush, e.AccentBrush);
+                ApplyForegroundToAllTextBlocks(this, e.TextBrush, e.AccentBrush, e.TertiaryBrush);
                 
                 // Apply theme resources for better control styling
                 if (this.Resources == null)
@@ -564,7 +565,7 @@ namespace Grex.Controls
                 this.Resources["CheckBoxForegroundPointerOver"] = e.TextBrush;
                 this.Resources["CheckBoxForegroundPressed"] = e.TextBrush;
                 this.Resources["CheckBoxCheckGlyphForegroundChecked"] = e.TextBrush;
-                this.Resources["CheckBoxCheckBackgroundFillChecked"] = e.AccentBrush;
+                this.Resources["CheckBoxCheckBackgroundFillChecked"] = e.TertiaryBrush;
                 this.Resources["CheckBoxCheckBackgroundFillCheckedPointerOver"] = e.AccentBrush;
                 
                 // ComboBox resources
@@ -577,31 +578,52 @@ namespace Grex.Controls
                 this.Resources["TextBoxForeground"] = e.TextBrush;
                 this.Resources["TextControlForeground"] = e.TextBrush;
                 
+                var accentDefaultBrush = e.SecondaryBrush;
+                var accentHoverBrush = e.TertiaryBrush;
+
                 // AccentButton resources (Browse button, Filter Options toggle)
                 this.Resources["AccentButtonForeground"] = e.TextBrush;
                 this.Resources["AccentButtonForegroundPointerOver"] = e.TextBrush;
                 this.Resources["AccentButtonForegroundPressed"] = e.TextBrush;
-                this.Resources["AccentButtonBackground"] = e.AccentBrush;
-                this.Resources["AccentButtonBackgroundPointerOver"] = e.TertiaryBrush;
-                this.Resources["AccentButtonBackgroundPressed"] = e.TertiaryBrush;
+                this.Resources["AccentButtonBackground"] = accentDefaultBrush;
+                this.Resources["AccentButtonBackgroundPointerOver"] = accentHoverBrush;
+                this.Resources["AccentButtonBackgroundPressed"] = accentHoverBrush;
                 
                 // Directly style AccentButton controls (ThemeResource doesn't update dynamically)
+                if (DockerRefreshButton != null)
+                {
+                    DockerRefreshButton.Foreground = e.TextBrush;
+                    DockerRefreshButton.Background = accentDefaultBrush;
+                    
+                    if (DockerRefreshButton.Resources == null)
+                        DockerRefreshButton.Resources = new Microsoft.UI.Xaml.ResourceDictionary();
+                    DockerRefreshButton.Resources["AccentButtonBackground"] = accentDefaultBrush;
+                    DockerRefreshButton.Resources["AccentButtonBackgroundPointerOver"] = accentHoverBrush;
+                    DockerRefreshButton.Resources["AccentButtonBackgroundPressed"] = accentHoverBrush;
+                    DockerRefreshButton.Resources["AccentButtonForeground"] = e.TextBrush;
+                    DockerRefreshButton.Resources["AccentButtonForegroundPointerOver"] = e.TextBrush;
+                    DockerRefreshButton.Resources["AccentButtonForegroundPressed"] = e.TextBrush;
+                }
+
                 if (BrowseButton != null)
                 {
                     BrowseButton.Foreground = e.TextBrush;
-                    BrowseButton.Background = e.AccentBrush;
+                    BrowseButton.Background = accentDefaultBrush;
                     
                     // Set hover/pressed state resources
                     if (BrowseButton.Resources == null)
                         BrowseButton.Resources = new Microsoft.UI.Xaml.ResourceDictionary();
-                    BrowseButton.Resources["AccentButtonBackground"] = e.AccentBrush;
-                    BrowseButton.Resources["AccentButtonBackgroundPointerOver"] = e.TertiaryBrush;
-                    BrowseButton.Resources["AccentButtonBackgroundPressed"] = e.TertiaryBrush;
+                    BrowseButton.Resources["AccentButtonBackground"] = accentDefaultBrush;
+                    BrowseButton.Resources["AccentButtonBackgroundPointerOver"] = accentHoverBrush;
+                    BrowseButton.Resources["AccentButtonBackgroundPressed"] = accentHoverBrush;
                     BrowseButton.Resources["AccentButtonForeground"] = e.TextBrush;
                     BrowseButton.Resources["AccentButtonForegroundPointerOver"] = e.TextBrush;
                     BrowseButton.Resources["AccentButtonForegroundPressed"] = e.TextBrush;
                 }
                 
+                var appBarDefaultBrush = e.SecondaryBrush;
+                var appBarHoverBrush = e.TertiaryBrush;
+
                 if (FilterOptionsToggleButton != null)
                 {
                     // Clear any hardcoded values first
@@ -610,25 +632,25 @@ namespace Grex.Controls
                     
                     // Set properties directly
                     FilterOptionsToggleButton.Foreground = e.TextBrush;
-                    FilterOptionsToggleButton.Background = e.AccentBrush;
+                    FilterOptionsToggleButton.Background = appBarDefaultBrush;
                     
                     // Set hover/pressed state resources
                     if (FilterOptionsToggleButton.Resources == null)
                         FilterOptionsToggleButton.Resources = new Microsoft.UI.Xaml.ResourceDictionary();
                     
                     // Set all AppBarToggleButton resources
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackground"] = e.AccentBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundPointerOver"] = e.TertiaryBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundPressed"] = e.TertiaryBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundChecked"] = e.AccentBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundCheckedPointerOver"] = e.TertiaryBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundCheckedPressed"] = e.TertiaryBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackground"] = e.AccentBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundPointerOver"] = e.TertiaryBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundPressed"] = e.TertiaryBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundChecked"] = e.AccentBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundCheckedPointerOver"] = e.TertiaryBrush;
-                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundCheckedPressed"] = e.TertiaryBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackground"] = appBarDefaultBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundPointerOver"] = appBarHoverBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundPressed"] = appBarHoverBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundChecked"] = appBarDefaultBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundCheckedPointerOver"] = appBarHoverBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonBackgroundCheckedPressed"] = appBarHoverBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackground"] = appBarDefaultBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundPointerOver"] = appBarHoverBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundPressed"] = appBarHoverBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundChecked"] = appBarDefaultBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundCheckedPointerOver"] = appBarHoverBrush;
+                    FilterOptionsToggleButton.Resources["AppBarToggleButtonRevealBackgroundCheckedPressed"] = appBarHoverBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForeground"] = e.TextBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForegroundPointerOver"] = e.TextBrush;
                     FilterOptionsToggleButton.Resources["AppBarToggleButtonForegroundPressed"] = e.TextBrush;
@@ -652,10 +674,10 @@ namespace Grex.Controls
                         commandBar.Resources = new Microsoft.UI.Xaml.ResourceDictionary();
                     if (commandBar?.Resources != null)
                     {
-                        commandBar.Resources["AppBarToggleButtonBackground"] = e.AccentBrush;
-                        commandBar.Resources["AppBarToggleButtonBackgroundChecked"] = e.AccentBrush;
-                        commandBar.Resources["AppBarToggleButtonRevealBackground"] = e.AccentBrush;
-                        commandBar.Resources["AppBarToggleButtonRevealBackgroundChecked"] = e.AccentBrush;
+                        commandBar.Resources["AppBarToggleButtonBackground"] = appBarDefaultBrush;
+                        commandBar.Resources["AppBarToggleButtonBackgroundChecked"] = appBarDefaultBrush;
+                        commandBar.Resources["AppBarToggleButtonRevealBackground"] = appBarDefaultBrush;
+                        commandBar.Resources["AppBarToggleButtonRevealBackgroundChecked"] = appBarDefaultBrush;
                     }
 
                     // Force visual state refresh for FilterOptionsToggleButton
@@ -684,7 +706,7 @@ namespace Grex.Controls
             }
         }
         
-        private void ApplyForegroundToAllTextBlocks(DependencyObject parent, Microsoft.UI.Xaml.Media.SolidColorBrush foreground, Microsoft.UI.Xaml.Media.SolidColorBrush accent)
+        private void ApplyForegroundToAllTextBlocks(DependencyObject parent, Microsoft.UI.Xaml.Media.SolidColorBrush foreground, Microsoft.UI.Xaml.Media.SolidColorBrush accent, Microsoft.UI.Xaml.Media.SolidColorBrush tertiary)
         {
             var count = Microsoft.UI.Xaml.Media.VisualTreeHelper.GetChildrenCount(parent);
             for (int i = 0; i < count; i++)
@@ -724,11 +746,13 @@ namespace Grex.Controls
                     checkBox.Resources["CheckBoxCheckGlyphForegroundChecked"] = foreground;
                     checkBox.Resources["CheckBoxCheckGlyphForegroundCheckedPointerOver"] = foreground;
                     checkBox.Resources["CheckBoxCheckGlyphForegroundCheckedPressed"] = foreground;
-                    checkBox.Resources["CheckBoxCheckBackgroundFillChecked"] = accent;
+                    checkBox.Resources["CheckBoxCheckBackgroundFillChecked"] = tertiary;
                     checkBox.Resources["CheckBoxCheckBackgroundFillCheckedPointerOver"] = accent;
-                    checkBox.Resources["CheckBoxCheckBackgroundFillCheckedPressed"] = accent;
-                    
+                    checkBox.Resources["CheckBoxCheckBackgroundFillCheckedPressed"] = tertiary;
+
                     // Force visual state refresh to apply new resources
+                    // We must toggle to a different state and back to force the VSM to re-apply setters
+                    // useTransitions: false ensures immediate update without animation delays
                     if (checkBox.IsEnabled)
                     {
                         Microsoft.UI.Xaml.VisualStateManager.GoToState(checkBox, "PointerOver", false);
@@ -752,9 +776,9 @@ namespace Grex.Controls
                     }
                     else
                     {
-                        Microsoft.UI.Xaml.VisualStateManager.GoToState(checkBox, "Checked", false);
-                        Microsoft.UI.Xaml.VisualStateManager.GoToState(checkBox, "Indeterminate", false);
-                    }
+                         Microsoft.UI.Xaml.VisualStateManager.GoToState(checkBox, "Checked", false);
+                         Microsoft.UI.Xaml.VisualStateManager.GoToState(checkBox, "Indeterminate", false);
+                    }                    
                 }
                 else if (child is Button button)
                 {
@@ -770,7 +794,7 @@ namespace Grex.Controls
                 }
                 
                 // Recurse into children
-                ApplyForegroundToAllTextBlocks(child, foreground, accent);
+                ApplyForegroundToAllTextBlocks(child, foreground, accent, tertiary);
             }
         }
         
@@ -789,7 +813,7 @@ namespace Grex.Controls
                     }
                     
                     // Apply foreground to header buttons
-                    ApplyForegroundToAllTextBlocks(ContentResultsGrid, e.TextBrush, e.AccentBrush);
+                    ApplyForegroundToAllTextBlocks(ContentResultsGrid, e.TextBrush, e.AccentBrush, e.TertiaryBrush);
                 }
                 
                 if (FilesResultsGrid != null)
@@ -801,7 +825,7 @@ namespace Grex.Controls
                     }
                     
                     // Apply foreground to header buttons
-                    ApplyForegroundToAllTextBlocks(FilesResultsGrid, e.TextBrush, e.AccentBrush);
+                    ApplyForegroundToAllTextBlocks(FilesResultsGrid, e.TextBrush, e.AccentBrush, e.TertiaryBrush);
                 }
             }
             catch (Exception ex)
