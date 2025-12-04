@@ -197,6 +197,11 @@ def main():
     
     if success_count == total_count:
         print(f"SUCCESS: All {total_count} files updated to version {new_version}")
+        print(f"Run 'git add .' and 'git commit -m \"Update version to {new_version}\"' to commit the changes.")
+        print(f"Run 'git push' to push the changes to the remote repository.")
+        print(f"Run 'git tag v{new_version}' to create a new tag for the version.")
+        print(f"Run 'git push origin v{new_version}' to push the tag to the remote repository.")
+        print(f"Run 'git push origin --tags' to push all tags to the remote repository.")
         sys.exit(0)
     else:
         print(f"PARTIAL: {success_count}/{total_count} files updated")
