@@ -5,6 +5,13 @@
 <h1 align="center">Grex</h1>
 
 <p align="center">
+  <strong>🤖 This project was built with <a href="https://z.ai/subscribe?ic=V57CYQZPEZ" target="_blank">Z.AI GLM 4.6</a>!</strong><br>
+  🚀 Want to create your own AI-powered projects?<br>
+  <a href="https://z.ai/subscribe?ic=V57CYQZPEZ" target="_blank"><b>Use my link to save 10%</b></a> — the Black Friday / Cyber Monday deal ends <b>December 5th</b>!<br>
+  <em>This insane deal isn't lasting much longer, so don't miss out 😉</em>
+</p>
+
+<p align="center">
   <strong>The modern, customizable and tabbed Windows grep experience.</strong><br>
   Search native drives, UNC shares, Docker containers, and entire WSL distributions with instant previews, Regex visualizations, and safe bulk replace—all powered by WinUI 3 and .NET 8.
 </p>
