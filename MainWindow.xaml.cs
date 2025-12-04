@@ -840,6 +840,21 @@ namespace Grex
                     e.Handled = true;
                 }
             }
+            else if (e.Key == Windows.System.VirtualKey.Escape)
+            {
+                var searchContent = GetActiveSearchTabContent();
+                if (searchContent != null)
+                {
+                    if (searchContent.TryCancelActiveOperationFromShortcut())
+                    {
+                        e.Handled = true;
+                    }
+                    else if (searchContent.ClearSearchAndReplaceInputsFromShortcut())
+                    {
+                        e.Handled = true;
+                    }
+                }
+            }
         }
 
         private SearchTabContent? GetActiveSearchTabContent()

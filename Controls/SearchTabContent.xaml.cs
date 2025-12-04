@@ -1000,7 +1000,20 @@ namespace Grex.Controls
 
         private void UpdateSearchButtonState()
         {
-            // Button removed - method kept for compatibility but does nothing
+            if (AppBarSearchButton != null)
+            {
+                var canSearchOrStop = ViewModel?.CanSearchOrStop ?? false;
+                AppBarSearchButton.IsEnabled = canSearchOrStop;
+            }
+
+            if (AppBarReplaceButton != null)
+            {
+                var isReplaceRunning = ViewModel?.IsSearching == true && _isCurrentOperationReplace;
+                var inputsFilled = !string.IsNullOrWhiteSpace(SearchTextBox?.Text) &&
+                                   !string.IsNullOrWhiteSpace(ReplaceWithTextBox?.Text);
+                var canStartReplace = (ViewModel?.CanReplace ?? false) && inputsFilled;
+                AppBarReplaceButton.IsEnabled = isReplaceRunning || canStartReplace;
+            }
         }
 
         private void UpdateResultsHeaderVisibility()
@@ -2032,6 +2045,61 @@ namespace Grex.Controls
             var sender = (object?)AppBarSearchButton ?? this;
             AppBarSearchButton_Click(sender!, new RoutedEventArgs());
         }
+
+        public bool TryCancelActiveOperationFromShortcut()
+        {
+            if (ViewModel == null || !ViewModel.IsSearching)
+            {
+                return false;
+            }
+
+            if (_isCurrentOperationReplace)
+            {
+                var sender = (object?)AppBarReplaceButton ?? this;
+                AppBarReplaceButton_Click(sender!, new RoutedEventArgs());
+            }
+            else
+            {
+                var sender = (object?)AppBarSearchButton ?? this;
+                AppBarSearchButton_Click(sender!, new RoutedEventArgs());
+            }
+
+            return true;
+        }
+
+        public bool ClearSearchAndReplaceInputsFromShortcut()
+        {
+            bool cleared = false;
+
+            if (SearchTextBox != null && !string.IsNullOrWhiteSpace(SearchTextBox.Text))
+            {
+                SearchTextBox.Text = string.Empty;
+                cleared = true;
+            }
+            else if (ViewModel != null && !string.IsNullOrWhiteSpace(ViewModel.SearchTerm))
+            {
+                ViewModel.SearchTerm = string.Empty;
+                cleared = true;
+            }
+
+            if (ReplaceWithTextBox != null && !string.IsNullOrWhiteSpace(ReplaceWithTextBox.Text))
+            {
+                ReplaceWithTextBox.Text = string.Empty;
+                cleared = true;
+            }
+            else if (ViewModel != null && !string.IsNullOrWhiteSpace(ViewModel.ReplaceWith))
+            {
+                ViewModel.ReplaceWith = string.Empty;
+                cleared = true;
+            }
+
+            if (cleared)
+            {
+                UpdateSearchButtonState();
+            }
+
+            return cleared;
+        }
         
         /// <summary>
         /// Updates the search button label based on whether a search is in progress.
@@ -2238,6 +2306,7 @@ namespace Grex.Controls
             if (ReplaceWithTextBox != null)
             {
                 ReplaceWithTextBox.Visibility = Visibility.Visible;
+                UpdateSearchButtonState();
             }
         }
 
@@ -2251,6 +2320,7 @@ namespace Grex.Controls
                     ReplaceWithTextBox.Text = "";
                     ViewModel.ReplaceWith = "";
                 }
+                UpdateSearchButtonState();
             }
         }
 
@@ -4103,6 +4173,7 @@ namespace Grex.Controls
                         {
                             UpdateSearchButtonLabel(ViewModel.IsSearching);
                         }
+                    UpdateSearchButtonState();
                         break;
                     case nameof(ViewModel.ContentLineColumnVisible):
                     case nameof(ViewModel.ContentColumnColumnVisible):
@@ -4177,10 +4248,10 @@ namespace Grex.Controls
                         // The table will be updated when SearchResults or FileSearchResults change
                         break;
                     case nameof(ViewModel.CanSearch):
-                        UpdateSearchButtonState();
-                        break;
-                    case nameof(ViewModel.CanReplace):
-                        // Replace button IsEnabled is bound directly, no need to update here
+                case nameof(ViewModel.CanSearchOrStop):
+                case nameof(ViewModel.CanReplace):
+                case nameof(ViewModel.CanReplaceOrStop):
+                    UpdateSearchButtonState();
                         break;
                     case nameof(ViewModel.IsWindowsSearchOptionEnabled):
                     case nameof(ViewModel.UseWindowsSearchIndex):

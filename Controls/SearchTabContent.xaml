@@ -174,12 +174,12 @@
 
                     <!-- CommandBar -->
                     <CommandBar x:Name="MainCommandBar" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" DefaultLabelPosition="Right">
-                        <AppBarButton x:Name="AppBarSearchButton" x:Uid="AppBarSearchButton" Label="Search" Click="AppBarSearchButton_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" IsEnabled="{Binding CanSearchOrStop}">
+                        <AppBarButton x:Name="AppBarSearchButton" x:Uid="AppBarSearchButton" Label="Search" Click="AppBarSearchButton_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" IsEnabled="False">
                             <AppBarButton.Icon>
                                 <FontIcon Glyph="&#xE721;" FontFamily="{StaticResource SymbolThemeFontFamily}"/>
                             </AppBarButton.Icon>
                         </AppBarButton>
-                        <AppBarButton x:Name="AppBarReplaceButton" x:Uid="AppBarReplaceButton" Label="Replace" Click="AppBarReplaceButton_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" IsEnabled="{Binding CanReplaceOrStop}">
+                        <AppBarButton x:Name="AppBarReplaceButton" x:Uid="AppBarReplaceButton" Label="Replace" Click="AppBarReplaceButton_Click" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" IsEnabled="False">
                             <AppBarButton.Icon>
                                 <FontIcon Glyph="&#xE8AB;" FontFamily="{StaticResource SymbolThemeFontFamily}"/>
                             </AppBarButton.Icon>
