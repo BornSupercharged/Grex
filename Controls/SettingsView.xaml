@@ -52,6 +52,8 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
                     <!-- Theme Preference -->
@@ -349,81 +351,63 @@
                         <ComboBoxItem x:Uid="InvariantCultureComboBoxItem" Tag="InvariantCulture" PointerEntered="ComboBoxItem_PointerEntered" PointerExited="ComboBoxItem_PointerExited"/>
                     </ComboBox>
 
-                    <!-- Row 10:Docker Search Settings -->
-                    <Grid Grid.Row="10"
-                          Grid.ColumnSpan="4"
-                          Margin="0,24,0,0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        
-                        <TextBlock x:Name="DockerSettingsHeaderTextBlock"
-                                  x:Uid="DockerSettingsHeaderTextBlock"
-                                  Grid.Row="0"
-                                  Grid.ColumnSpan="4"
-                                  FontSize="18"
-                                  FontWeight="SemiBold"
-                                  Margin="0,0,0,12"/>
-                        
-                        <!-- Row 1: Description text (Full Width) -->
-                        <TextBlock x:Name="DockerSettingsDescriptionTextBlock"
-                                x:Uid="DockerSettingsDescriptionTextBlock"
-                                Grid.Row="1"
-                                Grid.ColumnSpan="4"
-                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                Margin="0,0,0,12" 
-                                TextWrapping="Wrap"/>
-                        
-                        <!-- Row 2: Docker search toggle switch (Four Column Layout) -->
-                        <TextBlock x:Name="EnableDockerSearchLabelTextBlock"
-                                  x:Uid="EnableDockerSearchLabelTextBlock"
-                                  Grid.Row="2"
-                                  Grid.Column="0"
-                                  VerticalAlignment="Center"
-                                  Margin="0,0,0,12"/>
-                        <ToggleSwitch x:Name="EnableDockerSearchToggleSwitch"
-                                    x:Uid="EnableDockerSearchToggleSwitch"
-                                    Grid.Row="2"
-                                    Grid.Column="1"
-                                    Toggled="EnableDockerSearchToggleSwitch_Toggled"
-                                    HorizontalAlignment="Left"
-                                    VerticalAlignment="Center"
-                                    Margin="0,0,0,12"
-                                    PointerEntered="Button_PointerEntered"
-                                    PointerExited="Button_PointerExited"/>
-                    </Grid>
-                    
-                    <!-- Row 11: Backup & Restore Section -->
-                    <TextBlock x:Name="BackupRestoreHeaderTextBlock"
-                              x:Uid="BackupRestoreHeaderTextBlock"
-                              Grid.Row="11"
+                    <!-- Row 10: Docker Search Header -->
+                    <TextBlock x:Name="DockerSettingsHeaderTextBlock"
+                              x:Uid="DockerSettingsHeaderTextBlock"
+                              Grid.Row="10"
                               Grid.ColumnSpan="4"
                               FontSize="18"
                               FontWeight="SemiBold"
                               Margin="0,16,0,4"/>
                     
-                    <!-- Row 12: Explanation Text -->
+                    <!-- Row 11: Docker Search Description -->
+                    <TextBlock x:Name="DockerSettingsDescriptionTextBlock"
+                              x:Uid="DockerSettingsDescriptionTextBlock"
+                              Grid.Row="11"
+                              Grid.ColumnSpan="4"
+                              Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                              Margin="0,0,0,0" 
+                              TextWrapping="Wrap"/>
+                    
+                    <!-- Row 12: Docker search toggle switch -->
+                    <TextBlock x:Name="EnableDockerSearchLabelTextBlock"
+                              x:Uid="EnableDockerSearchLabelTextBlock"
+                              Grid.Row="12"
+                              Grid.Column="0"
+                              VerticalAlignment="Center"
+                              Margin="0,0,12,0"/>
+                    <ToggleSwitch x:Name="EnableDockerSearchToggleSwitch"
+                                x:Uid="EnableDockerSearchToggleSwitch"
+                                Grid.Row="12"
+                                Grid.Column="1"
+                                Toggled="EnableDockerSearchToggleSwitch_Toggled"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                PointerEntered="Button_PointerEntered"
+                                PointerExited="Button_PointerExited"/>
+                    
+                    <!-- Row 13: Backup & Restore Section -->
+                    <TextBlock x:Name="BackupRestoreHeaderTextBlock"
+                              x:Uid="BackupRestoreHeaderTextBlock"
+                              Grid.Row="13"
+                              Grid.ColumnSpan="4"
+                              FontSize="18"
+                              FontWeight="SemiBold"
+                              Margin="0,16,0,4"/>
+                    
+                    <!-- Row 14: Explanation Text -->
                     <TextBlock x:Name="BackupRestoreExplanationTextBlock"
                                x:Uid="BackupRestoreExplanationTextBlock"
-                               Grid.Row="12"
+                               Grid.Row="14"
                                Grid.ColumnSpan="4"
                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                                Margin="0,0,0,12" 
                                TextWrapping="Wrap"/>
                     
-                    <!-- Row 13: Buttons aligned with the 4-column grid -->
+                    <!-- Row 15: Buttons aligned with the 4-column grid -->
                     <Button x:Name="ExportSettingsButton"
                            x:Uid="ExportSettingsButton"
-                           Grid.Row="13"
+                           Grid.Row="15"
                            Grid.Column="0"
                            Click="ExportSettingsButton_Click"
                            HorizontalAlignment="Left"
@@ -432,7 +416,7 @@
                            PointerExited="Button_PointerExited"/>
                     <Button x:Name="ImportSettingsButton"
                            x:Uid="ImportSettingsButton"
-                           Grid.Row="13"
+                           Grid.Row="15"
                            Grid.Column="1"
                            Click="ImportSettingsButton_Click"
                            HorizontalAlignment="Left"
@@ -441,7 +425,7 @@
                            PointerExited="Button_PointerExited"/>
                     <Button x:Name="RestoreDefaultsButton"
                            x:Uid="RestoreDefaultsButton"
-                           Grid.Row="13"
+                           Grid.Row="15"
                            Grid.Column="2"
                            Click="RestoreDefaultsButton_Click"
                            HorizontalAlignment="Left"
@@ -450,7 +434,7 @@
                            PointerExited="Button_PointerExited"/>
 
                     <!-- Debug Section -->
-                    <Grid Grid.Row="14"
+                    <Grid Grid.Row="16"
                           Grid.ColumnSpan="4"
                           Margin="0,24,0,0">
                         <Grid.RowDefinitions>
