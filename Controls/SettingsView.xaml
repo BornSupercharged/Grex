@@ -362,31 +362,44 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         
                         <TextBlock x:Name="DockerSettingsHeaderTextBlock"
                                   x:Uid="DockerSettingsHeaderTextBlock"
                                   Grid.Row="0"
-                                  Grid.ColumnSpan="2"
+                                  Grid.ColumnSpan="4"
                                   FontSize="18"
                                   FontWeight="SemiBold"
                                   Margin="0,0,0,12"/>
                         
-                        <!-- Row 1: Docker search toggle switch (Full Width) -->
-                        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,0,16">
-                            <TextBlock x:Name="DockerSettingsDescriptionTextBlock"
-                                    x:Uid="DockerSettingsDescriptionTextBlock"
-                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                    Margin="0,0,0,8" 
-                                    TextWrapping="Wrap"/>
-                            <ToggleSwitch x:Name="EnableDockerSearchToggleSwitch"
-                                        x:Uid="EnableDockerSearchToggleSwitch"
-                                        Toggled="EnableDockerSearchToggleSwitch_Toggled"
-                                        HorizontalAlignment="Left"
-                                        Padding="16,8"
-                                        PointerEntered="Button_PointerEntered"
-                                        PointerExited="Button_PointerExited"/>
-                        </StackPanel>
+                        <!-- Row 1: Description text (Full Width) -->
+                        <TextBlock x:Name="DockerSettingsDescriptionTextBlock"
+                                x:Uid="DockerSettingsDescriptionTextBlock"
+                                Grid.Row="1"
+                                Grid.ColumnSpan="4"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                Margin="0,0,0,12" 
+                                TextWrapping="Wrap"/>
+                        
+                        <!-- Row 2: Docker search toggle switch (Four Column Layout) -->
+                        <TextBlock x:Name="EnableDockerSearchLabelTextBlock"
+                                  x:Uid="EnableDockerSearchLabelTextBlock"
+                                  Grid.Row="2"
+                                  Grid.Column="0"
+                                  VerticalAlignment="Center"
+                                  Margin="0,0,0,12"/>
+                        <ToggleSwitch x:Name="EnableDockerSearchToggleSwitch"
+                                    x:Uid="EnableDockerSearchToggleSwitch"
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Toggled="EnableDockerSearchToggleSwitch_Toggled"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Margin="0,0,0,12"
+                                    PointerEntered="Button_PointerEntered"
+                                    PointerExited="Button_PointerExited"/>
                     </Grid>
                     
                     <!-- Row 11: Backup & Restore Section -->

@@ -339,7 +339,6 @@ namespace Grex.Controls
 
                 if (EnableDockerSearchToggleSwitch != null)
                 {
-                    EnableDockerSearchToggleSwitch.Header = locService.GetLocalizedString("EnableDockerSearchToggleSwitch.Header");
                     EnableDockerSearchToggleSwitch.OnContent = locService.GetLocalizedString("EnableDockerSearchToggleSwitch.OnContent");
                     EnableDockerSearchToggleSwitch.OffContent = locService.GetLocalizedString("EnableDockerSearchToggleSwitch.OffContent");
                 }
