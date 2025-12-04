@@ -5,16 +5,26 @@
 <h1 align="center">Grex</h1>
 
 <p align="center">
-  <strong>The modern, tabbed, Windows grep experience.</strong><br>
+  <strong>The modern, customizable and tabbed Windows grep experience.</strong><br>
   Search native drives, UNC shares, Docker containers, and entire WSL distributions with instant previews, Regex visualizations, and safe bulk replace—all powered by WinUI 3 and .NET 8.
 </p>
 
 <p align="center">
-  <a href="#quick-start">Quick Start</a> •
+  <strong>If you like this project, a star ⭐️ would mean a lot :)</strong>
+</p>
+
+<p align="center">
+  <a href="#quick-start">👉 Quick Start</a> •
   <a href="docs/features.md">Features</a> •
   <a href="docs/usage.md">Usage Guide</a> •
   <a href="docs/architecture.md">Architecture</a> •
   <a href="docs/build-and-test.md">Build & Test</a>
+</p>
+
+<p align="center">
+  <img src="docs/assets/img/screenshot_1.png" alt="Search Panel"/>
+  <img src="docs/assets/img/screenshot_2.png" alt="Regex Builder"/>
+  <img src="docs/assets/img/screenshot_3.png" alt="Settings Panel"/>
 </p>
 
 ---
@@ -30,6 +40,8 @@
 - **Modern Windows design** – Tabs, command bar, column controls, and a Mica-coated shell feel native on Windows 11
 
 ## Quick Start
+
+Download the latest release from the [Releases page](https://github.com/BornSupercharged/Grex/releases) or build from source:
 
 > **Requirements:** Windows 10 1809+ (or Windows 11), .NET 8 SDK, and Windows App Runtime 1.8
 >
