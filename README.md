@@ -32,7 +32,7 @@
 ## Quick Start
 
 ```powershell
-git clone https://github.com/<org>/Grex.git
+git clone https://github.com/BornSupercharged/Grex.git
 cd Grex
 dotnet build grex.sln -p:Platform=x64
 # After building, run the executable directly:

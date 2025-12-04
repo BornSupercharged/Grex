@@ -225,12 +225,13 @@ namespace Grex.Tests.ViewModels
                 It.IsAny<Models.StringComparisonMode>(),
                 It.IsAny<Models.UnicodeNormalizationMode>(),
                 It.IsAny<bool>(),
-                It.IsAny<string>(),
+                It.IsAny<string?>(),
                 It.IsAny<CancellationToken>()))
                 .ReturnsAsync(searchResults);
 
             _tabViewModel.SearchPath = "C:\\Test";
             _tabViewModel.SearchTerm = "test";
+            _tabViewModel.IsFilesSearch = false; // ensure content-mode search for this scenario
 
             // Act
             await _tabViewModel.PerformSearchAsync();
@@ -336,7 +337,7 @@ namespace Grex.Tests.ViewModels
             for (int i = 1; i < sortedResults.Count; i++)
             {
                 sortedResults[i].FileName.CompareTo(sortedResults[i - 1].FileName)
-                    .Should().BeGreaterOrEqualTo(0);
+                    .Should().BeGreaterThanOrEqualTo(0);
             }
         }
 
@@ -513,16 +514,17 @@ namespace Grex.Tests.ViewModels
         [Fact]
         public void SortResults_WithDescendingSort_TogglesDirection()
         {
-            // Arrange
-            for (int i = 0; i < 5; i++)
-            {
-                _tabViewModel.SearchResults.Add(new SearchResult
-                {
-                    FileName = $"file{i}.txt",
-                    LineNumber = i + 1
-                });
-            }
+            // Arrange - Add items in a specific order that will change when sorted
+            _tabViewModel.IsFilesSearch = false;
+            _tabViewModel.SearchResults.Add(new SearchResult { FileName = "file2.txt", LineNumber = 1 });
+            _tabViewModel.SearchResults.Add(new SearchResult { FileName = "file0.txt", LineNumber = 2 });
+            _tabViewModel.SearchResults.Add(new SearchResult { FileName = "file4.txt", LineNumber = 3 });
+            _tabViewModel.SearchResults.Add(new SearchResult { FileName = "file1.txt", LineNumber = 4 });
+            _tabViewModel.SearchResults.Add(new SearchResult { FileName = "file3.txt", LineNumber = 5 });
 
+            // Reset sort state by sorting a different field first (ensures fresh state)
+            _tabViewModel.SortResults(SearchResultSortField.LineNumber);
+            
             // Act - Sort by FileName twice to test direction toggle
             _tabViewModel.SortResults(SearchResultSortField.FileName);
             var firstSort = _tabViewModel.SearchResults.Select(r => r.FileName).ToList();
@@ -530,8 +532,9 @@ namespace Grex.Tests.ViewModels
             _tabViewModel.SortResults(SearchResultSortField.FileName);
             var secondSort = _tabViewModel.SearchResults.Select(r => r.FileName).ToList();
 
-            // Assert
-            firstSort.Should().NotEqual(secondSort);
+            // Assert - Second sort should be different from first (direction toggled)
+            secondSort.Should().NotEqual(firstSort);
+            // Verify the second sort is the reverse of the first (descending vs ascending)
             secondSort.Should().Equal(firstSort.AsEnumerable().Reverse());
         }
 

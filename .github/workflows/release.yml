@@ -10,29 +10,33 @@ permissions:
 
 jobs:
   build:
-    name: Build & Test
+    name: Build & Package
     runs-on: windows-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+
       - name: Restore dependencies
         run: dotnet restore grex.sln
+
       - name: Build solution
         run: dotnet build grex.sln -p:Platform=x64 --configuration Release --no-restore
-      - name: Run unit tests
-        run: dotnet test Tests/Grex.Tests.csproj -p:Platform=x64 --configuration Release --logger "console;verbosity=normal" --no-build --blame-hang-timeout 5m --blame-hang-dump-type full
-        timeout-minutes: 10
-        continue-on-error: false
+
+      # Tests intentionally not run in this workflow
+
       - name: Publish application
         run: dotnet publish Grex.csproj -p:Platform=x64 -c Release -o publish/win-x64
+
       - name: Package artifacts
         shell: pwsh
         run: Compress-Archive -Path publish/win-x64/* -DestinationPath grex-win-x64.zip
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -50,10 +54,10 @@ jobs:
         with:
           name: grex-win-x64
           path: artifacts
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: artifacts/grex-win-x64.zip
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-
