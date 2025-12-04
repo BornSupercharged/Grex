@@ -31,16 +31,23 @@
 
 ## Quick Start
 
+> **Requirements:** Windows 10 1809+ (or Windows 11), .NET 8 SDK, and Windows App Runtime 1.8
+>
+> Install the required dependencies:
+> ```powershell
+> # Install .NET 8.0 SDK
+> winget install Microsoft.DotNet.SDK.8
+>
+> # Install Windows App Runtime
+> winget install Microsoft.WindowsAppRuntime.1.8
+> ```
+
 ```powershell
 git clone https://github.com/BornSupercharged/Grex.git
 cd Grex
 dotnet build grex.sln -p:Platform=x64
-# After building, run the executable directly:
 .\bin\x64\Debug\net8.0-windows10.0.19041.0\Grex.exe
 ```
-
-> **Requirements:** Windows 10 1809+ (or Windows 11), .NET 8 SDK, and Windows App Runtime 1.8  
-> Install the runtime with `winget install Microsoft.WindowsAppRuntime.1.8`
 
 ## 🚀 Usage in 60 Seconds
 

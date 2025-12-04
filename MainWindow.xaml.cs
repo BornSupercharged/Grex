@@ -831,6 +831,25 @@ namespace Grex
                 NavigateToAbout();
                 e.Handled = true;
             }
+            else if (e.Key == Windows.System.VirtualKey.F5)
+            {
+                var searchContent = GetActiveSearchTabContent();
+                if (searchContent != null && searchContent.CanExecuteSearchShortcut)
+                {
+                    searchContent.ExecuteSearchShortcut();
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private SearchTabContent? GetActiveSearchTabContent()
+        {
+            if (MainTabView?.SelectedItem is TabViewItem selectedItem &&
+                selectedItem.Content is SearchTabContent searchContent)
+            {
+                return searchContent;
+            }
+            return null;
         }
 
         /// <summary>
@@ -1807,6 +1826,48 @@ namespace Grex
                     "AppBarToggleButtonRevealBackgroundPressed",
                     "AppBarToggleButtonRevealBackgroundCheckedPointerOver",
                     "AppBarToggleButtonRevealBackgroundCheckedPressed");
+                
+                // System accent resources used by controls like ToggleSwitch
+                SetBrushResources(resources, accent,
+                    "SystemControlHighlightAccentBrush",
+                    "SystemControlHighlightAltAccentBrush",
+                    "SystemControlHighlightChromeHighBrush",
+                    "SystemControlHighlightChromeMediumBrush",
+                    "SystemControlHighlightChromeLowBrush",
+                    "SystemControlDisabledAccentBrush");
+                
+                // ToggleSwitch resources to ensure the docker toggle matches theme colors
+                SetBrushResources(resources, accent,
+                    "ToggleSwitchFillOn",
+                    "ToggleSwitchFillOnPointerOver",
+                    "ToggleSwitchFillOnPressed",
+                    "ToggleSwitchFillOnDisabled");
+                SetBrushResources(resources, secondary,
+                    "ToggleSwitchFillOff",
+                    "ToggleSwitchFillOffPointerOver",
+                    "ToggleSwitchFillOffPressed",
+                    "ToggleSwitchFillOffDisabled");
+                SetBrushResources(resources, text,
+                    "ToggleSwitchStrokeOn",
+                    "ToggleSwitchStrokeOnPointerOver",
+                    "ToggleSwitchStrokeOnPressed",
+                    "ToggleSwitchStrokeOnDisabled",
+                    "ToggleSwitchStrokeOff",
+                    "ToggleSwitchStrokeOffPointerOver",
+                    "ToggleSwitchStrokeOffPressed",
+                    "ToggleSwitchStrokeOffDisabled",
+                    "ToggleSwitchForeground",
+                    "ToggleSwitchForegroundPointerOver",
+                    "ToggleSwitchForegroundPressed",
+                    "ToggleSwitchForegroundDisabled",
+                    "ToggleSwitchKnobFillOn",
+                    "ToggleSwitchKnobFillOnPointerOver",
+                    "ToggleSwitchKnobFillOnPressed",
+                    "ToggleSwitchKnobFillOnDisabled",
+                    "ToggleSwitchKnobFillOff",
+                    "ToggleSwitchKnobFillOffPointerOver",
+                    "ToggleSwitchKnobFillOffPressed",
+                    "ToggleSwitchKnobFillOffDisabled");
                 
                 Log($"ApplyHighContrastResources: Applied resource overrides for {preference}");
             }

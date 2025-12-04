@@ -2019,6 +2019,19 @@ namespace Grex.Controls
             
             SearchButton_Click(sender, e);
         }
+
+        public bool CanExecuteSearchShortcut => AppBarSearchButton?.IsEnabled == true;
+
+        public void ExecuteSearchShortcut()
+        {
+            if (!CanExecuteSearchShortcut)
+            {
+                return;
+            }
+
+            var sender = (object?)AppBarSearchButton ?? this;
+            AppBarSearchButton_Click(sender!, new RoutedEventArgs());
+        }
         
         /// <summary>
         /// Updates the search button label based on whether a search is in progress.

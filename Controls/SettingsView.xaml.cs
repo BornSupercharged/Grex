@@ -852,7 +852,8 @@ namespace Grex.Controls
         
         private static bool IsHighContrastTheme(ThemePreference preference)
         {
-            return preference == ThemePreference.BlackKnight ||
+            return preference == ThemePreference.GentleGecko ||
+                   preference == ThemePreference.BlackKnight ||
                    preference == ThemePreference.Paranoid ||
                    preference == ThemePreference.Diamond ||
                    preference == ThemePreference.Subspace ||
