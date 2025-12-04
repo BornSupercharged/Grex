@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -1550,10 +1550,6 @@ Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windo
     <value>泊坞窗搜索</value>
     <comment>status:complete</comment>
   </data>
-  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
-    <value>从正在运行的 Docker 容器镜像文件，以便 Grex 可以在不离开应用程序的情况下扫描它们。</value>
-    <comment>status:complete</comment>
-  </data>
   <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
     <value>启用 Docker 搜索</value>
     <comment>status:complete</comment>
@@ -1634,4 +1630,9 @@ Windows 需要特殊权限才能创建符号链接。以管理员身份运行 Gr
     <value>温柔的壁虎（高对比度）</value>
     <comment>status:complete</comment>
   </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Natively search Linux containers using the Docker CLI. If grep is unavailable in the docker container, search by mirroring files from a running Docker container so Grex can scan them without leaving the app.</value>
+    <comment>status:incomplete</comment>
+  </data>
 </root>
+

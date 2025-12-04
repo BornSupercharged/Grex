@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -864,12 +864,12 @@ See log: {1}</value>
     <value>Use the Windows Search index for faster text searches on indexed folders.</value>
     <comment>status:complete</comment>
   </data>
-  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
-    <value>Docker Search</value>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Natively search Linux containers using the Docker CLI. If grep is unavailable in the docker container, search by mirroring files from a running Docker container so Grex can scan them without leaving the app.</value>
     <comment>status:complete</comment>
   </data>
-  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
-    <value>Mirror files from a running Docker container so Grex can scan them without leaving the app.</value>
+  <data name="DockerSettingsHeaderTextBlock.Text" xml:space="preserve">
+    <value>Docker Search</value>
     <comment>status:complete</comment>
   </data>
   <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
@@ -1635,3 +1635,4 @@ Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windo
     <comment>status:complete</comment>
   </data>
 </root>
+

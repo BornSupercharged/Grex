@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:schema id="root">
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -1550,10 +1550,6 @@ Choose "WSL Search" for faster native WSL search, or "Continue" for slower Windo
     <value>도커 검색</value>
     <comment>status:complete</comment>
   </data>
-  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
-    <value>grex이 앱을 종료하지 않고도 파일을 스캔할 수 있도록 실행 중인 Docker 컨테이너에서 파일을 미러링합니다.</value>
-    <comment>status:complete</comment>
-  </data>
   <data name="EnableDockerSearchToggleSwitch.Header" xml:space="preserve">
     <value>Docker 검색 활성화</value>
     <comment>status:complete</comment>
@@ -1634,4 +1630,9 @@ Windows에서는 심볼릭 링크를 생성하려면 특별한 권한이 필요�
     <value>젠틀 게코(고대비)</value>
     <comment>status:complete</comment>
   </data>
+  <data name="DockerSettingsDescriptionTextBlock.Text" xml:space="preserve">
+    <value>Natively search Linux containers using the Docker CLI. If grep is unavailable in the docker container, search by mirroring files from a running Docker container so Grex can scan them without leaving the app.</value>
+    <comment>status:incomplete</comment>
+  </data>
 </root>
+
