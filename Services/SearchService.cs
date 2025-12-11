@@ -1082,7 +1082,12 @@ namespace Grex.Services
             var escapedPath = path.Replace("'", "'\"'\"'");
             // Escape single quotes for bash: ' becomes '\'' (end quote, escaped quote, start quote)
             // In C# string literal: '\'' becomes '\\'' (backslash needs to be escaped)
-            var escapedTerm = searchTerm.Replace("'", "'\\''");
+            // Escape characters for use inside single quotes within a double-quoted bash -c command
+            // Single quotes: ' becomes '\'' (end quote, escaped quote, start quote)
+            // Double quotes: " becomes \" (needs escaping when inside double-quoted bash -c)
+            // Backslashes: \ becomes \\ (needs escaping when inside double-quoted bash -c)
+            // Order matters: escape backslashes first, then single quotes, then double quotes
+            var escapedTerm = searchTerm.Replace("\\", "\\\\").Replace("'", "'\\''").Replace("\"", "\\\"");
 
             // Build find command predicates (each entry is a full expression)
             var findPredicates = new List<string>
@@ -1238,8 +1243,24 @@ namespace Grex.Services
             // The -F flag tells grep to treat it as a literal string, so single quotes work fine
             // Single quotes inside single quotes are escaped as: 'end quote' + \' + 'start quote' = '\''
             // In C# string literal, '\'' becomes '\\'' (backslash needs escaping)
-            // The escapedTerm already has quotes properly escaped, so wrap it in single quotes
-            var grepSearchTerm = $"'{escapedTerm}'";
+            // When the search term contains double quotes and we're inside bash -c "...",
+            // backslashes are interpreted, so we need to double-escape them:
+            // - escapedTerm has \" for double quotes
+            // - Inside bash -c "...", we need \\\" to get \" in the final command
+            // - In C# string: \\\" becomes \\\\\" (each backslash needs escaping)
+            string grepSearchTerm;
+            if (searchTerm.Contains('"'))
+            {
+                // Search term contains double quotes - need to double-escape backslashes for bash -c context
+                // \" becomes \\\" (one more backslash escape for the outer bash -c "..." context)
+                var doubleQuoteEscaped = escapedTerm.Replace("\\\"", "\\\\\\\"");
+                grepSearchTerm = $"'{doubleQuoteEscaped}'";
+            }
+            else
+            {
+                // No double quotes - simple single quote wrapping
+                grepSearchTerm = $"'{escapedTerm}'";
+            }
             
             // Build the command: find files, then grep them
             // Use -- to separate grep options from the search term (prevents issues with search terms starting with -)

@@ -250,7 +250,7 @@ namespace Grex.Controls
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"AboutView: Failed to load version: {ex.Message}");
-                VersionTextBlock.Text = "Version 1.2";
+                VersionTextBlock.Text = "Version 1.3";
             }
         }
 
