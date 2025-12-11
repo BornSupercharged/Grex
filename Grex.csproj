@@ -48,13 +48,55 @@
   </ItemGroup>
 
   <!-- Copy assets only when building the main application, not when referenced by test projects -->
-  <Target Name="CopyAssetsToOutput" AfterTargets="Build" Condition="'$(OutputType)' == 'WinExe' AND '$(IsTestProject)' != 'true' AND '$(MSBuildProjectName)' == 'Grex'">
+  <Target Name="CopyAssetsToOutput" AfterTargets="Build;Publish" Condition="'$(OutputType)' == 'WinExe' AND '$(IsTestProject)' != 'true' AND '$(MSBuildProjectName)' == 'Grex'">
+    <PropertyGroup>
+      <!-- For publish, use PublishDir if available, otherwise construct publish path from OutputPath and RuntimeIdentifier -->
+      <_AssetsOutputPath Condition="'$(PublishDir)' != ''">$(PublishDir)</_AssetsOutputPath>
+      <_AssetsOutputPath Condition="'$(_AssetsOutputPath)' == '' AND '$(RuntimeIdentifier)' != ''">$(OutputPath)$(RuntimeIdentifier)\publish\</_AssetsOutputPath>
+      <_AssetsOutputPath Condition="'$(_AssetsOutputPath)' == ''">$(OutputPath)</_AssetsOutputPath>
+    </PropertyGroup>
     <ItemGroup>
       <AssetsToCopy Include="Assets\*.png" />
       <AssetsToCopy Include="Assets\*.ico" />
     </ItemGroup>
-    <MakeDir Directories="$(OutputPath)Assets" Condition="!Exists('$(OutputPath)Assets')" />
-    <Copy SourceFiles="@(AssetsToCopy)" DestinationFolder="$(OutputPath)Assets" SkipUnchangedFiles="true" />
+    <MakeDir Directories="$(_AssetsOutputPath)Assets" Condition="!Exists('$(_AssetsOutputPath)Assets')" />
+    <Copy SourceFiles="@(AssetsToCopy)" DestinationFolder="$(_AssetsOutputPath)Assets" SkipUnchangedFiles="true" />
+  </Target>
+
+  <!-- Ensure PRI files are included in publish output -->
+  <Target Name="IncludePriFilesInPublish" BeforeTargets="GetCopyToPublishItems" Condition="'$(OutputType)' == 'WinExe' AND '$(IsTestProject)' != 'true' AND '$(MSBuildProjectName)' == 'Grex'">
+    <ItemGroup>
+      <!-- Include PRI files from build output -->
+      <_PriFilesForPublish Include="$(OutputPath)*.pri" />
+      <_PriFilesForPublish Include="$(OutputPath)*.resources.pri" />
+      <!-- Include PRI files from obj directory (where they're generated) -->
+      <_PriFilesForPublish Include="$(BaseIntermediateOutputPath)$(Configuration)\$(TargetFramework)\$(RuntimeIdentifier)\*.pri" />
+      <_PriFilesForPublish Include="$(BaseIntermediateOutputPath)$(Configuration)\$(TargetFramework)\$(RuntimeIdentifier)\*.resources.pri" />
+    </ItemGroup>
+    <ItemGroup>
+      <ResolvedFileToPublish Include="@(_PriFilesForPublish)" Condition="Exists('%(Identity)')">
+        <RelativePath>%(Filename)%(Extension)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+  <!-- Also copy PRI files after publish as a fallback -->
+  <Target Name="CopyPriFilesToPublish" AfterTargets="Publish" Condition="'$(OutputType)' == 'WinExe' AND '$(IsTestProject)' != 'true' AND '$(MSBuildProjectName)' == 'Grex'">
+    <PropertyGroup>
+      <_PublishOutputPath Condition="'$(PublishDir)' != ''">$(PublishDir)</_PublishOutputPath>
+      <_PublishOutputPath Condition="'$(_PublishOutputPath)' == '' AND '$(RuntimeIdentifier)' != ''">$(OutputPath)$(RuntimeIdentifier)\publish\</_PublishOutputPath>
+      <_PublishOutputPath Condition="'$(_PublishOutputPath)' == ''">$(OutputPath)</_PublishOutputPath>
+      <_ObjPath>$(BaseIntermediateOutputPath)$(Configuration)\$(TargetFramework)\$(RuntimeIdentifier)\</_ObjPath>
+      <_BinPath>$(OutputPath)</_BinPath>
+    </PropertyGroup>
+    <ItemGroup>
+      <_PriFilesToCopy Include="$(_ObjPath)*.pri" Condition="Exists('$(_ObjPath)')" />
+      <_PriFilesToCopy Include="$(_ObjPath)*.resources.pri" Condition="Exists('$(_ObjPath)')" />
+      <_PriFilesToCopy Include="$(_BinPath)*.pri" Condition="Exists('$(_BinPath)')" />
+      <_PriFilesToCopy Include="$(_BinPath)*.resources.pri" Condition="Exists('$(_BinPath)')" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_PriFilesToCopy)" DestinationFolder="$(_PublishOutputPath)" SkipUnchangedFiles="true" Condition="'@(_PriFilesToCopy)' != ''" />
   </Target>
 
   <!-- Prevent assets and docs from being included in project references - tests don't need them -->

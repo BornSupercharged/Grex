@@ -1080,7 +1080,9 @@ namespace Grex.Services
             string? culture)
         {
             var escapedPath = path.Replace("'", "'\"'\"'");
-            var escapedTerm = searchTerm.Replace("'", "'\"'\"'");
+            // Escape single quotes for bash: ' becomes '\'' (end quote, escaped quote, start quote)
+            // In C# string literal: '\'' becomes '\\'' (backslash needs to be escaped)
+            var escapedTerm = searchTerm.Replace("'", "'\\''");
 
             // Build find command predicates (each entry is a full expression)
             var findPredicates = new List<string>
@@ -1224,12 +1226,24 @@ namespace Grex.Services
             {
                 grepOptions.Add("-E"); // extended regex
             }
+            else
+            {
+                grepOptions.Add("-F"); // fixed string (literal match)
+            }
             
             var grepFlags = string.Join(" ", grepOptions);
             var findPreds = string.Join(" ", findPredicates);
             
+            // For both regex and fixed string searches, use single quotes with proper escaping
+            // The -F flag tells grep to treat it as a literal string, so single quotes work fine
+            // Single quotes inside single quotes are escaped as: 'end quote' + \' + 'start quote' = '\''
+            // In C# string literal, '\'' becomes '\\'' (backslash needs escaping)
+            // The escapedTerm already has quotes properly escaped, so wrap it in single quotes
+            var grepSearchTerm = $"'{escapedTerm}'";
+            
             // Build the command: find files, then grep them
-            var findAndGrep = $"find '{escapedPath}' {findPreds} -exec grep {grepFlags} '{escapedTerm}' {{}} + 2>/dev/null || true";
+            // Use -- to separate grep options from the search term (prevents issues with search terms starting with -)
+            var findAndGrep = $"find '{escapedPath}' {findPreds} -exec grep {grepFlags} -- {grepSearchTerm} {{}} + 2>/dev/null || true";
             
             // Build grep command with optional .gitignore support
             if (respectGitignore)
@@ -1247,39 +1261,24 @@ namespace Grex.Services
                     }
                     else
                     {
-                        var literalTerm = Regex.Escape(escapedTerm);
-                        var findAndGrepLiteral = $"find '{escapedPath}' {findPreds} -exec grep {grepFlags} '{literalTerm}' {{}} + 2>/dev/null || true";
-                        return $"bash -c \"cd '{escapedPath}' && {findAndGrepLiteral} | while IFS= read -r line; do file=$(echo \\\"$line\\\" | cut -d: -f1); git check-ignore -q \\\"$file\\\" 2>/dev/null || echo \\\"$line\\\"; done\"";
+                        // Use -F flag for fixed string matching
+                        return $"bash -c \"cd '{escapedPath}' && {findAndGrep} | while IFS= read -r line; do file=$(echo \\\"$line\\\" | cut -d: -f1); git check-ignore -q \\\"$file\\\" 2>/dev/null || echo \\\"$line\\\"; done\"";
                     }
                 }
                 else
                 {
                     // No size limit, can use git grep if in a git repository
                     // Use git grep if in a git repository, otherwise use find+grep with git check-ignore filter
-                    if (isRegex)
-                    {
-                        return $"bash -c \"cd '{escapedPath}' && if [ -d .git ]; then git grep {grepFlags} '{escapedTerm}' 2>/dev/null || true; else {findAndGrep} | while IFS= read -r line; do file=$(echo \\\"$line\\\" | cut -d: -f1); git check-ignore -q \\\"$file\\\" 2>/dev/null || echo \\\"$line\\\"; done; fi\"";
-                    }
-                    else
-                    {
-                        var literalTerm = Regex.Escape(escapedTerm);
-                        var findAndGrepLiteral = $"find '{escapedPath}' {findPreds} -exec grep {grepFlags} '{literalTerm}' {{}} + 2>/dev/null || true";
-                        return $"bash -c \"cd '{escapedPath}' && if [ -d .git ]; then git grep {grepFlags} '{literalTerm}' 2>/dev/null || true; else {findAndGrepLiteral} | while IFS= read -r line; do file=$(echo \\\"$line\\\" | cut -d: -f1); git check-ignore -q \\\"$file\\\" 2>/dev/null || echo \\\"$line\\\"; done; fi\"";
-                    }
+                    // Use single quotes with escaped term for both regex and fixed string (grep -F handles it correctly)
+                    var gitGrepTerm = $"'{escapedTerm}'";
+                    
+                    return $"bash -c \"cd '{escapedPath}' && if [ -d .git ]; then git grep {grepFlags} {gitGrepTerm} 2>/dev/null || true; else {findAndGrep} | while IFS= read -r line; do file=$(echo \\\"$line\\\" | cut -d: -f1); git check-ignore -q \\\"$file\\\" 2>/dev/null || echo \\\"$line\\\"; done; fi\"";
                 }
             }
             else
             {
-                if (isRegex)
-                {
-                    return $"bash -c \"cd '{escapedPath}' && {findAndGrep}\"";
-                }
-                else
-                {
-                    var literalTerm = Regex.Escape(escapedTerm);
-                    var findAndGrepLiteral = $"find '{escapedPath}' {findPreds} -exec grep {grepFlags} '{literalTerm}' {{}} + 2>/dev/null || true";
-                    return $"bash -c \"cd '{escapedPath}' && {findAndGrepLiteral}\"";
-                }
+                // Both regex and fixed string use the same command format now
+                return $"bash -c \"cd '{escapedPath}' && {findAndGrep}\"";
             }
         }
 
@@ -2500,3 +2499,5 @@ namespace Grex.Services
 
     }
 }
+
+
