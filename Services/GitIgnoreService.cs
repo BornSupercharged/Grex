@@ -125,16 +125,32 @@ namespace Grex.Services
                 // For directory patterns like "build/", we want to match "build/file.txt"
                 if (rule.IsDirectoryOnly)
                 {
+                    // Remove leading / from pattern for root-relative patterns when comparing
+                    var patternToCompare = rule.IsRootRelative && pattern.StartsWith("/") 
+                        ? pattern.Substring(1) 
+                        : pattern;
+                    
                     // Check if the path contains the directory pattern followed by /
-                    if (!relativePath.Contains(pattern + "/", StringComparison.OrdinalIgnoreCase) &&
-                        !relativePath.StartsWith(pattern + "/", StringComparison.OrdinalIgnoreCase) &&
-                        !(relativePath.Equals(pattern, StringComparison.OrdinalIgnoreCase) && isDirectory))
+                    if (!relativePath.Contains(patternToCompare + "/", StringComparison.OrdinalIgnoreCase) &&
+                        !relativePath.StartsWith(patternToCompare + "/", StringComparison.OrdinalIgnoreCase) &&
+                        !(relativePath.Equals(patternToCompare, StringComparison.OrdinalIgnoreCase) && isDirectory))
                     {
                         continue;
                     }
+                    // For directory patterns, if the path check passes, the pattern matches
+                    // (the file is inside the directory)
+                    if (rule.IsNegation)
+                    {
+                        result = false;
+                    }
+                    else
+                    {
+                        result = true;
+                    }
+                    continue;
                 }
 
-                if (MatchesPattern(pattern, pathToMatch, fileName, rule.GitIgnoreDirectory))
+                if (MatchesPattern(pattern, pathToMatch, fileName, rule.GitIgnoreDirectory, rule.IsRootRelative))
                 {
                     if (rule.IsNegation)
                     {
@@ -150,7 +166,7 @@ namespace Grex.Services
             return result;
         }
 
-        private bool MatchesPattern(string pattern, string relativePath, string fileName, string gitignoreDirectory)
+        private bool MatchesPattern(string pattern, string relativePath, string fileName, string gitignoreDirectory, bool isRootRelative)
         {
             // Convert gitignore pattern to regex
             var regexPattern = ConvertGitIgnorePatternToRegex(pattern);
@@ -161,11 +177,18 @@ namespace Grex.Services
                 if (Regex.IsMatch(relativePath, regexPattern, RegexOptions.IgnoreCase))
                     return true;
 
+                // For root-relative patterns (starting with /), only match the full path, not segments
+                // Root-relative patterns like /storage/app should only match paths starting with storage/app from root
+                if (isRootRelative)
+                {
+                    return false;
+                }
+
                 // Try matching against just the filename
                 if (Regex.IsMatch(fileName, regexPattern, RegexOptions.IgnoreCase))
                     return true;
 
-                // Try matching each path segment
+                // Try matching each path segment (only for non-root-relative patterns)
                 var segments = relativePath.Split('/');
                 foreach (var segment in segments)
                 {
@@ -176,7 +199,7 @@ namespace Grex.Services
             catch
             {
                 // Invalid regex pattern, fall back to simple matching
-                return SimpleMatch(pattern, relativePath, fileName);
+                return SimpleMatch(pattern, relativePath, fileName, isRootRelative);
             }
 
             return false;
@@ -273,8 +296,17 @@ namespace Grex.Services
             return escaped;
         }
 
-        private bool SimpleMatch(string pattern, string relativePath, string fileName)
+        private bool SimpleMatch(string pattern, string relativePath, string fileName, bool isRootRelative)
         {
+            // For root-relative patterns, only match the full path
+            if (isRootRelative)
+            {
+                // Remove leading / from pattern for comparison
+                var patternWithoutSlash = pattern.StartsWith("/") ? pattern.Substring(1) : pattern;
+                return relativePath.Equals(patternWithoutSlash, StringComparison.OrdinalIgnoreCase) ||
+                       relativePath.StartsWith(patternWithoutSlash + "/", StringComparison.OrdinalIgnoreCase);
+            }
+
             // Simple wildcard matching for common cases
             if (pattern.Contains("*") || pattern.Contains("?"))
             {

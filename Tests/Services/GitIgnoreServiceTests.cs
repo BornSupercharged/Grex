@@ -426,5 +426,134 @@ namespace Grex.Tests.Services
                 TestDataHelper.CleanupTestDirectory(testDirectory);
             }
         }
+
+        [Fact]
+        public void ShouldIgnoreFile_WithRootRelativePattern_OnlyMatchesFromRoot()
+        {
+            // Arrange - This test verifies the fix for the bug where /storage/app was incorrectly matching /app
+            var testDirectory = TestDataHelper.CreateTestDirectory();
+            var gitIgnoreFile = Path.Combine(testDirectory, ".gitignore");
+            var storageAppDir = Directory.CreateDirectory(Path.Combine(testDirectory, "storage", "app"));
+            var appDir = Directory.CreateDirectory(Path.Combine(testDirectory, "app"));
+            // Note: /storage/app without trailing slash matches the directory itself, not files inside
+            // So we test with a file directly at storage/app (if it were a file) or use /storage/app/ for directory
+            var storageAppFile = TestDataHelper.CreateTestFile(storageAppDir.FullName, "file.txt", "content");
+            var appFile = TestDataHelper.CreateTestFile(appDir.FullName, "file.txt", "content");
+
+            try
+            {
+                // Create .gitignore file with root-relative directory pattern (with trailing slash)
+                File.WriteAllText(gitIgnoreFile, "/storage/app/");
+
+                // Act
+                var storageAppResult = _gitIgnoreService.ShouldIgnoreFile(storageAppFile, testDirectory);
+                var appResult = _gitIgnoreService.ShouldIgnoreFile(appFile, testDirectory);
+
+                // Assert
+                storageAppResult.Should().BeTrue(); // storage/app/file.txt should be ignored
+                appResult.Should().BeFalse(); // app/file.txt should NOT be ignored (this was the bug)
+            }
+            finally
+            {
+                // Cleanup
+                TestDataHelper.CleanupTestDirectory(testDirectory);
+            }
+        }
+
+        [Fact]
+        public void ShouldIgnoreFile_WithRootRelativeDirectoryPattern_MatchesFilesInsideDirectory()
+        {
+            // Arrange
+            var testDirectory = TestDataHelper.CreateTestDirectory();
+            var gitIgnoreFile = Path.Combine(testDirectory, ".gitignore");
+            var storageAppDir = Directory.CreateDirectory(Path.Combine(testDirectory, "storage", "app"));
+            var storageAppSubDir = Directory.CreateDirectory(Path.Combine(storageAppDir.FullName, "subdir"));
+            var storageAppFile = TestDataHelper.CreateTestFile(storageAppDir.FullName, "file.txt", "content");
+            var storageAppSubFile = TestDataHelper.CreateTestFile(storageAppSubDir.FullName, "file.txt", "content");
+
+            try
+            {
+                // Create .gitignore file with root-relative directory pattern
+                File.WriteAllText(gitIgnoreFile, "/storage/app/");
+
+                // Act
+                var storageAppFileResult = _gitIgnoreService.ShouldIgnoreFile(storageAppFile, testDirectory);
+                var storageAppSubFileResult = _gitIgnoreService.ShouldIgnoreFile(storageAppSubFile, testDirectory);
+
+                // Assert
+                storageAppFileResult.Should().BeTrue(); // Files in storage/app should be ignored
+                storageAppSubFileResult.Should().BeTrue(); // Files in subdirectories should also be ignored
+            }
+            finally
+            {
+                // Cleanup
+                TestDataHelper.CleanupTestDirectory(testDirectory);
+            }
+        }
+
+        [Fact]
+        public void ShouldIgnoreFile_WithRootRelativePattern_DoesNotMatchSegmentInPath()
+        {
+            // Arrange - This test specifically verifies that root-relative patterns don't match path segments
+            // This was the original bug: /storage/app was incorrectly matching /app
+            var testDirectory = TestDataHelper.CreateTestDirectory();
+            var gitIgnoreFile = Path.Combine(testDirectory, ".gitignore");
+            var appHttpDir = Directory.CreateDirectory(Path.Combine(testDirectory, "app", "Http"));
+            var appHttpMiddlewareDir = Directory.CreateDirectory(Path.Combine(appHttpDir.FullName, "Middleware"));
+            var middlewareFile = TestDataHelper.CreateTestFile(appHttpMiddlewareDir.FullName, "ApiKeyValidation.php", "content");
+
+            try
+            {
+                // Create .gitignore file with root-relative pattern that should NOT match /app
+                File.WriteAllText(gitIgnoreFile, "/storage/app");
+
+                // Act
+                var result = _gitIgnoreService.ShouldIgnoreFile(middlewareFile, testDirectory);
+
+                // Assert
+                result.Should().BeFalse(); // app/Http/Middleware/ApiKeyValidation.php should NOT be ignored
+                // This verifies the fix: /storage/app should not match the "app" segment in the path
+            }
+            finally
+            {
+                // Cleanup
+                TestDataHelper.CleanupTestDirectory(testDirectory);
+            }
+        }
+
+        [Fact]
+        public void ShouldIgnoreFile_WithRootRelativePatternAndNonRootRelativePattern_HandlesBothCorrectly()
+        {
+            // Arrange
+            var testDirectory = TestDataHelper.CreateTestDirectory();
+            var gitIgnoreFile = Path.Combine(testDirectory, ".gitignore");
+            var storageAppDir = Directory.CreateDirectory(Path.Combine(testDirectory, "storage", "app"));
+            var appDir = Directory.CreateDirectory(Path.Combine(testDirectory, "app"));
+            var storageAppFile = TestDataHelper.CreateTestFile(storageAppDir.FullName, "file.txt", "content");
+            var appFile = TestDataHelper.CreateTestFile(appDir.FullName, "file.txt", "content");
+            var otherAppDir = Directory.CreateDirectory(Path.Combine(testDirectory, "other", "app"));
+            var otherAppFile = TestDataHelper.CreateTestFile(otherAppDir.FullName, "file.txt", "content");
+
+            try
+            {
+                // Create .gitignore file with both root-relative and non-root-relative patterns
+                File.WriteAllText(gitIgnoreFile, "/storage/app\napp/");
+
+                // Act
+                var storageAppResult = _gitIgnoreService.ShouldIgnoreFile(storageAppFile, testDirectory);
+                var appResult = _gitIgnoreService.ShouldIgnoreFile(appFile, testDirectory);
+                var otherAppResult = _gitIgnoreService.ShouldIgnoreFile(otherAppFile, testDirectory);
+
+                // Assert
+                storageAppResult.Should().BeTrue(); // storage/app should be ignored (root-relative)
+                appResult.Should().BeTrue(); // app should be ignored (non-root-relative pattern)
+                otherAppResult.Should().BeTrue(); // other/app should be ignored (non-root-relative pattern)
+            }
+            finally
+            {
+                // Cleanup
+                TestDataHelper.CleanupTestDirectory(testDirectory);
+            }
+        }
     }
 }

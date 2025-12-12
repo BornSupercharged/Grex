@@ -122,6 +122,38 @@ namespace Grex.IntegrationTests
         }
 
         [Fact]
+        public async Task SearchWorkflow_WithRootRelativeGitIgnorePattern_OnlyMatchesFromRoot()
+        {
+            // Arrange - This test verifies the fix for the bug where /storage/app was incorrectly matching /app
+            var gitIgnoreFile = Path.Combine(_testDirectory, ".gitignore");
+            var storageAppDir = Directory.CreateDirectory(Path.Combine(_testDirectory, "storage", "app"));
+            var appDir = Directory.CreateDirectory(Path.Combine(_testDirectory, "app"));
+            var storageAppFile = TestDataHelper.CreateTestFile(storageAppDir.FullName, "file.txt", "ApiKeyValidation content");
+            var appHttpDir = Directory.CreateDirectory(Path.Combine(appDir.FullName, "Http"));
+            var appHttpMiddlewareDir = Directory.CreateDirectory(Path.Combine(appHttpDir.FullName, "Middleware"));
+            var middlewareFile = TestDataHelper.CreateTestFile(appHttpMiddlewareDir.FullName, "ApiKeyValidation.php", "ApiKeyValidation content");
+            var searchTab = GetSelectedTab();
+
+            // Use /storage/app/ (with trailing slash) to match files inside the directory
+            File.WriteAllText(gitIgnoreFile, "/storage/app/");
+
+            searchTab.SearchPath = _testDirectory;
+            searchTab.SearchTerm = "ApiKeyValidation";
+            searchTab.RespectGitignore = true;
+
+            // Act
+            await searchTab.PerformSearchAsync();
+
+            // Assert
+            // storage/app/file.txt should be ignored (matches /storage/app/)
+            // app/Http/Middleware/ApiKeyValidation.php should NOT be ignored (doesn't match /storage/app/)
+            // This verifies the fix: /storage/app/ should not match the "app" segment in /app/Http/...
+            searchTab.SearchResults.Should().HaveCount(1);
+            searchTab.SearchResults[0].FileName.Should().Be("ApiKeyValidation.php");
+            searchTab.SearchResults[0].FullPath.Should().Be(middlewareFile);
+        }
+
+        [Fact]
         public async Task SearchWorkflow_WithFilesMode_ReturnsAggregatedFileResults()
         {
             // Arrange

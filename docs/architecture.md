@@ -55,7 +55,10 @@ Grex/
 
 ### GitIgnoreService
 
-- Parses `.gitignore` files at every directory level, caches the compiled rules, and mirrors Git’s matching semantics (negations, directory-only patterns, etc.).
+- Parses `.gitignore` files at every directory level, caches the compiled rules, and mirrors Git's matching semantics (negations, directory-only patterns, root-relative patterns, etc.).
+- **Root-relative patterns** – Patterns starting with `/` (e.g., `/storage/app`) only match paths from the repository root, not individual path segments. This prevents `/storage/app` from incorrectly matching files in `/app` directories.
+- **Directory patterns** – Patterns ending with `/` (e.g., `build/` or `/storage/app/`) match files inside those directories. Root-relative directory patterns correctly handle path comparisons by removing the leading `/` when checking directory membership.
+- **Pattern matching** – Converts gitignore patterns to regex with proper escaping, handles wildcards (`*`, `?`, `**`), bracket patterns, and respects case-insensitive matching. Root-relative patterns skip segment-level matching to ensure accurate results.
 
 ### RecentPathsService
 
